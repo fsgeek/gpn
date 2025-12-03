@@ -1,0 +1,187 @@
+# GPN-1 Configuration: Meta-Learning Architecture (V3)
+#
+# EXPERIMENT: Test whether meta-learning (rewarding Weaver for Witness's
+# improvement on real data) prevents the exploitation failures seen in V2.
+#
+# Key insight from V2 failure:
+# - V2: Weaver exploited random-Witness before Witness learned anything
+# - Weaver achieved 100% Witness approval by step 100
+# - But Witness was still at 41% on real data - no actual learning
+#
+# V3 solution: Meta-learning
+# - Inner loop: Witness trains on Weaver's generated examples
+# - Outer loop: Weaver rewarded for Witness's IMPROVEMENT on real data
+# - This makes exploitation impossible: random-Witness shows no improvement
+#
+# Additional safeguard: Competence gating
+# - Weaver training only starts when Witness reaches competence threshold
+# - This ensures Witness has meaningful judgment before evaluating Weaver
+#
+# Phase structure:
+# - Phase 1: Heavy grounding + meta-learning (Witness develops, Weaver learns)
+# - Phase 2: Balanced (continued learning)
+# - Phase 3: Drift test (does the relationship maintain?)
+
+# =============================================================================
+# Reproducibility
+# =============================================================================
+seed: 42
+
+# =============================================================================
+# Data
+# =============================================================================
+data:
+  dataset: mnist
+  batch_size: 64
+  num_workers: 4
+  pin_memory: true
+
+# =============================================================================
+# Model Architecture
+# =============================================================================
+model:
+  latent_dim: 64
+  num_classes: 10
+  image_channels: 1
+  image_size: 28
+
+  weaver:
+    hidden_dims: [256, 512, 1024]
+    use_batch_norm: true
+    v_pred_hidden: 128
+
+  witness:
+    hidden_dims: [1024, 512, 256]
+    use_batch_norm: true
+    v_seen_hidden: 128
+    dropout: 0.3
+
+  judge:
+    checkpoint_path: null
+    hidden_dims: [512, 256]
+
+# =============================================================================
+# Training Phases
+# =============================================================================
+training:
+  total_steps: 15000
+
+  # Phase boundaries
+  # Phase 1 (0-5000): Witness grounding + competence development
+  # Phase 2 (5000-10000): Full meta-learning
+  # Phase 3 (10000+): Drift test
+  phase1_steps: 5000
+  phase2_steps: 10000
+
+  optimizer:
+    type: adam
+    lr: 0.0002
+    betas: [0.5, 0.999]
+    weight_decay: 0
+
+  scheduler:
+    type: constant
+    warmup_steps: 0
+
+# =============================================================================
+# Loss Weights (per phase)
+# In V3, the primary training signal is meta-learning improvement.
+# These weights are less critical than in V1/V2.
+# =============================================================================
+losses:
+  phase1:
+    grounding: 1.0
+    alignment: 0.1
+    empowerment: 0.0
+
+  phase2:
+    grounding: 1.0
+    alignment: 0.2
+    empowerment: 0.0
+
+  phase3:
+    grounding: 0.0
+    alignment: 0.0
+    empowerment: 0.0
+
+  empowerment:
+    target_kl: 0.5
+    tolerance: 0.1
+
+# =============================================================================
+# Meta-Learning Configuration (V3 specific)
+# =============================================================================
+meta_learning:
+  # Number of inner loop steps (Witness trains on Weaver output)
+  inner_steps: 3
+
+  # Size of held-out batch for measuring improvement
+  held_out_batch_size: 128
+
+  # Competence gating: only train Weaver when Witness shows competence
+  competence_threshold: 0.5
+
+  # EMA decay for tracking competence
+  competence_ema_decay: 0.95
+
+# =============================================================================
+# EMA Tracking
+# =============================================================================
+ema:
+  decay: 0.99
+  update_on: witness_forward
+
+  stagnation:
+    variance_threshold: 0.000001
+    window_size: 100
+
+# =============================================================================
+# Collusion Detection
+# =============================================================================
+collusion:
+  enabled: true
+  phase1:
+    mode: informational
+  phase2:
+    mode: warning
+    alignment_drop_threshold: 0.1
+    quality_stagnation_threshold: 0.01
+  phase3:
+    mode: diagnostic
+
+# =============================================================================
+# Logging & Checkpoints
+# =============================================================================
+logging:
+  log_dir: experiments
+  log_interval: 100
+  sample_interval: 500
+  num_samples: 64
+
+checkpointing:
+  checkpoint_dir: checkpoints
+  save_interval: 1000
+  keep_last_n: 3
+  save_on_phase_transition: true
+
+# =============================================================================
+# Metrics
+# =============================================================================
+metrics:
+  mode_diversity:
+    enabled: true
+    eval_interval: 500
+    num_samples: 1000
+
+  quality:
+    enabled: true
+    eval_interval: 500
+
+  convergence:
+    enabled: true
+    track_from_step: 0
+
+# =============================================================================
+# Device
+# =============================================================================
+device: auto
