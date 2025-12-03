@@ -10,6 +10,7 @@ Exports:
     - set_rng_state: Restore RNG state from checkpoint
 """
 
+import os
 import random
 from dataclasses import dataclass
 from typing import Any
@@ -83,6 +84,11 @@ def set_reproducibility(seed: int, deterministic: bool = True) -> None:
 
     # Deterministic algorithms
     if deterministic:
+        # Set cuBLAS workspace config for deterministic behavior on CUDA >= 10.2
+        # See: https://docs.nvidia.com/cuda/cublas/index.html#results-reproducibility
+        if torch.cuda.is_available():
+            os.environ.setdefault("CUBLAS_WORKSPACE_CONFIG", ":4096:8")
+
         torch.use_deterministic_algorithms(True, warn_only=True)
         # cuDNN determinism
         if torch.backends.cudnn.is_available():

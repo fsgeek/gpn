@@ -201,8 +201,16 @@ class GPNTrainer:
         Returns:
             Dictionary of loss components and metrics
         """
-        self.weaver.train()
-        self.witness.train()
+        current_phase = self.phase_manager.current_phase
+        is_drift_test = current_phase >= 3
+
+        # In Phase 3 (Drift Test), we observe without training
+        if is_drift_test:
+            self.weaver.eval()
+            self.witness.eval()
+        else:
+            self.weaver.train()
+            self.witness.train()
 
         # Get real images and labels
         real_images, labels = self._get_batch()
@@ -211,31 +219,36 @@ class GPNTrainer:
         # Generate noise
         z = torch.randn(batch_size, self.config.latent_dim, device=self.device)
 
-        # Forward pass through Weaver
-        fake_images, v_pred = self.weaver(z, labels)
+        # Use no_grad in Phase 3 to save memory
+        context = torch.no_grad() if is_drift_test else torch.enable_grad()
 
-        # Forward pass through Witness (this triggers EMA update logic)
-        witness_logits, v_seen = self.witness(fake_images)
+        with context:
+            # Forward pass through Weaver
+            fake_images, v_pred = self.weaver(z, labels)
 
-        # Judge provides grounding signal
-        with torch.no_grad():
-            judge_logits = self.judge(fake_images)
+            # Forward pass through Witness (this triggers EMA update logic)
+            witness_logits, v_seen = self.witness(fake_images)
 
-        # Compute losses
-        ema_mean = self.ema_state.mean if self.ema_state.initialized else None
-        ema_var = self.ema_state.variance if self.ema_state.initialized else None
+            # Judge provides grounding signal
+            with torch.no_grad():
+                judge_logits = self.judge(fake_images)
 
-        total_loss, loss_components = self.loss_fn(
-            witness_logits, labels, judge_logits, v_pred, v_seen,
-            ema_mean, ema_var,
-        )
+            # Compute losses (for metrics, even in Phase 3)
+            ema_mean = self.ema_state.mean if self.ema_state.initialized else None
+            ema_var = self.ema_state.variance if self.ema_state.initialized else None
 
-        # Backward pass
-        self.weaver_optimizer.zero_grad()
-        self.witness_optimizer.zero_grad()
-        total_loss.backward()
-        self.weaver_optimizer.step()
-        self.witness_optimizer.step()
+            total_loss, loss_components = self.loss_fn(
+                witness_logits, labels, judge_logits, v_pred, v_seen,
+                ema_mean, ema_var,
+            )
+
+        # Backward pass (skip in Phase 3 - we're observing, not training)
+        if not is_drift_test and total_loss.requires_grad:
+            self.weaver_optimizer.zero_grad()
+            self.witness_optimizer.zero_grad()
+            total_loss.backward()
+            self.weaver_optimizer.step()
+            self.witness_optimizer.step()
 
         # Update EMA (only after Witness forward - per spec)
         self.ema_state.update(v_seen.detach())
