@@ -276,7 +276,7 @@ class TrainingConfig:
             ),
             optimizer=OptimizerConfig(
                 type=optimizer_data.get("type", "adam"),
-                lr=optimizer_data.get("lr", 2e-4),
+                lr=float(optimizer_data.get("lr", 2e-4)),
                 betas=tuple(optimizer_data.get("betas", [0.5, 0.999])),
                 weight_decay=optimizer_data.get("weight_decay", 0.0),
             ),
@@ -288,18 +288,18 @@ class TrainingConfig:
                 tolerance=losses_data.get("empowerment", {}).get("tolerance", 0.1),
             ),
             ema=EMAConfig(
-                decay=ema_data.get("decay", 0.99),
-                variance_threshold=ema_data.get("stagnation", {}).get("variance_threshold", 1e-6),
-                window_size=ema_data.get("stagnation", {}).get("window_size", 100),
+                decay=float(ema_data.get("decay", 0.99)),
+                variance_threshold=float(ema_data.get("stagnation", {}).get("variance_threshold", 1e-6)),
+                window_size=int(ema_data.get("stagnation", {}).get("window_size", 100)),
             ),
             collusion=CollusionConfig(
                 enabled=collusion_data.get("enabled", True),
-                alignment_drop_threshold=collusion_data.get("phase2", {}).get(
+                alignment_drop_threshold=float(collusion_data.get("phase2", {}).get(
                     "alignment_drop_threshold", 0.1
-                ),
-                quality_stagnation_threshold=collusion_data.get("phase2", {}).get(
+                )),
+                quality_stagnation_threshold=float(collusion_data.get("phase2", {}).get(
                     "quality_stagnation_threshold", 0.01
-                ),
+                )),
             ),
             logging=LoggingConfig(
                 log_dir=logging_data.get("log_dir", "experiments"),

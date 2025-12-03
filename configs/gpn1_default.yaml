@@ -54,7 +54,7 @@ training:
   # Optimizer settings
   optimizer:
     type: adam
-    lr: 2e-4
+    lr: 0.0002
     betas: [0.5, 0.999]
     weight_decay: 0
 
@@ -99,7 +99,7 @@ ema:
 
   # Stagnation detection (T027a)
   stagnation:
-    variance_threshold: 1e-6
+    variance_threshold: 0.000001
     window_size: 100  # Consecutive steps to check
 
 # =============================================================================
