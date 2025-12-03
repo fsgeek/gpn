@@ -3,7 +3,7 @@
 Training CLI for GPN-1.
 
 Usage:
-    python -m src.cli.train [--config PATH] [--mode gpn|gan] [--steps N]
+    python -m src.cli.train [--config PATH] [--mode gpn|gpn-v2|gan] [--steps N]
 """
 
 import argparse
@@ -20,6 +20,7 @@ from src.models.judge import create_judge
 from src.models.baseline_gan import create_baseline_gan
 from src.training.config import TrainingConfig
 from src.training.gpn_trainer import GPNTrainer
+from src.training.gpn_trainer_v2 import GPNTrainerV2
 from src.training.gan_trainer import GANTrainer
 from src.utils.reproducibility import set_reproducibility
 
@@ -124,6 +125,75 @@ def train_gpn(config: TrainingConfig, resume_from: str | None = None) -> dict:
     return final_metrics
 
 
+def train_gpn_v2(config: TrainingConfig, resume_from: str | None = None) -> dict:
+    """
+    Train GPN model with grounded Witness architecture (V2).
+
+    Key difference from V1: Witness is trained on real MNIST to develop
+    independent competence before providing feedback to Weaver.
+
+    Args:
+        config: Training configuration
+        resume_from: Path to checkpoint to resume from
+
+    Returns:
+        Final metrics
+    """
+    device = config.get_device()
+    logger.info(f"Training GPN V2 (Grounded Witness) on {device}")
+
+    # Set reproducibility
+    set_reproducibility(config.seed)
+
+    # Data
+    train_loader = get_mnist_loader(
+        batch_size=config.data.batch_size,
+        num_workers=config.data.num_workers,
+    )
+
+    # Models
+    weaver = create_weaver(
+        latent_dim=config.latent_dim,
+        v_pred_dim=config.weaver.v_pred_dim,
+        device=device,
+    )
+    witness = create_witness(
+        v_seen_dim=config.witness.v_seen_dim,
+        dropout=config.witness.dropout,
+        device=device,
+    )
+    judge = create_judge(
+        checkpoint_path=config.judge.checkpoint_path or "checkpoints/judge.pt",
+        device=device,
+        freeze=True,
+    )
+
+    logger.info(f"Weaver parameters: {sum(p.numel() for p in weaver.parameters()):,}")
+    logger.info(f"Witness parameters: {sum(p.numel() for p in witness.parameters()):,}")
+    logger.info(f"Judge parameters: {sum(p.numel() for p in judge.parameters()):,}")
+
+    # Trainer V2
+    trainer = GPNTrainerV2(
+        config=config,
+        weaver=weaver,
+        witness=witness,
+        judge=judge,
+        train_loader=train_loader,
+        device=device,
+    )
+
+    # Train
+    final_metrics = trainer.train(resume_from=resume_from)
+
+    # Evaluate
+    eval_metrics = trainer.evaluate()
+    final_metrics.update(eval_metrics)
+
+    logger.info(f"Final metrics: {final_metrics}")
+
+    return final_metrics
+
+
 def train_gan(config: TrainingConfig) -> dict:
     """
     Train baseline GAN model.
@@ -193,9 +263,9 @@ def main():
     parser.add_argument(
         "--mode",
         type=str,
-        choices=["gpn", "gan"],
+        choices=["gpn", "gpn-v2", "gan"],
         default="gpn",
-        help="Training mode",
+        help="Training mode: gpn (original), gpn-v2 (grounded witness), gan (baseline)",
     )
     parser.add_argument(
         "--steps",
@@ -245,6 +315,8 @@ def main():
     # Train
     if args.mode == "gpn":
         metrics = train_gpn(config, resume_from=args.resume)
+    elif args.mode == "gpn-v2":
+        metrics = train_gpn_v2(config, resume_from=args.resume)
     else:
         metrics = train_gan(config)
 

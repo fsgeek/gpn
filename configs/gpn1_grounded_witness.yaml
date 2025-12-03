@@ -1,0 +1,169 @@
+# GPN-1 Configuration: Grounded Witness Architecture (V2)
+#
+# EXPERIMENT: Test whether grounding Witness on real MNIST before
+# using it to train Weaver produces better results than the original
+# architecture where Witness only saw Weaver's outputs.
+#
+# Pedagogical framing:
+# - Witness (student) studies the textbook (real MNIST)
+# - Witness develops independent classification competence
+# - Weaver (teacher) learns to produce examples Witness can understand
+# - Trust emerges from demonstrated competence, not scheduling
+#
+# Key difference from V1:
+# - Witness is trained on real MNIST (grounding)
+# - Weaver loss = cross_entropy(Witness(fake_images), labels)
+# - Gradients flow from Witness's grounded judgment to Weaver
+#
+# Phase structure:
+# - Phase 1: Heavy grounding (80% Witness training on real data)
+# - Phase 2: Balanced (50% grounding, 50% Weaver training)
+# - Phase 3: No grounding (test if Witness maintains judgment)
+
+# =============================================================================
+# Reproducibility
+# =============================================================================
+seed: 42
+
+# =============================================================================
+# Data
+# =============================================================================
+data:
+  dataset: mnist
+  batch_size: 64
+  num_workers: 4
+  pin_memory: true
+
+# =============================================================================
+# Model Architecture
+# =============================================================================
+model:
+  latent_dim: 64
+  num_classes: 10
+  image_channels: 1
+  image_size: 28
+
+  weaver:
+    hidden_dims: [256, 512, 1024]
+    use_batch_norm: true
+    v_pred_hidden: 128
+
+  witness:
+    hidden_dims: [1024, 512, 256]
+    use_batch_norm: true
+    v_seen_hidden: 128
+    dropout: 0.3
+
+  judge:
+    checkpoint_path: null
+    hidden_dims: [512, 256]
+
+# =============================================================================
+# Training Phases
+# =============================================================================
+training:
+  total_steps: 15000
+
+  # Phase boundaries
+  # Phase 1 (0-5000): Heavy Witness grounding (80% real data)
+  # Phase 2 (5000-10000): Balanced (50% real data)
+  # Phase 3 (10000+): Drift test (no grounding)
+  phase1_steps: 5000
+  phase2_steps: 10000
+
+  optimizer:
+    type: adam
+    lr: 0.0002
+    betas: [0.5, 0.999]
+    weight_decay: 0
+
+  scheduler:
+    type: constant
+    warmup_steps: 0
+
+# =============================================================================
+# Loss Weights (per phase)
+# Note: In V2, these primarily control alignment loss.
+# Grounding is handled separately via real data training.
+# =============================================================================
+losses:
+  phase1:
+    grounding: 1.0    # Not used in V2 - grounding is via real data
+    alignment: 0.1    # Light alignment in Phase 1
+    empowerment: 0.0
+
+  phase2:
+    grounding: 1.0
+    alignment: 0.3    # Moderate alignment in Phase 2
+    empowerment: 0.0  # Empowerment disabled for simplicity in V2
+
+  phase3:
+    grounding: 0.0
+    alignment: 0.0
+    empowerment: 0.0
+
+  empowerment:
+    target_kl: 0.5
+    tolerance: 0.1
+
+# =============================================================================
+# EMA Tracking
+# =============================================================================
+ema:
+  decay: 0.99
+  update_on: witness_forward
+
+  stagnation:
+    variance_threshold: 0.000001
+    window_size: 100
+
+# =============================================================================
+# Collusion Detection
+# =============================================================================
+collusion:
+  enabled: true
+  phase1:
+    mode: informational
+  phase2:
+    mode: warning
+    alignment_drop_threshold: 0.1
+    quality_stagnation_threshold: 0.01
+  phase3:
+    mode: diagnostic
+
+# =============================================================================
+# Logging & Checkpoints
+# =============================================================================
+logging:
+  log_dir: experiments
+  log_interval: 100
+  sample_interval: 500
+  num_samples: 64
+
+checkpointing:
+  checkpoint_dir: checkpoints
+  save_interval: 1000
+  keep_last_n: 3
+  save_on_phase_transition: true
+
+# =============================================================================
+# Metrics
+# =============================================================================
+metrics:
+  mode_diversity:
+    enabled: true
+    eval_interval: 500
+    num_samples: 1000
+
+  quality:
+    enabled: true
+    eval_interval: 500
+
+  convergence:
+    enabled: true
+    track_from_step: 0
+
+# =============================================================================
+# Device
+# =============================================================================
+device: auto
