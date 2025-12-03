@@ -1,0 +1,157 @@
+# GPN-1 Default Configuration
+# MNIST Proof of Concept - Three-Phase Training
+
+# =============================================================================
+# Reproducibility
+# =============================================================================
+seed: 42
+
+# =============================================================================
+# Data
+# =============================================================================
+data:
+  dataset: mnist
+  batch_size: 64
+  num_workers: 4
+  pin_memory: true
+
+# =============================================================================
+# Model Architecture
+# =============================================================================
+model:
+  latent_dim: 64
+  num_classes: 10
+  image_channels: 1
+  image_size: 28
+
+  weaver:
+    hidden_dims: [256, 512, 1024]
+    use_batch_norm: true
+    v_pred_hidden: 128  # Value prediction head
+
+  witness:
+    hidden_dims: [1024, 512, 256]
+    use_batch_norm: true
+    v_seen_hidden: 128  # Value estimation head
+    dropout: 0.3
+
+  judge:
+    # Frozen classifier for grounding
+    checkpoint_path: null  # Will be trained first or loaded
+    hidden_dims: [512, 256]
+
+# =============================================================================
+# Training Phases
+# =============================================================================
+training:
+  total_steps: 15000
+
+  # Phase boundaries (per spec: 5000/10000/15000)
+  phase1_steps: 5000   # Scaffolding: Train Witness, ground Weaver
+  phase2_steps: 10000  # Relationship: Full alignment loop
+  # Phase 3: 10000+ - Drift test (scaffolding removed)
+
+  # Optimizer settings
+  optimizer:
+    type: adam
+    lr: 2e-4
+    betas: [0.5, 0.999]
+    weight_decay: 0
+
+  # Learning rate schedule
+  scheduler:
+    type: constant  # Keep simple for PoC
+    warmup_steps: 0
+
+# =============================================================================
+# Loss Weights (per phase)
+# =============================================================================
+losses:
+  # Phase 1: Heavy grounding, light alignment
+  phase1:
+    grounding: 1.0
+    alignment: 0.1
+    empowerment: 0.0  # Disabled in Phase 1
+
+  # Phase 2: Balanced with empowerment
+  phase2:
+    grounding: 1.0
+    alignment: 0.5
+    empowerment: 0.3
+
+  # Phase 3: Scaffolding removed - observe drift
+  phase3:
+    grounding: 0.0   # Judge feedback removed
+    alignment: 0.0   # Explicit alignment removed
+    empowerment: 0.0 # Let them self-organize
+
+  # Empowerment (Goldilocks) parameters
+  empowerment:
+    target_kl: 0.5   # Target KL divergence
+    tolerance: 0.1   # Acceptable range around target
+
+# =============================================================================
+# EMA Tracking
+# =============================================================================
+ema:
+  decay: 0.99
+  update_on: witness_forward  # Only on Witness forward pass
+
+  # Stagnation detection (T027a)
+  stagnation:
+    variance_threshold: 1e-6
+    window_size: 100  # Consecutive steps to check
+
+# =============================================================================
+# Collusion Detection (T032a)
+# =============================================================================
+collusion:
+  enabled: true
+  # Phase-aware thresholds
+  phase1:
+    mode: informational  # Log only, no warnings
+  phase2:
+    mode: warning
+    alignment_drop_threshold: 0.1
+    quality_stagnation_threshold: 0.01
+  phase3:
+    mode: diagnostic
+    # Flag as either cooperative collapse OR successful internalization
+    # Distinguish by checking if quality maintained
+
+# =============================================================================
+# Logging & Checkpoints
+# =============================================================================
+logging:
+  log_dir: experiments
+  log_interval: 100
+  sample_interval: 500
+  num_samples: 64  # Samples to generate for visualization
+
+checkpointing:
+  checkpoint_dir: checkpoints
+  save_interval: 1000
+  keep_last_n: 3
+  save_on_phase_transition: true
+
+# =============================================================================
+# Metrics
+# =============================================================================
+metrics:
+  mode_diversity:
+    enabled: true
+    eval_interval: 500
+    num_samples: 1000
+
+  quality:
+    enabled: true
+    eval_interval: 500
+
+  convergence:
+    enabled: true
+    track_from_step: 0
+
+# =============================================================================
+# Device
+# =============================================================================
+device: auto  # auto, cpu, or cuda

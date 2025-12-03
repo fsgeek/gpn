@@ -1,0 +1,22 @@
+# GPN-1 MNIST Proof-of-Concept Dependencies
+# Python 3.11+
+
+# Core ML
+torch>=2.0
+torchvision
+
+# Numerical
+numpy
+
+# Visualization
+matplotlib
+
+# Logging
+tensorboard
+
+# Configuration
+pyyaml
+
+# Testing (dev)
+pytest>=7.0
+pytest-cov
