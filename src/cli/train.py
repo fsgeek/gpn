@@ -570,6 +570,139 @@ def train_gan(config: TrainingConfig) -> dict:
     return final_metrics
 
 
+def train_acgan2_direct(
+    config: TrainingConfig,
+    judge_checkpoint: str = "checkpoints/judge_twodigit.pt",
+) -> dict:
+    """
+    Train AC-GAN 2-digit (hybrid adversarial + pedagogical).
+
+    Tests: Does adding pedagogical class loss help adversarial training?
+
+    Args:
+        config: Training configuration
+        judge_checkpoint: Path to pre-trained 2-digit Judge
+
+    Returns:
+        Final metrics
+    """
+    from src.models.acgan_twodigit import create_acgan_twodigit
+    from src.models.judge_twodigit import create_twodigit_judge
+    from src.data.multidigit import get_twodigit_loader
+    from src.training.acgan_trainer_twodigit import ACGANTrainerTwoDigit
+
+    device = config.get_device()
+    logger.info(f"Training AC-GAN 2-digit (hybrid) on {device}")
+    logger.info("HYBRID: Adversarial + Pedagogical (class prediction)")
+
+    # Set reproducibility
+    set_reproducibility(config.seed)
+
+    # Data
+    train_loader = get_twodigit_loader(
+        batch_size=config.data.batch_size,
+        num_workers=config.data.num_workers,
+        train=True,
+        num_samples=50000,
+    )
+
+    # Models
+    generator, discriminator = create_acgan_twodigit(
+        latent_dim=config.latent_dim,
+        device=device,
+    )
+    judge = create_twodigit_judge(
+        checkpoint_path=judge_checkpoint,
+        device=device,
+        freeze=True,
+    )
+
+    logger.info(f"Generator params: {sum(p.numel() for p in generator.parameters()):,}")
+    logger.info(f"Discriminator params: {sum(p.numel() for p in discriminator.parameters()):,}")
+
+    # Trainer
+    trainer = ACGANTrainerTwoDigit(
+        config=config,
+        generator=generator,
+        discriminator=discriminator,
+        judge=judge,
+        train_loader=train_loader,
+        device=device,
+    )
+
+    # Train
+    final_metrics = trainer.train()
+
+    return final_metrics
+
+
+def train_gan2_direct(
+    config: TrainingConfig,
+    judge_checkpoint: str = "checkpoints/judge_twodigit.pt",
+) -> dict:
+    """
+    Train 2-digit GAN from scratch (no curriculum).
+
+    Critical ablation: Does adversarial training succeed where
+    pedagogical training failed?
+
+    Args:
+        config: Training configuration
+        judge_checkpoint: Path to pre-trained 2-digit Judge
+
+    Returns:
+        Final metrics
+    """
+    from src.models.gan_twodigit import create_twodigit_gan
+    from src.models.judge_twodigit import create_twodigit_judge
+    from src.data.multidigit import get_twodigit_loader
+    from src.training.gan_trainer_twodigit import GANTrainerTwoDigit
+
+    device = config.get_device()
+    logger.info(f"Training GAN 2-digit (from scratch) on {device}")
+    logger.info("ABLATION: GAN baseline for compositional learning")
+
+    # Set reproducibility
+    set_reproducibility(config.seed)
+
+    # Data
+    train_loader = get_twodigit_loader(
+        batch_size=config.data.batch_size,
+        num_workers=config.data.num_workers,
+        train=True,
+        num_samples=50000,
+    )
+
+    # Models
+    generator, discriminator = create_twodigit_gan(
+        latent_dim=config.latent_dim,
+        device=device,
+    )
+    judge = create_twodigit_judge(
+        checkpoint_path=judge_checkpoint,
+        device=device,
+        freeze=True,
+    )
+
+    logger.info(f"Generator params: {sum(p.numel() for p in generator.parameters()):,}")
+    logger.info(f"Discriminator params: {sum(p.numel() for p in discriminator.parameters()):,}")
+
+    # Trainer
+    trainer = GANTrainerTwoDigit(
+        config=config,
+        generator=generator,
+        discriminator=discriminator,
+        judge=judge,
+        train_loader=train_loader,
+        device=device,
+    )
+
+    # Train
+    final_metrics = trainer.train()
+
+    return final_metrics
+
+
 def main():
     parser = argparse.ArgumentParser(description="Train GPN-1 or baseline GAN")
     parser.add_argument(
@@ -581,7 +714,7 @@ def main():
     parser.add_argument(
         "--mode",
         type=str,
-        choices=["gpn", "gpn-v2", "gpn-v3", "gpn-v3-nometa", "gpn2", "gpn2-direct", "gan"],
+        choices=["gpn", "gpn-v2", "gpn-v3", "gpn-v3-nometa", "gpn2", "gpn2-direct", "gan", "gan2-direct", "acgan2-direct"],
         default="gpn",
         help="Training mode: gpn (original), gpn-v2 (grounded witness), gpn-v3 (meta-learning), gpn-v3-nometa (ablation: no inner loop), gpn2 (two-digit curriculum), gpn2-direct (two-digit from scratch, no curriculum ablation), gan (baseline)",
     )
@@ -649,6 +782,10 @@ def main():
         metrics = train_gpn2(config, resume_from=args.resume)
     elif args.mode == "gpn2-direct":
         metrics = train_gpn2_direct(config, resume_from=args.resume)
+    elif args.mode == "gan2-direct":
+        metrics = train_gan2_direct(config)
+    elif args.mode == "acgan2-direct":
+        metrics = train_acgan2_direct(config)
     else:
         metrics = train_gan(config)
 
