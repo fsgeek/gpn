@@ -1,0 +1,126 @@
+# GPN-1 Configuration: V3 Ablation - No Competence Gating
+#
+# ABLATION: Test whether competence gating is the key to V3's success.
+#
+# This is identical to gpn1_meta_learning.yaml except:
+# - competence_threshold: 0.0 (disabled - Weaver trains from step 0)
+#
+# If this fails like V2: competence gating is the critical insight
+# If this succeeds like V3: something else explains the result
+
+seed: 42
+
+data:
+  dataset: mnist
+  batch_size: 64
+  num_workers: 4
+  pin_memory: true
+
+model:
+  latent_dim: 64
+  num_classes: 10
+  image_channels: 1
+  image_size: 28
+
+  weaver:
+    hidden_dims: [256, 512, 1024]
+    use_batch_norm: true
+    v_pred_hidden: 128
+
+  witness:
+    hidden_dims: [1024, 512, 256]
+    use_batch_norm: true
+    v_seen_hidden: 128
+    dropout: 0.3
+
+  judge:
+    checkpoint_path: null
+    hidden_dims: [512, 256]
+
+training:
+  total_steps: 15000
+  phase1_steps: 5000
+  phase2_steps: 10000
+
+  optimizer:
+    type: adam
+    lr: 0.0002
+    betas: [0.5, 0.999]
+    weight_decay: 0
+
+  scheduler:
+    type: constant
+    warmup_steps: 0
+
+losses:
+  phase1:
+    grounding: 1.0
+    alignment: 0.1
+    empowerment: 0.0
+
+  phase2:
+    grounding: 1.0
+    alignment: 0.2
+    empowerment: 0.0
+
+  phase3:
+    grounding: 0.0
+    alignment: 0.0
+    empowerment: 0.0
+
+  empowerment:
+    target_kl: 0.5
+    tolerance: 0.1
+
+# ABLATION: Competence gating DISABLED
+meta_learning:
+  inner_steps: 3
+  held_out_batch_size: 128
+  competence_threshold: 0.0  # CHANGED: No gating - Weaver trains immediately
+  competence_ema_decay: 0.95
+
+ema:
+  decay: 0.99
+  update_on: witness_forward
+  stagnation:
+    variance_threshold: 0.000001
+    window_size: 100
+
+collusion:
+  enabled: true
+  phase1:
+    mode: informational
+  phase2:
+    mode: warning
+    alignment_drop_threshold: 0.1
+    quality_stagnation_threshold: 0.01
+  phase3:
+    mode: diagnostic
+
+logging:
+  log_dir: experiments
+  log_interval: 100
+  sample_interval: 500
+  num_samples: 64
+
+checkpointing:
+  checkpoint_dir: checkpoints
+  save_interval: 1000
+  keep_last_n: 3
+  save_on_phase_transition: true
+
+metrics:
+  mode_diversity:
+    enabled: true
+    eval_interval: 500
+    num_samples: 1000
+
+  quality:
+    enabled: true
+    eval_interval: 500
+
+  convergence:
+    enabled: true
+    track_from_step: 0
+
+device: auto
