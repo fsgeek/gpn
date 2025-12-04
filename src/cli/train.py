@@ -23,6 +23,8 @@ from src.training.gpn_trainer import GPNTrainer
 from src.training.gpn_trainer_v2 import GPNTrainerV2
 from src.training.gpn_trainer_v3 import GPNTrainerV3
 from src.training.gpn_trainer_v3_no_meta import GPNTrainerV3NoMeta
+from src.training.gpn_trainer_twodigit import GPNTrainerTwoDigit
+from src.training.gpn_trainer_twodigit_direct import GPNTrainerTwoDigitDirect
 from src.training.gan_trainer import GANTrainer
 from src.utils.reproducibility import set_reproducibility
 
@@ -338,6 +340,178 @@ def train_gpn_v3_no_meta(config: TrainingConfig, resume_from: str | None = None,
     return final_metrics
 
 
+def train_gpn2(
+    config: TrainingConfig,
+    resume_from: str | None = None,
+    single_digit_checkpoint: str = "checkpoints/checkpoint_v3_final.pt",
+    judge_checkpoint: str = "checkpoints/judge_twodigit.pt",
+) -> dict:
+    """
+    Train GPN-2 (Two-Digit) with curriculum learning.
+
+    Curriculum phases:
+    - Phase 1: Composition learning (single-digit Weaver frozen)
+    - Phase 2: End-to-end fine-tuning (all unfrozen)
+    - Phase 3: Drift test (grounding removed)
+
+    Args:
+        config: Training configuration
+        resume_from: Path to checkpoint to resume from
+        single_digit_checkpoint: Path to pre-trained single-digit Weaver
+        judge_checkpoint: Path to pre-trained 2-digit Judge
+
+    Returns:
+        Final metrics
+    """
+    from src.models.weaver_twodigit import create_twodigit_weaver
+    from src.models.witness_twodigit import create_twodigit_witness
+    from src.models.judge_twodigit import create_twodigit_judge
+    from src.data.multidigit import get_twodigit_loader
+
+    device = config.get_device()
+    logger.info(f"Training GPN-2 (Two-Digit Curriculum) on {device}")
+
+    # Set reproducibility
+    set_reproducibility(config.seed)
+
+    # Data (2-digit MNIST)
+    train_loader = get_twodigit_loader(
+        batch_size=config.data.batch_size,
+        num_workers=config.data.num_workers,
+        train=True,
+        num_samples=50000,
+    )
+
+    # Models
+    weaver = create_twodigit_weaver(
+        single_digit_checkpoint=single_digit_checkpoint,
+        latent_dim=config.latent_dim,
+        v_pred_dim=config.weaver.v_pred_dim,
+        device=device,
+        freeze_digits=True,  # Phase 1: frozen
+    )
+    witness = create_twodigit_witness(
+        v_seen_dim=config.witness.v_seen_dim,
+        dropout=config.witness.dropout,
+        device=device,
+    )
+    judge = create_twodigit_judge(
+        checkpoint_path=judge_checkpoint,
+        device=device,
+        freeze=True,
+    )
+
+    logger.info(f"TwoDigitWeaver parameters: {sum(p.numel() for p in weaver.parameters()):,}")
+    logger.info(f"TwoDigitWitness parameters: {sum(p.numel() for p in witness.parameters()):,}")
+    logger.info(f"TwoDigitJudge parameters: {sum(p.numel() for p in judge.parameters()):,}")
+    logger.info(f"Single-digit Weaver frozen: {weaver.is_digit_weaver_frozen()}")
+
+    # Trainer
+    trainer = GPNTrainerTwoDigit(
+        weaver=weaver,
+        witness=witness,
+        judge=judge,
+        train_loader=train_loader,
+        config=config,
+        device=device,
+        latent_dim=config.latent_dim,
+        v_pred_dim=config.weaver.v_pred_dim,
+    )
+
+    # Train
+    final_metrics = trainer.train(resume_from=resume_from)
+
+    # Evaluate
+    eval_metrics = trainer.evaluate()
+    final_metrics.update(eval_metrics)
+
+    logger.info(f"Final metrics: {final_metrics}")
+
+    return final_metrics
+
+
+def train_gpn2_direct(
+    config: TrainingConfig,
+    resume_from: str | None = None,
+    judge_checkpoint: str = "checkpoints/judge_twodigit.pt",
+) -> dict:
+    """
+    Train GPN-2 DIRECT (No Curriculum Ablation) - from scratch.
+
+    Critical ablation: tests whether curriculum helps or composition is free.
+
+    Args:
+        config: Training configuration
+        resume_from: Path to checkpoint to resume from
+        judge_checkpoint: Path to pre-trained 2-digit Judge
+
+    Returns:
+        Final metrics
+    """
+    from src.models.weaver_twodigit import create_twodigit_weaver_direct
+    from src.models.witness_twodigit import create_twodigit_witness
+    from src.models.judge_twodigit import create_twodigit_judge
+    from src.data.multidigit import get_twodigit_loader
+
+    device = config.get_device()
+    logger.info(f"Training GPN-2 DIRECT (No Curriculum Ablation) on {device}")
+    logger.info("ABLATION: Training 2-digit from scratch, NO pre-trained single-digit Weaver")
+
+    # Set reproducibility
+    set_reproducibility(config.seed)
+
+    # Data (2-digit MNIST)
+    train_loader = get_twodigit_loader(
+        batch_size=config.data.batch_size,
+        num_workers=config.data.num_workers,
+        train=True,
+        num_samples=50000,
+    )
+
+    # Models - DIRECT Weaver (no composition, from scratch)
+    weaver = create_twodigit_weaver_direct(
+        latent_dim=config.latent_dim,
+        v_pred_dim=config.weaver.v_pred_dim,
+        device=device,
+    )
+    witness = create_twodigit_witness(
+        v_seen_dim=config.witness.v_seen_dim,
+        dropout=config.witness.dropout,
+        device=device,
+    )
+    judge = create_twodigit_judge(
+        checkpoint_path=judge_checkpoint,
+        device=device,
+        freeze=True,
+    )
+
+    logger.info(f"TwoDigitWeaverDirect params: {sum(p.numel() for p in weaver.parameters()):,}")
+    logger.info(f"TwoDigitWitness params: {sum(p.numel() for p in witness.parameters()):,}")
+    logger.info(f"TwoDigitJudge params: {sum(p.numel() for p in judge.parameters()):,}")
+
+    # Trainer - Direct (no curriculum)
+    trainer = GPNTrainerTwoDigitDirect(
+        weaver=weaver,
+        witness=witness,
+        judge=judge,
+        train_loader=train_loader,
+        device=device,
+        latent_dim=config.latent_dim,
+        v_pred_dim=config.weaver.v_pred_dim,
+    )
+
+    # Train
+    final_metrics = trainer.train(resume_from=resume_from)
+
+    # Evaluate
+    eval_metrics = trainer.evaluate()
+    final_metrics.update(eval_metrics)
+
+    logger.info(f"Final metrics: {final_metrics}")
+
+    return final_metrics
+
+
 def train_gan(config: TrainingConfig) -> dict:
     """
     Train baseline GAN model.
@@ -407,9 +581,9 @@ def main():
     parser.add_argument(
         "--mode",
         type=str,
-        choices=["gpn", "gpn-v2", "gpn-v3", "gpn-v3-nometa", "gan"],
+        choices=["gpn", "gpn-v2", "gpn-v3", "gpn-v3-nometa", "gpn2", "gpn2-direct", "gan"],
         default="gpn",
-        help="Training mode: gpn (original), gpn-v2 (grounded witness), gpn-v3 (meta-learning), gpn-v3-nometa (ablation: no inner loop), gan (baseline)",
+        help="Training mode: gpn (original), gpn-v2 (grounded witness), gpn-v3 (meta-learning), gpn-v3-nometa (ablation: no inner loop), gpn2 (two-digit curriculum), gpn2-direct (two-digit from scratch, no curriculum ablation), gan (baseline)",
     )
     parser.add_argument(
         "--steps",
@@ -471,6 +645,10 @@ def main():
         metrics = train_gpn_v3(config, resume_from=args.resume, competence_threshold=args.competence_threshold)
     elif args.mode == "gpn-v3-nometa":
         metrics = train_gpn_v3_no_meta(config, resume_from=args.resume, competence_threshold=args.competence_threshold)
+    elif args.mode == "gpn2":
+        metrics = train_gpn2(config, resume_from=args.resume)
+    elif args.mode == "gpn2-direct":
+        metrics = train_gpn2_direct(config, resume_from=args.resume)
     else:
         metrics = train_gan(config)
 

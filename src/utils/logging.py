@@ -36,7 +36,7 @@ class MetricsLogger:
         self,
         log_dir: str | Path,
         experiment_name: Optional[str] = None,
-        flush_secs: int = 120,
+        flush_secs: int = 10,
     ) -> None:
         """
         Initialize TensorBoard logger.

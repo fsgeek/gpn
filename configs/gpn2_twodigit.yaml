@@ -1,0 +1,144 @@
+# GPN-2 Configuration: Two-Digit Number Generation with Curriculum Learning
+#
+# EXPERIMENT: Test whether curriculum-based training (single digits → composition)
+# produces better multi-digit generators than training from scratch.
+#
+# Hypothesis: Pedagogical structure matters when the task has compositional structure.
+#
+# Curriculum Phases:
+# - Phase 1 (0-2000): Composition learning - single-digit Weaver FROZEN
+#   - Only train the latent_split layer that distributes z to each digit position
+#   - Witness learns to evaluate 2-digit images
+#
+# - Phase 2 (2000-6000): End-to-end fine-tuning - everything UNFROZEN
+#   - All weights trainable
+#   - Lower learning rate for stable fine-tuning
+#
+# - Phase 3 (6000+): Drift test - grounding REMOVED
+#   - Tests whether learned relationship is stable
+#
+# Key insight from GPN-1 ablations:
+# - Meta-learning inner loop NOT necessary
+# - Classification grounding + competence gating is sufficient
+# - ~8% transfer gap over discrimination grounding (GAN)
+
+# =============================================================================
+# Reproducibility
+# =============================================================================
+seed: 42
+
+# =============================================================================
+# Data (2-digit MNIST)
+# =============================================================================
+data:
+  dataset: twodigit_mnist
+  batch_size: 64
+  num_workers: 4
+  pin_memory: true
+  num_samples: 50000  # Pre-generated samples
+
+# =============================================================================
+# Model Architecture
+# =============================================================================
+model:
+  latent_dim: 64
+  num_classes: 100  # 0-99 for 2-digit numbers
+  image_channels: 1
+  image_size_h: 28
+  image_size_w: 56  # 28 * 2 = 56
+
+  weaver:
+    # Uses pre-trained single-digit Weaver from GPN-1
+    single_digit_checkpoint: checkpoints/checkpoint_v3_final.pt
+    freeze_digits_phase1: true
+
+  witness:
+    hidden_dims: [64, 128, 256]
+    v_seen_dim: 16
+    v_seen_hidden: 128
+    dropout: 0.3
+
+  judge:
+    # Pre-trained 2-digit Judge
+    checkpoint_path: checkpoints/judge_twodigit.pt
+    hidden_dims: [64, 128, 256]
+
+# =============================================================================
+# Training Phases
+# =============================================================================
+training:
+  total_steps: 8000
+
+  # Phase boundaries
+  # Phase 1 (0-2000): Composition only (digits frozen)
+  # Phase 2 (2000-6000): End-to-end (unfrozen)
+  # Phase 3 (6000+): Drift test
+  phase1_steps: 2000
+  phase2_steps: 6000
+
+  optimizer:
+    type: adam
+    lr: 0.0002
+    lr_phase2: 0.0001  # Lower LR for fine-tuning
+    betas: [0.5, 0.999]
+    weight_decay: 0
+
+# =============================================================================
+# Competence Gating
+# =============================================================================
+competence:
+  threshold: 0.5  # Start training Weaver when Witness reaches 50% accuracy
+  ema_decay: 0.95
+
+# =============================================================================
+# EMA Tracking
+# =============================================================================
+ema:
+  decay: 0.99
+  variance_threshold: 0.000001
+  window_size: 100
+
+# =============================================================================
+# Logging & Checkpoints
+# =============================================================================
+logging:
+  log_dir: experiments/gpn2
+  log_interval: 100
+  sample_interval: 500
+  num_samples: 20
+
+checkpointing:
+  checkpoint_dir: checkpoints
+  save_interval: 1000
+  keep_last_n: 3
+  save_on_phase_transition: true
+
+# =============================================================================
+# Metrics
+# =============================================================================
+metrics:
+  # Per-digit accuracy tracking
+  track_tens_accuracy: true
+  track_ones_accuracy: true
+  track_full_number_accuracy: true
+
+# =============================================================================
+# Ablations (for comparison)
+# =============================================================================
+ablations:
+  # Ablation 1: No curriculum (train directly on 2-digit from scratch)
+  no_curriculum:
+    enabled: false
+    skip_phase1: true
+    use_random_init: true
+
+  # Ablation 2: No composition phase (skip Phase 1)
+  no_composition_phase:
+    enabled: false
+    skip_phase1: true
+    freeze_digits: false
+
+# =============================================================================
+# Device
+# =============================================================================
+device: auto
