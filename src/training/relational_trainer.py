@@ -545,3 +545,79 @@ def create_relational_trainer_holdout(
         latent_dim=latent_dim,
         device=device,
     )
+
+
+def create_relational_trainer_holdout_acgan(
+    acgan_checkpoint: str,
+    judge_checkpoint: str,
+    latent_dim: int | None = None,
+    holdout_pairs: list[tuple[int, int]] | None = None,
+    device: torch.device | None = None,
+    freeze_digits: bool = True,
+) -> RelationalTrainerHoldout:
+    """
+    Create RelationalTrainerHoldout using AC-GAN generator instead of GPN Weaver.
+
+    This tests whether primitive quality (sharp GAN vs blobby GPN) matters
+    for compositional transfer when relational coverage is the same.
+
+    Args:
+        acgan_checkpoint: Path to trained AC-GAN checkpoint
+        judge_checkpoint: Path to RelationJudge checkpoint
+        latent_dim: Latent dimension (auto-detected from checkpoint if None)
+        holdout_pairs: List of (X, Y) pairs to hold out
+        device: Device to use
+        freeze_digits: Whether to freeze AC-GAN weights
+
+    Returns:
+        RelationalTrainerHoldout with AC-GAN primitives
+    """
+    from src.models.acgan_weaver_adapter import ACGANWeaverAdapter
+    from src.models.acgan import ACGANGenerator
+
+    device = device or torch.device("cpu")
+    holdout_pairs = holdout_pairs or [(7, 3), (8, 2), (9, 1), (6, 4)]
+
+    # Load AC-GAN generator
+    checkpoint = torch.load(
+        acgan_checkpoint,
+        map_location=device,
+        weights_only=False,
+    )
+
+    # Auto-detect latent_dim from checkpoint if not provided
+    if latent_dim is None:
+        config = checkpoint.get("config", {})
+        model_config = config.get("model", {})
+        latent_dim = model_config.get("latent_dim", 64)
+
+    acgan_gen = ACGANGenerator(
+        latent_dim=latent_dim,
+        num_classes=10,
+    )
+    acgan_gen.load_state_dict(checkpoint["models"]["generator"])
+    acgan_gen = acgan_gen.to(device)
+
+    # Wrap in adapter to match Weaver interface
+    weaver_adapter = ACGANWeaverAdapter(acgan_gen)
+
+    # Create RelationalWeaver with AC-GAN adapter
+    relational_weaver = RelationalWeaver(
+        single_digit_weaver=weaver_adapter,
+        latent_dim=latent_dim,
+        freeze_digits=freeze_digits,
+    )
+
+    # Load judge
+    judge = create_relation_judge(judge_checkpoint, device=device)
+
+    # Create trainer
+    trainer = RelationalTrainerHoldout(
+        weaver=relational_weaver,
+        judge=judge,
+        latent_dim=latent_dim,
+        holdout_pairs=holdout_pairs,
+        device=device,
+    )
+
+    return trainer

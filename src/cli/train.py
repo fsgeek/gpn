@@ -1184,6 +1184,111 @@ def train_relational_holdout(
     return final_metrics
 
 
+def train_relational_holdout_acgan(
+    config: TrainingConfig,
+    acgan_checkpoint: str = "checkpoints/acgan_step1000.pt",  # Peak checkpoint
+    judge_checkpoint: str = "checkpoints/relation_judge.pt",
+) -> dict:
+    """
+    Train RelationalWeaver with AC-GAN primitives (Phase 1.6 baseline).
+
+    Critical control experiment: Does primitive quality matter?
+    - GPN (blobby): 100% holdout transfer
+    - AC-GAN (sharp): ??? holdout transfer
+
+    If quality matters: AC-GAN should outperform GPN
+    If coverage matters: Both should perform equally (~100%)
+
+    Args:
+        config: Training configuration
+        acgan_checkpoint: Path to AC-GAN checkpoint (step 1000 peak)
+        judge_checkpoint: Path to pre-trained RelationJudge
+
+    Returns:
+        Final metrics
+    """
+    from src.training.relational_trainer import create_relational_trainer_holdout_acgan
+
+    device = config.get_device()
+    logger.info(f"Training RelationalWeaver with AC-GAN primitives (Phase 1.6 baseline) on {device}")
+    logger.info("Testing: Does primitive quality (sharp vs blobby) matter for compositional transfer?")
+    logger.info("Hold-out pairs: {7>3, 8>2, 9>1, 6>4}")
+
+    # Set reproducibility
+    set_reproducibility(config.seed)
+
+    # Define hold-out pairs
+    holdout_pairs = [(7, 3), (8, 2), (9, 1), (6, 4)]
+
+    # Trainer with AC-GAN primitives (latent_dim auto-detected from checkpoint)
+    trainer = create_relational_trainer_holdout_acgan(
+        acgan_checkpoint=acgan_checkpoint,
+        judge_checkpoint=judge_checkpoint,
+        latent_dim=None,  # Auto-detect from checkpoint
+        holdout_pairs=holdout_pairs,
+        device=device,
+        freeze_digits=True,
+    )
+
+    logger.info(f"Weaver params: {sum(p.numel() for p in trainer.weaver.parameters()):,}")
+    logger.info(f"Latent dim: {trainer.latent_dim}")
+    logger.info(f"AC-GAN checkpoint: {acgan_checkpoint}")
+    logger.info(f"Training pairs: 41 (45 - 4 hold-out)")
+
+    # Training loop
+    total_steps = config.total_steps
+    for step in range(total_steps):
+        metrics = trainer.train_step(batch_size=config.data.batch_size)
+
+        if step % config.logging.log_interval == 0:
+            logger.info(
+                f"Step {step} | "
+                f"Loss: {metrics['loss']:.4f} | "
+                f"Valid: {metrics['avg_validity']:.1%} | "
+                f"X Acc: {metrics['x_accuracy']:.1%} | "
+                f"Y Acc: {metrics['y_accuracy']:.1%}"
+            )
+
+        if step % config.checkpointing.save_interval == 0 and step > 0:
+            checkpoint_path = f"checkpoints/relational_holdout_acgan_step{step}.pt"
+            trainer.save_checkpoint(checkpoint_path, step, metrics)
+            logger.info(f"Saved checkpoint: {checkpoint_path}")
+
+    # Final checkpoint
+    final_path = "checkpoints/relational_holdout_acgan_final.pt"
+    trainer.save_checkpoint(final_path, total_steps, metrics)
+    logger.info(f"Saved final checkpoint: {final_path}")
+
+    # Training pairs evaluation
+    logger.info("\nEVALUATING ON TRAINING PAIRS (41 pairs)...")
+    training_metrics = trainer.evaluate(
+        num_samples=1000,
+        holdout_mode=False,
+    )
+    for key, value in training_metrics.items():
+        logger.info(f"  {key}: {value:.1%}")
+
+    # Hold-out pairs evaluation (THE CRITICAL TEST)
+    logger.info("\nEVALUATING ON HOLD-OUT PAIRS {7>3, 8>2, 9>1, 6>4}...")
+    logger.info("Question: Does sharp AC-GAN match blobby GPN's 100% transfer?")
+    holdout_metrics = trainer.evaluate(
+        num_samples=1000,
+        holdout_mode=True,
+    )
+    for key, value in holdout_metrics.items():
+        logger.info(f"  {key}: {value:.1%}")
+
+    # Combined metrics
+    final_metrics = {
+        "training_validity": training_metrics["avg_validity"],
+        "training_relation_acc": training_metrics["relation_accuracy"],
+        "holdout_validity": holdout_metrics["avg_validity"],
+        "holdout_relation_acc": holdout_metrics["relation_accuracy"],
+    }
+
+    return final_metrics
+
+
 def main():
     parser = argparse.ArgumentParser(description="Train GPN-1 or baseline GAN")
     parser.add_argument(
@@ -1195,9 +1300,9 @@ def main():
     parser.add_argument(
         "--mode",
         type=str,
-        choices=["gpn", "gpn-v2", "gpn-v3", "gpn-v3-nometa", "gpn2", "gpn2-direct", "gan", "gan2-direct", "acgan", "acgan2", "acgan2-direct", "relation-judge", "relational", "relational-holdout"],
+        choices=["gpn", "gpn-v2", "gpn-v3", "gpn-v3-nometa", "gpn2", "gpn2-direct", "gan", "gan2-direct", "acgan", "acgan2", "acgan2-direct", "relation-judge", "relational", "relational-holdout", "relational-holdout-acgan"],
         default="gpn",
-        help="Training mode: gpn (original), gpn-v2 (grounded witness), gpn-v3 (meta-learning), gpn-v3-nometa (ablation: no inner loop), gpn2 (two-digit curriculum), gpn2-direct (two-digit from scratch, no curriculum ablation), gan (baseline), relation-judge (Phase 1.5 judge), relational (Phase 1.5 X>Y task), relational-holdout (Phase 1.6 hold-out pairs)",
+        help="Training mode: gpn (original), gpn-v2 (grounded witness), gpn-v3 (meta-learning), gpn-v3-nometa (ablation: no inner loop), gpn2 (two-digit curriculum), gpn2-direct (two-digit from scratch, no curriculum ablation), gan (baseline), relation-judge (Phase 1.5 judge), relational (Phase 1.5 X>Y task), relational-holdout (Phase 1.6 hold-out pairs with GPN), relational-holdout-acgan (Phase 1.6 with AC-GAN baseline)",
     )
     parser.add_argument(
         "--steps",
@@ -1277,6 +1382,8 @@ def main():
         metrics = train_relational(config)
     elif args.mode == "relational-holdout":
         metrics = train_relational_holdout(config)
+    elif args.mode == "relational-holdout-acgan":
+        metrics = train_relational_holdout_acgan(config)
     else:
         metrics = train_gan(config)
 
