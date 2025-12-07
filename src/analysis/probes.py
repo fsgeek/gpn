@@ -189,3 +189,257 @@ def train_digit_identity_probe(
         accuracy = (predictions == test_labels).float().mean().item()
 
     return accuracy
+
+
+def train_spatial_position_probe(
+    probe: SpatialPositionProbe,
+    features: torch.Tensor,
+    left_labels: torch.Tensor,
+    right_labels: torch.Tensor,
+    device: torch.device,
+    epochs: int = 10,
+    batch_size: int = 64,
+    lr: float = 0.001,
+) -> tuple[float, float]:
+    """
+    Train spatial position probe and return accuracies for both positions.
+
+    Args:
+        probe: Probe model
+        features: Extracted spatial feature maps [N, C, H, W]
+        left_labels: Ground truth labels for left digit [N]
+        right_labels: Ground truth labels for right digit [N]
+        device: Device to train on
+        epochs: Number of training epochs
+        batch_size: Batch size
+        lr: Learning rate
+
+    Returns:
+        Tuple of (left_accuracy, right_accuracy)
+    """
+    probe = probe.to(device)
+    features = features.to(device)
+    left_labels = left_labels.to(device)
+    right_labels = right_labels.to(device)
+
+    # Split train/test
+    n_train = int(0.8 * len(features))
+    train_features = features[:n_train]
+    test_features = features[n_train:]
+    train_left_labels = left_labels[:n_train]
+    test_left_labels = left_labels[n_train:]
+    train_right_labels = right_labels[:n_train]
+    test_right_labels = right_labels[n_train:]
+
+    optimizer = torch.optim.Adam(probe.parameters(), lr=lr)
+    criterion = nn.CrossEntropyLoss()
+
+    # Training loop
+    probe.train()
+    for epoch in range(epochs):
+        for i in range(0, len(train_features), batch_size):
+            batch_features = train_features[i:i + batch_size]
+            batch_left = train_left_labels[i:i + batch_size]
+            batch_right = train_right_labels[i:i + batch_size]
+
+            left_logits, right_logits = probe(batch_features)
+
+            # Combined loss
+            loss = criterion(left_logits, batch_left) + criterion(right_logits, batch_right)
+
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+
+    # Evaluation
+    probe.eval()
+    with torch.no_grad():
+        test_left_logits, test_right_logits = probe(test_features)
+
+        left_predictions = test_left_logits.argmax(dim=1)
+        right_predictions = test_right_logits.argmax(dim=1)
+
+        left_accuracy = (left_predictions == test_left_labels).float().mean().item()
+        right_accuracy = (right_predictions == test_right_labels).float().mean().item()
+
+    return left_accuracy, right_accuracy
+
+
+def extract_edge_maps(
+    images: torch.Tensor,
+    threshold: float = 0.1,
+) -> torch.Tensor:
+    """
+    Extract edge maps from images using Sobel filters.
+
+    This creates ground truth targets for the stroke structure probe.
+
+    Args:
+        images: Input images [B, C, H, W]
+        threshold: Threshold for edge detection
+
+    Returns:
+        Binary edge maps [B, 1, H, W]
+    """
+    # Sobel filters
+    sobel_x = torch.tensor([
+        [-1, 0, 1],
+        [-2, 0, 2],
+        [-1, 0, 1]
+    ], dtype=torch.float32).view(1, 1, 3, 3)
+
+    sobel_y = torch.tensor([
+        [-1, -2, -1],
+        [0, 0, 0],
+        [1, 2, 1]
+    ], dtype=torch.float32).view(1, 1, 3, 3)
+
+    sobel_x = sobel_x.to(images.device)
+    sobel_y = sobel_y.to(images.device)
+
+    # Convert to grayscale if needed
+    if images.shape[1] > 1:
+        images = images.mean(dim=1, keepdim=True)
+
+    # Apply Sobel filters
+    edges_x = F.conv2d(images, sobel_x, padding=1)
+    edges_y = F.conv2d(images, sobel_y, padding=1)
+
+    # Magnitude
+    edges = torch.sqrt(edges_x**2 + edges_y**2)
+
+    # Normalize to [0, 1]
+    edges = edges / (edges.max() + 1e-8)
+
+    # Threshold
+    edges = (edges > threshold).float()
+
+    return edges
+
+
+def train_stroke_structure_probe(
+    probe: StrokeStructureProbe,
+    features: torch.Tensor,
+    images: torch.Tensor,
+    device: torch.device,
+    epochs: int = 20,
+    batch_size: int = 64,
+    lr: float = 0.001,
+    edge_threshold: float = 0.1,
+) -> tuple[float, float]:
+    """
+    Train stroke structure probe to decode edge maps from features.
+
+    Args:
+        probe: Probe model
+        features: Extracted feature maps [N, C, H, W]
+        images: Original images to extract edges from [N, C, H_img, W_img]
+        device: Device to train on
+        epochs: Number of training epochs
+        batch_size: Batch size
+        lr: Learning rate
+        edge_threshold: Threshold for edge extraction
+
+    Returns:
+        Tuple of (reconstruction_loss, edge_iou)
+    """
+    probe = probe.to(device)
+    features = features.to(device)
+    images = images.to(device)
+
+    # Extract ground truth edge maps
+    with torch.no_grad():
+        edge_maps = extract_edge_maps(images, threshold=edge_threshold)
+
+        # Resize edge maps to match feature map resolution
+        _, _, H, W = features.shape
+        if edge_maps.shape[-2:] != (H, W):
+            edge_maps = F.interpolate(
+                edge_maps,
+                size=(H, W),
+                mode='bilinear',
+                align_corners=False,
+            )
+
+    edge_maps = edge_maps.to(device)
+
+    # Split train/test
+    n_train = int(0.8 * len(features))
+    train_features = features[:n_train]
+    test_features = features[n_train:]
+    train_edges = edge_maps[:n_train]
+    test_edges = edge_maps[n_train:]
+
+    optimizer = torch.optim.Adam(probe.parameters(), lr=lr)
+    criterion = nn.BCELoss()
+
+    # Training loop
+    probe.train()
+    for epoch in range(epochs):
+        for i in range(0, len(train_features), batch_size):
+            batch_features = train_features[i:i + batch_size]
+            batch_edges = train_edges[i:i + batch_size]
+
+            predicted_edges = probe(batch_features)
+            loss = criterion(predicted_edges, batch_edges)
+
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+
+    # Evaluation
+    probe.eval()
+    with torch.no_grad():
+        test_predictions = probe(test_features)
+        test_loss = criterion(test_predictions, test_edges).item()
+
+        # Compute IoU (Intersection over Union)
+        pred_binary = (test_predictions > 0.5).float()
+        true_binary = test_edges
+
+        intersection = (pred_binary * true_binary).sum()
+        union = (pred_binary + true_binary).clamp(0, 1).sum()
+
+        iou = (intersection / (union + 1e-8)).item()
+
+    return test_loss, iou
+
+
+def compare_probe_results(
+    gpn_results: dict[str, float],
+    gan_results: dict[str, float],
+    probe_name: str,
+) -> str:
+    """
+    Generate formatted comparison of probe results between GPN and GAN.
+
+    Args:
+        gpn_results: Dictionary of GPN probe metrics
+        gan_results: Dictionary of GAN probe metrics
+        probe_name: Name of the probe being compared
+
+    Returns:
+        Formatted comparison string
+    """
+    lines = []
+    lines.append("=" * 80)
+    lines.append(f"PROBE COMPARISON: {probe_name}")
+    lines.append("=" * 80)
+    lines.append("")
+
+    # Compare each metric
+    for metric_name in gpn_results.keys():
+        gpn_val = gpn_results[metric_name]
+        gan_val = gan_results[metric_name]
+        delta = gpn_val - gan_val
+        better = "GPN" if delta > 0 else "GAN"
+
+        lines.append(f"{metric_name}:")
+        lines.append(f"  GPN: {gpn_val:.4f}")
+        lines.append(f"  GAN: {gan_val:.4f}")
+        lines.append(f"  Δ (GPN - GAN): {delta:+.4f} ({better} better)")
+        lines.append("")
+
+    lines.append("=" * 80)
+
+    return "\n".join(lines)

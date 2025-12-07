@@ -20,6 +20,8 @@ dependencies = [
     "tensorboard",
     "pyyaml",
     "tensorflow>=2.20.0",
+    "scipy>=1.16.3",
+    "scikit-learn>=1.7.2",
 ]
 
 [project.optional-dependencies]
