@@ -7,6 +7,8 @@ torchvision
 
 # Numerical
 numpy
+scipy
+scikit-learn
 
 # Visualization
 matplotlib
