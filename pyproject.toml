@@ -13,12 +13,14 @@ authors = [
     {name = "Tony Mason"}
 ]
 dependencies = [
-    "torch>=2.0",
+    "torch",
     "torchvision",
+    "torchaudio",
     "numpy",
     "matplotlib",
     "tensorboard",
     "pyyaml",
+    "tensorflow>=2.20.0",
 ]
 
 [project.optional-dependencies]
