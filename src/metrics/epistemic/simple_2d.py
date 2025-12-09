@@ -90,6 +90,10 @@ class Simple2DMetric(EpistemicMetric):
         disagreement = self.compute_disagreement(judge_logits, witness_logits)
         witness_correctness = self._compute_witness_correctness(witness_logits, labels)
 
+        # Uncertainty proxies (logit margin)
+        judge_uncertainty = self._compute_logit_margin_uncertainty(judge_logits)
+        witness_uncertainty = self._compute_logit_margin_uncertainty(witness_logits)
+
         # Improvement tracking (if history available)
         alignment_improvement = self.get_recent_improvement('alignment', window=100)
         correctness_improvement = self.get_recent_improvement('correctness', window=100)
@@ -111,6 +115,10 @@ class Simple2DMetric(EpistemicMetric):
             # Secondary signals
             'disagreement': disagreement,
             'witness_correctness': witness_correctness,
+
+            # Uncertainty proxies (logit margin)
+            'judge_uncertainty': judge_uncertainty,
+            'witness_uncertainty': witness_uncertainty,
 
             # Improvement tracking
             'alignment_improvement': alignment_improvement,
@@ -258,3 +266,38 @@ class Simple2DMetric(EpistemicMetric):
                 return "SUSPICIOUS: Very fast convergence - possible gaming"
             else:
                 return "Good: Genuine synchronization"
+
+    def _compute_logit_margin_uncertainty(
+        self,
+        logits: torch.Tensor,
+    ) -> float:
+        """
+        Compute uncertainty proxy using logit margin.
+
+        Margin = top_logit - second_logit
+        Low margin indicates high uncertainty (model not confident).
+
+        This is a simple, cheap uncertainty estimate that doesn't require
+        MC dropout or ensembles.
+
+        Args:
+            logits: Classifier outputs [B, num_classes]
+
+        Returns:
+            Average uncertainty [0, 1] where 1 = maximally uncertain
+        """
+        if not self._should_compute_metric('logit_margin_uncertainty'):
+            return 0.0
+
+        # Get top 2 logits for each sample
+        top_logits, _ = torch.topk(logits, k=2, dim=1)  # [B, 2]
+
+        # Compute margin (difference between top two)
+        margins = top_logits[:, 0] - top_logits[:, 1]  # [B]
+
+        # Convert to uncertainty: low margin = high uncertainty
+        # Normalize by assuming max margin ~10 (reasonable for cross-entropy trained models)
+        uncertainties = 1.0 - torch.clamp(margins / 10.0, 0.0, 1.0)
+
+        # Return average uncertainty
+        return uncertainties.mean().item()
