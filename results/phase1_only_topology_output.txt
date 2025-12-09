@@ -1,0 +1,6 @@
+usage: analyze_fashion_mnist_topology.py [-h] --pedagogical PEDAGOGICAL
+                                         --adversarial ADVERSARIAL
+                                         --output OUTPUT
+                                         [--samples-per-class SAMPLES_PER_CLASS]
+                                         [--latent-dim LATENT_DIM]
+analyze_fashion_mnist_topology.py: error: unrecognized arguments:     
