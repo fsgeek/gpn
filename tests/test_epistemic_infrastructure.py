@@ -22,6 +22,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from src.metrics.epistemic import (
     Simple2DMetric,
     NeutrosophicMetric,
+    BayesianUncertaintyMetric,
     ComparativeTracker,
 )
 
@@ -332,6 +333,114 @@ def test_save_load():
     print("\n✓ Save/load works correctly")
 
 
+def test_bayesian_metric():
+    """Test Bayesian MC dropout uncertainty metric."""
+    print("\n" + "=" * 80)
+    print("TEST 6: Bayesian MC Dropout")
+    print("=" * 80)
+
+    device = torch.device('cpu')
+
+    # Create a toy model with dropout
+    class ToyWitness(nn.Module):
+        def __init__(self):
+            super().__init__()
+            self.conv1 = nn.Conv2d(1, 16, 3, padding=1)
+            self.bn1 = nn.BatchNorm2d(16)
+            self.dropout1 = nn.Dropout2d(0.3)
+            self.conv2 = nn.Conv2d(16, 32, 3, padding=1)
+            self.bn2 = nn.BatchNorm2d(32)
+            self.dropout2 = nn.Dropout2d(0.3)
+            self.fc = nn.Linear(32 * 28 * 28, 10)
+
+        def forward(self, x):
+            x = torch.relu(self.bn1(self.conv1(x)))
+            x = self.dropout1(x)
+            x = torch.relu(self.bn2(self.conv2(x)))
+            x = self.dropout2(x)
+            x = x.view(x.size(0), -1)
+            logits = self.fc(x)
+            # Return (logits, features) to match expected signature
+            return logits, x
+
+    toy_witness = ToyWitness().to(device)
+    toy_witness.eval()  # Important: set to eval mode
+
+    # Test Bayesian metric
+    print("\nTesting BayesianUncertaintyMetric...")
+    bayesian = BayesianUncertaintyMetric(device=device, num_mc_samples=5)
+
+    # Create test data
+    batch_size = 8  # Small batch for speed
+    num_classes = 10
+
+    v_pred = torch.randn(batch_size, device=device)
+    v_seen = torch.randn(batch_size, device=device)
+    judge_logits = torch.randn(batch_size, num_classes, device=device)
+    witness_logits = torch.randn(batch_size, num_classes, device=device)
+    labels = torch.randint(0, num_classes, (batch_size,), device=device)
+    fake_images = torch.randn(batch_size, 1, 28, 28, device=device)
+
+    state_bayesian = bayesian.compute(
+        step=0,
+        v_pred=v_pred,
+        v_seen=v_seen,
+        judge_logits=judge_logits,
+        witness_logits=witness_logits,
+        labels=labels,
+        fake_images=fake_images,
+        witness_model=toy_witness,  # Pass model for MC dropout
+    )
+
+    print(f"  Alignment: {state_bayesian.metrics['alignment']:.4f}")
+    print(f"  Correctness: {state_bayesian.metrics['correctness']:.4f}")
+    print(f"  Witness epistemic uncertainty: {state_bayesian.metrics['witness_epistemic_uncertainty']:.4f}")
+    print(f"  Witness predictive entropy: {state_bayesian.metrics['witness_predictive_entropy']:.4f}")
+    print(f"  Judge entropy: {state_bayesian.metrics['judge_entropy']:.4f}")
+    print(f"  State: {state_bayesian.metadata['state_name']}")
+    print(f"  Interpretation: {state_bayesian.metadata['interpretation']}")
+    print(f"  MC samples: {state_bayesian.metadata['num_mc_samples']}")
+
+    # Verify uncertainty metrics are non-zero
+    assert state_bayesian.metrics['witness_epistemic_uncertainty'] > 0, "Epistemic uncertainty should be > 0"
+    assert state_bayesian.metrics['witness_predictive_entropy'] > 0, "Predictive entropy should be > 0"
+
+    # Test with ComparativeTracker
+    print("\nTesting Bayesian with ComparativeTracker...")
+    tracker = ComparativeTracker(
+        device=device,
+        enable_simple_2d=True,
+        enable_neutrosophic=True,
+        enable_bayesian=True,
+        num_mc_samples=5,
+    )
+
+    states = tracker.compute_all(
+        step=0,
+        v_pred=v_pred,
+        v_seen=v_seen,
+        judge_logits=judge_logits,
+        witness_logits=witness_logits,
+        labels=labels,
+        fake_images=fake_images,
+        witness_model=toy_witness,
+    )
+
+    print(f"  Computed {len(states)} approaches:")
+    for name in states.keys():
+        print(f"    - {name}")
+
+    assert 'bayesian' in states, "Bayesian approach should be in results"
+
+    # Get summary statistics
+    summary = tracker.get_summary_statistics()
+    print("\nComputational overhead:")
+    for name, stats in summary.items():
+        print(f"  {name}: {stats['avg_computation_time_ms']:.2f}ms")
+
+    print("\n✓ Bayesian metric works correctly")
+
+
 def main():
     """Run all tests."""
     print("\n" + "=" * 80)
@@ -344,6 +453,7 @@ def main():
         test_sparse_sampling()
         test_history_tracking()
         test_save_load()
+        test_bayesian_metric()
 
         print("\n" + "=" * 80)
         print("ALL TESTS PASSED ✓")

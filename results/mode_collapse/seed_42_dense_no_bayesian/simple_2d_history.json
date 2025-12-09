@@ -1,0 +1,1002 @@
+[
+  {
+    "step": 0,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9543045982718468,
+      "correctness": 0.0625,
+      "disagreement": 0.953125,
+      "witness_correctness": 0.109375,
+      "judge_uncertainty": 0.9201077222824097,
+      "witness_uncertainty": 0.9860517978668213,
+      "alignment_improvement": 0.0,
+      "correctness_improvement": 0.0,
+      "quadrant": 2,
+      "velocity": 0.0
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 1,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9564659520983696,
+      "correctness": 0.125,
+      "disagreement": 0.734375,
+      "witness_correctness": 0.0625,
+      "judge_uncertainty": 0.9024830460548401,
+      "witness_uncertainty": 0.986486554145813,
+      "alignment_improvement": 0.0,
+      "correctness_improvement": 0.0,
+      "quadrant": 2,
+      "velocity": 0.0
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 2,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9545814767479897,
+      "correctness": 0.03125,
+      "disagreement": 0.5625,
+      "witness_correctness": 0.0625,
+      "judge_uncertainty": 0.8674976825714111,
+      "witness_uncertainty": 0.9822598695755005,
+      "alignment_improvement": 0.002161353826522827,
+      "correctness_improvement": 0.0625,
+      "quadrant": 2,
+      "velocity": 0.06253736043648968
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 3,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9559705257415771,
+      "correctness": 0.109375,
+      "disagreement": 0.65625,
+      "witness_correctness": 0.078125,
+      "judge_uncertainty": 0.8957880735397339,
+      "witness_uncertainty": 0.9662190675735474,
+      "alignment_improvement": 0.0002768784761428833,
+      "correctness_improvement": -0.03125,
+      "quadrant": 2,
+      "velocity": 0.03125122656297751
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 4,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9635660201311111,
+      "correctness": 0.03125,
+      "disagreement": 0.703125,
+      "witness_correctness": 0.0625,
+      "judge_uncertainty": 0.9210449457168579,
+      "witness_uncertainty": 0.9747970700263977,
+      "alignment_improvement": 0.0016659274697303772,
+      "correctness_improvement": 0.046875,
+      "quadrant": 2,
+      "velocity": 0.04690459401097511
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 5,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9664039090275764,
+      "correctness": 0.109375,
+      "disagreement": 0.640625,
+      "witness_correctness": 0.125,
+      "judge_uncertainty": 0.9153028130531311,
+      "witness_uncertainty": 0.9854406118392944,
+      "alignment_improvement": 0.009261421859264374,
+      "correctness_improvement": -0.03125,
+      "quadrant": 2,
+      "velocity": 0.03259350295465739
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 6,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9693704396486282,
+      "correctness": 0.140625,
+      "disagreement": 0.59375,
+      "witness_correctness": 0.140625,
+      "judge_uncertainty": 0.9126678705215454,
+      "witness_uncertainty": 0.9815710186958313,
+      "alignment_improvement": 0.012099310755729675,
+      "correctness_improvement": 0.046875,
+      "quadrant": 2,
+      "velocity": 0.04841135141435029
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 7,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9706004336476326,
+      "correctness": 0.109375,
+      "disagreement": 0.625,
+      "witness_correctness": 0.15625,
+      "judge_uncertainty": 0.9290498495101929,
+      "witness_uncertainty": 0.9827887415885925,
+      "alignment_improvement": 0.015065841376781464,
+      "correctness_improvement": 0.078125,
+      "quadrant": 2,
+      "velocity": 0.07956440913744248
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 8,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9668394587934017,
+      "correctness": 0.125,
+      "disagreement": 0.703125,
+      "witness_correctness": 0.0625,
+      "judge_uncertainty": 0.9147157073020935,
+      "witness_uncertainty": 0.9771630764007568,
+      "alignment_improvement": 0.016295835375785828,
+      "correctness_improvement": 0.046875,
+      "quadrant": 2,
+      "velocity": 0.04962680601846862
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 9,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9712157342582941,
+      "correctness": 0.15625,
+      "disagreement": 0.59375,
+      "witness_correctness": 0.125,
+      "judge_uncertainty": 0.8784838318824768,
+      "witness_uncertainty": 0.9777610301971436,
+      "alignment_improvement": 0.012534860521554947,
+      "correctness_improvement": 0.0625,
+      "quadrant": 2,
+      "velocity": 0.06374458979627085
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 10,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9737458508461714,
+      "correctness": 0.109375,
+      "disagreement": 0.484375,
+      "witness_correctness": 0.09375,
+      "judge_uncertainty": 0.897571325302124,
+      "witness_uncertainty": 0.9612569212913513,
+      "alignment_improvement": 0.016911135986447334,
+      "correctness_improvement": 0.09375,
+      "quadrant": 2,
+      "velocity": 0.09526305170606343
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 11,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9734283983707428,
+      "correctness": 0.078125,
+      "disagreement": 0.609375,
+      "witness_correctness": 0.09375,
+      "judge_uncertainty": 0.9369392991065979,
+      "witness_uncertainty": 0.9477972984313965,
+      "alignment_improvement": 0.019441252574324608,
+      "correctness_improvement": 0.046875,
+      "quadrant": 2,
+      "velocity": 0.05074670360386656
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 12,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9727718215435743,
+      "correctness": 0.140625,
+      "disagreement": 0.890625,
+      "witness_correctness": 0.0625,
+      "judge_uncertainty": 0.9209781885147095,
+      "witness_uncertainty": 0.9649953246116638,
+      "alignment_improvement": 0.019123800098896027,
+      "correctness_improvement": 0.015625,
+      "quadrant": 2,
+      "velocity": 0.024695350882757986
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 13,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9724965896457434,
+      "correctness": 0.125,
+      "disagreement": 0.59375,
+      "witness_correctness": 0.15625,
+      "judge_uncertainty": 0.9528980851173401,
+      "witness_uncertainty": 0.9641485214233398,
+      "alignment_improvement": 0.018467223271727562,
+      "correctness_improvement": 0.078125,
+      "quadrant": 2,
+      "velocity": 0.08027797929923147
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 14,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9747806079685688,
+      "correctness": 0.140625,
+      "disagreement": 0.84375,
+      "witness_correctness": 0.078125,
+      "judge_uncertainty": 0.9600926637649536,
+      "witness_uncertainty": 0.9639666676521301,
+      "alignment_improvement": 0.0181919913738966,
+      "correctness_improvement": 0.0625,
+      "quadrant": 2,
+      "velocity": 0.06509376736791264
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 15,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9747154302895069,
+      "correctness": 0.078125,
+      "disagreement": 0.875,
+      "witness_correctness": 0.109375,
+      "judge_uncertainty": 0.9402426481246948,
+      "witness_uncertainty": 0.9864931106567383,
+      "alignment_improvement": 0.02047600969672203,
+      "correctness_improvement": 0.078125,
+      "quadrant": 2,
+      "velocity": 0.08076374556755188
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 16,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9755294285714626,
+      "correctness": 0.125,
+      "disagreement": 0.59375,
+      "witness_correctness": 0.09375,
+      "judge_uncertainty": 0.9084451198577881,
+      "witness_uncertainty": 0.9860161542892456,
+      "alignment_improvement": 0.02041083201766014,
+      "correctness_improvement": 0.015625,
+      "quadrant": 2,
+      "velocity": 0.02570491565154689
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 17,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9790549129247665,
+      "correctness": 0.078125,
+      "disagreement": 0.21875,
+      "witness_correctness": 0.078125,
+      "judge_uncertainty": 0.9077396392822266,
+      "witness_uncertainty": 0.9645295143127441,
+      "alignment_improvement": 0.02122483029961586,
+      "correctness_improvement": 0.0625,
+      "quadrant": 2,
+      "velocity": 0.06600563173887128
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 18,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9780952390283346,
+      "correctness": 0.09375,
+      "disagreement": 0.0625,
+      "witness_correctness": 0.109375,
+      "judge_uncertainty": 0.9029155373573303,
+      "witness_uncertainty": 0.936468780040741,
+      "alignment_improvement": 0.02475031465291977,
+      "correctness_improvement": 0.015625,
+      "quadrant": 2,
+      "velocity": 0.029269757436961023
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 19,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.977897759526968,
+      "correctness": 0.078125,
+      "disagreement": 0.09375,
+      "witness_correctness": 0.078125,
+      "judge_uncertainty": 0.901367723941803,
+      "witness_uncertainty": 0.9274535775184631,
+      "alignment_improvement": 0.023790640756487846,
+      "correctness_improvement": 0.03125,
+      "quadrant": 2,
+      "velocity": 0.039275400540341544
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 20,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9763531181961298,
+      "correctness": 0.125,
+      "disagreement": 0.296875,
+      "witness_correctness": 0.078125,
+      "judge_uncertainty": 0.9323124885559082,
+      "witness_uncertainty": 0.9415501356124878,
+      "alignment_improvement": 0.02359316125512123,
+      "correctness_improvement": 0.015625,
+      "quadrant": 2,
+      "velocity": 0.02829801906512457
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 21,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9769171979278326,
+      "correctness": 0.109375,
+      "disagreement": 0.71875,
+      "witness_correctness": 0.109375,
+      "judge_uncertainty": 0.948564887046814,
+      "witness_uncertainty": 0.9602156281471252,
+      "alignment_improvement": 0.022048519924283028,
+      "correctness_improvement": 0.0625,
+      "quadrant": 2,
+      "velocity": 0.06627508755823341
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 22,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9768324047327042,
+      "correctness": 0.15625,
+      "disagreement": 0.78125,
+      "witness_correctness": 0.09375,
+      "judge_uncertainty": 0.9058545827865601,
+      "witness_uncertainty": 0.9805029630661011,
+      "alignment_improvement": 0.022612599655985832,
+      "correctness_improvement": 0.046875,
+      "quadrant": 2,
+      "velocity": 0.052044166706768306
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 23,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9794583767652512,
+      "correctness": 0.046875,
+      "disagreement": 0.078125,
+      "witness_correctness": 0.046875,
+      "judge_uncertainty": 0.8486218452453613,
+      "witness_uncertainty": 0.9748847484588623,
+      "alignment_improvement": 0.02252780646085739,
+      "correctness_improvement": 0.09375,
+      "quadrant": 2,
+      "velocity": 0.09641869405845449
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 24,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.979671960696578,
+      "correctness": 0.078125,
+      "disagreement": 0.046875,
+      "witness_correctness": 0.09375,
+      "judge_uncertainty": 0.8517128229141235,
+      "witness_uncertainty": 0.9287110567092896,
+      "alignment_improvement": 0.02515377849340439,
+      "correctness_improvement": -0.015625,
+      "quadrant": 2,
+      "velocity": 0.0296117071020104
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 25,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9796374887228012,
+      "correctness": 0.0625,
+      "disagreement": 0.0,
+      "witness_correctness": 0.0625,
+      "judge_uncertainty": 0.8439511656761169,
+      "witness_uncertainty": 0.9014312028884888,
+      "alignment_improvement": 0.025367362424731255,
+      "correctness_improvement": 0.015625,
+      "quadrant": 2,
+      "velocity": 0.029793349952425073
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 26,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.8996587246656418,
+      "correctness": 0.09375,
+      "disagreement": 0.03125,
+      "witness_correctness": 0.078125,
+      "judge_uncertainty": 0.8676906824111938,
+      "witness_uncertainty": 0.9133169054985046,
+      "alignment_improvement": 0.025332890450954437,
+      "correctness_improvement": 0.0,
+      "quadrant": 2,
+      "velocity": 0.025332890450954437
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 27,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9342246204614639,
+      "correctness": 0.015625,
+      "disagreement": 0.46875,
+      "witness_correctness": 0.03125,
+      "judge_uncertainty": 0.9486702084541321,
+      "witness_uncertainty": 0.9351769685745239,
+      "alignment_improvement": -0.05464587360620499,
+      "correctness_improvement": 0.03125,
+      "quadrant": 2,
+      "velocity": 0.06295025021543069
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 28,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9358373358845711,
+      "correctness": 0.09375,
+      "disagreement": 0.703125,
+      "witness_correctness": 0.0625,
+      "judge_uncertainty": 0.9563572406768799,
+      "witness_uncertainty": 0.9664270877838135,
+      "alignment_improvement": -0.020079977810382843,
+      "correctness_improvement": -0.046875,
+      "quadrant": 2,
+      "velocity": 0.05099481477430296
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 29,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9501254297792912,
+      "correctness": 0.140625,
+      "disagreement": 0.671875,
+      "witness_correctness": 0.1875,
+      "judge_uncertainty": 0.9628260731697083,
+      "witness_uncertainty": 0.9834326505661011,
+      "alignment_improvement": -0.018467262387275696,
+      "correctness_improvement": 0.03125,
+      "quadrant": 2,
+      "velocity": 0.03629879171653635
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 30,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9539654180407524,
+      "correctness": 0.109375,
+      "disagreement": 0.671875,
+      "witness_correctness": 0.046875,
+      "judge_uncertainty": 0.9585378766059875,
+      "witness_uncertainty": 0.9853768944740295,
+      "alignment_improvement": -0.004179168492555618,
+      "correctness_improvement": 0.078125,
+      "quadrant": 2,
+      "velocity": 0.07823669902474906
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 31,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9614506550133228,
+      "correctness": 0.109375,
+      "disagreement": 0.625,
+      "witness_correctness": 0.109375,
+      "judge_uncertainty": 0.9640017151832581,
+      "witness_uncertainty": 0.9870623350143433,
+      "alignment_improvement": -0.00033918023109436035,
+      "correctness_improvement": 0.046875,
+      "quadrant": 2,
+      "velocity": 0.046876227111715865
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 32,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.960875678807497,
+      "correctness": 0.0625,
+      "disagreement": 0.546875,
+      "witness_correctness": 0.125,
+      "judge_uncertainty": 0.9539508819580078,
+      "witness_uncertainty": 0.9870006442070007,
+      "alignment_improvement": 0.007146056741476059,
+      "correctness_improvement": 0.046875,
+      "quadrant": 2,
+      "velocity": 0.047416576763326085
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 33,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.966822188347578,
+      "correctness": 0.15625,
+      "disagreement": 0.734375,
+      "witness_correctness": 0.046875,
+      "judge_uncertainty": 0.9634115099906921,
+      "witness_uncertainty": 0.985252857208252,
+      "alignment_improvement": 0.006571080535650253,
+      "correctness_improvement": 0.0,
+      "quadrant": 2,
+      "velocity": 0.006571080535650253
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 34,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9722400493919849,
+      "correctness": 0.09375,
+      "disagreement": 0.6875,
+      "witness_correctness": 0.078125,
+      "judge_uncertainty": 0.9533660411834717,
+      "witness_uncertainty": 0.9876691102981567,
+      "alignment_improvement": 0.012517590075731277,
+      "correctness_improvement": 0.09375,
+      "quadrant": 2,
+      "velocity": 0.0945819885670842
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 35,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9769728537648916,
+      "correctness": 0.125,
+      "disagreement": 0.421875,
+      "witness_correctness": 0.109375,
+      "judge_uncertainty": 0.950711727142334,
+      "witness_uncertainty": 0.9859991669654846,
+      "alignment_improvement": 0.01793545112013817,
+      "correctness_improvement": 0.03125,
+      "quadrant": 2,
+      "velocity": 0.03603113801814849
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 36,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9757916890084743,
+      "correctness": 0.046875,
+      "disagreement": 0.3125,
+      "witness_correctness": 0.0625,
+      "judge_uncertainty": 0.9498394727706909,
+      "witness_uncertainty": 0.980525553226471,
+      "alignment_improvement": 0.022668255493044853,
+      "correctness_improvement": 0.0625,
+      "quadrant": 2,
+      "velocity": 0.06648383117042789
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 37,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9804139602929354,
+      "correctness": 0.15625,
+      "disagreement": 0.390625,
+      "witness_correctness": 0.171875,
+      "judge_uncertainty": 0.9493507146835327,
+      "witness_uncertainty": 0.979862630367279,
+      "alignment_improvement": 0.02148709073662758,
+      "correctness_improvement": -0.015625,
+      "quadrant": 2,
+      "velocity": 0.02656756844959784
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 38,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9793609790503979,
+      "correctness": 0.109375,
+      "disagreement": 0.125,
+      "witness_correctness": 0.0625,
+      "judge_uncertainty": 0.9247167110443115,
+      "witness_uncertainty": 0.9718522429466248,
+      "alignment_improvement": 0.0261093620210886,
+      "correctness_improvement": 0.09375,
+      "quadrant": 2,
+      "velocity": 0.09731783641834761
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 39,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9822092670947313,
+      "correctness": 0.046875,
+      "disagreement": 0.0625,
+      "witness_correctness": 0.046875,
+      "judge_uncertainty": 0.9208998680114746,
+      "witness_uncertainty": 0.9640634655952454,
+      "alignment_improvement": 0.0250563807785511,
+      "correctness_improvement": 0.046875,
+      "quadrant": 2,
+      "velocity": 0.05315155541204552
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 40,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9724733214825392,
+      "correctness": 0.140625,
+      "disagreement": 0.0625,
+      "witness_correctness": 0.171875,
+      "judge_uncertainty": 0.9108469486236572,
+      "witness_uncertainty": 0.9582910537719727,
+      "alignment_improvement": 0.02790466882288456,
+      "correctness_improvement": -0.015625,
+      "quadrant": 2,
+      "velocity": 0.03198141909163609
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 41,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.977026104927063,
+      "correctness": 0.15625,
+      "disagreement": 0.109375,
+      "witness_correctness": 0.15625,
+      "judge_uncertainty": 0.9188116788864136,
+      "witness_uncertainty": 0.9503275752067566,
+      "alignment_improvement": 0.018168723210692406,
+      "correctness_improvement": 0.078125,
+      "quadrant": 2,
+      "velocity": 0.0802098381004896
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 42,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9527121037244797,
+      "correctness": 0.109375,
+      "disagreement": 0.078125,
+      "witness_correctness": 0.078125,
+      "judge_uncertainty": 0.9153575897216797,
+      "witness_uncertainty": 0.9270799160003662,
+      "alignment_improvement": 0.022721506655216217,
+      "correctness_improvement": 0.09375,
+      "quadrant": 2,
+      "velocity": 0.09646413512120987
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 43,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.977899232879281,
+      "correctness": 0.109375,
+      "disagreement": 0.078125,
+      "witness_correctness": 0.09375,
+      "judge_uncertainty": 0.9354134798049927,
+      "witness_uncertainty": 0.9233666062355042,
+      "alignment_improvement": -0.001592494547367096,
+      "correctness_improvement": 0.046875,
+      "quadrant": 2,
+      "velocity": 0.046902043280473336
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 44,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9820688329637051,
+      "correctness": 0.109375,
+      "disagreement": 0.125,
+      "witness_correctness": 0.109375,
+      "judge_uncertainty": 0.9212985634803772,
+      "witness_uncertainty": 0.9384953379631042,
+      "alignment_improvement": 0.023594634607434273,
+      "correctness_improvement": 0.046875,
+      "quadrant": 2,
+      "velocity": 0.052478304157607215
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 45,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9831586722284555,
+      "correctness": 0.1875,
+      "disagreement": 0.078125,
+      "witness_correctness": 0.15625,
+      "judge_uncertainty": 0.9154523015022278,
+      "witness_uncertainty": 0.9444191455841064,
+      "alignment_improvement": 0.02776423469185829,
+      "correctness_improvement": 0.046875,
+      "quadrant": 2,
+      "velocity": 0.05448044009573149
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 46,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9858608301728964,
+      "correctness": 0.1875,
+      "disagreement": 0.046875,
+      "witness_correctness": 0.171875,
+      "judge_uncertainty": 0.913846492767334,
+      "witness_uncertainty": 0.944367527961731,
+      "alignment_improvement": 0.028854073956608772,
+      "correctness_improvement": 0.125,
+      "quadrant": 2,
+      "velocity": 0.12828701253008212
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 47,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9858460603281856,
+      "correctness": 0.109375,
+      "disagreement": 0.125,
+      "witness_correctness": 0.125,
+      "judge_uncertainty": 0.9132413864135742,
+      "witness_uncertainty": 0.9437911510467529,
+      "alignment_improvement": 0.031556231901049614,
+      "correctness_improvement": 0.125,
+      "quadrant": 2,
+      "velocity": 0.12892166525372228
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 48,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9868711372837424,
+      "correctness": 0.03125,
+      "disagreement": 0.171875,
+      "witness_correctness": 0.03125,
+      "judge_uncertainty": 0.9333648681640625,
+      "witness_uncertainty": 0.946251630783081,
+      "alignment_improvement": 0.03154146205633879,
+      "correctness_improvement": 0.046875,
+      "quadrant": 2,
+      "velocity": 0.056498933208083316
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  },
+  {
+    "step": 49,
+    "approach": "simple_2d",
+    "metrics": {
+      "alignment": 0.9883239706978202,
+      "correctness": 0.046875,
+      "disagreement": 0.140625,
+      "witness_correctness": 0.046875,
+      "judge_uncertainty": 0.9261596202850342,
+      "witness_uncertainty": 0.9473086595535278,
+      "alignment_improvement": 0.03256653901189566,
+      "correctness_improvement": -0.03125,
+      "quadrant": 2,
+      "velocity": 0.0451347090742072
+    },
+    "metadata": {
+      "quadrant_name": "collusion",
+      "interpretation": "WARNING: Collusion - both wrong but agreeing"
+    }
+  }
+]

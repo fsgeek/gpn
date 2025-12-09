@@ -21,6 +21,7 @@ Usage:
 
 from src.metrics.epistemic.base import EpistemicMetric, EpistemicState
 from src.metrics.epistemic.simple_2d import Simple2DMetric
+from src.metrics.epistemic.bayesian_uncertainty import BayesianUncertaintyMetric
 from src.metrics.epistemic.neutrosophic import NeutrosophicMetric
 from src.metrics.epistemic.comparative_tracker import ComparativeTracker
 
@@ -28,6 +29,7 @@ __all__ = [
     'EpistemicMetric',
     'EpistemicState',
     'Simple2DMetric',
+    'BayesianUncertaintyMetric',
     'NeutrosophicMetric',
     'ComparativeTracker',
 ]

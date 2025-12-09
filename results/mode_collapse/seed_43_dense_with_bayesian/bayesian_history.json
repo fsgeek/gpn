@@ -1,0 +1,4002 @@
+[
+  {
+    "step": 0,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9382404088973999,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 9.27317887544632e-06,
+      "witness_predictive_entropy": 2.301384449005127,
+      "judge_entropy": 2.115656852722168,
+      "disagreement": 0.9375,
+      "alignment_improvement": 0.0,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 1,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9444395825266838,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 1.2857037290814333e-05,
+      "witness_predictive_entropy": 2.30141019821167,
+      "judge_entropy": 1.9602268934249878,
+      "disagreement": 0.90625,
+      "alignment_improvement": 0.0,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 2,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9454930759966373,
+      "correctness": 0.140625,
+      "witness_epistemic_uncertainty": 2.6595622330205515e-05,
+      "witness_predictive_entropy": 2.301215410232544,
+      "judge_entropy": 1.3669627904891968,
+      "disagreement": 0.8125,
+      "alignment_improvement": 0.006199173629283905,
+      "correctness_improvement": -0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 3,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9437364563345909,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 5.5667147535132244e-05,
+      "witness_predictive_entropy": 2.300151824951172,
+      "judge_entropy": 0.9107160568237305,
+      "disagreement": 0.09375,
+      "alignment_improvement": 0.007252667099237442,
+      "correctness_improvement": 0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 4,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.949184238910675,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.00011721159535227343,
+      "witness_predictive_entropy": 2.2972779273986816,
+      "judge_entropy": 0.46124541759490967,
+      "disagreement": 0.015625,
+      "alignment_improvement": 0.0054960474371910095,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 5,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.952800378203392,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.0001589281455380842,
+      "witness_predictive_entropy": 2.296013832092285,
+      "judge_entropy": 0.5396389961242676,
+      "disagreement": 0.03125,
+      "alignment_improvement": 0.010943830013275146,
+      "correctness_improvement": 0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 6,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9574213325977325,
+      "correctness": 0.140625,
+      "witness_epistemic_uncertainty": 0.00015575715224258602,
+      "witness_predictive_entropy": 2.2975926399230957,
+      "judge_entropy": 0.7687612771987915,
+      "disagreement": 0.140625,
+      "alignment_improvement": 0.014559969305992126,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 7,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9584347158670425,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.00018822678248398006,
+      "witness_predictive_entropy": 2.296907424926758,
+      "judge_entropy": 0.7476862668991089,
+      "disagreement": 0.09375,
+      "alignment_improvement": 0.01918092370033264,
+      "correctness_improvement": 0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 8,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9600862450897694,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.0003120272303931415,
+      "witness_predictive_entropy": 2.2906699180603027,
+      "judge_entropy": 0.7085110545158386,
+      "disagreement": 0.09375,
+      "alignment_improvement": 0.02019430696964264,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 9,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9626797735691071,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.000436256465036422,
+      "witness_predictive_entropy": 2.283818483352661,
+      "judge_entropy": 0.4008203148841858,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.02184583619236946,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 10,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9632320329546928,
+      "correctness": 0.140625,
+      "witness_epistemic_uncertainty": 0.0006187019171193242,
+      "witness_predictive_entropy": 2.2749340534210205,
+      "judge_entropy": 0.3054884672164917,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.024439364671707153,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 11,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9647108167409897,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.0006811671191826463,
+      "witness_predictive_entropy": 2.2724814414978027,
+      "judge_entropy": 0.3187166452407837,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.024991624057292938,
+      "correctness_improvement": 0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 12,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9663760364055634,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.0006325592403300107,
+      "witness_predictive_entropy": 2.2771990299224854,
+      "judge_entropy": 0.424736887216568,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.026470407843589783,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 13,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9706526473164558,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.0005033486522734165,
+      "witness_predictive_entropy": 2.2871241569519043,
+      "judge_entropy": 1.0364809036254883,
+      "disagreement": 0.03125,
+      "alignment_improvement": 0.028135627508163452,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 14,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9727210439741611,
+      "correctness": 0.140625,
+      "witness_epistemic_uncertainty": 0.0004994196933694184,
+      "witness_predictive_entropy": 2.290644884109497,
+      "judge_entropy": 1.461793303489685,
+      "disagreement": 0.140625,
+      "alignment_improvement": 0.03241223841905594,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 15,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9717669747769833,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.0005473388591781259,
+      "witness_predictive_entropy": 2.2911407947540283,
+      "judge_entropy": 1.473138451576233,
+      "disagreement": 0.328125,
+      "alignment_improvement": 0.034480635076761246,
+      "correctness_improvement": 0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 16,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9740233570337296,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.0006974599091336131,
+      "witness_predictive_entropy": 2.2891483306884766,
+      "judge_entropy": 1.5068085193634033,
+      "disagreement": 0.65625,
+      "alignment_improvement": 0.03352656587958336,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 17,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9743882119655609,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.0011182043235749006,
+      "witness_predictive_entropy": 2.2774715423583984,
+      "judge_entropy": 1.461272954940796,
+      "disagreement": 0.421875,
+      "alignment_improvement": 0.03578294813632965,
+      "correctness_improvement": -0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 18,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9754663035273552,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.001500382786616683,
+      "witness_predictive_entropy": 2.2655084133148193,
+      "judge_entropy": 1.475743293762207,
+      "disagreement": 0.375,
+      "alignment_improvement": 0.03614780306816101,
+      "correctness_improvement": 0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 19,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9758786968886852,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.0016749436035752296,
+      "witness_predictive_entropy": 2.2605109214782715,
+      "judge_entropy": 1.4164172410964966,
+      "disagreement": 0.296875,
+      "alignment_improvement": 0.03722589462995529,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 20,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9765218142420053,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.001936298212967813,
+      "witness_predictive_entropy": 2.2510972023010254,
+      "judge_entropy": 1.4098044633865356,
+      "disagreement": 0.46875,
+      "alignment_improvement": 0.037638287991285324,
+      "correctness_improvement": 0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 21,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9773591160774231,
+      "correctness": 0.140625,
+      "witness_epistemic_uncertainty": 0.0020984308794140816,
+      "witness_predictive_entropy": 2.250692844390869,
+      "judge_entropy": 1.4277287721633911,
+      "disagreement": 0.625,
+      "alignment_improvement": 0.038281405344605446,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 22,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9773251879960299,
+      "correctness": 0.15625,
+      "witness_epistemic_uncertainty": 0.002434075577184558,
+      "witness_predictive_entropy": 2.2373616695404053,
+      "judge_entropy": 1.3863111734390259,
+      "disagreement": 0.640625,
+      "alignment_improvement": 0.03911870718002319,
+      "correctness_improvement": 0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 23,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9758608676493168,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.0028084712103009224,
+      "witness_predictive_entropy": 2.2247562408447266,
+      "judge_entropy": 1.3161967992782593,
+      "disagreement": 0.65625,
+      "alignment_improvement": 0.03908477909862995,
+      "correctness_improvement": 0.078125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 24,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9772367477416992,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.003557385876774788,
+      "witness_predictive_entropy": 2.206047296524048,
+      "judge_entropy": 1.0703282356262207,
+      "disagreement": 0.578125,
+      "alignment_improvement": 0.037620458751916885,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 25,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.977559357881546,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.005272493232041597,
+      "witness_predictive_entropy": 2.1302032470703125,
+      "judge_entropy": 0.7063022255897522,
+      "disagreement": 0.046875,
+      "alignment_improvement": 0.038996338844299316,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 26,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9777751080691814,
+      "correctness": 0.171875,
+      "witness_epistemic_uncertainty": 0.009251957759261131,
+      "witness_predictive_entropy": 2.016371250152588,
+      "judge_entropy": 0.35609978437423706,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.03931894898414612,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 27,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9776442497968674,
+      "correctness": 0.140625,
+      "witness_epistemic_uncertainty": 0.008921938017010689,
+      "witness_predictive_entropy": 2.0074620246887207,
+      "judge_entropy": 0.35842347145080566,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.03953469917178154,
+      "correctness_improvement": 0.09375,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 28,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.978544794023037,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.007384344004094601,
+      "witness_predictive_entropy": 2.0959081649780273,
+      "judge_entropy": 0.5590741038322449,
+      "disagreement": 0.015625,
+      "alignment_improvement": 0.03940384089946747,
+      "correctness_improvement": 0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 29,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9791187401860952,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.0067621273919939995,
+      "witness_predictive_entropy": 2.095567226409912,
+      "judge_entropy": 0.45939901471138,
+      "disagreement": 0.015625,
+      "alignment_improvement": 0.040304385125637054,
+      "correctness_improvement": -0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 30,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9791914373636246,
+      "correctness": 0.03125,
+      "witness_epistemic_uncertainty": 0.005585099570453167,
+      "witness_predictive_entropy": 2.119818925857544,
+      "judge_entropy": 0.6834285259246826,
+      "disagreement": 0.03125,
+      "alignment_improvement": 0.040878331288695335,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 31,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9785947054624557,
+      "correctness": 0.15625,
+      "witness_epistemic_uncertainty": 0.006457568611949682,
+      "witness_predictive_entropy": 2.1068780422210693,
+      "judge_entropy": 0.8040764331817627,
+      "disagreement": 0.046875,
+      "alignment_improvement": 0.04095102846622467,
+      "correctness_improvement": -0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 32,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9791971426457167,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.005038480274379253,
+      "witness_predictive_entropy": 2.1550021171569824,
+      "judge_entropy": 0.9574686288833618,
+      "disagreement": 0.296875,
+      "alignment_improvement": 0.04035429656505585,
+      "correctness_improvement": 0.078125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 33,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9799633137881756,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.004488216247409582,
+      "witness_predictive_entropy": 2.177769660949707,
+      "judge_entropy": 1.097745656967163,
+      "disagreement": 0.53125,
+      "alignment_improvement": 0.040956733748316765,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 34,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9809798449277878,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.0052522411569952965,
+      "witness_predictive_entropy": 2.1409268379211426,
+      "judge_entropy": 1.0836620330810547,
+      "disagreement": 0.546875,
+      "alignment_improvement": 0.04172290489077568,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 35,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9792378917336464,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.0067623089998960495,
+      "witness_predictive_entropy": 2.102954387664795,
+      "judge_entropy": 1.0429072380065918,
+      "disagreement": 0.25,
+      "alignment_improvement": 0.04273943603038788,
+      "correctness_improvement": -0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 36,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9807046018540859,
+      "correctness": 0.015625,
+      "witness_epistemic_uncertainty": 0.007219487335532904,
+      "witness_predictive_entropy": 2.1029624938964844,
+      "judge_entropy": 0.9704804420471191,
+      "disagreement": 0.078125,
+      "alignment_improvement": 0.04099748283624649,
+      "correctness_improvement": 0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 37,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.981848418712616,
+      "correctness": 0.03125,
+      "witness_epistemic_uncertainty": 0.008027087897062302,
+      "witness_predictive_entropy": 2.094576358795166,
+      "judge_entropy": 0.9353559017181396,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.04246419295668602,
+      "correctness_improvement": -0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 38,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.981180077418685,
+      "correctness": 0.15625,
+      "witness_epistemic_uncertainty": 0.00856474693864584,
+      "witness_predictive_entropy": 2.0459585189819336,
+      "judge_entropy": 0.9806258678436279,
+      "disagreement": 0.078125,
+      "alignment_improvement": 0.043608009815216064,
+      "correctness_improvement": -0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 39,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9825181663036346,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.008558417670428753,
+      "witness_predictive_entropy": 2.0584068298339844,
+      "judge_entropy": 0.8920907378196716,
+      "disagreement": 0.015625,
+      "alignment_improvement": 0.04293966852128506,
+      "correctness_improvement": 0.078125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 40,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9801150374114513,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.007494726683944464,
+      "witness_predictive_entropy": 2.081625461578369,
+      "judge_entropy": 0.9191067218780518,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.04427775740623474,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 41,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9806263521313667,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.008292879909276962,
+      "witness_predictive_entropy": 2.0411689281463623,
+      "judge_entropy": 0.8557958602905273,
+      "disagreement": 0.078125,
+      "alignment_improvement": 0.04187462851405144,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 42,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9803233854472637,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.009409668855369091,
+      "witness_predictive_entropy": 2.0311450958251953,
+      "judge_entropy": 0.9176467657089233,
+      "disagreement": 0.078125,
+      "alignment_improvement": 0.04238594323396683,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 43,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9817865267395973,
+      "correctness": 0.1875,
+      "witness_epistemic_uncertainty": 0.009285176172852516,
+      "witness_predictive_entropy": 2.000241756439209,
+      "judge_entropy": 0.9223811626434326,
+      "disagreement": 0.03125,
+      "alignment_improvement": 0.042082976549863815,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 44,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9816572200506926,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.009385230951011181,
+      "witness_predictive_entropy": 2.0291266441345215,
+      "judge_entropy": 0.9704667329788208,
+      "disagreement": 0.015625,
+      "alignment_improvement": 0.04354611784219742,
+      "correctness_improvement": 0.109375,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 45,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9806034527719021,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.006593502592295408,
+      "witness_predictive_entropy": 2.1014018058776855,
+      "judge_entropy": 1.0010950565338135,
+      "disagreement": 0.0625,
+      "alignment_improvement": 0.043416811153292656,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 46,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9775843936949968,
+      "correctness": 0.03125,
+      "witness_epistemic_uncertainty": 0.005384184420108795,
+      "witness_predictive_entropy": 2.1447434425354004,
+      "judge_entropy": 1.0428805351257324,
+      "disagreement": 0.15625,
+      "alignment_improvement": 0.04236304387450218,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 47,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9810032732784748,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.004620838910341263,
+      "witness_predictive_entropy": 2.162799596786499,
+      "judge_entropy": 1.1014491319656372,
+      "disagreement": 0.6875,
+      "alignment_improvement": 0.03934398479759693,
+      "correctness_improvement": -0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 48,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.980228716507554,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.006616639439016581,
+      "witness_predictive_entropy": 2.113626003265381,
+      "judge_entropy": 1.2799532413482666,
+      "disagreement": 0.46875,
+      "alignment_improvement": 0.042762864381074905,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 49,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9814750179648399,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.0069497982040047646,
+      "witness_predictive_entropy": 2.072610378265381,
+      "judge_entropy": 1.2762978076934814,
+      "disagreement": 0.53125,
+      "alignment_improvement": 0.04198830761015415,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 50,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9790170043706894,
+      "correctness": 0.15625,
+      "witness_epistemic_uncertainty": 0.006768682040274143,
+      "witness_predictive_entropy": 2.066690444946289,
+      "judge_entropy": 1.1757863759994507,
+      "disagreement": 0.515625,
+      "alignment_improvement": 0.04323460906744003,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 51,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9808010719716549,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.00788317434489727,
+      "witness_predictive_entropy": 2.042147159576416,
+      "judge_entropy": 1.0912201404571533,
+      "disagreement": 0.3125,
+      "alignment_improvement": 0.04077659547328949,
+      "correctness_improvement": 0.078125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 52,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9806469026952982,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.010735830292105675,
+      "witness_predictive_entropy": 1.988530158996582,
+      "judge_entropy": 0.8222124576568604,
+      "disagreement": 0.03125,
+      "alignment_improvement": 0.04256066307425499,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 53,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.980198634788394,
+      "correctness": 0.140625,
+      "witness_epistemic_uncertainty": 0.013387393206357956,
+      "witness_predictive_entropy": 1.8870947360992432,
+      "judge_entropy": 0.6064467430114746,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.04240649379789829,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 54,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.982340520247817,
+      "correctness": 0.140625,
+      "witness_epistemic_uncertainty": 0.015801820904016495,
+      "witness_predictive_entropy": 1.77736234664917,
+      "judge_entropy": 0.5003474950790405,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.04195822589099407,
+      "correctness_improvement": 0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 55,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9809960871934891,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.013523056171834469,
+      "witness_predictive_entropy": 1.9390039443969727,
+      "judge_entropy": 0.6857573986053467,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.04410011135041714,
+      "correctness_improvement": 0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 56,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9822925440967083,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.008959166705608368,
+      "witness_predictive_entropy": 2.055713653564453,
+      "judge_entropy": 0.8212537169456482,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.04275567829608917,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 57,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.98224763199687,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.007979661226272583,
+      "witness_predictive_entropy": 2.09834885597229,
+      "judge_entropy": 1.1552234888076782,
+      "disagreement": 0.046875,
+      "alignment_improvement": 0.044052135199308395,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 58,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9826541244983673,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.00719434954226017,
+      "witness_predictive_entropy": 2.1344923973083496,
+      "judge_entropy": 1.3913583755493164,
+      "disagreement": 0.078125,
+      "alignment_improvement": 0.04400722309947014,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 59,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9826003238558769,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.006043958943337202,
+      "witness_predictive_entropy": 2.160919189453125,
+      "judge_entropy": 1.5802786350250244,
+      "disagreement": 0.21875,
+      "alignment_improvement": 0.04441371560096741,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 60,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9806243386119604,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.0035949009470641613,
+      "witness_predictive_entropy": 2.2211475372314453,
+      "judge_entropy": 1.725386381149292,
+      "disagreement": 0.515625,
+      "alignment_improvement": 0.04435991495847702,
+      "correctness_improvement": 0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 61,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9825635887682438,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.0033724731765687466,
+      "witness_predictive_entropy": 2.2436165809631348,
+      "judge_entropy": 1.712688684463501,
+      "disagreement": 0.984375,
+      "alignment_improvement": 0.04238392971456051,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 62,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9797083530575037,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.004562989808619022,
+      "witness_predictive_entropy": 2.2143056392669678,
+      "judge_entropy": 1.5658152103424072,
+      "disagreement": 0.5625,
+      "alignment_improvement": 0.04432317987084389,
+      "correctness_improvement": 0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 63,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9805670399218798,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.007832766510546207,
+      "witness_predictive_entropy": 2.141024112701416,
+      "judge_entropy": 1.3988350629806519,
+      "disagreement": 0.125,
+      "alignment_improvement": 0.0414679441601038,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 64,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9788627400994301,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.01157846674323082,
+      "witness_predictive_entropy": 2.069988250732422,
+      "judge_entropy": 1.2851157188415527,
+      "disagreement": 0.109375,
+      "alignment_improvement": 0.042326631024479866,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 65,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.981353746727109,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.014647075906395912,
+      "witness_predictive_entropy": 2.031142234802246,
+      "judge_entropy": 1.1909337043762207,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.04062233120203018,
+      "correctness_improvement": 0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 66,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9813731797039509,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.01482430100440979,
+      "witness_predictive_entropy": 2.0271031856536865,
+      "judge_entropy": 1.0688610076904297,
+      "disagreement": 0.03125,
+      "alignment_improvement": 0.04311333782970905,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 67,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9788985773921013,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.010788079351186752,
+      "witness_predictive_entropy": 2.112119436264038,
+      "judge_entropy": 1.3928825855255127,
+      "disagreement": 0.03125,
+      "alignment_improvement": 0.04313277080655098,
+      "correctness_improvement": -0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 68,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9818680360913277,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.00666574202477932,
+      "witness_predictive_entropy": 2.192774772644043,
+      "judge_entropy": 1.6127713918685913,
+      "disagreement": 0.140625,
+      "alignment_improvement": 0.040658168494701385,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 69,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.98115224391222,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.005020707845687866,
+      "witness_predictive_entropy": 2.219770908355713,
+      "judge_entropy": 1.804716944694519,
+      "disagreement": 0.109375,
+      "alignment_improvement": 0.043627627193927765,
+      "correctness_improvement": 0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 70,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9817290678620338,
+      "correctness": 0.1875,
+      "witness_epistemic_uncertainty": 0.0034949500113725662,
+      "witness_predictive_entropy": 2.246368885040283,
+      "judge_entropy": 1.9581656455993652,
+      "disagreement": 0.234375,
+      "alignment_improvement": 0.0429118350148201,
+      "correctness_improvement": 0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 71,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9803433753550053,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.0027305735275149345,
+      "witness_predictive_entropy": 2.2637109756469727,
+      "judge_entropy": 2.000542640686035,
+      "disagreement": 0.390625,
+      "alignment_improvement": 0.04348865896463394,
+      "correctness_improvement": 0.109375,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 72,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9817758128046989,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.002881885040551424,
+      "witness_predictive_entropy": 2.24764347076416,
+      "judge_entropy": 1.966756820678711,
+      "disagreement": 0.265625,
+      "alignment_improvement": 0.04210296645760536,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 73,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.980563510209322,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.003813647199422121,
+      "witness_predictive_entropy": 2.218599796295166,
+      "judge_entropy": 1.8747618198394775,
+      "disagreement": 0.296875,
+      "alignment_improvement": 0.04353540390729904,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 74,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9817475024610758,
+      "correctness": 0.1875,
+      "witness_epistemic_uncertainty": 0.005112071987241507,
+      "witness_predictive_entropy": 2.1890766620635986,
+      "judge_entropy": 1.803147315979004,
+      "disagreement": 0.203125,
+      "alignment_improvement": 0.04232310131192207,
+      "correctness_improvement": 0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 75,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9805624186992645,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.006994401570409536,
+      "witness_predictive_entropy": 2.148620367050171,
+      "judge_entropy": 1.575995922088623,
+      "disagreement": 0.078125,
+      "alignment_improvement": 0.04350709356367588,
+      "correctness_improvement": 0.109375,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 76,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9805285409092903,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.0093611478805542,
+      "witness_predictive_entropy": 2.100971221923828,
+      "judge_entropy": 1.2682008743286133,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.042322009801864624,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 77,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.981165200471878,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.011339681223034859,
+      "witness_predictive_entropy": 2.0627384185791016,
+      "judge_entropy": 1.2193835973739624,
+      "disagreement": 0.015625,
+      "alignment_improvement": 0.04228813201189041,
+      "correctness_improvement": -0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 78,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9787965267896652,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.011968037113547325,
+      "witness_predictive_entropy": 2.059116840362549,
+      "judge_entropy": 1.5820527076721191,
+      "disagreement": 0.203125,
+      "alignment_improvement": 0.04292479157447815,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 79,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9803438764065504,
+      "correctness": 0.140625,
+      "witness_epistemic_uncertainty": 0.0083807073533535,
+      "witness_predictive_entropy": 2.1230149269104004,
+      "judge_entropy": 1.698056936264038,
+      "disagreement": 0.140625,
+      "alignment_improvement": 0.04055611789226532,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 80,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9803802277892828,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.004941850434988737,
+      "witness_predictive_entropy": 2.194121837615967,
+      "judge_entropy": 1.6619963645935059,
+      "disagreement": 0.140625,
+      "alignment_improvement": 0.042103467509150505,
+      "correctness_improvement": 0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 81,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9803141448646784,
+      "correctness": 0.171875,
+      "witness_epistemic_uncertainty": 0.003966871649026871,
+      "witness_predictive_entropy": 2.1967248916625977,
+      "judge_entropy": 1.7265987396240234,
+      "disagreement": 0.359375,
+      "alignment_improvement": 0.042139818891882896,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 82,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9806622732430696,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.003349925857037306,
+      "witness_predictive_entropy": 2.2231862545013428,
+      "judge_entropy": 1.8107165098190308,
+      "disagreement": 0.453125,
+      "alignment_improvement": 0.04207373596727848,
+      "correctness_improvement": 0.09375,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 83,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.981076443567872,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.002572169527411461,
+      "witness_predictive_entropy": 2.246570587158203,
+      "judge_entropy": 1.8781042098999023,
+      "disagreement": 0.5625,
+      "alignment_improvement": 0.042421864345669746,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 84,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9821273013949394,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.0023792365100234747,
+      "witness_predictive_entropy": 2.248584270477295,
+      "judge_entropy": 1.8900156021118164,
+      "disagreement": 0.640625,
+      "alignment_improvement": 0.042836034670472145,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 85,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9808954522013664,
+      "correctness": 0.15625,
+      "witness_epistemic_uncertainty": 0.00274122622795403,
+      "witness_predictive_entropy": 2.2345969676971436,
+      "judge_entropy": 1.9320321083068848,
+      "disagreement": 0.609375,
+      "alignment_improvement": 0.04388689249753952,
+      "correctness_improvement": 0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 86,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9820594452321529,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.0026273115072399378,
+      "witness_predictive_entropy": 2.235480308532715,
+      "judge_entropy": 1.9325538873672485,
+      "disagreement": 0.453125,
+      "alignment_improvement": 0.04265504330396652,
+      "correctness_improvement": 0.078125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 87,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9800745993852615,
+      "correctness": 0.171875,
+      "witness_epistemic_uncertainty": 0.003055964130908251,
+      "witness_predictive_entropy": 2.2160654067993164,
+      "judge_entropy": 1.8362783193588257,
+      "disagreement": 0.40625,
+      "alignment_improvement": 0.043819036334753036,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 88,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9816882573068142,
+      "correctness": 0.171875,
+      "witness_epistemic_uncertainty": 0.003024980891495943,
+      "witness_predictive_entropy": 2.2214608192443848,
+      "judge_entropy": 1.944411277770996,
+      "disagreement": 0.46875,
+      "alignment_improvement": 0.04183419048786163,
+      "correctness_improvement": 0.09375,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 89,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9820662178099155,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.0026859058998525143,
+      "witness_predictive_entropy": 2.2313990592956543,
+      "judge_entropy": 1.8347091674804688,
+      "disagreement": 0.765625,
+      "alignment_improvement": 0.04344784840941429,
+      "correctness_improvement": 0.09375,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 90,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9811898395419121,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.002699436154216528,
+      "witness_predictive_entropy": 2.232672691345215,
+      "judge_entropy": 1.7581137418746948,
+      "disagreement": 0.890625,
+      "alignment_improvement": 0.04382580891251564,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 91,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9818162173032761,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.0029054214246571064,
+      "witness_predictive_entropy": 2.2271599769592285,
+      "judge_entropy": 1.6248632669448853,
+      "disagreement": 0.671875,
+      "alignment_improvement": 0.042949430644512177,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 92,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9813785422593355,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.00285209808498621,
+      "witness_predictive_entropy": 2.230175495147705,
+      "judge_entropy": 1.769939661026001,
+      "disagreement": 0.703125,
+      "alignment_improvement": 0.04357580840587616,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 93,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9825875125825405,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.002720943419262767,
+      "witness_predictive_entropy": 2.2494797706604004,
+      "judge_entropy": 1.6921806335449219,
+      "disagreement": 0.71875,
+      "alignment_improvement": 0.043138133361935616,
+      "correctness_improvement": 0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 94,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9825812187045813,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.002794204745441675,
+      "witness_predictive_entropy": 2.246652126312256,
+      "judge_entropy": 1.677034854888916,
+      "disagreement": 0.609375,
+      "alignment_improvement": 0.04434710368514061,
+      "correctness_improvement": -0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 95,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9817004259675741,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.0035810910630971193,
+      "witness_predictive_entropy": 2.2298333644866943,
+      "judge_entropy": 1.6759486198425293,
+      "disagreement": 0.546875,
+      "alignment_improvement": 0.04434080980718136,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 96,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9824870675802231,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.004229281097650528,
+      "witness_predictive_entropy": 2.212362289428711,
+      "judge_entropy": 1.6234649419784546,
+      "disagreement": 0.46875,
+      "alignment_improvement": 0.04346001707017422,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 97,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9829375892877579,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.004743071272969246,
+      "witness_predictive_entropy": 2.1825132369995117,
+      "judge_entropy": 1.4998724460601807,
+      "disagreement": 0.390625,
+      "alignment_improvement": 0.04424665868282318,
+      "correctness_improvement": -0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 98,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.98237619176507,
+      "correctness": 0.171875,
+      "witness_epistemic_uncertainty": 0.005156350787729025,
+      "witness_predictive_entropy": 2.159088611602783,
+      "judge_entropy": 1.5700390338897705,
+      "disagreement": 0.46875,
+      "alignment_improvement": 0.04469718039035797,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 99,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9826221764087677,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.0068847667425870895,
+      "witness_predictive_entropy": 2.1065561771392822,
+      "judge_entropy": 1.4548845291137695,
+      "disagreement": 0.375,
+      "alignment_improvement": 0.04413578286767006,
+      "correctness_improvement": 0.09375,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 100,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9822556674480438,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.004860726185142994,
+      "witness_predictive_entropy": 2.1631455421447754,
+      "judge_entropy": 1.5646190643310547,
+      "disagreement": 0.5,
+      "alignment_improvement": 0.0443817675113678,
+      "correctness_improvement": 0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 101,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.8962614610791206,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.003137445542961359,
+      "witness_predictive_entropy": 2.220430374145508,
+      "judge_entropy": 1.4902245998382568,
+      "disagreement": 0.875,
+      "alignment_improvement": 0.037816084921360016,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 102,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9345574975013733,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.001923084375448525,
+      "witness_predictive_entropy": 2.254610776901245,
+      "judge_entropy": 0.05924326553940773,
+      "disagreement": 1.0,
+      "alignment_improvement": -0.04923161491751671,
+      "correctness_improvement": -0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 103,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.952812172472477,
+      "correctness": 0.140625,
+      "witness_epistemic_uncertainty": 0.004315908066928387,
+      "witness_predictive_entropy": 2.152897357940674,
+      "judge_entropy": 0.10629382729530334,
+      "disagreement": 0.515625,
+      "alignment_improvement": -0.00917895883321762,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 104,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9571754336357117,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.010991238988935947,
+      "witness_predictive_entropy": 1.936015009880066,
+      "judge_entropy": 0.10393129289150238,
+      "disagreement": 0.03125,
+      "alignment_improvement": 0.0036279335618019104,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 105,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9616168215870857,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.01988237351179123,
+      "witness_predictive_entropy": 1.6561709642410278,
+      "judge_entropy": 0.15754124522209167,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.004375055432319641,
+      "correctness_improvement": -0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 106,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9677771627902985,
+      "correctness": 0.03125,
+      "witness_epistemic_uncertainty": 0.02040056511759758,
+      "witness_predictive_entropy": 1.6222106218338013,
+      "judge_entropy": 0.23515424132347107,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.00419548898935318,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 107,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9721406176686287,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.020972898229956627,
+      "witness_predictive_entropy": 1.5939581394195557,
+      "judge_entropy": 0.2058144211769104,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.00934244692325592,
+      "correctness_improvement": -0.078125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 108,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9846419719979167,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.016615664586424828,
+      "witness_predictive_entropy": 1.8780606985092163,
+      "judge_entropy": 0.3648824095726013,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.01205437257885933,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 109,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9842786192893982,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.014955788850784302,
+      "witness_predictive_entropy": 1.8973454236984253,
+      "judge_entropy": 0.352212131023407,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.021962198428809643,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 110,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9815539885312319,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.016188159584999084,
+      "witness_predictive_entropy": 1.7706031799316406,
+      "judge_entropy": 0.3189051151275635,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.021046586334705353,
+      "correctness_improvement": -0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 111,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9810658283531666,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.01939895935356617,
+      "witness_predictive_entropy": 1.6560351848602295,
+      "judge_entropy": 0.38248854875564575,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.016843171790242195,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 112,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.986415134742856,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.014527161605656147,
+      "witness_predictive_entropy": 1.89992356300354,
+      "judge_entropy": 0.4520786702632904,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.014689791947603226,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 113,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9870369918644428,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.012248825281858444,
+      "witness_predictive_entropy": 1.9693338871002197,
+      "judge_entropy": 0.5832580327987671,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.015762487426400185,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 114,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9868300352245569,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.012997981160879135,
+      "witness_predictive_entropy": 1.9521809816360474,
+      "judge_entropy": 0.6177640557289124,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.014315947890281677,
+      "correctness_improvement": -0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 115,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9872112926095724,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.014407075941562653,
+      "witness_predictive_entropy": 1.8749475479125977,
+      "judge_entropy": 0.6058822274208069,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.015063060447573662,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 116,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9867219943553209,
+      "correctness": 0.15625,
+      "witness_epistemic_uncertainty": 0.013332074508070946,
+      "witness_predictive_entropy": 1.8529008626937866,
+      "judge_entropy": 0.8391420841217041,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.013187935575842857,
+      "correctness_improvement": 0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 117,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9882313646376133,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.010125242173671722,
+      "witness_predictive_entropy": 1.9729442596435547,
+      "judge_entropy": 0.9381508827209473,
+      "disagreement": 0.015625,
+      "alignment_improvement": 0.012333782389760017,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 118,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9869793057441711,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.008970544673502445,
+      "witness_predictive_entropy": 2.0512421131134033,
+      "judge_entropy": 1.2644500732421875,
+      "disagreement": 0.015625,
+      "alignment_improvement": 0.012765061110258102,
+      "correctness_improvement": -0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 119,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9886714853346348,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.00758223794400692,
+      "witness_predictive_entropy": 2.0542802810668945,
+      "judge_entropy": 1.3188509941101074,
+      "disagreement": 0.03125,
+      "alignment_improvement": 0.011100608855485916,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 120,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9881567880511284,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.007140501402318478,
+      "witness_predictive_entropy": 2.1052961349487305,
+      "judge_entropy": 1.3916740417480469,
+      "disagreement": 0.078125,
+      "alignment_improvement": 0.012149671092629433,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 121,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9891002140939236,
+      "correctness": 0.1875,
+      "witness_epistemic_uncertainty": 0.009013324975967407,
+      "witness_predictive_entropy": 2.019454002380371,
+      "judge_entropy": 1.1684613227844238,
+      "disagreement": 0.015625,
+      "alignment_improvement": 0.010797671973705292,
+      "correctness_improvement": -0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 122,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9883104264736176,
+      "correctness": 0.140625,
+      "witness_epistemic_uncertainty": 0.012541229836642742,
+      "witness_predictive_entropy": 1.8565685749053955,
+      "judge_entropy": 0.7949812412261963,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.011775026097893715,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 123,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9884256534278393,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.015412655659019947,
+      "witness_predictive_entropy": 1.711014986038208,
+      "judge_entropy": 0.3913819491863251,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.012449558824300766,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 124,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9884208235889673,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.013863440603017807,
+      "witness_predictive_entropy": 1.7860329151153564,
+      "judge_entropy": 0.2742859125137329,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.01118890568614006,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 125,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9889690894633532,
+      "correctness": 0.140625,
+      "witness_epistemic_uncertainty": 0.01490485854446888,
+      "witness_predictive_entropy": 1.7868698835372925,
+      "judge_entropy": 0.2733931541442871,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.010861465707421303,
+      "correctness_improvement": -0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 126,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9887247886508703,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.01277078315615654,
+      "witness_predictive_entropy": 1.847571611404419,
+      "judge_entropy": 0.23130640387535095,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.011193981394171715,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 127,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9878477044403553,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.011951466090977192,
+      "witness_predictive_entropy": 1.8680260181427002,
+      "judge_entropy": 0.3357953429222107,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.011080538854002953,
+      "correctness_improvement": -0.078125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 128,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9877741262316704,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.012048937380313873,
+      "witness_predictive_entropy": 1.8574132919311523,
+      "judge_entropy": 0.39479321241378784,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.009302910417318344,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 129,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9885237449780107,
+      "correctness": 0.1875,
+      "witness_epistemic_uncertainty": 0.014296814799308777,
+      "witness_predictive_entropy": 1.7016043663024902,
+      "judge_entropy": 0.37804603576660156,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.008655386045575142,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 130,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9897415237501264,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.015397695824503899,
+      "witness_predictive_entropy": 1.6950902938842773,
+      "judge_entropy": 0.2588157057762146,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.009332307614386082,
+      "correctness_improvement": 0.15625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 131,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9889556653797626,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.014792410656809807,
+      "witness_predictive_entropy": 1.7702713012695312,
+      "judge_entropy": 0.16182860732078552,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.011146818287670612,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 132,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9892736133188009,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.015319811180233955,
+      "witness_predictive_entropy": 1.7757574319839478,
+      "judge_entropy": 0.12002930790185928,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.009758522734045982,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 133,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9872185364365578,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.0135226184502244,
+      "witness_predictive_entropy": 1.7804160118103027,
+      "judge_entropy": 0.10450505465269089,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.009310299530625343,
+      "correctness_improvement": -0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 134,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9880675887688994,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.013336565345525742,
+      "witness_predictive_entropy": 1.8022089004516602,
+      "judge_entropy": 0.08197229355573654,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.006238691508769989,
+      "correctness_improvement": 0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 135,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9891651887446642,
+      "correctness": 0.03125,
+      "witness_epistemic_uncertainty": 0.013607088476419449,
+      "witness_predictive_entropy": 1.8134708404541016,
+      "judge_entropy": 0.09042149782180786,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.008829697035253048,
+      "correctness_improvement": -0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 136,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9878914710134268,
+      "correctness": 0.140625,
+      "witness_epistemic_uncertainty": 0.015489509329199791,
+      "witness_predictive_entropy": 1.7178521156311035,
+      "judge_entropy": 0.10453642904758453,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.00846058689057827,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 137,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.987365024164319,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.015528377145528793,
+      "witness_predictive_entropy": 1.7481367588043213,
+      "judge_entropy": 0.1041305884718895,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.006043052300810814,
+      "correctness_improvement": 0.109375,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 138,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9874656600877643,
+      "correctness": 0.15625,
+      "witness_epistemic_uncertainty": 0.015164259821176529,
+      "witness_predictive_entropy": 1.7381157875061035,
+      "judge_entropy": 0.1044531911611557,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.006184946745634079,
+      "correctness_improvement": -0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 139,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9872665712609887,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.015520824119448662,
+      "witness_predictive_entropy": 1.729561448097229,
+      "judge_entropy": 0.11888857185840607,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.00494749378412962,
+      "correctness_improvement": 0.078125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 140,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9881625063717365,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.014959271997213364,
+      "witness_predictive_entropy": 1.722869873046875,
+      "judge_entropy": 0.13755160570144653,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.007151533849537373,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 141,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.988493730314076,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.014011047780513763,
+      "witness_predictive_entropy": 1.8263299465179443,
+      "judge_entropy": 0.16175517439842224,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.007536154240369797,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 142,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9881150228902698,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.013271491043269634,
+      "witness_predictive_entropy": 1.8526906967163086,
+      "judge_entropy": 0.20789538323879242,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.00817034486681223,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 143,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9874142091721296,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.014692690223455429,
+      "witness_predictive_entropy": 1.7793633937835693,
+      "judge_entropy": 0.13391855359077454,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.006328496150672436,
+      "correctness_improvement": -0.109375,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 144,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9881245661526918,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.013250387273728848,
+      "witness_predictive_entropy": 1.80419921875,
+      "judge_entropy": 0.13338428735733032,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.005756989121437073,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 145,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.988970784470439,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.014478646218776703,
+      "witness_predictive_entropy": 1.7898310422897339,
+      "judge_entropy": 0.08729574084281921,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.007521113380789757,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 146,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9891007347032428,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.012339713983237743,
+      "witness_predictive_entropy": 1.798298954963684,
+      "judge_entropy": 0.07874937355518341,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.011386390775442123,
+      "correctness_improvement": 0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 147,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9883285667747259,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.014531183987855911,
+      "witness_predictive_entropy": 1.7189116477966309,
+      "judge_entropy": 0.08093897998332977,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.008097461424767971,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 148,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9882833966985345,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.014836165122687817,
+      "witness_predictive_entropy": 1.6710751056671143,
+      "judge_entropy": 0.04790031537413597,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.00809985026717186,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 149,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.988324848935008,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.01151094026863575,
+      "witness_predictive_entropy": 1.8084042072296143,
+      "judge_entropy": 0.03652579337358475,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.006808378733694553,
+      "correctness_improvement": 0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 150,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9888316998258233,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.012857886031270027,
+      "witness_predictive_entropy": 1.850346326828003,
+      "judge_entropy": 0.03481807932257652,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.009307844564318657,
+      "correctness_improvement": -0.109375,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 151,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9883058974519372,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.012720262631773949,
+      "witness_predictive_entropy": 1.7834410667419434,
+      "judge_entropy": 0.03426123782992363,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.008030627854168415,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 152,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9882448213174939,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.013947699218988419,
+      "witness_predictive_entropy": 1.7044463157653809,
+      "judge_entropy": 0.019932545721530914,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.007658994756639004,
+      "correctness_improvement": 0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 153,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9871769035235047,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.014783579856157303,
+      "witness_predictive_entropy": 1.696038007736206,
+      "judge_entropy": 0.020666547119617462,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.008046186529099941,
+      "correctness_improvement": -0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 154,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9882418708875775,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.014148497954010963,
+      "witness_predictive_entropy": 1.725097894668579,
+      "judge_entropy": 0.03476394712924957,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.0048363832756876945,
+      "correctness_improvement": -0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 155,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9892624160274863,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.01398560032248497,
+      "witness_predictive_entropy": 1.7500150203704834,
+      "judge_entropy": 0.04099135845899582,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.007245783694088459,
+      "correctness_improvement": 0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 156,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.988736342638731,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.0123768150806427,
+      "witness_predictive_entropy": 1.8509905338287354,
+      "judge_entropy": 0.03565935045480728,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.006969871930778027,
+      "correctness_improvement": 0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 157,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9893978741019964,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.012793365865945816,
+      "witness_predictive_entropy": 1.8291854858398438,
+      "judge_entropy": 0.04278956353664398,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.006488710641860962,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 158,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9828113317489624,
+      "correctness": 0.140625,
+      "witness_epistemic_uncertainty": 0.014452993869781494,
+      "witness_predictive_entropy": 1.6715426445007324,
+      "judge_entropy": 0.05058199167251587,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.006743749603629112,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 159,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.942320104688406,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.013741657137870789,
+      "witness_predictive_entropy": 1.6885619163513184,
+      "judge_entropy": 0.05002103000879288,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.00021100789308547974,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 160,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9665767997503281,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.013560809195041656,
+      "witness_predictive_entropy": 1.7543777227401733,
+      "judge_entropy": 0.10061377286911011,
+      "disagreement": 0.0,
+      "alignment_improvement": -0.03830423392355442,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 161,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9587452374398708,
+      "correctness": 0.1875,
+      "witness_epistemic_uncertainty": 0.013962503522634506,
+      "witness_predictive_entropy": 1.6786532402038574,
+      "judge_entropy": 0.1686795949935913,
+      "disagreement": 0.0,
+      "alignment_improvement": -0.015986789017915726,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 162,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9717263504862785,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.012982518412172794,
+      "witness_predictive_entropy": 1.7166005373001099,
+      "judge_entropy": 0.2808328866958618,
+      "disagreement": 0.0,
+      "alignment_improvement": -0.020963115617632866,
+      "correctness_improvement": 0.09375,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 163,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9668582193553448,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.009617294184863567,
+      "witness_predictive_entropy": 1.9255203008651733,
+      "judge_entropy": 0.3578464984893799,
+      "disagreement": 0.015625,
+      "alignment_improvement": -0.008840689435601234,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 164,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9850032078102231,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.009035642258822918,
+      "witness_predictive_entropy": 1.981557846069336,
+      "judge_entropy": 0.5272307395935059,
+      "disagreement": 0.0,
+      "alignment_improvement": -0.012004520744085312,
+      "correctness_improvement": -0.078125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 165,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9777291044592857,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.009311771020293236,
+      "witness_predictive_entropy": 1.9443421363830566,
+      "judge_entropy": 0.5159825086593628,
+      "disagreement": 0.015625,
+      "alignment_improvement": 0.003649461083114147,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 166,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9825444929301739,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.009305904619395733,
+      "witness_predictive_entropy": 1.920494794845581,
+      "judge_entropy": 0.44675594568252563,
+      "disagreement": 0.0,
+      "alignment_improvement": -0.003644075244665146,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 167,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9786016866564751,
+      "correctness": 0.140625,
+      "witness_epistemic_uncertainty": 0.011819548904895782,
+      "witness_predictive_entropy": 1.796526312828064,
+      "judge_entropy": 0.4014742970466614,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.003645915538072586,
+      "correctness_improvement": -0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 168,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.987301361747086,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.012834418565034866,
+      "witness_predictive_entropy": 1.7542757987976074,
+      "judge_entropy": 0.39769405126571655,
+      "disagreement": 0.0,
+      "alignment_improvement": -0.0032663494348526,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 169,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9773928541690111,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.011486079543828964,
+      "witness_predictive_entropy": 1.7744886875152588,
+      "judge_entropy": 0.3206469416618347,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.006149117834866047,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 170,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9927691766060889,
+      "correctness": 0.03125,
+      "witness_epistemic_uncertainty": 0.010397749952971935,
+      "witness_predictive_entropy": 1.8680920600891113,
+      "judge_entropy": 0.23954050242900848,
+      "disagreement": 0.0,
+      "alignment_improvement": -0.004336213693022728,
+      "correctness_improvement": -0.09375,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 171,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.993402830325067,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.010366121307015419,
+      "witness_predictive_entropy": 1.9189140796661377,
+      "judge_entropy": 0.28234726190567017,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.012425801251083612,
+      "correctness_improvement": -0.078125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 172,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.992534875869751,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.012165805324912071,
+      "witness_predictive_entropy": 1.7945868968963623,
+      "judge_entropy": 0.2827242910861969,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.0116270175203681,
+      "correctness_improvement": -0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 173,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9936141464859247,
+      "correctness": 0.03125,
+      "witness_epistemic_uncertainty": 0.011173626407980919,
+      "witness_predictive_entropy": 1.7678821086883545,
+      "judge_entropy": 0.3188285827636719,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.011971365660429,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 174,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9941874258220196,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.011793214827775955,
+      "witness_predictive_entropy": 1.7907459735870361,
+      "judge_entropy": 0.2557961642742157,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.011866644024848938,
+      "correctness_improvement": -0.15625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 175,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.994736141525209,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.011931090615689754,
+      "witness_predictive_entropy": 1.768333911895752,
+      "judge_entropy": 0.23556344211101532,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.01362500712275505,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 176,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9954444160684943,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.011425485834479332,
+      "witness_predictive_entropy": 1.853576421737671,
+      "judge_entropy": 0.26681846380233765,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.014207600615918636,
+      "correctness_improvement": 0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 177,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9957546233199537,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.01023835688829422,
+      "witness_predictive_entropy": 1.867651343345642,
+      "judge_entropy": 0.28326940536499023,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.014279215596616268,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 178,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.995218560565263,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.0105825774371624,
+      "witness_predictive_entropy": 1.8488132953643799,
+      "judge_entropy": 0.2807438373565674,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.016958096530288458,
+      "correctness_improvement": -0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 179,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9958391478285193,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.011483542621135712,
+      "witness_predictive_entropy": 1.7880265712738037,
+      "judge_entropy": 0.2854202687740326,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.014874684158712626,
+      "correctness_improvement": -0.078125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 180,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9959040116518736,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.010722052305936813,
+      "witness_predictive_entropy": 1.8210697174072266,
+      "judge_entropy": 0.3220587372779846,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.015458920039236546,
+      "correctness_improvement": -0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 181,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9956889450550079,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.010814586654305458,
+      "witness_predictive_entropy": 1.8745626211166382,
+      "judge_entropy": 0.36026182770729065,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.015589866787195206,
+      "correctness_improvement": -0.078125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 182,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9957898990251124,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.010495195165276527,
+      "witness_predictive_entropy": 1.838974952697754,
+      "judge_entropy": 0.5033236145973206,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.015026671811938286,
+      "correctness_improvement": -0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 183,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9963660312350839,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.01114390417933464,
+      "witness_predictive_entropy": 1.8547725677490234,
+      "judge_entropy": 0.5102260708808899,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.014713455457240343,
+      "correctness_improvement": -0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 184,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9955641962587833,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.00872156210243702,
+      "witness_predictive_entropy": 1.9236115217208862,
+      "judge_entropy": 0.586953341960907,
+      "disagreement": 0.015625,
+      "alignment_improvement": 0.014238729840144515,
+      "correctness_improvement": -0.078125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 185,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9954527197405696,
+      "correctness": 0.140625,
+      "witness_epistemic_uncertainty": 0.008555343374609947,
+      "witness_predictive_entropy": 1.992185115814209,
+      "judge_entropy": 0.7652130126953125,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.014668744057416916,
+      "correctness_improvement": -0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 186,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9965252762194723,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.007519222330302,
+      "witness_predictive_entropy": 2.0094308853149414,
+      "judge_entropy": 0.8425957560539246,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.013393274508416653,
+      "correctness_improvement": 0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 187,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9965487108565867,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.008806705474853516,
+      "witness_predictive_entropy": 1.9576988220214844,
+      "judge_entropy": 0.7258201241493225,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.016450676834210753,
+      "correctness_improvement": -0.09375,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 188,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9965234159026295,
+      "correctness": 0.03125,
+      "witness_epistemic_uncertainty": 0.009927572682499886,
+      "witness_predictive_entropy": 1.8761746883392334,
+      "judge_entropy": 0.5331353545188904,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.014860453549772501,
+      "correctness_improvement": -0.078125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 189,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9963478029239923,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.01113512460142374,
+      "witness_predictive_entropy": 1.8599709272384644,
+      "judge_entropy": 0.4533986449241638,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.014457198092713952,
+      "correctness_improvement": -0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 190,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9972501073498279,
+      "correctness": 0.125,
+      "witness_epistemic_uncertainty": 0.010370677337050438,
+      "witness_predictive_entropy": 1.8224613666534424,
+      "judge_entropy": 0.43669185042381287,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.015157963382080197,
+      "correctness_improvement": 0.0,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 191,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9965733264107257,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.009433658793568611,
+      "witness_predictive_entropy": 1.8327878713607788,
+      "judge_entropy": 0.39384424686431885,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.015433890046551824,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 192,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9966663420200348,
+      "correctness": 0.09375,
+      "witness_epistemic_uncertainty": 0.010022400878369808,
+      "witness_predictive_entropy": 1.8779867887496948,
+      "judge_entropy": 0.41127705574035645,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.015194784151390195,
+      "correctness_improvement": -0.046875,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 193,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9966077511198819,
+      "correctness": 0.109375,
+      "witness_epistemic_uncertainty": 0.01080585177987814,
+      "witness_predictive_entropy": 1.890742301940918,
+      "judge_entropy": 0.4314003586769104,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.014078829437494278,
+      "correctness_improvement": 0.03125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 194,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9961741371080279,
+      "correctness": 0.15625,
+      "witness_epistemic_uncertainty": 0.01085268147289753,
+      "witness_predictive_entropy": 1.8003690242767334,
+      "judge_entropy": 0.41946759819984436,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.014026532415300608,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 195,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9965920364484191,
+      "correctness": 0.078125,
+      "witness_epistemic_uncertainty": 0.01211532298475504,
+      "witness_predictive_entropy": 1.7829211950302124,
+      "judge_entropy": 0.2559446096420288,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.014473711140453815,
+      "correctness_improvement": 0.0625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 196,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9964747219346464,
+      "correctness": 0.203125,
+      "witness_epistemic_uncertainty": 0.014321921393275261,
+      "witness_predictive_entropy": 1.6826759576797485,
+      "judge_entropy": 0.23111560940742493,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.01410496886819601,
+      "correctness_improvement": 0.015625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 197,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9964072115253657,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.013695633970201015,
+      "witness_predictive_entropy": 1.7627902030944824,
+      "judge_entropy": 0.22525624930858612,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.013537132646888494,
+      "correctness_improvement": 0.15625,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 198,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9970983853563666,
+      "correctness": 0.046875,
+      "witness_epistemic_uncertainty": 0.010261892341077328,
+      "witness_predictive_entropy": 1.8889386653900146,
+      "judge_entropy": 0.26333343982696533,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.014031019760295749,
+      "correctness_improvement": -0.109375,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  },
+  {
+    "step": 199,
+    "approach": "bayesian",
+    "metrics": {
+      "alignment": 0.9966080391313881,
+      "correctness": 0.0625,
+      "witness_epistemic_uncertainty": 0.01095355674624443,
+      "witness_predictive_entropy": 1.8895235061645508,
+      "judge_entropy": 0.27783477306365967,
+      "disagreement": 0.0,
+      "alignment_improvement": 0.014476208947598934,
+      "correctness_improvement": -0.078125,
+      "state": 4
+    },
+    "metadata": {
+      "state_name": "collusion_risk",
+      "interpretation": "WARNING: Collusion risk - aligned, confident, but wrong",
+      "num_mc_samples": 10
+    }
+  }
+]

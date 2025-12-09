@@ -211,6 +211,7 @@ class GPNTrainerEpistemic(GPNTrainer):
                 witness_logits=self._last_witness_logits,
                 labels=self._last_labels,
                 fake_images=self._last_fake_images,
+                witness_model=self.witness,  # For Bayesian MC dropout
             )
 
             # Flatten epistemic metrics into main metrics dict

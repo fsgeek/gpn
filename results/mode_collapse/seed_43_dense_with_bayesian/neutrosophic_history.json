@@ -1,0 +1,4802 @@
+[
+  {
+    "step": 0,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.50654616355896,
+      "I": 0.6929515543616053,
+      "F": 0.44835545434897595,
+      "alignment": 0.9382404088973999,
+      "correctness": 0.078125,
+      "improvement": 0.5,
+      "weaver_uncertainty": 0.07246693223714828,
+      "witness_entropy": 0.9873715823015359,
+      "disagreement": 0.9375,
+      "collusion": 0.8649403769522905,
+      "mode_collapse": 0.34126434522686566,
+      "gaming": 0.0,
+      "state_class": 3
+    },
+    "metadata": {
+      "state_name": "learning_with_uncertainty",
+      "interpretation": "Learning with uncertainty: Good progress, still learning",
+      "dominant_component": "I (Indeterminacy)"
+    }
+  },
+  {
+    "step": 1,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5027758330106735,
+      "I": 0.6773835053810651,
+      "F": 0.4909021936479985,
+      "alignment": 0.9444395825266838,
+      "correctness": 0.0625,
+      "improvement": 0.5,
+      "weaver_uncertainty": 0.06208023056387901,
+      "witness_entropy": 0.987531454039671,
+      "disagreement": 0.90625,
+      "collusion": 0.8854121086187661,
+      "mode_collapse": 0.4557911673349734,
+      "gaming": 0.0,
+      "state_class": 3
+    },
+    "metadata": {
+      "state_name": "learning_with_uncertainty",
+      "interpretation": "Learning with uncertainty: Good progress, still learning",
+      "dominant_component": "I (Indeterminacy)"
+    }
+  },
+  {
+    "step": 2,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5335046477615834,
+      "I": 0.6344257105154468,
+      "F": 0.5512287686852562,
+      "alignment": 0.9454930759966373,
+      "correctness": 0.140625,
+      "improvement": 0.49528708681464195,
+      "weaver_uncertainty": 0.053636547178030014,
+      "witness_entropy": 0.9777824878734594,
+      "disagreement": 0.8125,
+      "collusion": 0.8125331121846102,
+      "mode_collapse": 0.7251598510293606,
+      "gaming": 0.028891895008679436,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "I (Indeterminacy)"
+    }
+  },
+  {
+    "step": 3,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5032198492437601,
+      "I": 0.3347921674714808,
+      "F": 0.6508051589319533,
+      "alignment": 0.9437364563345909,
+      "correctness": 0.046875,
+      "improvement": 0.5348763335496187,
+      "weaver_uncertainty": 0.046533048152923584,
+      "witness_entropy": 0.9444408434186791,
+      "disagreement": 0.09375,
+      "collusion": 0.899498809943907,
+      "mode_collapse": 0.850078672633831,
+      "gaming": 0.11994011054747068,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 4,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5270983003079892,
+      "I": 0.2641235096699436,
+      "F": 0.6383863011065553,
+      "alignment": 0.949184238910675,
+      "correctness": 0.125,
+      "improvement": 0.4871230237185955,
+      "weaver_uncertainty": 0.04048933833837509,
+      "witness_entropy": 0.8190890272281036,
+      "disagreement": 0.015625,
+      "collusion": 0.8305362090468407,
+      "mode_collapse": 0.9650458830076429,
+      "gaming": 0.055526841951753864,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 5,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5181520342826844,
+      "I": 0.23759583465533446,
+      "F": 0.6598521257168471,
+      "alignment": 0.952800378203392,
+      "correctness": 0.078125,
+      "improvement": 0.5289094150066376,
+      "weaver_uncertainty": 0.035893913358449936,
+      "witness_entropy": 0.7144255354926649,
+      "disagreement": 0.03125,
+      "collusion": 0.878362848656252,
+      "mode_collapse": 0.9396066647876905,
+      "gaming": 0.08874995606013045,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 6,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5406745299696923,
+      "I": 0.2844744983703584,
+      "F": 0.5837114404487665,
+      "alignment": 0.9574213325977325,
+      "correctness": 0.140625,
+      "improvement": 0.5072799846529961,
+      "weaver_uncertainty": 0.03230683505535126,
+      "witness_entropy": 0.7284414928458433,
+      "disagreement": 0.140625,
+      "collusion": 0.8227839577011764,
+      "mode_collapse": 0.8236345773163126,
+      "gaming": 0.025024947244673967,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 7,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5352919787168503,
+      "I": 0.3171132535018877,
+      "F": 0.635841723518349,
+      "alignment": 0.9584347158670425,
+      "correctness": 0.109375,
+      "improvement": 0.5408404618501663,
+      "weaver_uncertainty": 0.02943153865635395,
+      "witness_entropy": 0.9026126396832718,
+      "disagreement": 0.09375,
+      "collusion": 0.8536059188190848,
+      "mode_collapse": 0.8648783276670675,
+      "gaming": 0.11645285896864925,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 8,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.532928928732872,
+      "I": 0.31506123020174115,
+      "F": 0.6314529708635057,
+      "alignment": 0.9600862450897694,
+      "correctness": 0.109375,
+      "improvement": 0.5257221534848213,
+      "weaver_uncertainty": 0.026747090741991997,
+      "witness_entropy": 0.8984570099304786,
+      "disagreement": 0.09375,
+      "collusion": 0.8550768120330758,
+      "mode_collapse": 0.8984655717143821,
+      "gaming": 0.06627524845320248,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 9,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5091314930468798,
+      "I": 0.24459917686601837,
+      "F": 0.6888265536962358,
+      "alignment": 0.9626797735691071,
+      "correctness": 0.046875,
+      "improvement": 0.5265479180961847,
+      "weaver_uncertainty": 0.02486569620668888,
+      "witness_entropy": 0.7904648933467057,
+      "disagreement": 0.0,
+      "collusion": 0.9175541591830552,
+      "mode_collapse": 1.0,
+      "gaming": 0.0726829667433792,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 10,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5408617496490479,
+      "I": 0.22705203035345034,
+      "F": 0.6515667398593005,
+      "alignment": 0.9632320329546928,
+      "correctness": 0.140625,
+      "improvement": 0.4965946823358536,
+      "weaver_uncertainty": 0.023706724867224693,
+      "witness_entropy": 0.7331333763109431,
+      "disagreement": 0.0,
+      "collusion": 0.8277775283204392,
+      "mode_collapse": 1.0,
+      "gaming": 0.06818576177041578,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 11,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5383834891021252,
+      "I": 0.21366772727159444,
+      "F": 0.6796477844462605,
+      "alignment": 0.9647108167409897,
+      "correctness": 0.109375,
+      "improvement": 0.5437458120286465,
+      "weaver_uncertainty": 0.02334713563323021,
+      "witness_entropy": 0.6888786219387513,
+      "disagreement": 0.0,
+      "collusion": 0.8591955711599439,
+      "mode_collapse": 1.0,
+      "gaming": 0.11989851994094317,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 12,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5235724553465844,
+      "I": 0.23094806122079684,
+      "F": 0.6790039451279956,
+      "alignment": 0.9663760364055634,
+      "correctness": 0.078125,
+      "improvement": 0.5288602039217949,
+      "weaver_uncertainty": 0.023535553365945816,
+      "witness_entropy": 0.7462913173700436,
+      "disagreement": 0.0,
+      "collusion": 0.8908779085613787,
+      "mode_collapse": 1.0,
+      "gaming": 0.07550927234481325,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 13,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5098246216773987,
+      "I": 0.26870429261301104,
+      "F": 0.6652112289704706,
+      "alignment": 0.9706526473164558,
+      "correctness": 0.046875,
+      "improvement": 0.5140678137540817,
+      "weaver_uncertainty": 0.024034744128584862,
+      "witness_entropy": 0.8299795645814518,
+      "disagreement": 0.03125,
+      "collusion": 0.925153304473497,
+      "mode_collapse": 0.9301994839994691,
+      "gaming": 0.05363353993743658,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 14,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5454546414315702,
+      "I": 0.341990766832798,
+      "F": 0.5891290252296846,
+      "alignment": 0.9727210439741611,
+      "correctness": 0.140625,
+      "improvement": 0.500581119209528,
+      "weaver_uncertainty": 0.025136001408100128,
+      "witness_entropy": 0.9273332213678932,
+      "disagreement": 0.140625,
+      "collusion": 0.8359321471652947,
+      "mode_collapse": 0.7718030777794644,
+      "gaming": 0.07738414343242445,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 15,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5171548534184695,
+      "I": 0.42451130419863203,
+      "F": 0.6032782540171092,
+      "alignment": 0.9717669747769833,
+      "correctness": 0.046875,
+      "improvement": 0.5484903175383806,
+      "weaver_uncertainty": 0.02542775683104992,
+      "witness_entropy": 0.952109923831057,
+      "disagreement": 0.328125,
+      "collusion": 0.9262153978343122,
+      "mode_collapse": 0.6399047261771955,
+      "gaming": 0.13606892343408558,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 16,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5148369994014502,
+      "I": 0.5568837587553439,
+      "F": 0.5646000651695128,
+      "alignment": 0.9740233570337296,
+      "correctness": 0.0625,
+      "improvement": 0.5011382829397917,
+      "weaver_uncertainty": 0.025774482637643814,
+      "witness_entropy": 0.9555047132135027,
+      "disagreement": 0.65625,
+      "collusion": 0.9131468972191215,
+      "mode_collapse": 0.5785355935165797,
+      "gaming": 0.08593542742296753,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 17,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5417710795998574,
+      "I": 0.4634124167012206,
+      "F": 0.55145253749347,
+      "alignment": 0.9743882119655609,
+      "correctness": 0.125,
+      "improvement": 0.5100789740681648,
+      "weaver_uncertainty": 0.02612287551164627,
+      "witness_entropy": 0.9560851801590889,
+      "disagreement": 0.421875,
+      "collusion": 0.8525896854698658,
+      "mode_collapse": 0.6330590525197297,
+      "gaming": 0.06832982516534947,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 18,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5422388017177582,
+      "I": 0.436440413059609,
+      "F": 0.5694780944694237,
+      "alignment": 0.9754663035273552,
+      "correctness": 0.109375,
+      "improvement": 0.5415114015340805,
+      "weaver_uncertainty": 0.026683500036597252,
+      "witness_entropy": 0.928117876828766,
+      "disagreement": 0.375,
+      "collusion": 0.8687746765790507,
+      "mode_collapse": 0.6344547721403202,
+      "gaming": 0.10543930731902433,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 19,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5471990682184696,
+      "I": 0.3998794196293935,
+      "F": 0.5896663304082731,
+      "alignment": 0.9758786968886852,
+      "correctness": 0.125,
+      "improvement": 0.5342379473149776,
+      "weaver_uncertainty": 0.02761777490377426,
+      "witness_entropy": 0.9094802905275374,
+      "disagreement": 0.296875,
+      "collusion": 0.8538938597775996,
+      "mode_collapse": 0.7419726319050561,
+      "gaming": 0.0850566564190548,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 20,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5428100544959307,
+      "I": 0.46967913368037867,
+      "F": 0.5691886603200658,
+      "alignment": 0.9765218142420053,
+      "correctness": 0.109375,
+      "improvement": 0.5422566439956427,
+      "weaver_uncertainty": 0.028664281591773033,
+      "witness_entropy": 0.9119328306761559,
+      "disagreement": 0.46875,
+      "collusion": 0.869714740809286,
+      "mode_collapse": 0.6305946565977845,
+      "gaming": 0.1070812233900536,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 21,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5541467869654298,
+      "I": 0.5306443675731128,
+      "F": 0.5429053711483182,
+      "alignment": 0.9773591160774231,
+      "correctness": 0.140625,
+      "improvement": 0.5347657026723027,
+      "weaver_uncertainty": 0.03039233386516571,
+      "witness_entropy": 0.9050888913785438,
+      "disagreement": 0.625,
+      "collusion": 0.8399179903790355,
+      "mode_collapse": 0.6048586460479064,
+      "gaming": 0.08493527060777362,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "T (Truth)"
+    }
+  },
+  {
+    "step": 22,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5635919459164143,
+      "I": 0.5395253234593866,
+      "F": 0.5395730618633415,
+      "alignment": 0.9773251879960299,
+      "correctness": 0.15625,
+      "improvement": 0.5508093535900116,
+      "weaver_uncertainty": 0.031994983553886414,
+      "witness_entropy": 0.912256094644069,
+      "disagreement": 0.640625,
+      "collusion": 0.8246181273716502,
+      "mode_collapse": 0.5746619654987677,
+      "gaming": 0.12442407088350381,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "T (Truth)"
+    }
+  },
+  {
+    "step": 23,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5458153249695897,
+      "I": 0.545868864945803,
+      "F": 0.572363559783497,
+      "alignment": 0.9758608676493168,
+      "correctness": 0.109375,
+      "improvement": 0.558604889549315,
+      "weaver_uncertainty": 0.0340568870306015,
+      "witness_entropy": 0.910505996122075,
+      "disagreement": 0.65625,
+      "collusion": 0.8691260852501728,
+      "mode_collapse": 0.5934402161499034,
+      "gaming": 0.15560353612818947,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 24,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5165317449718714,
+      "I": 0.5147368374178556,
+      "F": 0.6545001142659624,
+      "alignment": 0.9772367477416992,
+      "correctness": 0.046875,
+      "improvement": 0.5344352293759584,
+      "weaver_uncertainty": 0.03594457730650902,
+      "witness_entropy": 0.9090115474196764,
+      "disagreement": 0.578125,
+      "collusion": 0.9314287751913071,
+      "mode_collapse": 0.846533692865268,
+      "gaming": 0.0932283210995308,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 25,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5292983770370484,
+      "I": 0.29549961901793825,
+      "F": 0.671051721479202,
+      "alignment": 0.977559357881546,
+      "correctness": 0.09375,
+      "improvement": 0.5038731694221497,
+      "weaver_uncertainty": 0.03820051625370979,
+      "witness_entropy": 0.8842982138060843,
+      "disagreement": 0.046875,
+      "collusion": 0.8859131680801511,
+      "mode_collapse": 0.9650458830076429,
+      "gaming": 0.09057563114949593,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 26,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5653544381260872,
+      "I": 0.24988294048250514,
+      "F": 0.6449106934584559,
+      "alignment": 0.9777751080691814,
+      "correctness": 0.171875,
+      "improvement": 0.5274719744920731,
+      "weaver_uncertainty": 0.040377698838710785,
+      "witness_entropy": 0.7925654361029731,
+      "disagreement": 0.0,
+      "collusion": 0.8097200113697909,
+      "mode_collapse": 1.0,
+      "gaming": 0.07007562970179829,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 27,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5606361698359251,
+      "I": 0.22658318163325986,
+      "F": 0.6885275016128288,
+      "alignment": 0.9776442497968674,
+      "correctness": 0.140625,
+      "improvement": 0.5666423495858908,
+      "weaver_uncertainty": 0.042355556041002274,
+      "witness_entropy": 0.712921716069864,
+      "disagreement": 0.0,
+      "collusion": 0.8401630271691829,
+      "mode_collapse": 1.0,
+      "gaming": 0.17487430248385194,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 28,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5266083016991616,
+      "I": 0.24342771212203204,
+      "F": 0.6980280685488829,
+      "alignment": 0.978544794023037,
+      "correctness": 0.0625,
+      "improvement": 0.5509519204497337,
+      "weaver_uncertainty": 0.04445311054587364,
+      "witness_entropy": 0.7461392631942332,
+      "disagreement": 0.015625,
+      "collusion": 0.9173857443965971,
+      "mode_collapse": 0.9650458830076429,
+      "gaming": 0.13853335295983737,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 29,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5253654345870018,
+      "I": 0.2715034536853613,
+      "F": 0.6744738022594445,
+      "alignment": 0.9791187401860952,
+      "correctness": 0.078125,
+      "improvement": 0.5123396925628185,
+      "weaver_uncertainty": 0.046104900538921356,
+      "witness_entropy": 0.8380732784122831,
+      "disagreement": 0.015625,
+      "collusion": 0.9026250886090565,
+      "mode_collapse": 0.9650458830076429,
+      "gaming": 0.07970000637842996,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 30,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5082644080743194,
+      "I": 0.2753712520075552,
+      "F": 0.6850792114762658,
+      "alignment": 0.9791914373636246,
+      "correctness": 0.03125,
+      "improvement": 0.5204391656443477,
+      "weaver_uncertainty": 0.046842291951179504,
+      "witness_entropy": 0.8293952147406712,
+      "disagreement": 0.03125,
+      "collusion": 0.9485917049460113,
+      "mode_collapse": 0.9396066647876905,
+      "gaming": 0.07920176687184721,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 31,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5533454850316049,
+      "I": 0.2920106530208715,
+      "F": 0.6371347580986084,
+      "alignment": 0.9785947054624557,
+      "correctness": 0.15625,
+      "improvement": 0.49703801423311234,
+      "weaver_uncertainty": 0.04803009703755379,
+      "witness_entropy": 0.8628387463653512,
+      "disagreement": 0.046875,
+      "collusion": 0.825689282733947,
+      "mode_collapse": 0.9178275897720192,
+      "gaming": 0.10503589357807952,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 32,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5347767867147923,
+      "I": 0.3895966569286817,
+      "F": 0.6304756845496968,
+      "alignment": 0.9791971426457167,
+      "correctness": 0.078125,
+      "improvement": 0.5592396482825279,
+      "weaver_uncertainty": 0.04915856942534447,
+      "witness_entropy": 0.8536636203369277,
+      "disagreement": 0.296875,
+      "collusion": 0.90269736587652,
+      "mode_collapse": 0.7358650448520989,
+      "gaming": 0.1621240824781969,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 33,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.539830998890102,
+      "I": 0.4967601970371772,
+      "F": 0.5809438199415993,
+      "alignment": 0.9799633137881756,
+      "correctness": 0.109375,
+      "improvement": 0.5204783668741584,
+      "weaver_uncertainty": 0.049992308020591736,
+      "witness_entropy": 0.8975416821033322,
+      "disagreement": 0.53125,
+      "collusion": 0.8727798263425939,
+      "mode_collapse": 0.6998187826926832,
+      "gaming": 0.07295418198918924,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 34,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5246892284601927,
+      "I": 0.5069173107119367,
+      "F": 0.6239239175645874,
+      "alignment": 0.9809798449277878,
+      "correctness": 0.0625,
+      "improvement": 0.5364864524453878,
+      "weaver_uncertainty": 0.05089538171887398,
+      "witness_entropy": 0.9096623206542481,
+      "disagreement": 0.546875,
+      "collusion": 0.919668604619801,
+      "mode_collapse": 0.755780957909209,
+      "gaming": 0.09774062781301435,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 35,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5444066002964973,
+      "I": 0.3816913955576565,
+      "F": 0.6037497042219392,
+      "alignment": 0.9792378917336464,
+      "correctness": 0.125,
+      "improvement": 0.5135572180151939,
+      "weaver_uncertainty": 0.05122126266360283,
+      "witness_entropy": 0.8877500558619189,
+      "disagreement": 0.25,
+      "collusion": 0.8568331552669406,
+      "mode_collapse": 0.7904192304992202,
+      "gaming": 0.0796355765513227,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 36,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.507319089025259,
+      "I": 0.30606037362481475,
+      "F": 0.7124468217709028,
+      "alignment": 0.9807046018540859,
+      "correctness": 0.015625,
+      "improvement": 0.5439362414181232,
+      "weaver_uncertainty": 0.05177179351449013,
+      "witness_entropy": 0.8642627852348924,
+      "disagreement": 0.078125,
+      "collusion": 0.9653810924501158,
+      "mode_collapse": 0.9650458830076429,
+      "gaming": 0.12260206629521221,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 37,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.503235786780715,
+      "I": 0.27769725929854877,
+      "F": 0.7243860664331417,
+      "alignment": 0.981848418712616,
+      "correctness": 0.03125,
+      "improvement": 0.489982096478343,
+      "weaver_uncertainty": 0.05252973362803459,
+      "witness_entropy": 0.8731277973671279,
+      "disagreement": 0.0,
+      "collusion": 0.9511656556278467,
+      "mode_collapse": 1.0,
+      "gaming": 0.14639934727334344,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 38,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5546453319489957,
+      "I": 0.30839461176440824,
+      "F": 0.6278392148392894,
+      "alignment": 0.981180077418685,
+      "correctness": 0.15625,
+      "improvement": 0.49836650490760803,
+      "weaver_uncertainty": 0.05288073793053627,
+      "witness_entropy": 0.8709346346174913,
+      "disagreement": 0.078125,
+      "collusion": 0.8278706903220154,
+      "mode_collapse": 0.8809312518391981,
+      "gaming": 0.10803854386241236,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 39,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5363637333735825,
+      "I": 0.27101582148945563,
+      "F": 0.701127217192855,
+      "alignment": 0.9825181663036346,
+      "correctness": 0.078125,
+      "improvement": 0.5605323342606425,
+      "weaver_uncertainty": 0.052210718393325806,
+      "witness_entropy": 0.8303420199048598,
+      "disagreement": 0.015625,
+      "collusion": 0.9057589345611632,
+      "mode_collapse": 0.9650458830076429,
+      "gaming": 0.16436626155365586,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 40,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.527723790705204,
+      "I": 0.27039542805347655,
+      "F": 0.6859085546107964,
+      "alignment": 0.9801150374114513,
+      "correctness": 0.078125,
+      "improvement": 0.5221388787031174,
+      "weaver_uncertainty": 0.051557041704654694,
+      "witness_entropy": 0.8497610518069337,
+      "disagreement": 0.0,
+      "collusion": 0.9035435501136817,
+      "mode_collapse": 1.0,
+      "gaming": 0.0816371152177453,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 41,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5276880037039519,
+      "I": 0.3034627323307411,
+      "F": 0.6490472467970356,
+      "alignment": 0.9806263521313667,
+      "correctness": 0.078125,
+      "improvement": 0.5209373142570257,
+      "weaver_uncertainty": 0.05094106122851372,
+      "witness_entropy": 0.85643471320729,
+      "disagreement": 0.078125,
+      "collusion": 0.9040149183711037,
+      "mode_collapse": 0.8809312518391981,
+      "gaming": 0.07720634632278234,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 42,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5338679485023021,
+      "I": 0.3028728572123255,
+      "F": 0.642693959409862,
+      "alignment": 0.9803233854472637,
+      "correctness": 0.09375,
+      "improvement": 0.5211929716169834,
+      "weaver_uncertainty": 0.04996691644191742,
+      "witness_entropy": 0.8554426075991676,
+      "disagreement": 0.078125,
+      "collusion": 0.8884180680615827,
+      "mode_collapse": 0.8809312518391981,
+      "gaming": 0.07682452211156487,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 43,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5734854083508254,
+      "I": 0.27623841690197626,
+      "F": 0.6228465251671385,
+      "alignment": 0.9817865267395973,
+      "correctness": 0.1875,
+      "improvement": 0.5288539882749319,
+      "weaver_uncertainty": 0.04905198886990547,
+      "witness_entropy": 0.8300760674700153,
+      "disagreement": 0.03125,
+      "collusion": 0.7977015529759228,
+      "mode_collapse": 0.9396066647876905,
+      "gaming": 0.07294634846820744,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 44,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5267049998044968,
+      "I": 0.2687682192957112,
+      "F": 0.7310945143363936,
+      "alignment": 0.9816572200506926,
+      "correctness": 0.046875,
+      "improvement": 0.5764605589210987,
+      "weaver_uncertainty": 0.04874511808156967,
+      "witness_entropy": 0.8263156129041344,
+      "disagreement": 0.015625,
+      "collusion": 0.9356420378608163,
+      "mode_collapse": 0.9650458830076429,
+      "gaming": 0.22441311429924762,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 45,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.52470806222409,
+      "I": 0.2933004227535814,
+      "F": 0.6607259288202736,
+      "alignment": 0.9806034527719021,
+      "correctness": 0.078125,
+      "improvement": 0.5060834055766463,
+      "weaver_uncertainty": 0.048200055956840515,
+      "witness_entropy": 0.8461346865550975,
+      "disagreement": 0.0625,
+      "collusion": 0.9039938080240972,
+      "mode_collapse": 0.8984655717143821,
+      "gaming": 0.09862911365440032,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 46,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5077700618654489,
+      "I": 0.3426076494316965,
+      "F": 0.6469706548241088,
+      "alignment": 0.9775843936949968,
+      "correctness": 0.03125,
+      "improvement": 0.5211815219372511,
+      "weaver_uncertainty": 0.04795841872692108,
+      "witness_entropy": 0.8857337460454007,
+      "disagreement": 0.15625,
+      "collusion": 0.9470348813920282,
+      "mode_collapse": 0.811777276717477,
+      "gaming": 0.08207839750684798,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 47,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5353982077911497,
+      "I": 0.5629461582393156,
+      "F": 0.6029446962122761,
+      "alignment": 0.9810032732784748,
+      "correctness": 0.109375,
+      "improvement": 0.49623449239879847,
+      "weaver_uncertainty": 0.04696998745203018,
+      "witness_entropy": 0.9128505400123549,
+      "disagreement": 0.6875,
+      "collusion": 0.8737060402636416,
+      "mode_collapse": 0.7358650448520989,
+      "gaming": 0.10900922217063258,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 48,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5182427730411291,
+      "I": 0.47879976251152184,
+      "F": 0.6142655976024932,
+      "alignment": 0.980228716507554,
+      "correctness": 0.046875,
+      "improvement": 0.5370064321905375,
+      "weaver_uncertainty": 0.046095747500658035,
+      "witness_entropy": 0.9249034608710814,
+      "disagreement": 0.46875,
+      "collusion": 0.9342804954212625,
+      "mode_collapse": 0.7008813240196311,
+      "gaming": 0.10096334076032965,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 49,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5249138379469515,
+      "I": 0.4928484232841164,
+      "F": 0.6015815809461718,
+      "alignment": 0.9814750179648399,
+      "correctness": 0.078125,
+      "improvement": 0.5053691538050771,
+      "weaver_uncertainty": 0.045413631945848465,
+      "witness_entropy": 0.8890811123345395,
+      "disagreement": 0.53125,
+      "collusion": 0.9047972821863368,
+      "mode_collapse": 0.7023718380548993,
+      "gaming": 0.09650372218389103,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 50,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5584302626550198,
+      "I": 0.4814688709385344,
+      "F": 0.563017311231969,
+      "alignment": 0.9790170043706894,
+      "correctness": 0.15625,
+      "improvement": 0.52161730453372,
+      "weaver_uncertainty": 0.0449763685464859,
+      "witness_entropy": 0.8724198679152954,
+      "disagreement": 0.515625,
+      "collusion": 0.8260455974377692,
+      "mode_collapse": 0.7023718380548993,
+      "gaming": 0.07295840280130506,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 51,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.541710588335991,
+      "I": 0.3997095000288614,
+      "F": 0.6629225674870445,
+      "alignment": 0.9808010719716549,
+      "correctness": 0.09375,
+      "improvement": 0.5594507977366447,
+      "weaver_uncertainty": 0.04478585720062256,
+      "witness_entropy": 0.8709124762289157,
+      "disagreement": 0.3125,
+      "collusion": 0.8888509714743122,
+      "mode_collapse": 0.8648783276670675,
+      "gaming": 0.15972893532399807,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 52,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5168273273855448,
+      "I": 0.2842071886074728,
+      "F": 0.6997994039745931,
+      "alignment": 0.9806469026952982,
+      "correctness": 0.046875,
+      "improvement": 0.5290928315371275,
+      "weaver_uncertainty": 0.044458676129579544,
+      "witness_entropy": 0.8612319525619964,
+      "disagreement": 0.03125,
+      "collusion": 0.9346790791314561,
+      "mode_collapse": 1.0,
+      "gaming": 0.08642590774003546,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 53,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5494451032951475,
+      "I": 0.2662261860707843,
+      "F": 0.6641048925410714,
+      "alignment": 0.980198634788394,
+      "correctness": 0.140625,
+      "improvement": 0.5055782468989491,
+      "weaver_uncertainty": 0.0442119799554348,
+      "witness_entropy": 0.8432086402805128,
+      "disagreement": 0.0,
+      "collusion": 0.8423582017712761,
+      "mode_collapse": 1.0,
+      "gaming": 0.09053870610853652,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 54,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5596320306882263,
+      "I": 0.2477645553594205,
+      "F": 0.6764946542097582,
+      "alignment": 0.982340520247817,
+      "correctness": 0.140625,
+      "improvement": 0.552229112945497,
+      "weaver_uncertainty": 0.04516209289431572,
+      "witness_entropy": 0.7807197583037526,
+      "disagreement": 0.0,
+      "collusion": 0.8441988845879678,
+      "mode_collapse": 1.0,
+      "gaming": 0.12938366791523667,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 55,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5218084460124374,
+      "I": 0.235566028789176,
+      "F": 0.7177487843122751,
+      "alignment": 0.9809960871934891,
+      "correctness": 0.046875,
+      "improvement": 0.5533000556752086,
+      "weaver_uncertainty": 0.04625290259718895,
+      "witness_entropy": 0.7389671933667311,
+      "disagreement": 0.0,
+      "collusion": 0.9350118956062943,
+      "mode_collapse": 1.0,
+      "gaming": 0.14581342023252436,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 56,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5253175854682923,
+      "I": 0.2603890886602455,
+      "F": 0.69151308670418,
+      "alignment": 0.9822925440967083,
+      "correctness": 0.078125,
+      "improvement": 0.5057528391480446,
+      "weaver_uncertainty": 0.047212567180395126,
+      "witness_entropy": 0.82075106168709,
+      "disagreement": 0.0,
+      "collusion": 0.905550939089153,
+      "mode_collapse": 1.0,
+      "gaming": 0.0976423702283956,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 57,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5348042663186788,
+      "I": 0.30207773632002005,
+      "F": 0.6553663920450952,
+      "alignment": 0.98224763199687,
+      "correctness": 0.09375,
+      "improvement": 0.5220260675996542,
+      "weaver_uncertainty": 0.04768926277756691,
+      "witness_entropy": 0.8967365249558333,
+      "disagreement": 0.046875,
+      "collusion": 0.8901619164971635,
+      "mode_collapse": 0.9178275897720192,
+      "gaming": 0.07984449504874647,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 58,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5302748721092939,
+      "I": 0.3148164466887952,
+      "F": 0.6524633481667266,
+      "alignment": 0.9826541244983673,
+      "correctness": 0.078125,
+      "improvement": 0.5298161115497351,
+      "weaver_uncertainty": 0.04832467809319496,
+      "witness_entropy": 0.8968968108694558,
+      "disagreement": 0.078125,
+      "collusion": 0.9058842710219324,
+      "mode_collapse": 0.8809312518391981,
+      "gaming": 0.0861008806873143,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 59,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5474815011024475,
+      "I": 0.37766491626213616,
+      "F": 0.5802086351397587,
+      "alignment": 0.9826003238558769,
+      "correctness": 0.125,
+      "improvement": 0.5222068578004837,
+      "weaver_uncertainty": 0.04921174421906471,
+      "witness_entropy": 0.9180046433213892,
+      "disagreement": 0.21875,
+      "collusion": 0.8597752833738923,
+      "mode_collapse": 0.7099377369989797,
+      "gaming": 0.07772400230169296,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 60,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5451232269406319,
+      "I": 0.4981759776530932,
+      "F": 0.5473015891869519,
+      "alignment": 0.9806243386119604,
+      "correctness": 0.109375,
+      "improvement": 0.5456174574792385,
+      "weaver_uncertainty": 0.0495578832924366,
+      "witness_entropy": 0.9235287088845405,
+      "disagreement": 0.515625,
+      "collusion": 0.8733685515762772,
+      "mode_collapse": 0.544890099569858,
+      "gaming": 0.11495712895161181,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 61,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5503888284787536,
+      "I": 0.6961806402041107,
+      "F": 0.5947520080219652,
+      "alignment": 0.9825635887682438,
+      "correctness": 0.125,
+      "improvement": 0.5368169648572803,
+      "weaver_uncertainty": 0.05027555301785469,
+      "witness_entropy": 0.9578265809958477,
+      "disagreement": 0.984375,
+      "collusion": 0.8597431401722133,
+      "mode_collapse": 0.7440294273754673,
+      "gaming": 0.09215307913479867,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "I (Indeterminacy)"
+    }
+  },
+  {
+    "step": 62,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5385031592100858,
+      "I": 0.5299816728450025,
+      "F": 0.6276079284314896,
+      "alignment": 0.9797083530575037,
+      "correctness": 0.09375,
+      "improvement": 0.5455990899354219,
+      "weaver_uncertainty": 0.0507456474006176,
+      "witness_entropy": 0.9658599287493909,
+      "disagreement": 0.5625,
+      "collusion": 0.8878606949583627,
+      "mode_collapse": 0.7912840030309363,
+      "gaming": 0.11692816512954543,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 63,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5354361103847624,
+      "I": 0.3501990451061942,
+      "F": 0.6548995689915137,
+      "alignment": 0.9805670399218798,
+      "correctness": 0.09375,
+      "improvement": 0.5285464720800519,
+      "weaver_uncertainty": 0.05098829045891762,
+      "witness_entropy": 0.9496751932283964,
+      "disagreement": 0.125,
+      "collusion": 0.8886388799292035,
+      "mode_collapse": 0.9178275897720192,
+      "gaming": 0.08031913362742196,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 64,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5473402591422201,
+      "I": 0.33354214194790444,
+      "F": 0.6416374791659004,
+      "alignment": 0.9788627400994301,
+      "correctness": 0.125,
+      "improvement": 0.5289758155122399,
+      "weaver_uncertainty": 0.04989777132868767,
+      "witness_entropy": 0.9160760351643272,
+      "disagreement": 0.109375,
+      "collusion": 0.8565048975870013,
+      "mode_collapse": 0.9178275897720192,
+      "gaming": 0.07895747733164692,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 65,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5325412318110466,
+      "I": 0.28355370612548686,
+      "F": 0.6961832828340755,
+      "alignment": 0.981353746727109,
+      "correctness": 0.078125,
+      "improvement": 0.5437486656010151,
+      "weaver_uncertainty": 0.04917703568935394,
+      "witness_entropy": 0.8960019847289356,
+      "disagreement": 0.0,
+      "collusion": 0.9046854852640536,
+      "mode_collapse": 1.0,
+      "gaming": 0.11436362909484689,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 66,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5218606056645514,
+      "I": 0.2842011131832077,
+      "F": 0.6817799598204858,
+      "alignment": 0.9813731797039509,
+      "correctness": 0.0625,
+      "improvement": 0.5215566689148545,
+      "weaver_uncertainty": 0.049184150993824005,
+      "witness_entropy": 0.856486226283535,
+      "disagreement": 0.03125,
+      "collusion": 0.920037355972454,
+      "mode_collapse": 0.9650458830076429,
+      "gaming": 0.08083750843070447,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 67,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5255602080374957,
+      "I": 0.2865889190765904,
+      "F": 0.6682258264695596,
+      "alignment": 0.9788985773921013,
+      "correctness": 0.078125,
+      "improvement": 0.5137538854032755,
+      "weaver_uncertainty": 0.049421150237321854,
+      "witness_entropy": 0.8642085800179794,
+      "disagreement": 0.03125,
+      "collusion": 0.9024221260333434,
+      "mode_collapse": 0.9396066647876905,
+      "gaming": 0.08458325539971673,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 68,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5468130312860012,
+      "I": 0.34414183151217,
+      "F": 0.6159105902301897,
+      "alignment": 0.9818680360913277,
+      "correctness": 0.125,
+      "improvement": 0.5203290842473507,
+      "weaver_uncertainty": 0.05123455449938774,
+      "witness_entropy": 0.9084048838745122,
+      "disagreement": 0.140625,
+      "collusion": 0.8591345315799117,
+      "mode_collapse": 0.8363707971283557,
+      "gaming": 0.07115179486572742,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 69,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5515111602842808,
+      "I": 0.34296308331834696,
+      "F": 0.6364857910024094,
+      "alignment": 0.98115224391222,
+      "correctness": 0.125,
+      "improvement": 0.5452513135969639,
+      "weaver_uncertainty": 0.053016554564237595,
+      "witness_entropy": 0.9443603898302523,
+      "disagreement": 0.109375,
+      "collusion": 0.8585082134231925,
+      "mode_collapse": 0.8648783276670675,
+      "gaming": 0.11206335777670731,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 70,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5766703106462956,
+      "I": 0.3953833602556454,
+      "F": 0.5613912740634344,
+      "alignment": 0.9817290678620338,
+      "correctness": 0.1875,
+      "improvement": 0.54489341750741,
+      "weaver_uncertainty": 0.05454917997121811,
+      "witness_entropy": 0.9508953542142666,
+      "disagreement": 0.234375,
+      "collusion": 0.7976548676379025,
+      "mode_collapse": 0.7044945391997426,
+      "gaming": 0.10326988416116853,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "T (Truth)"
+    }
+  },
+  {
+    "step": 71,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5511737160384655,
+      "I": 0.4639942935714195,
+      "F": 0.5810421280455649,
+      "alignment": 0.9803433753550053,
+      "correctness": 0.109375,
+      "improvement": 0.576431829482317,
+      "weaver_uncertainty": 0.05556194856762886,
+      "witness_entropy": 0.9702523633371031,
+      "disagreement": 0.390625,
+      "collusion": 0.8731183186755516,
+      "mode_collapse": 0.5629896719129586,
+      "gaming": 0.20965966333818895,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 72,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5437956217676402,
+      "I": 0.41782627004681727,
+      "F": 0.5749608608363121,
+      "alignment": 0.9817758128046989,
+      "correctness": 0.109375,
+      "improvement": 0.5366764832288027,
+      "weaver_uncertainty": 0.05700160190463066,
+      "witness_entropy": 0.9815859649180937,
+      "disagreement": 0.265625,
+      "collusion": 0.874394083279185,
+      "mode_collapse": 0.6572810963473656,
+      "gaming": 0.0933963287347613,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 73,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5497039444744587,
+      "I": 0.4271247934879406,
+      "F": 0.5734463080991714,
+      "alignment": 0.980563510209322,
+      "correctness": 0.125,
+      "improvement": 0.5373927019536495,
+      "weaver_uncertainty": 0.058631543070077896,
+      "witness_entropy": 0.9692844352230573,
+      "disagreement": 0.296875,
+      "collusion": 0.8579930714331567,
+      "mode_collapse": 0.6737143371607981,
+      "gaming": 0.0937825945922309,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 74,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5766188111156225,
+      "I": 0.386222689151478,
+      "F": 0.571221675998674,
+      "alignment": 0.9817475024610758,
+      "correctness": 0.1875,
+      "improvement": 0.544599050655961,
+      "weaver_uncertainty": 0.060727979987859726,
+      "witness_entropy": 0.955847650517067,
+      "disagreement": 0.203125,
+      "collusion": 0.7976698457496241,
+      "mode_collapse": 0.7378861435726902,
+      "gaming": 0.10262631542339118,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "T (Truth)"
+    }
+  },
+  {
+    "step": 75,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5512631768360734,
+      "I": 0.33223531359525194,
+      "F": 0.6714127956223248,
+      "alignment": 0.9805624186992645,
+      "correctness": 0.109375,
+      "improvement": 0.5764410467818379,
+      "weaver_uncertainty": 0.06358946859836578,
+      "witness_entropy": 0.939694910052474,
+      "disagreement": 0.078125,
+      "collusion": 0.8733134041540325,
+      "mode_collapse": 0.8639529819703198,
+      "gaming": 0.2096717978987199,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 76,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5245686173439026,
+      "I": 0.29549768382257374,
+      "F": 0.6972908088185545,
+      "alignment": 0.9805285409092903,
+      "correctness": 0.0625,
+      "improvement": 0.5367860049009323,
+      "weaver_uncertainty": 0.06813365966081619,
+      "witness_entropy": 0.916858619747763,
+      "disagreement": 0.0,
+      "collusion": 0.9192455071024597,
+      "mode_collapse": 1.0,
+      "gaming": 0.0986420199252353,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 77,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5263823933899403,
+      "I": 0.296495035796159,
+      "F": 0.6867408943706667,
+      "alignment": 0.981165200471878,
+      "correctness": 0.078125,
+      "improvement": 0.5133315660059452,
+      "weaver_uncertainty": 0.07159474492073059,
+      "witness_entropy": 0.8958887077331327,
+      "disagreement": 0.015625,
+      "collusion": 0.9045116691850126,
+      "mode_collapse": 1.0,
+      "gaming": 0.08312075565553861,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 78,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.539561089873314,
+      "I": 0.3719030914766252,
+      "F": 0.5987001469151128,
+      "alignment": 0.9787965267896652,
+      "correctness": 0.109375,
+      "improvement": 0.5214623957872391,
+      "weaver_uncertainty": 0.07354647666215897,
+      "witness_entropy": 0.8952971615932586,
+      "disagreement": 0.203125,
+      "collusion": 0.8717406566720456,
+      "mode_collapse": 0.7568864958289422,
+      "gaming": 0.0764597849920392,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 79,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5555681623518467,
+      "I": 0.3472674611646999,
+      "F": 0.610483183909516,
+      "alignment": 0.9803438764065504,
+      "correctness": 0.140625,
+      "improvement": 0.5359030589461327,
+      "weaver_uncertainty": 0.07587569206953049,
+      "witness_entropy": 0.8941825118128026,
+      "disagreement": 0.140625,
+      "collusion": 0.8424830187868793,
+      "mode_collapse": 0.8236345773163126,
+      "gaming": 0.08799867733290137,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 80,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5401124378666282,
+      "I": 0.3539630470540336,
+      "F": 0.6381172187601083,
+      "alignment": 0.9803802277892828,
+      "correctness": 0.09375,
+      "improvement": 0.5523017337545753,
+      "weaver_uncertainty": 0.07647184282541275,
+      "witness_entropy": 0.9159049806880325,
+      "disagreement": 0.140625,
+      "collusion": 0.8884695814340375,
+      "mode_collapse": 0.8058434233384988,
+      "gaming": 0.13658786394981212,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 81,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5666521398350597,
+      "I": 0.4530191141817217,
+      "F": 0.516391717520075,
+      "alignment": 0.9803141448646784,
+      "correctness": 0.171875,
+      "improvement": 0.5288824094459414,
+      "weaver_uncertainty": 0.07657718658447266,
+      "witness_entropy": 0.9543198606879331,
+      "disagreement": 0.359375,
+      "collusion": 0.8118226512160618,
+      "mode_collapse": 0.5644380953643202,
+      "gaming": 0.07443742808118049,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "T (Truth)"
+    }
+  },
+  {
+    "step": 82,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5495972828939557,
+      "I": 0.4884826411738604,
+      "F": 0.5748626323063822,
+      "alignment": 0.9806622732430696,
+      "correctness": 0.109375,
+      "improvement": 0.5679118679836392,
+      "weaver_uncertainty": 0.0774519145488739,
+      "witness_entropy": 0.9466568893639942,
+      "disagreement": 0.453125,
+      "collusion": 0.8734023371071089,
+      "mode_collapse": 0.5686341589990704,
+      "gaming": 0.18303816587939198,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 83,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5435477638617158,
+      "I": 0.536536814431223,
+      "F": 0.51955628049478,
+      "alignment": 0.981076443567872,
+      "correctness": 0.109375,
+      "improvement": 0.5368359321728349,
+      "weaver_uncertainty": 0.07759501039981842,
+      "witness_entropy": 0.9608610377042585,
+      "disagreement": 0.5625,
+      "collusion": 0.873771207552636,
+      "mode_collapse": 0.47297292679800307,
+      "gaming": 0.09385306478108218,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "T (Truth)"
+    }
+  },
+  {
+    "step": 84,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.550259524025023,
+      "I": 0.5707193695360349,
+      "F": 0.5116264135058581,
+      "alignment": 0.9821273013949394,
+      "correctness": 0.125,
+      "improvement": 0.5370430173352361,
+      "weaver_uncertainty": 0.07706892490386963,
+      "witness_entropy": 0.9711623068829132,
+      "disagreement": 0.640625,
+      "collusion": 0.859361388720572,
+      "mode_collapse": 0.4668151209671991,
+      "gaming": 0.09279107242489869,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "I (Indeterminacy)"
+    }
+  },
+  {
+    "step": 85,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5639343701303006,
+      "I": 0.5582423599391555,
+      "F": 0.4933028572116015,
+      "alignment": 0.9808954522013664,
+      "correctness": 0.15625,
+      "improvement": 0.5453809462487698,
+      "weaver_uncertainty": 0.07621459662914276,
+      "witness_entropy": 0.9720932698347088,
+      "disagreement": 0.609375,
+      "collusion": 0.8276305377949029,
+      "mode_collapse": 0.4324758313071523,
+      "gaming": 0.10835964233831552,
+      "state_class": 3
+    },
+    "metadata": {
+      "state_name": "learning_with_uncertainty",
+      "interpretation": "Learning with uncertainty: Good progress, still learning",
+      "dominant_component": "T (Truth)"
+    }
+  },
+  {
+    "step": 86,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5361517824232578,
+      "I": 0.4940560398253315,
+      "F": 0.5523325121250088,
+      "alignment": 0.9820594452321529,
+      "correctness": 0.078125,
+      "improvement": 0.5603900216519833,
+      "weaver_uncertainty": 0.07477069646120071,
+      "witness_entropy": 0.967916102956571,
+      "disagreement": 0.453125,
+      "collusion": 0.905336051073391,
+      "mode_collapse": 0.4698795018545743,
+      "gaming": 0.16411413713093356,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 87,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.56516174338758,
+      "I": 0.4748180227031169,
+      "F": 0.5102257231042128,
+      "alignment": 0.9800745993852615,
+      "correctness": 0.171875,
+      "improvement": 0.5219095181673765,
+      "weaver_uncertainty": 0.07326594740152359,
+      "witness_entropy": 0.9677941282755327,
+      "disagreement": 0.40625,
+      "collusion": 0.8116242776159197,
+      "mode_collapse": 0.5460114279300483,
+      "gaming": 0.07257527892943472,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "T (Truth)"
+    }
+  },
+  {
+    "step": 88,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5749837219715118,
+      "I": 0.4952636971880499,
+      "F": 0.5086983622074264,
+      "alignment": 0.9816882573068142,
+      "correctness": 0.171875,
+      "improvement": 0.5677920952439308,
+      "weaver_uncertainty": 0.07128339260816574,
+      "witness_entropy": 0.9545955980186673,
+      "disagreement": 0.46875,
+      "collusion": 0.8129605880822055,
+      "mode_collapse": 0.44168243467261814,
+      "gaming": 0.17003132190919587,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "T (Truth)"
+    }
+  },
+  {
+    "step": 89,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5440462719649077,
+      "I": 0.6155132063144066,
+      "F": 0.5543786173780062,
+      "alignment": 0.9820662178099155,
+      "correctness": 0.09375,
+      "improvement": 0.5685989242047071,
+      "weaver_uncertainty": 0.07042407244443893,
+      "witness_entropy": 0.9604532819369165,
+      "disagreement": 0.765625,
+      "collusion": 0.889997509890236,
+      "mode_collapse": 0.4739824795485321,
+      "gaming": 0.18728289852450722,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "I (Indeterminacy)"
+    }
+  },
+  {
+    "step": 90,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5359210167080164,
+      "I": 0.6676574790009477,
+      "F": 0.5576499029315648,
+      "alignment": 0.9811898395419121,
+      "correctness": 0.09375,
+      "improvement": 0.5297254044562578,
+      "weaver_uncertainty": 0.06941280514001846,
+      "witness_entropy": 0.9686121248631409,
+      "disagreement": 0.890625,
+      "collusion": 0.8892032920848578,
+      "mode_collapse": 0.5888968663689711,
+      "gaming": 0.08433175395643439,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "I (Indeterminacy)"
+    }
+  },
+  {
+    "step": 91,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5423339299857617,
+      "I": 0.5790583980347332,
+      "F": 0.5588865715436756,
+      "alignment": 0.9818162173032761,
+      "correctness": 0.109375,
+      "improvement": 0.5292872153222561,
+      "weaver_uncertainty": 0.06878303736448288,
+      "witness_entropy": 0.9655782894179613,
+      "disagreement": 0.671875,
+      "collusion": 0.8744300685357302,
+      "mode_collapse": 0.6156394268970946,
+      "gaming": 0.08140905353418365,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "I (Indeterminacy)"
+    }
+  },
+  {
+    "step": 92,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5500339977443218,
+      "I": 0.590029906087488,
+      "F": 0.5769780453508278,
+      "alignment": 0.9813785422593355,
+      "correctness": 0.125,
+      "improvement": 0.5374129042029381,
+      "weaver_uncertainty": 0.06764126569032669,
+      "witness_entropy": 0.9616250879346332,
+      "disagreement": 0.703125,
+      "collusion": 0.8587062244769186,
+      "mode_collapse": 0.6844784733325864,
+      "gaming": 0.0938400452009481,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "I (Indeterminacy)"
+    }
+  },
+  {
+    "step": 93,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5270363183692098,
+      "I": 0.5973269081500281,
+      "F": 0.621851616056451,
+      "alignment": 0.9825875125825405,
+      "correctness": 0.0625,
+      "improvement": 0.5450065666809678,
+      "weaver_uncertainty": 0.06797660142183304,
+      "witness_entropy": 0.9647797590782607,
+      "disagreement": 0.71875,
+      "collusion": 0.9211757930461317,
+      "mode_collapse": 0.7251598510293606,
+      "gaming": 0.11944447843063373,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 94,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5334046978503466,
+      "I": 0.5565744302773079,
+      "F": 0.585118449054127,
+      "alignment": 0.9825812187045813,
+      "correctness": 0.09375,
+      "improvement": 0.5143610518425703,
+      "weaver_uncertainty": 0.0673316940665245,
+      "witness_entropy": 0.9754164068578349,
+      "disagreement": 0.609375,
+      "collusion": 0.8904642294510268,
+      "mode_collapse": 0.6778868704506706,
+      "gaming": 0.085222320461717,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 95,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5361767513677479,
+      "I": 0.5300664234337602,
+      "F": 0.5934247132828411,
+      "alignment": 0.9817004259675741,
+      "correctness": 0.09375,
+      "improvement": 0.5299829049035907,
+      "weaver_uncertainty": 0.0671655610203743,
+      "witness_entropy": 0.9705558504254929,
+      "disagreement": 0.546875,
+      "collusion": 0.889666011033114,
+      "mode_collapse": 0.7066494683746988,
+      "gaming": 0.08521156119061944,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 96,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5239033287391067,
+      "I": 0.4955371149660779,
+      "F": 0.5942026045228669,
+      "alignment": 0.9824870675802231,
+      "correctness": 0.0625,
+      "improvement": 0.5295425085350871,
+      "weaver_uncertainty": 0.06772810965776443,
+      "witness_entropy": 0.9590622735624953,
+      "disagreement": 0.46875,
+      "collusion": 0.9210816258564591,
+      "mode_collapse": 0.665972491292478,
+      "gaming": 0.08659402264179948,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 97,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5147872015833854,
+      "I": 0.462218582086347,
+      "F": 0.5944765229649092,
+      "alignment": 0.9829375892877579,
+      "correctness": 0.046875,
+      "improvement": 0.5143108293414116,
+      "weaver_uncertainty": 0.06840982288122177,
+      "witness_entropy": 0.9514854507399348,
+      "disagreement": 0.390625,
+      "collusion": 0.9368623897898942,
+      "mode_collapse": 0.642988754514254,
+      "gaming": 0.08944980231558414,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 98,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5630451947450638,
+      "I": 0.4911719579471515,
+      "F": 0.5226114141570507,
+      "alignment": 0.98237619176507,
+      "correctness": 0.171875,
+      "improvement": 0.506723590195179,
+      "weaver_uncertainty": 0.06774848699569702,
+      "witness_entropy": 0.9444913728281414,
+      "disagreement": 0.46875,
+      "collusion": 0.8135302838054486,
+      "mode_collapse": 0.567002333464696,
+      "gaming": 0.0903286686515414,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "T (Truth)"
+    }
+  },
+  {
+    "step": 99,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5568374488502741,
+      "I": 0.44997158098381035,
+      "F": 0.5820279400051365,
+      "alignment": 0.9826221764087677,
+      "correctness": 0.125,
+      "improvement": 0.568942891433835,
+      "weaver_uncertainty": 0.06766469031572342,
+      "witness_entropy": 0.9322405796303112,
+      "disagreement": 0.375,
+      "collusion": 0.8597944043576717,
+      "mode_collapse": 0.6123662239061678,
+      "gaming": 0.18133437030072438,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 100,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5270279437303543,
+      "I": 0.492666656732051,
+      "F": 0.5904593631309609,
+      "alignment": 0.9822556674480438,
+      "correctness": 0.0625,
+      "improvement": 0.5456283837556839,
+      "weaver_uncertainty": 0.06768275052309036,
+      "witness_entropy": 0.9078727719170796,
+      "disagreement": 0.5,
+      "collusion": 0.9208646882325411,
+      "mode_collapse": 0.619342621701843,
+      "gaming": 0.12103567109130525,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 101,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5122861929237843,
+      "I": 0.6504206608722949,
+      "F": 0.5640690111701703,
+      "alignment": 0.8962614610791206,
+      "correctness": 0.125,
+      "improvement": 0.51890804246068,
+      "weaver_uncertainty": 0.0676322802901268,
+      "witness_entropy": 0.9337699226175228,
+      "disagreement": 0.875,
+      "collusion": 0.7842287784442306,
+      "mode_collapse": 0.768413517362547,
+      "gaming": 0.06617814861238003,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "I (Indeterminacy)"
+    }
+  },
+  {
+    "step": 102,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.4923373375087977,
+      "I": 0.722983133458069,
+      "F": 0.6795131124264568,
+      "alignment": 0.9345574975013733,
+      "correctness": 0.0625,
+      "improvement": 0.46757169254124165,
+      "weaver_uncertainty": 0.10220938920974731,
+      "witness_entropy": 0.9744010556504823,
+      "disagreement": 1.0,
+      "collusion": 0.8761476539075375,
+      "mode_collapse": 1.0,
+      "gaming": 0.09684683621147275,
+      "state_class": 5
+    },
+    "metadata": {
+      "state_name": "chaotic_conflict",
+      "interpretation": "WARNING: Chaotic state with high uncertainty and gaming",
+      "dominant_component": "I (Indeterminacy)"
+    }
+  },
+  {
+    "step": 103,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5380194731056691,
+      "I": 0.5291186446841003,
+      "F": 0.6368731559648013,
+      "alignment": 0.952812172472477,
+      "correctness": 0.140625,
+      "improvement": 0.5032230205833912,
+      "weaver_uncertainty": 0.09512070566415787,
+      "witness_entropy": 0.9811081099495099,
+      "disagreement": 0.515625,
+      "collusion": 0.8188229607185349,
+      "mode_collapse": 1.0,
+      "gaming": 0.031146572257957614,
+      "state_class": 6
+    },
+    "metadata": {
+      "state_name": "indeterminate",
+      "interpretation": "Indeterminate: Mixed signals across all dimensions",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 104,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.509795466810465,
+      "I": 0.3153064108739693,
+      "F": 0.6679636545447547,
+      "alignment": 0.9571754336357117,
+      "correctness": 0.0625,
+      "improvement": 0.509626466780901,
+      "weaver_uncertainty": 0.07554791867733002,
+      "witness_entropy": 0.9338067842359011,
+      "disagreement": 0.03125,
+      "collusion": 0.8973519690334797,
+      "mode_collapse": 1.0,
+      "gaming": 0.030076223104542794,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 105,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5272717341780663,
+      "I": 0.2724360943134669,
+      "F": 0.6512467393592142,
+      "alignment": 0.9616168215870857,
+      "correctness": 0.109375,
+      "improvement": 0.4943750277161598,
+      "weaver_uncertainty": 0.05837453529238701,
+      "witness_entropy": 0.849745779085836,
+      "disagreement": 0.0,
+      "collusion": 0.8564399817259982,
+      "mode_collapse": 1.0,
+      "gaming": 0.02890248889604959,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 106,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.4969054140150547,
+      "I": 0.2372708973657723,
+      "F": 0.693340681789395,
+      "alignment": 0.9677771627902985,
+      "correctness": 0.03125,
+      "improvement": 0.4864727444946766,
+      "weaver_uncertainty": 0.04916874319314957,
+      "witness_entropy": 0.7417342480260914,
+      "disagreement": 0.0,
+      "collusion": 0.9375341264531016,
+      "mode_collapse": 1.0,
+      "gaming": 0.06109010402718075,
+      "state_class": 2
+    },
+    "metadata": {
+      "state_name": "collusion_gaming",
+      "interpretation": "WARNING: Collusion or gaming detected",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 107,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5319779917597771,
+      "I": 0.23636033272419504,
+      "F": 0.6815570653951991,
+      "alignment": 0.9721406176686287,
+      "correctness": 0.125,
+      "improvement": 0.46560872346162796,
+      "weaver_uncertainty": 0.047964908182621,
+      "witness_entropy": 0.7399028675646958,
+      "disagreement": 0.0,
+      "collusion": 0.8506230404600501,
+      "mode_collapse": 1.0,
+      "gaming": 0.13769283070393018,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 108,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5153747260570526,
+      "I": 0.22105041616085547,
+      "F": 0.6866803905116644,
+      "alignment": 0.9846419719979167,
+      "correctness": 0.046875,
+      "improvement": 0.5138396862894297,
+      "weaver_uncertainty": 0.0525248683989048,
+      "witness_entropy": 0.6843098521372801,
+      "disagreement": 0.0,
+      "collusion": 0.9384868795605144,
+      "mode_collapse": 1.0,
+      "gaming": 0.03761879562486207,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 109,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5334076675586402,
+      "I": 0.26565414997249737,
+      "F": 0.6687429448880722,
+      "alignment": 0.9842786192893982,
+      "correctness": 0.09375,
+      "improvement": 0.5109810992144048,
+      "weaver_uncertainty": 0.056218020617961884,
+      "witness_entropy": 0.8292958126236961,
+      "disagreement": 0.0,
+      "collusion": 0.8920024987310171,
+      "mode_collapse": 1.0,
+      "gaming": 0.03980648465221748,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 110,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5400387540459632,
+      "I": 0.2662290269950834,
+      "F": 0.6705200309228156,
+      "alignment": 0.9815539885312319,
+      "correctness": 0.125,
+      "improvement": 0.4870857931673527,
+      "weaver_uncertainty": 0.05727941915392876,
+      "witness_entropy": 0.8301506708296825,
+      "disagreement": 0.0,
+      "collusion": 0.8588597399648279,
+      "mode_collapse": 1.0,
+      "gaming": 0.08992044978961478,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 111,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5394231485202909,
+      "I": 0.25035137966558035,
+      "F": 0.6617817627132628,
+      "alignment": 0.9810658283531666,
+      "correctness": 0.109375,
+      "improvement": 0.5162340858951211,
+      "weaver_uncertainty": 0.05903296172618866,
+      "witness_entropy": 0.7754716371590792,
+      "disagreement": 0.0,
+      "collusion": 0.873761753377039,
+      "mode_collapse": 1.0,
+      "gaming": 0.04092353787482415,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 112,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5179100330919028,
+      "I": 0.22777092504772842,
+      "F": 0.6958178754398024,
+      "alignment": 0.986415134742856,
+      "correctness": 0.046875,
+      "improvement": 0.5229698959738016,
+      "weaver_uncertainty": 0.06275011599063873,
+      "witness_entropy": 0.6964863008351228,
+      "disagreement": 0.0,
+      "collusion": 0.9401769253017846,
+      "mode_collapse": 1.0,
+      "gaming": 0.06582368439696211,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 113,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5463910454884171,
+      "I": 0.26579071121092745,
+      "F": 0.6537382530514151,
+      "alignment": 0.9870369918644428,
+      "correctness": 0.125,
+      "improvement": 0.5078812437132001,
+      "weaver_uncertainty": 0.06360745429992676,
+      "witness_entropy": 0.8223615830698314,
+      "disagreement": 0.0,
+      "collusion": 0.8636573678813875,
+      "mode_collapse": 1.0,
+      "gaming": 0.027584352996200323,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 114,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5133511088788509,
+      "I": 0.26922388823161275,
+      "F": 0.688347938716535,
+      "alignment": 0.9868300352245569,
+      "correctness": 0.046875,
+      "improvement": 0.49934547394514084,
+      "weaver_uncertainty": 0.06091473996639252,
+      "witness_entropy": 0.8364982208056501,
+      "disagreement": 0.0,
+      "collusion": 0.9405723773234058,
+      "mode_collapse": 1.0,
+      "gaming": 0.04039662595724181,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 115,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5401408230885864,
+      "I": 0.26616234217977186,
+      "F": 0.6597433459188323,
+      "alignment": 0.9872112926095724,
+      "correctness": 0.109375,
+      "improvement": 0.5075315302237868,
+      "weaver_uncertainty": 0.05811069533228874,
+      "witness_entropy": 0.8290971119336176,
+      "disagreement": 0.0,
+      "collusion": 0.8792350574804004,
+      "mode_collapse": 1.0,
+      "gaming": 0.026831076422240585,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 116,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5631950912997127,
+      "I": 0.24973639253760538,
+      "F": 0.6576704349462941,
+      "alignment": 0.9867219943553209,
+      "correctness": 0.15625,
+      "improvement": 0.5300314677879214,
+      "weaver_uncertainty": 0.05713837221264839,
+      "witness_entropy": 0.7753162695793696,
+      "disagreement": 0.0,
+      "collusion": 0.832546682737302,
+      "mode_collapse": 1.0,
+      "gaming": 0.08217253950457766,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 117,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5184009240940214,
+      "I": 0.2646759893541738,
+      "F": 0.6854896296104399,
+      "alignment": 0.9882313646376133,
+      "correctness": 0.046875,
+      "improvement": 0.52179189119488,
+      "weaver_uncertainty": 0.058013640344142914,
+      "witness_entropy": 0.8034063241697698,
+      "disagreement": 0.015625,
+      "collusion": 0.9419080194202252,
+      "mode_collapse": 0.9650458830076429,
+      "gaming": 0.06404218980018986,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 118,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5273182284086942,
+      "I": 0.2790015747126223,
+      "F": 0.6819797150394136,
+      "alignment": 0.9869793057441711,
+      "correctness": 0.09375,
+      "improvement": 0.47513253055512905,
+      "weaver_uncertainty": 0.05882102623581886,
+      "witness_entropy": 0.8503508894729224,
+      "disagreement": 0.015625,
+      "collusion": 0.8944499958306551,
+      "mode_collapse": 0.9650458830076429,
+      "gaming": 0.11561983934952906,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 119,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5372036550194026,
+      "I": 0.29639709793537106,
+      "F": 0.6518177058777043,
+      "alignment": 0.9886714853346348,
+      "correctness": 0.109375,
+      "improvement": 0.48992530442774296,
+      "weaver_uncertainty": 0.059627991169691086,
+      "witness_entropy": 0.8866956686148791,
+      "disagreement": 0.03125,
+      "collusion": 0.8805355416261591,
+      "mode_collapse": 0.9396066647876905,
+      "gaming": 0.05907163263644485,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 120,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5339776823297143,
+      "I": 0.3142718429061793,
+      "F": 0.6290925948769107,
+      "alignment": 0.9881567880511284,
+      "correctness": 0.09375,
+      "improvement": 0.5060748355463147,
+      "weaver_uncertainty": 0.060087040066719055,
+      "witness_entropy": 0.8833191029538788,
+      "disagreement": 0.078125,
+      "collusion": 0.8955170891713351,
+      "mode_collapse": 0.8809312518391981,
+      "gaming": 0.022021278855390847,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 121,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.56703235283494,
+      "I": 0.2973904547769565,
+      "F": 0.6344213277524856,
+      "alignment": 0.9891002140939236,
+      "correctness": 0.1875,
+      "improvement": 0.48196133598685265,
+      "weaver_uncertainty": 0.06130566820502281,
+      "witness_entropy": 0.9091625143848324,
+      "disagreement": 0.015625,
+      "collusion": 0.8036439239513129,
+      "mode_collapse": 0.9650458830076429,
+      "gaming": 0.07816664423222512,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 122,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5558766731992364,
+      "I": 0.2782618297985197,
+      "F": 0.6569509111306634,
+      "alignment": 0.9883104264736176,
+      "correctness": 0.140625,
+      "improvement": 0.5215125130489469,
+      "weaver_uncertainty": 0.06113297864794731,
+      "witness_entropy": 0.866406454013785,
+      "disagreement": 0.0,
+      "collusion": 0.8493292727507651,
+      "mode_collapse": 1.0,
+      "gaming": 0.057397340101190956,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 123,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5309902172535659,
+      "I": 0.2574881450054561,
+      "F": 0.6830882988570744,
+      "alignment": 0.9884256534278393,
+      "correctness": 0.078125,
+      "improvement": 0.5218497794121504,
+      "weaver_uncertainty": 0.06088050827383995,
+      "witness_entropy": 0.7974133084110137,
+      "disagreement": 0.0,
+      "collusion": 0.9112048992537893,
+      "mode_collapse": 1.0,
+      "gaming": 0.06202113051852932,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 124,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.530862220004201,
+      "I": 0.23509515697941627,
+      "F": 0.6828398806972199,
+      "alignment": 0.9884208235889673,
+      "correctness": 0.078125,
+      "improvement": 0.52121945284307,
+      "weaver_uncertainty": 0.06065502390265465,
+      "witness_entropy": 0.7229954993620662,
+      "disagreement": 0.0,
+      "collusion": 0.9112004467460793,
+      "mode_collapse": 1.0,
+      "gaming": 0.06119900666262691,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 125,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5513612823560834,
+      "I": 0.24792716790978855,
+      "F": 0.6497700775612743,
+      "alignment": 0.9889690894633532,
+      "correctness": 0.140625,
+      "improvement": 0.49761823285371065,
+      "weaver_uncertainty": 0.060753822326660156,
+      "witness_entropy": 0.7656700707059684,
+      "disagreement": 0.0,
+      "collusion": 0.8498953112575691,
+      "mode_collapse": 1.0,
+      "gaming": 0.03270651019415515,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 126,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5184843135997654,
+      "I": 0.2410847809184248,
+      "F": 0.689443641745696,
+      "alignment": 0.9887247886508703,
+      "correctness": 0.0625,
+      "improvement": 0.48997199069708586,
+      "weaver_uncertainty": 0.059909384697675705,
+      "witness_entropy": 0.7437065516970737,
+      "disagreement": 0.0,
+      "collusion": 0.9269294893601909,
+      "mode_collapse": 1.0,
+      "gaming": 0.062239486672065136,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 127,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5134346356615425,
+      "I": 0.2558371463665847,
+      "F": 0.7148280029452403,
+      "alignment": 0.9878477044403553,
+      "correctness": 0.0625,
+      "improvement": 0.4664777694270015,
+      "weaver_uncertainty": 0.05973358079791069,
+      "witness_entropy": 0.7930569070907051,
+      "disagreement": 0.0,
+      "collusion": 0.9261072229128331,
+      "mode_collapse": 1.0,
+      "gaming": 0.1479503792670235,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 128,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5147899415343999,
+      "I": 0.2621275681449482,
+      "F": 0.6819089875207284,
+      "alignment": 0.9877741262316704,
+      "correctness": 0.046875,
+      "improvement": 0.5046514552086592,
+      "weaver_uncertainty": 0.06037537008523941,
+      "witness_entropy": 0.8133831903979212,
+      "disagreement": 0.0,
+      "collusion": 0.9414722140645608,
+      "mode_collapse": 1.0,
+      "gaming": 0.017733672983013093,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 129,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5681500365957618,
+      "I": 0.2638814155752162,
+      "F": 0.6370781381631537,
+      "alignment": 0.9885237449780107,
+      "correctness": 0.1875,
+      "improvement": 0.48870269302278757,
+      "weaver_uncertainty": 0.06103615462779999,
+      "witness_entropy": 0.818568563956254,
+      "disagreement": 0.0,
+      "collusion": 0.8031755427946337,
+      "mode_collapse": 1.0,
+      "gaming": 0.0526930701510009,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 130,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5624548402614892,
+      "I": 0.2383573037097073,
+      "F": 0.7285869675602044,
+      "alignment": 0.9897415237501264,
+      "correctness": 0.125,
+      "improvement": 0.582791153807193,
+      "weaver_uncertainty": 0.061769939959049225,
+      "witness_entropy": 0.7327544057399752,
+      "disagreement": 0.0,
+      "collusion": 0.8660238332813606,
+      "mode_collapse": 1.0,
+      "gaming": 0.27392478082553373,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 131,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5310719479806721,
+      "I": 0.2392263640099351,
+      "F": 0.6765372478730054,
+      "alignment": 0.9889556653797626,
+      "correctness": 0.09375,
+      "improvement": 0.4899484091438353,
+      "weaver_uncertainty": 0.06296288967132568,
+      "witness_entropy": 0.7344583236951246,
+      "disagreement": 0.0,
+      "collusion": 0.8962410717504099,
+      "mode_collapse": 1.0,
+      "gaming": 0.060136063909471384,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 132,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.516997797600925,
+      "I": 0.2485076717328918,
+      "F": 0.6876956355706096,
+      "alignment": 0.9892736133188009,
+      "correctness": 0.046875,
+      "improvement": 0.512691761367023,
+      "weaver_uncertainty": 0.06343279778957367,
+      "witness_entropy": 0.7649261079867323,
+      "disagreement": 0.0,
+      "collusion": 0.9429014126944821,
+      "mode_collapse": 1.0,
+      "gaming": 0.035116901642722395,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 133,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5333184445276857,
+      "I": 0.2485722028819284,
+      "F": 0.6854635720218504,
+      "alignment": 0.9872185364365578,
+      "correctness": 0.109375,
+      "improvement": 0.47340514976531267,
+      "weaver_uncertainty": 0.06409785151481628,
+      "witness_entropy": 0.7644761580916118,
+      "disagreement": 0.0,
+      "collusion": 0.8792415090138093,
+      "mode_collapse": 1.0,
+      "gaming": 0.11255656138775551,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 134,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5442884046584368,
+      "I": 0.24316298961645885,
+      "F": 0.6772687840382253,
+      "alignment": 0.9880675887688994,
+      "correctness": 0.109375,
+      "improvement": 0.526556845754385,
+      "weaver_uncertainty": 0.0653633177280426,
+      "witness_entropy": 0.7451799809934869,
+      "disagreement": 0.0,
+      "collusion": 0.8799976962473011,
+      "mode_collapse": 1.0,
+      "gaming": 0.08423235179768286,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 135,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.507486545201391,
+      "I": 0.251806144038686,
+      "F": 0.6937333560516075,
+      "alignment": 0.9891651887446642,
+      "correctness": 0.03125,
+      "improvement": 0.4966023485176265,
+      "weaver_uncertainty": 0.06617919355630875,
+      "witness_entropy": 0.773174619905978,
+      "disagreement": 0.0,
+      "collusion": 0.9582537765963934,
+      "mode_collapse": 1.0,
+      "gaming": 0.034772818043500485,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 136,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5538151470944286,
+      "I": 0.2534723646030225,
+      "F": 0.6487496131653099,
+      "alignment": 0.9878914710134268,
+      "correctness": 0.140625,
+      "improvement": 0.5120427934452891,
+      "weaver_uncertainty": 0.06670475751161575,
+      "witness_entropy": 0.7782031244984594,
+      "disagreement": 0.0,
+      "collusion": 0.8489692329021636,
+      "mode_collapse": 1.0,
+      "gaming": 0.030539733348147895,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 137,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5439878148958087,
+      "I": 0.24085100132973924,
+      "F": 0.7174831828496578,
+      "alignment": 0.987365024164319,
+      "correctness": 0.09375,
+      "improvement": 0.5577090261504054,
+      "weaver_uncertainty": 0.06667789816856384,
+      "witness_entropy": 0.736158772930567,
+      "disagreement": 0.0,
+      "collusion": 0.8947995531489141,
+      "mode_collapse": 1.0,
+      "gaming": 0.1985445386336408,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 138,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5518547587096692,
+      "I": 0.2386544550368965,
+      "F": 0.6650648347723194,
+      "alignment": 0.9874656600877643,
+      "correctness": 0.15625,
+      "improvement": 0.47184247337281704,
+      "weaver_uncertainty": 0.06797439604997635,
+      "witness_entropy": 0.727540454073012,
+      "disagreement": 0.0,
+      "collusion": 0.8331741506990511,
+      "mode_collapse": 1.0,
+      "gaming": 0.10598391497566341,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 139,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5469638778828085,
+      "I": 0.2449358565073983,
+      "F": 0.6935453928387268,
+      "alignment": 0.9872665712609887,
+      "correctness": 0.109375,
+      "improvement": 0.5415362468920648,
+      "weaver_uncertainty": 0.06993156671524048,
+      "witness_entropy": 0.7465212883094205,
+      "disagreement": 0.0,
+      "collusion": 0.8792842900293181,
+      "mode_collapse": 1.0,
+      "gaming": 0.13943892275666547,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 140,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5303551559336483,
+      "I": 0.24292576205944366,
+      "F": 0.6821169327700235,
+      "alignment": 0.9881625063717365,
+      "correctness": 0.078125,
+      "improvement": 0.5192007669247687,
+      "weaver_uncertainty": 0.07218282669782639,
+      "witness_entropy": 0.7375697135003192,
+      "disagreement": 0.0,
+      "collusion": 0.9109623105614446,
+      "mode_collapse": 1.0,
+      "gaming": 0.05910669515148534,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 141,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5211511075496674,
+      "I": 0.2436997526855547,
+      "F": 0.6749242356279865,
+      "alignment": 0.988493730314076,
+      "correctness": 0.0625,
+      "improvement": 0.5037680771201849,
+      "weaver_uncertainty": 0.07523071020841599,
+      "witness_entropy": 0.737101798743433,
+      "disagreement": 0.0,
+      "collusion": 0.9267128721694462,
+      "mode_collapse": 1.0,
+      "gaming": 0.014130289200693369,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 142,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5241880436427891,
+      "I": 0.25903541258274204,
+      "F": 0.6822335836733212,
+      "alignment": 0.9881150228902698,
+      "correctness": 0.078125,
+      "improvement": 0.4884601724334061,
+      "weaver_uncertainty": 0.07788804173469543,
+      "witness_entropy": 0.7855633335411114,
+      "disagreement": 0.0,
+      "collusion": 0.9109185367269674,
+      "mode_collapse": 1.0,
+      "gaming": 0.05955389660844751,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 143,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5159110332839192,
+      "I": 0.26163383257346806,
+      "F": 0.7247082208313483,
+      "alignment": 0.9874142091721296,
+      "correctness": 0.078125,
+      "improvement": 0.4484767480753362,
+      "weaver_uncertainty": 0.08101315796375275,
+      "witness_entropy": 0.7910996172811409,
+      "disagreement": 0.0,
+      "collusion": 0.910272474080557,
+      "mode_collapse": 1.0,
+      "gaming": 0.2019974373304185,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 144,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5177005253732204,
+      "I": 0.24952591976426844,
+      "F": 0.69489431208805,
+      "alignment": 0.9881245661526918,
+      "correctness": 0.046875,
+      "improvement": 0.5185034945607185,
+      "weaver_uncertainty": 0.08272187411785126,
+      "witness_entropy": 0.7490311917630436,
+      "disagreement": 0.0,
+      "collusion": 0.9418062271142844,
+      "mode_collapse": 1.0,
+      "gaming": 0.06057273747445403,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 145,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5244654251262546,
+      "I": 0.25642380368015716,
+      "F": 0.6824617053663385,
+      "alignment": 0.988970784470439,
+      "correctness": 0.078125,
+      "improvement": 0.4881355566903949,
+      "weaver_uncertainty": 0.08411712199449539,
+      "witness_entropy": 0.7706288902726952,
+      "disagreement": 0.0,
+      "collusion": 0.9117074419336859,
+      "mode_collapse": 1.0,
+      "gaming": 0.05926242864288068,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 146,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5327164329588413,
+      "I": 0.24857277470222425,
+      "F": 0.6914126020263983,
+      "alignment": 0.9891007347032428,
+      "correctness": 0.078125,
+      "improvement": 0.5291306953877211,
+      "weaver_uncertainty": 0.08574575930833817,
+      "witness_entropy": 0.7428301563657427,
+      "disagreement": 0.0,
+      "collusion": 0.9118272398045519,
+      "mode_collapse": 1.0,
+      "gaming": 0.08893902034859173,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 147,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5242661728523672,
+      "I": 0.2601706388682541,
+      "F": 0.6823021732958829,
+      "alignment": 0.9883285667747259,
+      "correctness": 0.078125,
+      "improvement": 0.488423730712384,
+      "weaver_uncertainty": 0.0873437449336052,
+      "witness_entropy": 0.7798917179605751,
+      "disagreement": 0.0,
+      "collusion": 0.9111153974954505,
+      "mode_collapse": 1.0,
+      "gaming": 0.05952004765900894,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 148,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.549248343706131,
+      "I": 0.2486828392729589,
+      "F": 0.6628475848377039,
+      "alignment": 0.9882833966985345,
+      "correctness": 0.125,
+      "improvement": 0.5196749251335859,
+      "weaver_uncertainty": 0.08782266825437546,
+      "witness_entropy": 0.7411201293221542,
+      "disagreement": 0.0,
+      "collusion": 0.8647479721112177,
+      "mode_collapse": 1.0,
+      "gaming": 0.05649465331072247,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 149,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5194482774473728,
+      "I": 0.23579864548111562,
+      "F": 0.7038867730453571,
+      "alignment": 0.988324848935008,
+      "correctness": 0.046875,
+      "improvement": 0.5268416893668473,
+      "weaver_uncertainty": 0.08818615227937698,
+      "witness_entropy": 0.6978093326576751,
+      "disagreement": 0.0,
+      "collusion": 0.9419971216411795,
+      "mode_collapse": 1.0,
+      "gaming": 0.0902930812962844,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 150,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5230259643867612,
+      "I": 0.256403941696229,
+      "F": 0.718139111213192,
+      "alignment": 0.9888316998258233,
+      "correctness": 0.09375,
+      "improvement": 0.44996642228215933,
+      "weaver_uncertainty": 0.0899297222495079,
+      "witness_entropy": 0.7647500834045887,
+      "disagreement": 0.0,
+      "collusion": 0.8961287279671524,
+      "mode_collapse": 1.0,
+      "gaming": 0.1989587334211033,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 151,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5336254217661918,
+      "I": 0.26192808892119984,
+      "F": 0.6626275417220313,
+      "alignment": 0.9883058974519372,
+      "correctness": 0.09375,
+      "improvement": 0.5040153139270842,
+      "weaver_uncertainty": 0.08962131291627884,
+      "witness_entropy": 0.783472316821054,
+      "disagreement": 0.0,
+      "collusion": 0.8956522195658181,
+      "mode_collapse": 1.0,
+      "gaming": 0.014555512985680252,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 152,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5507513280026615,
+      "I": 0.25421463597648986,
+      "F": 0.6708213959071179,
+      "alignment": 0.9882448213174939,
+      "correctness": 0.125,
+      "improvement": 0.5272669973783195,
+      "weaver_uncertainty": 0.08993545174598694,
+      "witness_entropy": 0.757446668175646,
+      "disagreement": 0.0,
+      "collusion": 0.8647142186528072,
+      "mode_collapse": 1.0,
+      "gaming": 0.08311902815331644,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 153,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5253628800623119,
+      "I": 0.24492161484150105,
+      "F": 0.6737426726369373,
+      "alignment": 0.9871769035235047,
+      "correctness": 0.078125,
+      "improvement": 0.49621059326454997,
+      "weaver_uncertainty": 0.09085535258054733,
+      "witness_entropy": 0.7255500302244562,
+      "disagreement": 0.0,
+      "collusion": 0.9100537079357309,
+      "mode_collapse": 1.0,
+      "gaming": 0.032403964875483145,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 154,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5332803866825998,
+      "I": 0.2394139957955798,
+      "F": 0.6855594495867225,
+      "alignment": 0.9882418708875775,
+      "correctness": 0.109375,
+      "improvement": 0.47116819163784385,
+      "weaver_uncertainty": 0.09157577157020569,
+      "witness_entropy": 0.706470881081727,
+      "disagreement": 0.0,
+      "collusion": 0.8801529162592487,
+      "mode_collapse": 1.0,
+      "gaming": 0.11166094361007692,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 155,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5526795447804034,
+      "I": 0.2502182624775581,
+      "F": 0.6792741154299377,
+      "alignment": 0.9892624160274863,
+      "correctness": 0.125,
+      "improvement": 0.5348728918470442,
+      "weaver_uncertainty": 0.09185633063316345,
+      "witness_entropy": 0.7422045442920302,
+      "disagreement": 0.0,
+      "collusion": 0.8656046140240505,
+      "mode_collapse": 1.0,
+      "gaming": 0.11010756606772489,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 156,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5258790242485702,
+      "I": 0.24271672114868534,
+      "F": 0.6974331971989801,
+      "alignment": 0.988736342638731,
+      "correctness": 0.0625,
+      "improvement": 0.526922435965389,
+      "weaver_uncertainty": 0.09170959144830704,
+      "witness_entropy": 0.7173461457139775,
+      "disagreement": 0.0,
+      "collusion": 0.9269403212238103,
+      "mode_collapse": 1.0,
+      "gaming": 0.08885689569818636,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 157,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5307830207049847,
+      "I": 0.2643601497088365,
+      "F": 0.6760113508850918,
+      "alignment": 0.9893978741019964,
+      "correctness": 0.09375,
+      "improvement": 0.4876193553209305,
+      "weaver_uncertainty": 0.09134211391210556,
+      "witness_entropy": 0.7898583851173494,
+      "disagreement": 0.0,
+      "collusion": 0.8966418234049343,
+      "mode_collapse": 1.0,
+      "gaming": 0.05784873841039372,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 158,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5516114076599479,
+      "I": 0.2553523485267818,
+      "F": 0.6466163993989926,
+      "alignment": 0.9828113317489624,
+      "correctness": 0.140625,
+      "improvement": 0.5111843748018146,
+      "weaver_uncertainty": 0.08873416483402252,
+      "witness_entropy": 0.7624403302552502,
+      "disagreement": 0.0,
+      "collusion": 0.8446034882217646,
+      "mode_collapse": 1.0,
+      "gaming": 0.0292500137009559,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 159,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5097616426646709,
+      "I": 0.2387895864157742,
+      "F": 0.6561239047735798,
+      "alignment": 0.942320104688406,
+      "correctness": 0.078125,
+      "improvement": 0.5079180039465427,
+      "weaver_uncertainty": 0.09555498510599136,
+      "witness_entropy": 0.7004103029465893,
+      "disagreement": 0.0,
+      "collusion": 0.8687013465096243,
+      "mode_collapse": 1.0,
+      "gaming": 0.02881122056576699,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 160,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5296752965077758,
+      "I": 0.2364453750018607,
+      "F": 0.6642550298284178,
+      "alignment": 0.9665767997503281,
+      "correctness": 0.125,
+      "improvement": 0.4652228830382228,
+      "weaver_uncertainty": 0.08210588246583939,
+      "witness_entropy": 0.706045367540363,
+      "disagreement": 0.0,
+      "collusion": 0.8457546997815371,
+      "mode_collapse": 1.0,
+      "gaming": 0.08651049971934349,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 161,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5568994160741567,
+      "I": 0.25025073109998053,
+      "F": 0.619385761814192,
+      "alignment": 0.9587452374398708,
+      "correctness": 0.1875,
+      "improvement": 0.49200660549104214,
+      "weaver_uncertainty": 0.06334244459867477,
+      "witness_entropy": 0.770826659067927,
+      "disagreement": 0.0,
+      "collusion": 0.778980505419895,
+      "mode_collapse": 1.0,
+      "gaming": 0.025978532154113054,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 162,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5397192286327481,
+      "I": 0.22822197374206526,
+      "F": 0.6975123315420005,
+      "alignment": 0.9717263504862785,
+      "correctness": 0.109375,
+      "improvement": 0.5363934421911836,
+      "weaver_uncertainty": 0.04791376739740372,
+      "witness_entropy": 0.7128261450761472,
+      "disagreement": 0.0,
+      "collusion": 0.8654437809018418,
+      "mode_collapse": 1.0,
+      "gaming": 0.17111606393754622,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 163,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5061717187985778,
+      "I": 0.2313623853309749,
+      "F": 0.6683951450568865,
+      "alignment": 0.9668582193553448,
+      "correctness": 0.046875,
+      "improvement": 0.5033921552821994,
+      "weaver_uncertainty": 0.03872162476181984,
+      "witness_entropy": 0.7116529930080965,
+      "disagreement": 0.015625,
+      "collusion": 0.921536740323063,
+      "mode_collapse": 0.9650458830076429,
+      "gaming": 0.03422228008456105,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 164,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5287383310496807,
+      "I": 0.2587651142959497,
+      "F": 0.6931454154899835,
+      "alignment": 0.9850032078102231,
+      "correctness": 0.109375,
+      "improvement": 0.45493523962795734,
+      "weaver_uncertainty": 0.03667866066098213,
+      "witness_entropy": 0.825871720325517,
+      "disagreement": 0.0,
+      "collusion": 0.87726848195598,
+      "mode_collapse": 1.0,
+      "gaming": 0.14079340902530493,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 165,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5195815878920258,
+      "I": 0.26713990008589583,
+      "F": 0.6738597652404813,
+      "alignment": 0.9777291044592857,
+      "correctness": 0.0625,
+      "improvement": 0.5174497305415571,
+      "weaver_uncertainty": 0.034385278820991516,
+      "witness_entropy": 0.835247721465328,
+      "disagreement": 0.015625,
+      "collusion": 0.9166210354305804,
+      "mode_collapse": 0.9650458830076429,
+      "gaming": 0.058991953886520884,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 166,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5176533896476031,
+      "I": 0.2537721294437203,
+      "F": 0.6705039771739394,
+      "alignment": 0.9825444929301739,
+      "correctness": 0.0625,
+      "improvement": 0.4981779623776674,
+      "weaver_uncertainty": 0.030772048979997635,
+      "witness_entropy": 0.8151350491657366,
+      "disagreement": 0.0,
+      "collusion": 0.921135462122038,
+      "mode_collapse": 1.0,
+      "gaming": 0.0068326410837471485,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 167,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5464927662163973,
+      "I": 0.24972732601210001,
+      "F": 0.6446673931213812,
+      "alignment": 0.9786016866564751,
+      "correctness": 0.140625,
+      "improvement": 0.4940104577690363,
+      "weaver_uncertainty": 0.028399214148521423,
+      "witness_entropy": 0.804025205891812,
+      "disagreement": 0.0,
+      "collusion": 0.8409858244704083,
+      "mode_collapse": 1.0,
+      "gaming": 0.027576877777392855,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 168,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5461564097553492,
+      "I": 0.23021357523243588,
+      "F": 0.6539359249012898,
+      "alignment": 0.987301361747086,
+      "correctness": 0.125,
+      "improvement": 0.5061793252825737,
+      "weaver_uncertainty": 0.028520474210381508,
+      "witness_entropy": 0.738858109897738,
+      "disagreement": 0.0,
+      "collusion": 0.8638886915287003,
+      "mode_collapse": 1.0,
+      "gaming": 0.02793482763269886,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 169,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5290720534510911,
+      "I": 0.2357904161614588,
+      "F": 0.6576484924589749,
+      "alignment": 0.9773928541690111,
+      "correctness": 0.09375,
+      "improvement": 0.503074558917433,
+      "weaver_uncertainty": 0.029079435393214226,
+      "witness_entropy": 0.7568886184783151,
+      "disagreement": 0.0,
+      "collusion": 0.8857622740906663,
+      "mode_collapse": 1.0,
+      "gaming": 0.01114527607569471,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 170,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.49979904927313334,
+      "I": 0.23784867926672462,
+      "F": 0.7392485008159859,
+      "alignment": 0.9927691766060889,
+      "correctness": 0.03125,
+      "improvement": 0.45095689315348864,
+      "weaver_uncertainty": 0.030164945870637894,
+      "witness_entropy": 0.7626639850184442,
+      "disagreement": 0.0,
+      "collusion": 0.9617451398371486,
+      "mode_collapse": 1.0,
+      "gaming": 0.18183481627042164,
+      "state_class": 2
+    },
+    "metadata": {
+      "state_name": "collusion_gaming",
+      "interpretation": "WARNING: Collusion or gaming detected",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 171,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5282912122551352,
+      "I": 0.2499237047195448,
+      "F": 0.7031229528187509,
+      "alignment": 0.993402830325067,
+      "correctness": 0.09375,
+      "improvement": 0.4671504006255418,
+      "weaver_uncertainty": 0.030208945274353027,
+      "witness_entropy": 0.8028700704574631,
+      "disagreement": 0.0,
+      "collusion": 0.900271314982092,
+      "mode_collapse": 1.0,
+      "gaming": 0.14338142275304713,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 172,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5466141520999372,
+      "I": 0.252561894450259,
+      "F": 0.6576122896587743,
+      "alignment": 0.992534875869751,
+      "correctness": 0.125,
+      "improvement": 0.49800100876018405,
+      "weaver_uncertainty": 0.028969302773475647,
+      "witness_entropy": 0.8129036787273878,
+      "disagreement": 0.0,
+      "collusion": 0.8684680163860321,
+      "mode_collapse": 1.0,
+      "gaming": 0.03408361034787137,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 173,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5111427951604128,
+      "I": 0.24233073743581643,
+      "F": 0.6919838380534202,
+      "alignment": 0.9936141464859247,
+      "correctness": 0.03125,
+      "improvement": 0.5059856828302145,
+      "weaver_uncertainty": 0.02715637907385826,
+      "witness_entropy": 0.7806127457121965,
+      "disagreement": 0.0,
+      "collusion": 0.9625637044082396,
+      "mode_collapse": 1.0,
+      "gaming": 0.02319452096708119,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 174,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5269866347312927,
+      "I": 0.23115688122228792,
+      "F": 0.7379158154555794,
+      "alignment": 0.9941874258220196,
+      "correctness": 0.109375,
+      "improvement": 0.42780832201242447,
+      "weaver_uncertainty": 0.02538437396287918,
+      "witness_entropy": 0.7451385634447473,
+      "disagreement": 0.0,
+      "collusion": 0.8854481761227362,
+      "mode_collapse": 1.0,
+      "gaming": 0.2791218166882828,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 175,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5492569573223591,
+      "I": 0.23629868048815147,
+      "F": 0.6553107782732696,
+      "alignment": 0.994736141525209,
+      "correctness": 0.125,
+      "improvement": 0.5068125035613775,
+      "weaver_uncertainty": 0.023766059428453445,
+      "witness_entropy": 0.7638962088653849,
+      "disagreement": 0.0,
+      "collusion": 0.8703941238345578,
+      "mode_collapse": 1.0,
+      "gaming": 0.02384376246482134,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 176,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5370985264889896,
+      "I": 0.2278938983450819,
+      "F": 0.7025224029880006,
+      "alignment": 0.9954444160684943,
+      "correctness": 0.078125,
+      "improvement": 0.5383538003079593,
+      "weaver_uncertainty": 0.022360531613230705,
+      "witness_entropy": 0.7372857962037089,
+      "disagreement": 0.0,
+      "collusion": 0.9176753210631432,
+      "mode_collapse": 1.0,
+      "gaming": 0.11817424854247735,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 177,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5372297708876431,
+      "I": 0.24423632560601363,
+      "F": 0.6687253744341434,
+      "alignment": 0.9957546233199537,
+      "correctness": 0.09375,
+      "improvement": 0.5071396077983081,
+      "weaver_uncertainty": 0.02123088389635086,
+      "witness_entropy": 0.7928902014570279,
+      "disagreement": 0.0,
+      "collusion": 0.902402627383708,
+      "mode_collapse": 1.0,
+      "gaming": 0.025881078268866986,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 178,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5232207338791341,
+      "I": 0.24990816579905561,
+      "F": 0.6861776499309759,
+      "alignment": 0.995218560565263,
+      "correctness": 0.0625,
+      "improvement": 0.5006665482651442,
+      "weaver_uncertainty": 0.02050323598086834,
+      "witness_entropy": 0.8125239833493171,
+      "disagreement": 0.0,
+      "collusion": 0.9330174005299341,
+      "mode_collapse": 1.0,
+      "gaming": 0.04323563239667399,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 179,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5170106275472791,
+      "I": 0.24275673147506632,
+      "F": 0.718174424699781,
+      "alignment": 0.9958391478285193,
+      "correctness": 0.0625,
+      "improvement": 0.4683748420793563,
+      "weaver_uncertainty": 0.02009388990700245,
+      "witness_entropy": 0.7890952150098853,
+      "disagreement": 0.0,
+      "collusion": 0.9335992010892369,
+      "mode_collapse": 1.0,
+      "gaming": 0.14911581421362075,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 180,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5342824966646731,
+      "I": 0.22928780519260347,
+      "F": 0.679972833402894,
+      "alignment": 0.9959040116518736,
+      "correctness": 0.09375,
+      "improvement": 0.4921044600196183,
+      "weaver_uncertainty": 0.019686128944158554,
+      "witness_entropy": 0.7446065550311863,
+      "disagreement": 0.0,
+      "collusion": 0.9025380105595104,
+      "mode_collapse": 1.0,
+      "gaming": 0.06319209726363285,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 181,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5170220647007228,
+      "I": 0.23621909721551962,
+      "F": 0.7181950840476033,
+      "alignment": 0.9956889450550079,
+      "correctness": 0.0625,
+      "improvement": 0.4687324333935976,
+      "weaver_uncertainty": 0.019428038969635963,
+      "witness_entropy": 0.7679689517487628,
+      "disagreement": 0.0,
+      "collusion": 0.9334583859890699,
+      "mode_collapse": 1.0,
+      "gaming": 0.14937243217325114,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 182,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5326311267912388,
+      "I": 0.25334813312827104,
+      "F": 0.6877397436187492,
+      "alignment": 0.9957898990251124,
+      "correctness": 0.09375,
+      "improvement": 0.48407583590596914,
+      "weaver_uncertainty": 0.019220799207687378,
+      "witness_entropy": 0.8252729778865495,
+      "disagreement": 0.0,
+      "collusion": 0.9024345959915081,
+      "mode_collapse": 1.0,
+      "gaming": 0.08921968407381992,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 183,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5172052580397577,
+      "I": 0.24096747012085867,
+      "F": 0.6921382499315468,
+      "alignment": 0.9963660312350839,
+      "correctness": 0.046875,
+      "improvement": 0.49954422772862017,
+      "weaver_uncertainty": 0.01906707137823105,
+      "witness_entropy": 0.7841578290246313,
+      "disagreement": 0.0,
+      "collusion": 0.9496613735209394,
+      "mode_collapse": 1.0,
+      "gaming": 0.04091233507723714,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 184,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5293370514875279,
+      "I": 0.2498465246931593,
+      "F": 0.6935860312897291,
+      "alignment": 0.9955641962587833,
+      "correctness": 0.09375,
+      "improvement": 0.46805686492007226,
+      "weaver_uncertainty": 0.019048668444156647,
+      "witness_entropy": 0.7929397471997077,
+      "disagreement": 0.015625,
+      "collusion": 0.9022300528595224,
+      "mode_collapse": 0.9650458830076429,
+      "gaming": 0.14393415081209043,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 185,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5496479623019696,
+      "I": 0.24625640833363105,
+      "F": 0.6752891221708778,
+      "alignment": 0.9954527197405696,
+      "correctness": 0.140625,
+      "improvement": 0.47608437202870846,
+      "weaver_uncertainty": 0.018865471705794334,
+      "witness_entropy": 0.8019892227396425,
+      "disagreement": 0.0,
+      "collusion": 0.855467181027052,
+      "mode_collapse": 1.0,
+      "gaming": 0.11034083253352306,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 186,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5374494379386306,
+      "I": 0.26059567621076857,
+      "F": 0.7028238545830244,
+      "alignment": 0.9965252762194723,
+      "correctness": 0.078125,
+      "improvement": 0.5379466372542083,
+      "weaver_uncertainty": 0.01877637207508087,
+      "witness_entropy": 0.8498758819608144,
+      "disagreement": 0.0,
+      "collusion": 0.918671739014826,
+      "mode_collapse": 1.0,
+      "gaming": 0.11785052992364689,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 187,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5283895520260558,
+      "I": 0.26038146751800356,
+      "F": 0.7130043319686367,
+      "alignment": 0.9965487108565867,
+      "correctness": 0.09375,
+      "improvement": 0.4613503384171054,
+      "weaver_uncertainty": 0.01873755268752575,
+      "witness_entropy": 0.8492006723724862,
+      "disagreement": 0.0,
+      "collusion": 0.9031222692137817,
+      "mode_collapse": 1.0,
+      "gaming": 0.17251808094374665,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 188,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5047829117160291,
+      "I": 0.2555054723447747,
+      "F": 0.7323771797062358,
+      "alignment": 0.9965234159026295,
+      "correctness": 0.03125,
+      "improvement": 0.46836772677488625,
+      "weaver_uncertainty": 0.018681706860661507,
+      "witness_entropy": 0.8330032009552544,
+      "disagreement": 0.0,
+      "collusion": 0.9653820591556723,
+      "mode_collapse": 1.0,
+      "gaming": 0.15408118681322291,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 189,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5312348409788684,
+      "I": 0.23928600040345155,
+      "F": 0.6960578024329275,
+      "alignment": 0.9963478029239923,
+      "correctness": 0.09375,
+      "improvement": 0.475978599046357,
+      "weaver_uncertainty": 0.01862305775284767,
+      "witness_entropy": 0.7789969435919908,
+      "disagreement": 0.0,
+      "collusion": 0.902940196399868,
+      "mode_collapse": 1.0,
+      "gaming": 0.1162724129099342,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 190,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5504158392781392,
+      "I": 0.23932469801066647,
+      "F": 0.6569954683480319,
+      "alignment": 0.9972501073498279,
+      "correctness": 0.125,
+      "improvement": 0.5075789816910401,
+      "weaver_uncertainty": 0.018624121323227882,
+      "witness_entropy": 0.7791248720456604,
+      "disagreement": 0.0,
+      "collusion": 0.8725938439310994,
+      "mode_collapse": 1.0,
+      "gaming": 0.026526435918640345,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 191,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5329852195689455,
+      "I": 0.23685598242416325,
+      "F": 0.6796343486470133,
+      "alignment": 0.9965733264107257,
+      "correctness": 0.078125,
+      "improvement": 0.5155294450232759,
+      "weaver_uncertainty": 0.018542004749178886,
+      "witness_entropy": 0.7709779366646986,
+      "disagreement": 0.0,
+      "collusion": 0.9187160352848878,
+      "mode_collapse": 1.0,
+      "gaming": 0.040493115110193864,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 192,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.532998515223153,
+      "I": 0.23722450631481568,
+      "F": 0.6880855004097283,
+      "alignment": 0.9966663420200348,
+      "correctness": 0.09375,
+      "improvement": 0.4841598920756951,
+      "weaver_uncertainty": 0.018641168251633644,
+      "witness_entropy": 0.7721071861310853,
+      "disagreement": 0.0,
+      "collusion": 0.9032288724556565,
+      "mode_collapse": 1.0,
+      "gaming": 0.0893131714248855,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 193,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5469259833917022,
+      "I": 0.2434477511828603,
+      "F": 0.6733572169039924,
+      "alignment": 0.9966077511198819,
+      "correctness": 0.109375,
+      "improvement": 0.5226644147187471,
+      "weaver_uncertainty": 0.018756013363599777,
+      "witness_entropy": 0.7927364905792679,
+      "disagreement": 0.0,
+      "collusion": 0.8876037783411448,
+      "mode_collapse": 1.0,
+      "gaming": 0.06105235189178153,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 194,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5639348080847413,
+      "I": 0.24388052815554861,
+      "F": 0.646838625819935,
+      "alignment": 0.9961741371080279,
+      "correctness": 0.15625,
+      "improvement": 0.5148257662076503,
+      "weaver_uncertainty": 0.018723465502262115,
+      "witness_entropy": 0.7942116283495666,
+      "disagreement": 0.0,
+      "collusion": 0.8405219281848986,
+      "mode_collapse": 1.0,
+      "gaming": 0.035432848486585,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 195,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.537584185693413,
+      "I": 0.23328369539745158,
+      "F": 0.7029785058908766,
+      "alignment": 0.9965920364484191,
+      "correctness": 0.078125,
+      "improvement": 0.5384868555702269,
+      "weaver_uncertainty": 0.018777385354042053,
+      "witness_entropy": 0.7588349326374633,
+      "disagreement": 0.0,
+      "collusion": 0.9187332836008864,
+      "mode_collapse": 1.0,
+      "gaming": 0.1182839748350737,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 196,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5828128856606782,
+      "I": 0.23513128600872546,
+      "F": 0.6276907156696199,
+      "alignment": 0.9964747219346464,
+      "correctness": 0.203125,
+      "improvement": 0.514864984434098,
+      "weaver_uncertainty": 0.01866726763546467,
+      "witness_entropy": 0.7651036857269535,
+      "disagreement": 0.0,
+      "collusion": 0.7940657940416713,
+      "mode_collapse": 1.0,
+      "gaming": 0.03354799350983796,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 197,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5405415978748352,
+      "I": 0.2178264102019552,
+      "F": 0.7618725697790997,
+      "alignment": 0.9964072115253657,
+      "correctness": 0.0625,
+      "improvement": 0.5848935663234442,
+      "weaver_uncertainty": 0.018489819020032883,
+      "witness_entropy": 0.7075982149864845,
+      "disagreement": 0.0,
+      "collusion": 0.9341317608050304,
+      "mode_collapse": 1.0,
+      "gaming": 0.2940662181902917,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 198,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5080549561185762,
+      "I": 0.22912692060451065,
+      "F": 0.7432051604966184,
+      "alignment": 0.9970983853563666,
+      "correctness": 0.046875,
+      "improvement": 0.4523280098801479,
+      "weaver_uncertainty": 0.018300114199519157,
+      "witness_entropy": 0.7454562878155163,
+      "disagreement": 0.0,
+      "collusion": 0.950359398542787,
+      "mode_collapse": 1.0,
+      "gaming": 0.2102046702650123,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  },
+  {
+    "step": 199,
+    "approach": "neutrosophic",
+    "metrics": {
+      "T": 0.5172783365473151,
+      "I": 0.2473381597545946,
+      "F": 0.718421378637873,
+      "alignment": 0.9966080391313881,
+      "correctness": 0.0625,
+      "improvement": 0.46817560447379947,
+      "weaver_uncertainty": 0.018089022487401962,
+      "witness_entropy": 0.8063715100279134,
+      "disagreement": 0.0,
+      "collusion": 0.9343200366856763,
+      "mode_collapse": 1.0,
+      "gaming": 0.1489778798786749,
+      "state_class": 4
+    },
+    "metadata": {
+      "state_name": "suspicious_conflict",
+      "interpretation": "SUSPICIOUS: High truth but also high falsity signals",
+      "dominant_component": "F (Falsity)"
+    }
+  }
+]

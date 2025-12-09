@@ -17,6 +17,7 @@ from torch.utils.tensorboard import SummaryWriter
 
 from src.metrics.epistemic.base import EpistemicMetric, EpistemicState
 from src.metrics.epistemic.simple_2d import Simple2DMetric
+from src.metrics.epistemic.bayesian_uncertainty import BayesianUncertaintyMetric
 from src.metrics.epistemic.neutrosophic import NeutrosophicMetric
 
 
@@ -35,9 +36,10 @@ class ComparativeTracker:
         device: torch.device | None = None,
         enable_simple_2d: bool = True,
         enable_neutrosophic: bool = True,
-        enable_bayesian: bool = False,  # Week 2
+        enable_bayesian: bool = False,
         random_sampling: bool = False,
         sample_rate: float = 0.5,
+        num_mc_samples: int = 10,
     ):
         """
         Initialize comparative tracker.
@@ -46,9 +48,10 @@ class ComparativeTracker:
             device: Device for tensor operations
             enable_simple_2d: Enable Simple 2D approach
             enable_neutrosophic: Enable Neutrosophic approach
-            enable_bayesian: Enable Bayesian approach (not yet implemented)
+            enable_bayesian: Enable Bayesian approach (MC dropout)
             random_sampling: Enable sparse tensor sampling (test for gaming)
             sample_rate: Fraction of metrics to compute when sampling
+            num_mc_samples: Number of MC dropout samples for Bayesian approach
         """
         self.device = device or torch.device('cpu')
         self.random_sampling = random_sampling
@@ -72,8 +75,12 @@ class ComparativeTracker:
             )
 
         if enable_bayesian:
-            # Will be implemented in Week 2
-            raise NotImplementedError("Bayesian approach not yet implemented (Week 2)")
+            self.approaches['bayesian'] = BayesianUncertaintyMetric(
+                random_sampling=random_sampling,
+                sample_rate=sample_rate,
+                device=device,
+                num_mc_samples=num_mc_samples,
+            )
 
         # Track computational overhead
         self.computation_times: dict[str, list[float]] = {
