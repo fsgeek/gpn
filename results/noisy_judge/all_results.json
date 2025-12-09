@@ -1,0 +1,56 @@
+[
+  {
+    "dropout_rate": 0.2,
+    "seed": 0,
+    "success": false,
+    "error": "'NoisyJudge' object has no attribute 'freeze'"
+  },
+  {
+    "dropout_rate": 0.2,
+    "seed": 1,
+    "success": false,
+    "error": "'NoisyJudge' object has no attribute 'freeze'"
+  },
+  {
+    "dropout_rate": 0.2,
+    "seed": 2,
+    "success": false,
+    "error": "'NoisyJudge' object has no attribute 'freeze'"
+  },
+  {
+    "dropout_rate": 0.3,
+    "seed": 0,
+    "success": false,
+    "error": "'NoisyJudge' object has no attribute 'freeze'"
+  },
+  {
+    "dropout_rate": 0.3,
+    "seed": 1,
+    "success": false,
+    "error": "'NoisyJudge' object has no attribute 'freeze'"
+  },
+  {
+    "dropout_rate": 0.3,
+    "seed": 2,
+    "success": false,
+    "error": "'NoisyJudge' object has no attribute 'freeze'"
+  },
+  {
+    "dropout_rate": 0.5,
+    "seed": 0,
+    "success": false,
+    "error": "'NoisyJudge' object has no attribute 'freeze'"
+  },
+  {
+    "dropout_rate": 0.5,
+    "seed": 1,
+    "success": false,
+    "error": "'NoisyJudge' object has no attribute 'freeze'"
+  },
+  {
+    "dropout_rate": 0.5,
+    "seed": 2,
+    "success": false,
+    "error": "'NoisyJudge' object has no attribute 'freeze'"
+  }
+]
