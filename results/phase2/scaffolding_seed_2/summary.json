@@ -1,0 +1,41 @@
+{
+  "simple_2d": {
+    "history_length": 2000,
+    "avg_computation_time_ms": 1.3160841464996338,
+    "avg_alignment": 0.9879624137841165,
+    "avg_correctness": 0.11453125,
+    "avg_disagreement": 0.84546875,
+    "avg_witness_correctness": 0.96,
+    "avg_judge_uncertainty": 0.8284604346752167,
+    "avg_witness_uncertainty": 0.885221917629242,
+    "avg_alignment_improvement": 0.0007203616481274367,
+    "avg_correctness_improvement": -0.00765625,
+    "avg_quadrant": 2.0,
+    "avg_velocity": 0.04224827600767741
+  },
+  "neutrosophic": {
+    "history_length": 2000,
+    "avg_computation_time_ms": 1.7517030239105225,
+    "avg_T": 0.5403038766784594,
+    "avg_I": 0.5393347291740678,
+    "avg_F": 0.5641933415124558,
+    "avg_dT_dt": 0.000977416904059648,
+    "avg_dI_dt": 0.005734289862686659,
+    "avg_dF_dt": -0.024675632807680644,
+    "avg_alignment": 0.9879624137841165,
+    "avg_correctness": 0.11453125,
+    "avg_improvement": 0.49653205582406373,
+    "avg_weaver_uncertainty": 0.06164772741496563,
+    "avg_witness_entropy": 0.6088430364985935,
+    "avg_disagreement": 0.84546875,
+    "avg_collusion": 0.8274468267438659,
+    "avg_mode_collapse": 0.7024402001782611,
+    "avg_gaming": 0.07494183587143671,
+    "avg_state_class": 5.66
+  },
+  "curriculum_history": [],
+  "exp_type": "scaffolding",
+  "seed": 2,
+  "total_steps": 2000,
+  "training_time_seconds": 37.10078501701355
+}

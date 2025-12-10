@@ -2,55 +2,487 @@
   {
     "dropout_rate": 0.2,
     "seed": 0,
-    "success": false,
-    "error": "'NoisyJudge' object has no attribute 'freeze'"
+    "success": true,
+    "summary": {
+      "simple_2d": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 1.6471643447875977,
+        "avg_alignment": 0.9966005743364803,
+        "avg_correctness": 0.13453125,
+        "avg_disagreement": 0.78640625,
+        "avg_witness_correctness": 0.89015625,
+        "avg_judge_uncertainty": 0.5344451686739922,
+        "avg_witness_uncertainty": 0.9340866923332214,
+        "avg_alignment_improvement": -0.00041251309390645475,
+        "avg_correctness_improvement": 0.03609375,
+        "avg_quadrant": 2.0,
+        "avg_velocity": 0.07007513566423683
+      },
+      "neutrosophic": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 3.3735268115997314,
+        "avg_T": 0.5560208534252016,
+        "avg_I": 0.4565012904184892,
+        "avg_F": 0.38556860695181905,
+        "avg_dT_dt": 0.039719073610517644,
+        "avg_dI_dt": -0.04314041919892683,
+        "avg_dF_dt": -0.04001329341514452,
+        "avg_alignment": 0.9966005743364803,
+        "avg_correctness": 0.13453125,
+        "avg_improvement": 0.5178406184530467,
+        "avg_weaver_uncertainty": 0.00893515591043979,
+        "avg_witness_entropy": 0.4641941454845242,
+        "avg_disagreement": 0.78640625,
+        "avg_collusion": 0.7356157266108977,
+        "avg_mode_collapse": 0.18314118403659985,
+        "avg_gaming": 0.12126653698826653,
+        "avg_state_class": 0.26
+      },
+      "bayesian": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 14.857306957244873,
+        "avg_alignment": 0.9966005743364803,
+        "avg_correctness": 0.13453125,
+        "avg_witness_epistemic_uncertainty": 0.010242128889076411,
+        "avg_witness_predictive_entropy": 1.0912140887975692,
+        "avg_judge_entropy": 0.4516667574644089,
+        "avg_disagreement": 0.78640625,
+        "avg_alignment_improvement": -0.00041251309390645475,
+        "avg_correctness_improvement": 0.03609375,
+        "avg_state": 4.0
+      }
+    }
   },
   {
     "dropout_rate": 0.2,
     "seed": 1,
-    "success": false,
-    "error": "'NoisyJudge' object has no attribute 'freeze'"
+    "success": true,
+    "summary": {
+      "simple_2d": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 1.5651805400848389,
+        "avg_alignment": 0.9958870762516745,
+        "avg_correctness": 0.175,
+        "avg_disagreement": 0.70921875,
+        "avg_witness_correctness": 0.856875,
+        "avg_judge_uncertainty": 0.370009058713913,
+        "avg_witness_uncertainty": 0.8978455179929733,
+        "avg_alignment_improvement": -0.0019785523280734197,
+        "avg_correctness_improvement": 0.00453125,
+        "avg_quadrant": 2.0,
+        "avg_velocity": 0.05217509427895513
+      },
+      "neutrosophic": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 2.017503499984741,
+        "avg_T": 0.5686101002678625,
+        "avg_I": 0.4184452035694521,
+        "avg_F": 0.42494400624430717,
+        "avg_dT_dt": 0.003985233479391533,
+        "avg_dI_dt": -0.010223683647604393,
+        "avg_dF_dt": -0.019786650519638495,
+        "avg_alignment": 0.9958870762516745,
+        "avg_correctness": 0.175,
+        "avg_improvement": 0.5012763488359633,
+        "avg_weaver_uncertainty": 0.020936973271891476,
+        "avg_witness_entropy": 0.4282553719596154,
+        "avg_disagreement": 0.70921875,
+        "avg_collusion": 0.7859339431401016,
+        "avg_mode_collapse": 0.28256340612536557,
+        "avg_gaming": 0.08600469050218966,
+        "avg_state_class": 0.0
+      },
+      "bayesian": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 36.21863889694214,
+        "avg_alignment": 0.9958870762516745,
+        "avg_correctness": 0.175,
+        "avg_witness_epistemic_uncertainty": 0.0082551849167794,
+        "avg_witness_predictive_entropy": 1.0066848421096801,
+        "avg_judge_entropy": 0.3165218831598759,
+        "avg_disagreement": 0.70921875,
+        "avg_alignment_improvement": -0.0019785523280734197,
+        "avg_correctness_improvement": 0.00453125,
+        "avg_state": 4.0
+      }
+    }
   },
   {
     "dropout_rate": 0.2,
     "seed": 2,
-    "success": false,
-    "error": "'NoisyJudge' object has no attribute 'freeze'"
+    "success": true,
+    "summary": {
+      "simple_2d": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 1.6060898303985596,
+        "avg_alignment": 0.9964975151477847,
+        "avg_correctness": 0.11421875,
+        "avg_disagreement": 0.7496875,
+        "avg_witness_correctness": 0.81078125,
+        "avg_judge_uncertainty": 0.49392203003168106,
+        "avg_witness_uncertainty": 0.9377011752128601,
+        "avg_alignment_improvement": -0.0004703138617333025,
+        "avg_correctness_improvement": 0.07234375,
+        "avg_quadrant": 2.0,
+        "avg_velocity": 0.08510366755195412
+      },
+      "neutrosophic": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 3.2729299068450928,
+        "avg_T": 0.5514738496729406,
+        "avg_I": 0.4492311330730409,
+        "avg_F": 0.46769047413458303,
+        "avg_dT_dt": 0.048187309599368754,
+        "avg_dI_dt": -0.022551266626296366,
+        "avg_dF_dt": -0.01996214295815682,
+        "avg_alignment": 0.9964975151477847,
+        "avg_correctness": 0.11421875,
+        "avg_improvement": 0.5359367180691333,
+        "avg_weaver_uncertainty": 0.020612221378833055,
+        "avg_witness_entropy": 0.4772415555313033,
+        "avg_disagreement": 0.7496875,
+        "avg_collusion": 0.8306978807650002,
+        "avg_mode_collapse": 0.3007218260748734,
+        "avg_gaming": 0.15064924668706975,
+        "avg_state_class": 1.1
+      },
+      "bayesian": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 12.951879978179932,
+        "avg_alignment": 0.9964975151477847,
+        "avg_correctness": 0.11421875,
+        "avg_witness_epistemic_uncertainty": 0.013296155156567693,
+        "avg_witness_predictive_entropy": 1.1116525971889495,
+        "avg_judge_entropy": 0.4278650739789009,
+        "avg_disagreement": 0.7496875,
+        "avg_alignment_improvement": -0.0004703138617333025,
+        "avg_correctness_improvement": 0.07234375,
+        "avg_state": 4.0
+      }
+    }
   },
   {
     "dropout_rate": 0.3,
     "seed": 0,
-    "success": false,
-    "error": "'NoisyJudge' object has no attribute 'freeze'"
+    "success": true,
+    "summary": {
+      "simple_2d": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 1.5025763511657715,
+        "avg_alignment": 0.9979661162605044,
+        "avg_correctness": 0.039375,
+        "avg_disagreement": 0.90484375,
+        "avg_witness_correctness": 0.9184375,
+        "avg_judge_uncertainty": 0.40624093294143676,
+        "avg_witness_uncertainty": 0.9475770795345306,
+        "avg_alignment_improvement": 0.003139192919479683,
+        "avg_correctness_improvement": -0.02875,
+        "avg_quadrant": 2.0,
+        "avg_velocity": 0.04040701179091373
+      },
+      "neutrosophic": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 1.8259923458099365,
+        "avg_T": 0.5123753657961497,
+        "avg_I": 0.5315614782614826,
+        "avg_F": 0.48333514628189056,
+        "avg_dT_dt": -0.009549617064444245,
+        "avg_dI_dt": -0.019686980823256945,
+        "avg_dF_dt": -0.019326324304111166,
+        "avg_alignment": 0.9979661162605044,
+        "avg_correctness": 0.039375,
+        "avg_improvement": 0.48719459645973984,
+        "avg_weaver_uncertainty": 0.054689263999462126,
+        "avg_witness_entropy": 0.5107239968721466,
+        "avg_disagreement": 0.90484375,
+        "avg_collusion": 0.9139673000659633,
+        "avg_mode_collapse": 0.3150711279096087,
+        "avg_gaming": 0.07742295960874208,
+        "avg_state_class": 3.85
+      },
+      "bayesian": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 38.10262131690979,
+        "avg_alignment": 0.9979661162605044,
+        "avg_correctness": 0.039375,
+        "avg_witness_epistemic_uncertainty": 0.009974174909293651,
+        "avg_witness_predictive_entropy": 1.2036091089248657,
+        "avg_judge_entropy": 0.33534717455506324,
+        "avg_disagreement": 0.90484375,
+        "avg_alignment_improvement": 0.003139192919479683,
+        "avg_correctness_improvement": -0.02875,
+        "avg_state": 4.0
+      }
+    }
   },
   {
     "dropout_rate": 0.3,
     "seed": 1,
-    "success": false,
-    "error": "'NoisyJudge' object has no attribute 'freeze'"
+    "success": true,
+    "summary": {
+      "simple_2d": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 1.5792908668518066,
+        "avg_alignment": 0.9969172626419458,
+        "avg_correctness": 0.09109375,
+        "avg_disagreement": 0.84890625,
+        "avg_witness_correctness": 0.90734375,
+        "avg_judge_uncertainty": 0.43828320503234863,
+        "avg_witness_uncertainty": 0.939987736940384,
+        "avg_alignment_improvement": -0.00020749103394336997,
+        "avg_correctness_improvement": 0.05234375,
+        "avg_quadrant": 2.0,
+        "avg_velocity": 0.06271700858512251
+      },
+      "neutrosophic": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 4.158093214035034,
+        "avg_T": 0.540418030953384,
+        "avg_I": 0.4983517833005864,
+        "avg_F": 0.4179265564978273,
+        "avg_dT_dt": 0.04752738273994432,
+        "avg_dI_dt": -0.040436667408695476,
+        "avg_dF_dt": -0.046342332093784154,
+        "avg_alignment": 0.9969172626419458,
+        "avg_correctness": 0.09109375,
+        "avg_improvement": 0.5260681294830283,
+        "avg_weaver_uncertainty": 0.01403297253884375,
+        "avg_witness_entropy": 0.5152646384631108,
+        "avg_disagreement": 0.84890625,
+        "avg_collusion": 0.8276225136777646,
+        "avg_mode_collapse": 0.17902717943800944,
+        "avg_gaming": 0.11056465731772887,
+        "avg_state_class": 1.52
+      },
+      "bayesian": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 12.596297264099121,
+        "avg_alignment": 0.9969172626419458,
+        "avg_correctness": 0.09109375,
+        "avg_witness_epistemic_uncertainty": 0.009946657037362456,
+        "avg_witness_predictive_entropy": 1.210081765651703,
+        "avg_judge_entropy": 0.4577940933406353,
+        "avg_disagreement": 0.84890625,
+        "avg_alignment_improvement": -0.00020749103394336997,
+        "avg_correctness_improvement": 0.05234375,
+        "avg_state": 4.0
+      }
+    }
   },
   {
     "dropout_rate": 0.3,
     "seed": 2,
-    "success": false,
-    "error": "'NoisyJudge' object has no attribute 'freeze'"
+    "success": true,
+    "summary": {
+      "simple_2d": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 3.789006233215332,
+        "avg_alignment": 0.9958750414452515,
+        "avg_correctness": 0.138125,
+        "avg_disagreement": 0.82703125,
+        "avg_witness_correctness": 0.94515625,
+        "avg_judge_uncertainty": 0.639640856385231,
+        "avg_witness_uncertainty": 0.9073146384954452,
+        "avg_alignment_improvement": 0.0012593168695457279,
+        "avg_correctness_improvement": -0.0071875,
+        "avg_quadrant": 2.0,
+        "avg_velocity": 0.049631730218955984
+      },
+      "neutrosophic": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 2.008096933364868,
+        "avg_T": 0.5530071982650552,
+        "avg_I": 0.4982018625845853,
+        "avg_F": 0.4380855727666216,
+        "avg_dT_dt": -0.007934771078991263,
+        "avg_dI_dt": 0.010167717658169812,
+        "avg_dF_dt": 0.08882519794547278,
+        "avg_alignment": 0.9958750414452515,
+        "avg_correctness": 0.138125,
+        "avg_improvement": 0.49703590843477286,
+        "avg_weaver_uncertainty": 0.017864219844341278,
+        "avg_witness_entropy": 0.5401003221042765,
+        "avg_disagreement": 0.82703125,
+        "avg_collusion": 0.8467566688428534,
+        "avg_mode_collapse": 0.2449740648486986,
+        "avg_gaming": 0.08630228591623544,
+        "avg_state_class": 1.57
+      },
+      "bayesian": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 15.147194623947144,
+        "avg_alignment": 0.9958750414452515,
+        "avg_correctness": 0.138125,
+        "avg_witness_epistemic_uncertainty": 0.011014759624376893,
+        "avg_witness_predictive_entropy": 1.2738492941856385,
+        "avg_judge_entropy": 0.670271999835968,
+        "avg_disagreement": 0.82703125,
+        "avg_alignment_improvement": 0.0012593168695457279,
+        "avg_correctness_improvement": -0.0071875,
+        "avg_state": 4.0
+      }
+    }
   },
   {
     "dropout_rate": 0.5,
     "seed": 0,
-    "success": false,
-    "error": "'NoisyJudge' object has no attribute 'freeze'"
+    "success": true,
+    "summary": {
+      "simple_2d": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 1.42037034034729,
+        "avg_alignment": 0.996930273323087,
+        "avg_correctness": 0.09453125,
+        "avg_disagreement": 0.89625,
+        "avg_witness_correctness": 0.9790625,
+        "avg_judge_uncertainty": 0.594947549700737,
+        "avg_witness_uncertainty": 0.9140107917785645,
+        "avg_alignment_improvement": -0.0013588828907813877,
+        "avg_correctness_improvement": 0.0446875,
+        "avg_quadrant": 2.0,
+        "avg_velocity": 0.06524372262215854
+      },
+      "neutrosophic": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 1.7362926006317139,
+        "avg_T": 0.5409174710401566,
+        "avg_I": 0.5474665338857113,
+        "avg_F": 0.38461156344551894,
+        "avg_dT_dt": 0.051569427254292755,
+        "avg_dI_dt": -0.043229907768975326,
+        "avg_dF_dt": -0.018519299766993663,
+        "avg_alignment": 0.996930273323087,
+        "avg_correctness": 0.09453125,
+        "avg_improvement": 0.5216643085546093,
+        "avg_weaver_uncertainty": 0.009016489880159496,
+        "avg_witness_entropy": 0.6208719564055449,
+        "avg_disagreement": 0.89625,
+        "avg_collusion": 0.8000990232000791,
+        "avg_mode_collapse": 0.1012090036159591,
+        "avg_gaming": 0.1140308436023318,
+        "avg_state_class": 2.63
+      },
+      "bayesian": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 35.737531661987305,
+        "avg_alignment": 0.996930273323087,
+        "avg_correctness": 0.09453125,
+        "avg_witness_epistemic_uncertainty": 0.010980594092980028,
+        "avg_witness_predictive_entropy": 1.4309880220890046,
+        "avg_judge_entropy": 0.8640035444498062,
+        "avg_disagreement": 0.89625,
+        "avg_alignment_improvement": -0.0013588828907813877,
+        "avg_correctness_improvement": 0.0446875,
+        "avg_state": 4.0
+      }
+    }
   },
   {
     "dropout_rate": 0.5,
     "seed": 1,
-    "success": false,
-    "error": "'NoisyJudge' object has no attribute 'freeze'"
+    "success": true,
+    "summary": {
+      "simple_2d": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 3.747335433959961,
+        "avg_alignment": 0.995445866707014,
+        "avg_correctness": 0.10984375,
+        "avg_disagreement": 0.88578125,
+        "avg_witness_correctness": 0.988125,
+        "avg_judge_uncertainty": 0.6686840438842774,
+        "avg_witness_uncertainty": 0.8992702794075013,
+        "avg_alignment_improvement": 0.0007397275033872575,
+        "avg_correctness_improvement": 0.00703125,
+        "avg_quadrant": 2.0,
+        "avg_velocity": 0.047652916979350944
+      },
+      "neutrosophic": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 1.96980619430542,
+        "avg_T": 0.5428929444331443,
+        "avg_I": 0.5541405705093905,
+        "avg_F": 0.3677963431200811,
+        "avg_dT_dt": 0.00355002846013171,
+        "avg_dI_dt": 0.016124487674259273,
+        "avg_dF_dt": -0.011723722648944621,
+        "avg_alignment": 0.995445866707014,
+        "avg_correctness": 0.10984375,
+        "avg_improvement": 0.5038854887516936,
+        "avg_weaver_uncertainty": 0.036199916722252964,
+        "avg_witness_entropy": 0.6298936516423818,
+        "avg_disagreement": 0.88578125,
+        "avg_collusion": 0.7934663452626414,
+        "avg_mode_collapse": 0.08348193086955522,
+        "avg_gaming": 0.08455075251385981,
+        "avg_state_class": 3.0
+      },
+      "bayesian": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 13.639152765274048,
+        "avg_alignment": 0.995445866707014,
+        "avg_correctness": 0.10984375,
+        "avg_witness_epistemic_uncertainty": 0.012006008857861161,
+        "avg_witness_predictive_entropy": 1.4802673697471618,
+        "avg_judge_entropy": 0.929744103550911,
+        "avg_disagreement": 0.88578125,
+        "avg_alignment_improvement": 0.0007397275033872575,
+        "avg_correctness_improvement": 0.00703125,
+        "avg_state": 4.0
+      }
+    }
   },
   {
     "dropout_rate": 0.5,
     "seed": 2,
-    "success": false,
-    "error": "'NoisyJudge' object has no attribute 'freeze'"
+    "success": true,
+    "summary": {
+      "simple_2d": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 1.268324375152588,
+        "avg_alignment": 0.9977934334089514,
+        "avg_correctness": 0.12796875,
+        "avg_disagreement": 0.868125,
+        "avg_witness_correctness": 0.9915625,
+        "avg_judge_uncertainty": 0.5126318415999412,
+        "avg_witness_uncertainty": 0.9146811300516129,
+        "avg_alignment_improvement": 0.0021949816041160375,
+        "avg_correctness_improvement": -0.02984375,
+        "avg_quadrant": 2.0,
+        "avg_velocity": 0.06862821849019288
+      },
+      "neutrosophic": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 1.5079522132873535,
+        "avg_T": 0.5475399965239922,
+        "avg_I": 0.5255055313656264,
+        "avg_F": 0.3738155783353665,
+        "avg_dT_dt": 0.010012733683710157,
+        "avg_dI_dt": -0.009692618390179259,
+        "avg_dF_dt": -0.1143439180929373,
+        "avg_alignment": 0.9977934334089514,
+        "avg_correctness": 0.12796875,
+        "avg_improvement": 0.48617561580205804,
+        "avg_weaver_uncertainty": 0.016136073525995016,
+        "avg_witness_entropy": 0.5780490310260928,
+        "avg_disagreement": 0.868125,
+        "avg_collusion": 0.7485815174806114,
+        "avg_mode_collapse": 0.12812869146846126,
+        "avg_gaming": 0.11981454634194487,
+        "avg_state_class": 2.66
+      },
+      "bayesian": {
+        "history_length": 1000,
+        "avg_computation_time_ms": 35.459768772125244,
+        "avg_alignment": 0.9977934334089514,
+        "avg_correctness": 0.12796875,
+        "avg_witness_epistemic_uncertainty": 0.009597294209524989,
+        "avg_witness_predictive_entropy": 1.3603154158592223,
+        "avg_judge_entropy": 0.7247408220171928,
+        "avg_disagreement": 0.868125,
+        "avg_alignment_improvement": 0.0021949816041160375,
+        "avg_correctness_improvement": -0.02984375,
+        "avg_state": 4.0
+      }
+    }
   }
 ]

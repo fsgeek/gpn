@@ -126,14 +126,24 @@ class NeutrosophicMetric(EpistemicMetric):
         gaming = self._compute_gaming(alignment, correctness)
         f_value = self._compute_falsity(collusion, mode_collapse, gaming)
 
-        # State classification
-        state_class = self._classify_state(t_value, i_value, f_value)
+        # Temporal derivatives (∂T/∂t, ∂I/∂t, ∂F/∂t) - first-class signals
+        dT_dt = self._compute_derivative('T', t_value, window=50)
+        dI_dt = self._compute_derivative('I', i_value, window=50)
+        dF_dt = self._compute_derivative('F', f_value, window=50)
+
+        # State classification (now uses temporal derivatives)
+        state_class = self._classify_state(t_value, i_value, f_value, dT_dt, dI_dt, dF_dt)
 
         metrics = {
             # Primary neutrosophic values
             'T': t_value,
             'I': i_value,
             'F': f_value,
+
+            # Temporal derivatives (first-class signals)
+            'dT_dt': dT_dt,
+            'dI_dt': dI_dt,
+            'dF_dt': dF_dt,
 
             # Truth components
             'alignment': alignment,
@@ -294,14 +304,73 @@ class NeutrosophicMetric(EpistemicMetric):
         return i_value
 
     # ========================================================================
+    # Temporal derivatives (∂T/∂t, ∂I/∂t, ∂F/∂t)
+    # ========================================================================
+
+    def _compute_derivative(self, metric_name: str, current_value: float, window: int = 50) -> float:
+        """
+        Compute temporal derivative of a metric using recent history.
+
+        ∂metric/∂t ≈ (current - past) / Δt
+
+        Args:
+            metric_name: Name of metric in history ('T', 'I', or 'F')
+            current_value: Current value of metric
+            window: Number of steps to look back
+
+        Returns:
+            Derivative estimate (change per step), normalized to [-1, 1]
+        """
+        if not self._should_compute_metric(f'd{metric_name}_dt'):
+            return 0.0
+
+        if len(self.history) < 2:
+            return 0.0  # Not enough history
+
+        # Get historical values
+        lookback = min(window, len(self.history))
+        past_states = self.history[-lookback:]
+
+        # Extract metric values
+        values = [state.metrics.get(metric_name, 0.0) for state in past_states]
+
+        if len(values) < 2:
+            return 0.0
+
+        # Simple linear regression slope
+        # slope = (n*Σ(xy) - Σx*Σy) / (n*Σ(x²) - (Σx)²)
+        n = len(values)
+        x = list(range(n))  # Time steps
+        y = values
+
+        sum_x = sum(x)
+        sum_y = sum(y)
+        sum_xy = sum(xi * yi for xi, yi in zip(x, y))
+        sum_x2 = sum(xi**2 for xi in x)
+
+        denominator = n * sum_x2 - sum_x**2
+        if abs(denominator) < 1e-8:
+            return 0.0
+
+        slope = (n * sum_xy - sum_x * sum_y) / denominator
+
+        # Normalize to [-1, 1] (slope per step)
+        # Assume max reasonable change is 0.1 per step
+        return max(-1.0, min(1.0, slope / 0.01))
+
+    # ========================================================================
     # Falsity (F) computation
     # ========================================================================
 
     def _compute_collusion(self, alignment: float, correctness: float) -> float:
         """
-        Compute collusion score.
+        Compute collusion score WITH temporal awareness.
 
-        Collusion = high alignment AND low correctness (both wrong but agreeing).
+        Collusion = high alignment AND low correctness AND not improving
+
+        Distinguishes:
+        - Healthy early training: High alignment, low correctness, ∂F/∂t < 0 (improving)
+        - Actual collusion: High alignment, low correctness, ∂F/∂t ≈ 0 (stuck)
 
         Args:
             alignment: Alignment score [0, 1]
@@ -313,8 +382,19 @@ class NeutrosophicMetric(EpistemicMetric):
         if not self._should_compute_metric('collusion'):
             return 0.0
 
-        # High alignment, low correctness
-        collusion = alignment * (1.0 - correctness)
+        # Base collusion signal: high alignment, low correctness
+        base_collusion = alignment * (1.0 - correctness)
+
+        # Temporal modulation: reduce collusion score if F is decreasing (improving)
+        # ∂F/∂t < 0 means falsity decreasing → healthy
+        # ∂F/∂t ≥ 0 means falsity stable/increasing → suspicious
+        dF_dt = self._compute_derivative('F', 0.0, window=50)  # Placeholder current value
+
+        # If ∂F/∂t < 0 (improving), reduce collusion score
+        # If ∂F/∂t ≥ 0 (stuck/worsening), keep full collusion score
+        improvement_factor = max(0.0, min(1.0, 1.0 + dF_dt))  # Maps [-1,1] to [0,2], clamp to [0,1]
+
+        collusion = base_collusion * improvement_factor
         return collusion
 
     def _compute_mode_collapse(
@@ -417,6 +497,9 @@ class NeutrosophicMetric(EpistemicMetric):
         t_value: float,
         i_value: float,
         f_value: float,
+        dT_dt: float = 0.0,
+        dI_dt: float = 0.0,
+        dF_dt: float = 0.0,
         threshold: float = 0.5,
     ) -> int:
         """

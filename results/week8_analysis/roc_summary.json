@@ -1,0 +1,40 @@
+{
+  "roc_aucs": {
+    "simple_2d": {
+      "avg_alignment": 0.6825396825396826,
+      "avg_correctness": 0.4781746031746032
+    },
+    "neutrosophic": {
+      "avg_T": 0.4126984126984127,
+      "avg_I": 0.46924603174603174,
+      "avg_F": 0.6130952380952381,
+      "avg_dT_dt": 0.6408730158730158,
+      "avg_dI_dt": 0.677579365079365,
+      "avg_dF_dt": 0.4732142857142857,
+      "avg_collusion": 0.6279761904761905,
+      "avg_mode_collapse": 0.6577380952380952,
+      "avg_gaming": 0.4444444444444444
+    },
+    "bayesian": {
+      "avg_alignment": 0.6825396825396826,
+      "avg_correctness": 0.4781746031746032,
+      "avg_witness_epistemic_uncertainty": 0.5545634920634921,
+      "avg_witness_predictive_entropy": 0.5734126984126985
+    }
+  },
+  "temporal_vs_static": {
+    "static_mean_auc": 0.49834656084656087,
+    "static_max_auc": 0.6130952380952381,
+    "temporal_mean_auc": 0.5972222222222222,
+    "temporal_max_auc": 0.677579365079365,
+    "improvement": 0.09887566137566134,
+    "best_static": [
+      0.6130952380952381,
+      "avg_F"
+    ],
+    "best_temporal": [
+      0.677579365079365,
+      "avg_dI_dt"
+    ]
+  }
+}
