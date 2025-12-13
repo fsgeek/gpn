@@ -153,6 +153,89 @@ python scripts/compute_statistical_rigor.py
     \item \textbf{Analysis:} \texttt{scripts/analyze\_fashion\_mnist\_topology.py}
 \end{itemize}
 
+\textbf{Compositional Transfer (Multi-seed validation, December 13, 2025):}
+
+\begin{itemize}
+    \item \textbf{Script:} \texttt{scripts/run\_fashion\_multiseed\_validation.py}
+    \item \textbf{Results:} \texttt{results/fashion\_multiseed\_validation/summary.json}
+
+    \textbf{Pedagogical (5 seeds):}
+    \begin{itemize}
+        \item Mean: $100.0\%$, Std: $\pm 0.0\%$
+        \item Individual: 100.0\%, 100.0\%, 100.0\%, 100.0\%, 100.0\%
+    \end{itemize}
+
+    \textbf{Adversarial (5 seeds):}
+    \begin{itemize}
+        \item Mean: $72.6\%$, Std: $\pm 1.8\%$
+        \item Individual: 74.3\%, 71.8\%, 69.7\%, 74.7\%, 72.3\%
+    \end{itemize}
+
+    \textbf{Statistical analysis:}
+    \begin{itemize}
+        \item Gap: +27.4 percentage points
+        \item $p$-value: 0.0037
+        \item Cohen's $d$: 21.3 (pedagogical has zero variance)
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Vallier Illustration Experiments (Table~\ref{tab:vallier_mapping})}
+
+\textbf{Experiment 1: Staged Perception (33\% vs 92\%)}
+
+\textbf{Claim:} Staged perception achieves 33\% accuracy; full-information training achieves 92\%.
+
+\begin{itemize}
+    \item \textbf{Source:} \texttt{results/staged\_curriculum\_experiment/summary.json}
+    \item \textbf{Values (3 seeds):}
+    \begin{itemize}
+        \item Full staged: $33.3\% \pm 11.8\%$ (individual: 25\%, 25\%, 50\%)
+        \item Final from start: $91.7\% \pm 11.8\%$ (individual: 100\%, 75\%, 100\%)
+    \end{itemize}
+    \item \textbf{Script:} \texttt{scripts/run\_staged\_curriculum\_experiment.py}
+\end{itemize}
+
+\textbf{Experiment 2: Min-to-Any Training (Diversity Collapse)}
+
+\textbf{Claim:} Training with min-loss over valid outputs collapses to single (shortest) interpretation.
+
+\begin{itemize}
+    \item \textbf{Source:} \texttt{results/ambiguity\_diversity/diversity\_results\_seed0.json}
+    \item \textbf{Evidence:}
+    \begin{itemize}
+        \item Mean coverage: 47.6\% (of 2--3 valid interpretations)
+        \item Mean entropy: $\approx 0$ (complete collapse)
+        \item Unique outputs generated per example: 1 (always same interpretation)
+    \end{itemize}
+    \item \textbf{Example:} Command ``walk and run left'' has 2 valid outputs; model always generates ``WALK LTURN RUN'' (shortest)
+    \item \textbf{Script:} \texttt{scripts/train\_ambiguity\_diversity.py}
+\end{itemize}
+
+\textbf{Experiment 3: Temperature Diagnostic}
+
+\textbf{Claim:} Temperature sampling reveals both interpretations exist in distribution.
+
+\begin{itemize}
+    \item \textbf{Method:} Temperature scaling during inference on collapsed model
+    \item \textbf{Evidence:} Model from Experiment 2 shows capacity exists (71\% accuracy) but diversity collapsed---temperature sampling surfaces alternate interpretations that were suppressed during training
+    \item \textbf{Note:} This is a diagnostic on the same model as Experiment 2, demonstrating capacity $\neq$ incentive
+\end{itemize}
+
+\textbf{Experiment 4: Phase-1-Only (2\% accuracy)}
+
+\textbf{Claim:} Phase-1-only training produces catastrophic failure ($\approx$2\% accuracy).
+
+\begin{itemize}
+    \item \textbf{Source:} \texttt{results/phase1\_only\_ablation\_results.md}
+    \item \textbf{Values:}
+    \begin{itemize}
+        \item Mean Judge accuracy: $2.2\%$ (vs 100 classes = 1\% chance)
+        \item Mean Witness accuracy: $14.0\%$
+    \end{itemize}
+    \item \textbf{Interpretation:} Heavy grounding without relationship phase produces no compositional structure---Witness learns something, but Weaver generates noise
+    \item \textbf{Script:} \texttt{scripts/ablate\_phase1\_only.py}
+\end{itemize}
+
 \subsection{Figure Sources}
 
 \begin{itemize}

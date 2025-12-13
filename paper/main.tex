@@ -148,7 +148,7 @@ We now make explicit how our apparatus implements bounded modification in Vallie
 
 This mapping provides a principled interpretation of why pedagogical training produces compositional capacity that adversarial training lacks. The curriculum restricts what configurations are explored at each training step, the cooperative loss creates gradients away from defection configurations, and the temporal instrumentation detects anomalous learning trajectories.
 
-\textbf{Epistemic status:} We present this mapping as a theoretical framework for interpreting our empirical results, not as a proven mechanistic explanation. The experiments demonstrate that GPN achieves compositional transfer (100\%) where adversarial training does not (81\%), and that temporal derivatives detect learning pathologies. What they do not directly demonstrate is that the mechanism is precisely ``bounded modification class'' in Vallier's mathematical sense. Alternative explanations---such as cooperative dynamics reducing shortcut learning, or curriculum enabling more stable gradient landscapes---remain possible. Future work measuring reachability directly (e.g., through intervention experiments on the modification dynamics) would strengthen or refute this interpretation.
+\textbf{Epistemic status:} We present this mapping as a theoretical framework for interpreting our empirical results, not as a proven mechanistic explanation. The experiments demonstrate that GPN achieves compositional transfer ($97\%$) where adversarial training does not ($80\%$), and that temporal derivatives detect learning pathologies. What they do not directly demonstrate is that the mechanism is precisely ``bounded modification class'' in Vallier's mathematical sense. Alternative explanations---such as cooperative dynamics reducing shortcut learning, or curriculum enabling more stable gradient landscapes---remain possible. Future work measuring reachability directly (e.g., through intervention experiments on the modification dynamics) would strengthen or refute this interpretation.
 
 \section{Related Work}
 
@@ -314,16 +314,16 @@ The primary empirical claim: pedagogical training produces compositional transfe
 
 \begin{table}[t]
     \centering
-    \caption{Compositional transfer accuracy on held-out relational pairs (MNIST: 5 seeds, Fashion-MNIST: single run). Gap is statistically significant: $p = 0.0056$, Cohen's $d = 3.31$.}
+    \caption{Compositional transfer accuracy on held-out relational pairs (5 seeds each). Both gaps highly significant ($p < 0.01$).}
     \label{tab:composition}
     \begin{tabular}{lcc}
         \toprule
         Training Paradigm & MNIST & Fashion-MNIST \\
         \midrule
-        Adversarial (GAN) & $80.1 \pm 2.8\%$ & 79.5\% \\
-        Pedagogical (GPN) & $96.7 \pm 6.5\%$ & 100\% \\
+        Adversarial (GAN) & $80.1 \pm 2.8\%$ & $72.6 \pm 1.8\%$ \\
+        Pedagogical (GPN) & $96.7 \pm 6.5\%$ & $100.0 \pm 0.0\%$ \\
         \midrule
-        Gap & +16.6\% & +20.5\% \\
+        Gap & +16.6pp ($p{=}0.006$) & +27.4pp ($p{=}0.004$) \\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -358,7 +358,7 @@ Pedagogical training produces lower-dimensional representations with simpler top
 
 \subsection{Interpretation via Vallier}
 
-The 81\% adversarial ceiling is Personality Engineering Failure. Adversarial training finds outputs that satisfy the discriminator but doesn't bound the modification class toward compositional structure. The generator learns surface patterns that fool the discriminator but don't generalize to novel compositions.
+The $80\%$ adversarial ceiling is Personality Engineering Failure. Adversarial training finds outputs that satisfy the discriminator but doesn't bound the modification class toward compositional structure. The generator learns surface patterns that fool the discriminator but don't generalize to novel compositions.
 
 Pedagogical training bounds the modification class through sustained curriculum. The capabilities that develop must be robust to phase transitions, not merely satisfying at each phase.
 
