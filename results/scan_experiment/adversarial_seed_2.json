@@ -1,0 +1,79 @@
+{
+  "seed": 2,
+  "condition": "adversarial",
+  "train_accuracy": 1.0,
+  "test_accuracy": 1.0,
+  "history": [
+    {
+      "step": 2490,
+      "total_loss": 0.1037454903125763,
+      "gen_loss": 0.1037454903125763,
+      "disc_loss": 0.13561737537384033,
+      "judge_correctness": 0.9375
+    },
+    {
+      "step": 2491,
+      "total_loss": 0.0007514044991694391,
+      "gen_loss": 0.0007514044991694391,
+      "disc_loss": 0.1692931056022644,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2492,
+      "total_loss": 0.022086352109909058,
+      "gen_loss": 0.022086352109909058,
+      "disc_loss": 0.15024547278881073,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2493,
+      "total_loss": 0.028046229854226112,
+      "gen_loss": 0.028046229854226112,
+      "disc_loss": 0.19802482426166534,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2494,
+      "total_loss": 0.008988235145807266,
+      "gen_loss": 0.008988235145807266,
+      "disc_loss": 0.11467315256595612,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2495,
+      "total_loss": 0.03768486902117729,
+      "gen_loss": 0.03768486902117729,
+      "disc_loss": 0.3101533055305481,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2496,
+      "total_loss": 0.02829793281853199,
+      "gen_loss": 0.02829793281853199,
+      "disc_loss": 0.18485723435878754,
+      "judge_correctness": 0.9791666865348816
+    },
+    {
+      "step": 2497,
+      "total_loss": 0.008546534925699234,
+      "gen_loss": 0.008546534925699234,
+      "disc_loss": 0.22072263062000275,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2498,
+      "total_loss": 0.004815196618437767,
+      "gen_loss": 0.004815196618437767,
+      "disc_loss": 0.14933454990386963,
+      "judge_correctness": 0.984375
+    },
+    {
+      "step": 2499,
+      "total_loss": 0.0017607854679226875,
+      "gen_loss": 0.0017607854679226875,
+      "disc_loss": 0.13929548859596252,
+      "judge_correctness": 1.0
+    }
+  ],
+  "final_step": 2500
+}

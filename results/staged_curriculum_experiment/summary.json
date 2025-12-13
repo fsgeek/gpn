@@ -1,0 +1,37 @@
+{
+  "full_staged": {
+    "mean_test_accuracy": 0.3333333333333333,
+    "std_test_accuracy": 0.11785113019775792,
+    "individual_accuracies": [
+      0.25,
+      0.25,
+      0.5
+    ]
+  },
+  "stage1_only": {
+    "mean_test_accuracy": 0.25,
+    "std_test_accuracy": 0.2041241452319315,
+    "individual_accuracies": [
+      0.0,
+      0.25,
+      0.5
+    ]
+  },
+  "final_from_start": {
+    "mean_test_accuracy": 0.9166666666666666,
+    "std_test_accuracy": 0.11785113019775792,
+    "individual_accuracies": [
+      1.0,
+      0.75,
+      1.0
+    ]
+  },
+  "comparisons": {
+    "full_vs_stage1_only": 0.08333333333333331,
+    "full_vs_final_from_start": -0.5833333333333333,
+    "predictions_confirmed": {
+      "stage1_fails_composition": true,
+      "final_from_start_fails": false
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "seed": 0,
+  "condition": "adversarial",
+  "train_accuracy": 1.0,
+  "test_accuracy": 0.75,
+  "history": [
+    {
+      "step": 2490,
+      "total_loss": 0.00652843015268445,
+      "gen_loss": 0.00652843015268445,
+      "disc_loss": 0.250255286693573,
+      "judge_correctness": 0.9732142686843872
+    },
+    {
+      "step": 2491,
+      "total_loss": 0.012805492617189884,
+      "gen_loss": 0.012805492617189884,
+      "disc_loss": 0.1228143721818924,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2492,
+      "total_loss": 0.02109140157699585,
+      "gen_loss": 0.02109140157699585,
+      "disc_loss": 0.12463362514972687,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2493,
+      "total_loss": 0.01523925643414259,
+      "gen_loss": 0.01523925643414259,
+      "disc_loss": 0.13699369132518768,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2494,
+      "total_loss": 0.026035750284790993,
+      "gen_loss": 0.026035750284790993,
+      "disc_loss": 0.13394521176815033,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2495,
+      "total_loss": 0.0013454142026603222,
+      "gen_loss": 0.0013454142026603222,
+      "disc_loss": 0.5124672651290894,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2496,
+      "total_loss": 0.0027980252634733915,
+      "gen_loss": 0.0027980252634733915,
+      "disc_loss": 0.20802906155586243,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2497,
+      "total_loss": 0.0033949685748666525,
+      "gen_loss": 0.0033949685748666525,
+      "disc_loss": 0.13177737593650818,
+      "judge_correctness": 0.9791666865348816
+    },
+    {
+      "step": 2498,
+      "total_loss": 0.007646335754543543,
+      "gen_loss": 0.007646335754543543,
+      "disc_loss": 0.1309765875339508,
+      "judge_correctness": 0.9791666865348816
+    },
+    {
+      "step": 2499,
+      "total_loss": 0.0020378553308546543,
+      "gen_loss": 0.0020378553308546543,
+      "disc_loss": 0.159950852394104,
+      "judge_correctness": 1.0
+    }
+  ],
+  "final_step": 2500
+}

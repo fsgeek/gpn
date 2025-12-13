@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-12-10T00:44:48.650031",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "config": {
+    "total_steps": 2500,
+    "phase1_steps": 500,
+    "phase2_steps": 1500
+  },
+  "pedagogical": {
+    "n": 3,
+    "mean_test_accuracy": 0.6666666666666666,
+    "std_test_accuracy": 0.11785113019775792,
+    "all_test_accuracies": [
+      0.75,
+      0.5,
+      0.75
+    ]
+  },
+  "adversarial": {
+    "n": 3,
+    "mean_test_accuracy": 0.9166666666666666,
+    "std_test_accuracy": 0.11785113019775792,
+    "all_test_accuracies": [
+      0.75,
+      1.0,
+      1.0
+    ]
+  },
+  "effect_size": {
+    "delta": -0.25,
+    "cohens_d": -1.732050807568877
+  },
+  "success_criteria": {
+    "pedagogical_above_90": false,
+    "delta_above_10pct": false
+  }
+}

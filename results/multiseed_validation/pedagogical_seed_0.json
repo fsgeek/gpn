@@ -1,0 +1,36 @@
+{
+  "seed": 0,
+  "primitives": "pedagogical",
+  "checkpoint": "checkpoints/checkpoint_final.pt",
+  "holdout_pairs": [
+    [
+      7,
+      3
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      6,
+      4
+    ]
+  ],
+  "holdout": {
+    "x_accuracy": 1.0,
+    "y_accuracy": 0.9970703125,
+    "validity": 0.9861666895449162,
+    "relation_accuracy": 1.0
+  },
+  "training": {
+    "x_accuracy": 0.9931640625,
+    "y_accuracy": 0.9593750014901161,
+    "validity": 0.993467915803194,
+    "relation_accuracy": 1.0
+  },
+  "timestamp": "2025-12-12T22:47:28.151417"
+}

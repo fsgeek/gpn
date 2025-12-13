@@ -1,0 +1,67 @@
+{
+  "pedagogical": {
+    "name": "pedagogical",
+    "n_seeds": 5,
+    "holdout": {
+      "mean_accuracy": 0.9669140629470349,
+      "std_accuracy": 0.0651996998458137,
+      "min_accuracy": 0.8365234397351742,
+      "max_accuracy": 1.0,
+      "accuracies": [
+        1.0,
+        1.0,
+        1.0,
+        0.998046875,
+        0.8365234397351742
+      ]
+    }
+  },
+  "adversarial": {
+    "name": "adversarial",
+    "n_seeds": 5,
+    "holdout": {
+      "mean_accuracy": 0.800781250745058,
+      "std_accuracy": 0.027992853405068914,
+      "min_accuracy": 0.7521484382450581,
+      "max_accuracy": 0.8289062492549419,
+      "accuracies": [
+        0.8244140632450581,
+        0.8091796897351742,
+        0.8289062492549419,
+        0.7892578132450581,
+        0.7521484382450581
+      ]
+    }
+  },
+  "comparison": {
+    "difference_mean": 0.16613281220197684,
+    "mann_whitney_u": 25.0,
+    "p_value": 0.005579712641457377,
+    "cohens_d": 3.311218946932209,
+    "significant_at_05": true,
+    "significant_at_01": true
+  },
+  "config": {
+    "n_seeds": 5,
+    "n_steps": 5000,
+    "holdout_pairs": [
+      [
+        7,
+        3
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        6,
+        4
+      ]
+    ]
+  },
+  "timestamp": "2025-12-12T23:04:02.817015"
+}

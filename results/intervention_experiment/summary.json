@@ -1,0 +1,25 @@
+{
+  "intervention": {
+    "n": 5,
+    "triggered_rate": 1.0,
+    "triggered_count": 5,
+    "mean_recovery_fraction": 0.7841561465177078,
+    "std_recovery_fraction": 0.1212253054611137,
+    "final_mode_collapse_mean": 0.43420186996090804,
+    "final_mode_collapse_std": 0.044707627520794914
+  },
+  "control": {
+    "n": 5,
+    "final_mode_collapse_mean": 0.9537852564877485,
+    "final_mode_collapse_std": 0.09208034391768967
+  },
+  "effect_size": {
+    "cohens_d": 7.178606381583798,
+    "interpretation": "large"
+  },
+  "success_criteria": {
+    "trigger_rate_pass": true,
+    "recovery_fraction_pass": true,
+    "mode_collapse_difference_pass": true
+  }
+}

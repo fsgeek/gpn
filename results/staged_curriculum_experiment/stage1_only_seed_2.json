@@ -1,0 +1,5018 @@
+{
+  "condition": "stage1_only",
+  "seed": 2,
+  "history": [
+    {
+      "total_loss": 5.277467727661133,
+      "gen_loss": 2.8876829147338867,
+      "grounding_loss": 2.045502185821533,
+      "alignment_loss": 1.1476091146469116,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.04377880319952965,
+      "stage": 1,
+      "action_acc": 0.0,
+      "test_seq_acc": 0.0
+    },
+    {
+      "total_loss": 4.013037204742432,
+      "gen_loss": 2.2487709522247314,
+      "grounding_loss": 1.326294183731079,
+      "alignment_loss": 1.4456584453582764,
+      "empowerment_loss": 0.042743146419525146,
+      "judge_correctness": 0.0,
+      "stage": 1,
+      "action_acc": 0.25
+    },
+    {
+      "total_loss": 4.165957450866699,
+      "gen_loss": 1.7948825359344482,
+      "grounding_loss": 1.9837936162948608,
+      "alignment_loss": 1.2756364345550537,
+      "empowerment_loss": 0.045904576778411865,
+      "judge_correctness": 0.0,
+      "stage": 1,
+      "action_acc": 0.0
+    },
+    {
+      "total_loss": 3.075930595397949,
+      "gen_loss": 1.6704132556915283,
+      "grounding_loss": 1.1146889925003052,
+      "alignment_loss": 0.9451067447662354,
+      "empowerment_loss": 0.07296108454465866,
+      "judge_correctness": 0.0,
+      "stage": 1,
+      "action_acc": 0.5
+    },
+    {
+      "total_loss": 2.9701144695281982,
+      "gen_loss": 1.4603233337402344,
+      "grounding_loss": 1.1342475414276123,
+      "alignment_loss": 1.2439650297164917,
+      "empowerment_loss": 0.02354246936738491,
+      "judge_correctness": 0.0,
+      "stage": 1,
+      "action_acc": 0.5
+    },
+    {
+      "total_loss": 3.127654790878296,
+      "gen_loss": 1.7161643505096436,
+      "grounding_loss": 1.1446812152862549,
+      "alignment_loss": 0.8734680414199829,
+      "empowerment_loss": 0.04768822714686394,
+      "judge_correctness": 0.0,
+      "stage": 1,
+      "action_acc": 0.25
+    },
+    {
+      "total_loss": 2.936222553253174,
+      "gen_loss": 1.198512315750122,
+      "grounding_loss": 1.4642974138259888,
+      "alignment_loss": 0.8907521367073059,
+      "empowerment_loss": 0.06186947599053383,
+      "judge_correctness": 0.25,
+      "stage": 1,
+      "action_acc": 0.25
+    },
+    {
+      "total_loss": 2.675541877746582,
+      "gen_loss": 1.3979496955871582,
+      "grounding_loss": 1.032155990600586,
+      "alignment_loss": 0.7989864945411682,
+      "empowerment_loss": 0.0574023574590683,
+      "judge_correctness": 0.25,
+      "stage": 1,
+      "action_acc": 0.5
+    },
+    {
+      "total_loss": 1.829878330230713,
+      "gen_loss": 0.6611442565917969,
+      "grounding_loss": 0.9689273834228516,
+      "alignment_loss": 0.6413068771362305,
+      "empowerment_loss": 0.07414616644382477,
+      "judge_correctness": 0.2708333432674408,
+      "stage": 1,
+      "action_acc": 0.5
+    },
+    {
+      "total_loss": 1.8688076734542847,
+      "gen_loss": 0.6599806547164917,
+      "grounding_loss": 1.02177095413208,
+      "alignment_loss": 0.6065460443496704,
+      "empowerment_loss": 0.05092311650514603,
+      "judge_correctness": 0.1875,
+      "stage": 1,
+      "action_acc": 0.5
+    },
+    {
+      "total_loss": 2.692131757736206,
+      "gen_loss": 1.3075931072235107,
+      "grounding_loss": 1.173764705657959,
+      "alignment_loss": 0.679795503616333,
+      "empowerment_loss": 0.06835313141345978,
+      "judge_correctness": 0.3125,
+      "stage": 1,
+      "action_acc": 0.5
+    },
+    {
+      "total_loss": 1.3896052837371826,
+      "gen_loss": 0.7171695232391357,
+      "grounding_loss": 0.5135741233825684,
+      "alignment_loss": 0.5093685388565063,
+      "empowerment_loss": 0.060510095208883286,
+      "judge_correctness": 0.5625,
+      "stage": 1,
+      "action_acc": 0.75
+    },
+    {
+      "total_loss": 1.327890396118164,
+      "gen_loss": 0.7365562915802002,
+      "grounding_loss": 0.4459087550640106,
+      "alignment_loss": 0.4644342064857483,
+      "empowerment_loss": 0.06095058098435402,
+      "judge_correctness": 0.75,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.3251283168792725,
+      "gen_loss": 0.7281851768493652,
+      "grounding_loss": 0.478659987449646,
+      "alignment_loss": 0.3763124644756317,
+      "empowerment_loss": 0.05389473959803581,
+      "judge_correctness": 0.25,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.2811167240142822,
+      "gen_loss": 0.759861409664154,
+      "grounding_loss": 0.3555675446987152,
+      "alignment_loss": 0.5341224074363708,
+      "empowerment_loss": 0.05451036989688873,
+      "judge_correctness": 0.75,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.8958451151847839,
+      "gen_loss": 0.4523336887359619,
+      "grounding_loss": 0.2906268537044525,
+      "alignment_loss": 0.4911682903766632,
+      "empowerment_loss": 0.05534029379487038,
+      "judge_correctness": 0.75,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.1822296380996704,
+      "gen_loss": 0.7473669052124023,
+      "grounding_loss": 0.27972352504730225,
+      "alignment_loss": 0.5029983520507812,
+      "empowerment_loss": 0.042396850883960724,
+      "judge_correctness": 0.75,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.1919938325881958,
+      "gen_loss": 0.6420485973358154,
+      "grounding_loss": 0.39514487981796265,
+      "alignment_loss": 0.5021837949752808,
+      "empowerment_loss": 0.04145125299692154,
+      "judge_correctness": 0.5,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.9867665767669678,
+      "gen_loss": 0.653088390827179,
+      "grounding_loss": 0.20271103084087372,
+      "alignment_loss": 0.4250653386116028,
+      "empowerment_loss": 0.03447520732879639,
+      "judge_correctness": 0.75,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.9109014868736267,
+      "gen_loss": 0.5049154758453369,
+      "grounding_loss": 0.2949252724647522,
+      "alignment_loss": 0.35461506247520447,
+      "empowerment_loss": 0.04676232486963272,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.0717054605484009,
+      "gen_loss": 0.6155182123184204,
+      "grounding_loss": 0.36246517300605774,
+      "alignment_loss": 0.29531025886535645,
+      "empowerment_loss": 0.051290255039930344,
+      "judge_correctness": 0.75,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.8434599041938782,
+      "gen_loss": 0.4702642560005188,
+      "grounding_loss": 0.28079935908317566,
+      "alignment_loss": 0.2891107201576233,
+      "empowerment_loss": 0.05663092061877251,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.7654293775558472,
+      "gen_loss": 0.5712248086929321,
+      "grounding_loss": 0.08100655674934387,
+      "alignment_loss": 0.36562973260879517,
+      "empowerment_loss": 0.03509083017706871,
+      "judge_correctness": 0.75,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.43387946486473083,
+      "gen_loss": 0.25913387537002563,
+      "grounding_loss": 0.06616874784231186,
+      "alignment_loss": 0.34751075506210327,
+      "empowerment_loss": 0.04323612153530121,
+      "judge_correctness": 0.25,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.5176798105239868,
+      "gen_loss": 0.35992929339408875,
+      "grounding_loss": 0.04210696369409561,
+      "alignment_loss": 0.37845587730407715,
+      "empowerment_loss": 0.021068129688501358,
+      "judge_correctness": 0.75,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.38764214515686035,
+      "gen_loss": 0.2391076534986496,
+      "grounding_loss": 0.06674246490001678,
+      "alignment_loss": 0.2611444890499115,
+      "empowerment_loss": 0.0344865582883358,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.42692217230796814,
+      "gen_loss": 0.24876853823661804,
+      "grounding_loss": 0.04613916575908661,
+      "alignment_loss": 0.4311840832233429,
+      "empowerment_loss": 0.026592358946800232,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.4176180958747864,
+      "gen_loss": 0.30553990602493286,
+      "grounding_loss": 0.016503451392054558,
+      "alignment_loss": 0.3119727373123169,
+      "empowerment_loss": 0.01982913911342621,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.4337639808654785,
+      "gen_loss": 0.2691832184791565,
+      "grounding_loss": 0.04175086319446564,
+      "alignment_loss": 0.4008950889110565,
+      "empowerment_loss": 0.02561398409307003,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.3488010764122009,
+      "gen_loss": 0.19938725233078003,
+      "grounding_loss": 0.027105282992124557,
+      "alignment_loss": 0.39599350094795227,
+      "empowerment_loss": 0.0351046584546566,
+      "judge_correctness": 0.5,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.3291274607181549,
+      "gen_loss": 0.20048722624778748,
+      "grounding_loss": 0.013768330216407776,
+      "alignment_loss": 0.3707915246486664,
+      "empowerment_loss": 0.0363445021212101,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.38800370693206787,
+      "gen_loss": 0.19394834339618683,
+      "grounding_loss": 0.02127685211598873,
+      "alignment_loss": 0.5749841928482056,
+      "empowerment_loss": 0.0028325305320322514,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2208765745162964,
+      "gen_loss": 0.05202057957649231,
+      "grounding_loss": 0.01744866371154785,
+      "alignment_loss": 0.49824583530426025,
+      "empowerment_loss": 0.019335776567459106,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.29950466752052307,
+      "gen_loss": 0.16167330741882324,
+      "grounding_loss": 0.008965959772467613,
+      "alignment_loss": 0.42303144931793213,
+      "empowerment_loss": 0.019559483975172043,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.19247868657112122,
+      "gen_loss": 0.055428214371204376,
+      "grounding_loss": 0.004429193679243326,
+      "alignment_loss": 0.43552690744400024,
+      "empowerment_loss": 0.019631927832961082,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.27769598364830017,
+      "gen_loss": 0.1142493411898613,
+      "grounding_loss": 0.0071338992565870285,
+      "alignment_loss": 0.5104459524154663,
+      "empowerment_loss": 0.03178955614566803,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.20927202701568604,
+      "gen_loss": 0.05749860033392906,
+      "grounding_loss": 0.011692349798977375,
+      "alignment_loss": 0.4640469253063202,
+      "empowerment_loss": 0.008669951930642128,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.33049115538597107,
+      "gen_loss": 0.15291348099708557,
+      "grounding_loss": 0.0018633741419762373,
+      "alignment_loss": 0.5804182291030884,
+      "empowerment_loss": 0.01588824763894081,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2944043278694153,
+      "gen_loss": 0.17595383524894714,
+      "grounding_loss": 0.004742991644889116,
+      "alignment_loss": 0.3777260482311249,
+      "empowerment_loss": 0.0038969824090600014,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.24093900620937347,
+      "gen_loss": 0.10648030042648315,
+      "grounding_loss": 0.00554262800142169,
+      "alignment_loss": 0.42497289180755615,
+      "empowerment_loss": 0.014242017641663551,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.21866221725940704,
+      "gen_loss": 0.0709240585565567,
+      "grounding_loss": 0.0023372143041342497,
+      "alignment_loss": 0.481448233127594,
+      "empowerment_loss": 0.009664582088589668,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.13209539651870728,
+      "gen_loss": 0.032995838671922684,
+      "grounding_loss": 0.0028327242471277714,
+      "alignment_loss": 0.31002071499824524,
+      "empowerment_loss": 0.03260611742734909,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.11871201545000076,
+      "gen_loss": 0.022092442959547043,
+      "grounding_loss": 0.0022753365337848663,
+      "alignment_loss": 0.31266456842422485,
+      "empowerment_loss": 0.005448610987514257,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.15834276378154755,
+      "gen_loss": 0.04071589186787605,
+      "grounding_loss": 0.0013627376174554229,
+      "alignment_loss": 0.38353580236434937,
+      "empowerment_loss": 0.012033890932798386,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1486642062664032,
+      "gen_loss": 0.039888687431812286,
+      "grounding_loss": 0.0024063135497272015,
+      "alignment_loss": 0.3517119288444519,
+      "empowerment_loss": 0.008556302636861801,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.17305344343185425,
+      "gen_loss": 0.04678451642394066,
+      "grounding_loss": 0.0019010149408131838,
+      "alignment_loss": 0.4133264124393463,
+      "empowerment_loss": 0.0036997636780142784,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.158766508102417,
+      "gen_loss": 0.04429946094751358,
+      "grounding_loss": 0.002007157076150179,
+      "alignment_loss": 0.37434664368629456,
+      "empowerment_loss": 0.0015589245595037937,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.10687389224767685,
+      "gen_loss": 0.014596104621887207,
+      "grounding_loss": 0.001803574850782752,
+      "alignment_loss": 0.2985786199569702,
+      "empowerment_loss": 0.00900617241859436,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.12171890586614609,
+      "gen_loss": 0.011877395212650299,
+      "grounding_loss": 0.00256939185783267,
+      "alignment_loss": 0.35333797335624695,
+      "empowerment_loss": 0.01270719338208437,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.14089973270893097,
+      "gen_loss": 0.023295730352401733,
+      "grounding_loss": 0.0010159527882933617,
+      "alignment_loss": 0.38833194971084595,
+      "empowerment_loss": 0.0008846696000546217,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.15092557668685913,
+      "gen_loss": 0.02160688117146492,
+      "grounding_loss": 0.0046269576996564865,
+      "alignment_loss": 0.4136110246181488,
+      "empowerment_loss": 0.006084254942834377,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.13482049107551575,
+      "gen_loss": 0.024938950315117836,
+      "grounding_loss": 0.0013810053933411837,
+      "alignment_loss": 0.36057767271995544,
+      "empowerment_loss": 0.003272232599556446,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.12717939913272858,
+      "gen_loss": 0.016675427556037903,
+      "grounding_loss": 0.0010910634882748127,
+      "alignment_loss": 0.3644130825996399,
+      "empowerment_loss": 0.0008897748775780201,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.12305311858654022,
+      "gen_loss": 0.018780823796987534,
+      "grounding_loss": 0.0007782541215419769,
+      "alignment_loss": 0.34434929490089417,
+      "empowerment_loss": 0.0018924770411103964,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1468588262796402,
+      "gen_loss": 0.01737368479371071,
+      "grounding_loss": 0.0007436700398102403,
+      "alignment_loss": 0.4291382431983948,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.09599124640226364,
+      "gen_loss": 0.010492363944649696,
+      "grounding_loss": 0.001587721984833479,
+      "alignment_loss": 0.27970385551452637,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.09971968829631805,
+      "gen_loss": 0.013537479564547539,
+      "grounding_loss": 0.0017549600452184677,
+      "alignment_loss": 0.2814241349697113,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.875,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.08782126754522324,
+      "gen_loss": 0.005339575931429863,
+      "grounding_loss": 0.0004871254786849022,
+      "alignment_loss": 0.27166861295700073,
+      "empowerment_loss": 0.004939747042953968,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.09240490198135376,
+      "gen_loss": 0.023977765813469887,
+      "grounding_loss": 0.0007673674845136702,
+      "alignment_loss": 0.22553254663944244,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.11983416974544525,
+      "gen_loss": 0.010669170878827572,
+      "grounding_loss": 0.0004622052947524935,
+      "alignment_loss": 0.36183425784111023,
+      "empowerment_loss": 0.0015251075383275747,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.11890176683664322,
+      "gen_loss": 0.01680723950266838,
+      "grounding_loss": 0.0005466146394610405,
+      "alignment_loss": 0.3384930193424225,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.07249560952186584,
+      "gen_loss": 0.00889841839671135,
+      "grounding_loss": 0.000428808038122952,
+      "alignment_loss": 0.2099044919013977,
+      "empowerment_loss": 0.001970296259969473,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.0891878679394722,
+      "gen_loss": 0.009996896609663963,
+      "grounding_loss": 0.0008177899871952832,
+      "alignment_loss": 0.26124390959739685,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.073632150888443,
+      "gen_loss": 0.009700944647192955,
+      "grounding_loss": 0.0007026318926364183,
+      "alignment_loss": 0.20578086376190186,
+      "empowerment_loss": 0.014943081885576248,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.0801267996430397,
+      "gen_loss": 0.005346018821001053,
+      "grounding_loss": 0.0005276915617287159,
+      "alignment_loss": 0.2460460364818573,
+      "empowerment_loss": 0.004392796196043491,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.06880144029855728,
+      "gen_loss": 0.014508684165775776,
+      "grounding_loss": 0.000481393130030483,
+      "alignment_loss": 0.17670147120952606,
+      "empowerment_loss": 0.008009125478565693,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.06571676582098007,
+      "gen_loss": 0.007168845273554325,
+      "grounding_loss": 0.0005091106286272407,
+      "alignment_loss": 0.19346268475055695,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.0712638571858406,
+      "gen_loss": 0.00706276623532176,
+      "grounding_loss": 0.00043623062083497643,
+      "alignment_loss": 0.21254952251911163,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.07849978655576706,
+      "gen_loss": 0.005920366384088993,
+      "grounding_loss": 0.0005882094847038388,
+      "alignment_loss": 0.23979195952415466,
+      "empowerment_loss": 0.0005361828953027725,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.086900994181633,
+      "gen_loss": 0.0064404853619635105,
+      "grounding_loss": 0.0006559824105352163,
+      "alignment_loss": 0.26594018936157227,
+      "empowerment_loss": 0.00022461079061031342,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.08605485409498215,
+      "gen_loss": 0.013455823063850403,
+      "grounding_loss": 0.0005873155896551907,
+      "alignment_loss": 0.23871353268623352,
+      "empowerment_loss": 0.003976542968302965,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.09340046346187592,
+      "gen_loss": 0.01124273519963026,
+      "grounding_loss": 0.0005850731395184994,
+      "alignment_loss": 0.27090975642204285,
+      "empowerment_loss": 0.0029972330667078495,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.09082556515932083,
+      "gen_loss": 0.010355458594858646,
+      "grounding_loss": 0.0007929261773824692,
+      "alignment_loss": 0.2632787823677063,
+      "empowerment_loss": 0.006935412995517254,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.06264697015285492,
+      "gen_loss": 0.003324060933664441,
+      "grounding_loss": 0.0004142075194977224,
+      "alignment_loss": 0.1952926367521286,
+      "empowerment_loss": 0.0032091098837554455,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.08168501406908035,
+      "gen_loss": 0.006138954311609268,
+      "grounding_loss": 0.0003549969114828855,
+      "alignment_loss": 0.25018244981765747,
+      "empowerment_loss": 0.0013633323833346367,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.07435740530490875,
+      "gen_loss": 0.003572175046429038,
+      "grounding_loss": 0.0004844304930884391,
+      "alignment_loss": 0.2343360036611557,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.08703412115573883,
+      "gen_loss": 0.0091194286942482,
+      "grounding_loss": 0.0006832113722339272,
+      "alignment_loss": 0.2559186816215515,
+      "empowerment_loss": 0.004558715969324112,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.06814835965633392,
+      "gen_loss": 0.0035715466365218163,
+      "grounding_loss": 0.0008874080376699567,
+      "alignment_loss": 0.2121938169002533,
+      "empowerment_loss": 0.00031257933005690575,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.08644860237836838,
+      "gen_loss": 0.006072338670492172,
+      "grounding_loss": 0.00044877149048261344,
+      "alignment_loss": 0.2645520269870758,
+      "empowerment_loss": 0.005618780851364136,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.08828363567590714,
+      "gen_loss": 0.006263147108256817,
+      "grounding_loss": 0.0003582751378417015,
+      "alignment_loss": 0.2722073793411255,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.08333902806043625,
+      "gen_loss": 0.003216139040887356,
+      "grounding_loss": 0.00033364901901222765,
+      "alignment_loss": 0.2645646035671234,
+      "empowerment_loss": 0.004198592156171799,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.06982356309890747,
+      "gen_loss": 0.006836636923253536,
+      "grounding_loss": 0.0002638588775880635,
+      "alignment_loss": 0.2080836296081543,
+      "empowerment_loss": 0.002979803364723921,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.07449459284543991,
+      "gen_loss": 0.0030841464176774025,
+      "grounding_loss": 0.0002289708936586976,
+      "alignment_loss": 0.23330160975456238,
+      "empowerment_loss": 0.01190991885960102,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.078618124127388,
+      "gen_loss": 0.0023792413994669914,
+      "grounding_loss": 0.0005469415336847305,
+      "alignment_loss": 0.2523064613342285,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.08611967414617538,
+      "gen_loss": 0.002599578583613038,
+      "grounding_loss": 0.0009472455712966621,
+      "alignment_loss": 0.27478891611099243,
+      "empowerment_loss": 0.0013616383075714111,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.08336500823497772,
+      "gen_loss": 0.0016597236972302198,
+      "grounding_loss": 0.0009692697203718126,
+      "alignment_loss": 0.2691200375556946,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.06178884580731392,
+      "gen_loss": 0.0022544420789927244,
+      "grounding_loss": 0.0003414629609324038,
+      "alignment_loss": 0.19730979204177856,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.05431890860199928,
+      "gen_loss": 0.0019230176694691181,
+      "grounding_loss": 0.00039750634459778666,
+      "alignment_loss": 0.17255853116512299,
+      "empowerment_loss": 0.0023082448169589043,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.07654627412557602,
+      "gen_loss": 0.0022483146749436855,
+      "grounding_loss": 0.0003477149293757975,
+      "alignment_loss": 0.24650080502033234,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.07578599452972412,
+      "gen_loss": 0.0019975053146481514,
+      "grounding_loss": 0.0002996250696014613,
+      "alignment_loss": 0.24418699741363525,
+      "empowerment_loss": 0.0023275455459952354,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.07815980911254883,
+      "gen_loss": 0.003536313772201538,
+      "grounding_loss": 0.0004688407061621547,
+      "alignment_loss": 0.2465249001979828,
+      "empowerment_loss": 0.0019717933610081673,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.09032124280929565,
+      "gen_loss": 0.002523011527955532,
+      "grounding_loss": 0.00042100195423699915,
+      "alignment_loss": 0.29125741124153137,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.06644687801599503,
+      "gen_loss": 0.003137524239718914,
+      "grounding_loss": 0.0011327038519084454,
+      "alignment_loss": 0.20683065056800842,
+      "empowerment_loss": 0.0012745005078613758,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.07980133593082428,
+      "gen_loss": 0.0023915073834359646,
+      "grounding_loss": 0.00021647915127687156,
+      "alignment_loss": 0.2515915036201477,
+      "empowerment_loss": 0.0171589907258749,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.06078958511352539,
+      "gen_loss": 0.002563506830483675,
+      "grounding_loss": 0.0003240634687244892,
+      "alignment_loss": 0.1911352574825287,
+      "empowerment_loss": 0.00561435054987669,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.09076108783483505,
+      "gen_loss": 0.001338165020570159,
+      "grounding_loss": 0.0008965346496552229,
+      "alignment_loss": 0.2950879633426666,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.07553354650735855,
+      "gen_loss": 0.0033679583575576544,
+      "grounding_loss": 0.0005541066057048738,
+      "alignment_loss": 0.23870491981506348,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.07982505857944489,
+      "gen_loss": 0.0020731957629323006,
+      "grounding_loss": 0.0006595886079594493,
+      "alignment_loss": 0.2543520927429199,
+      "empowerment_loss": 0.007866496220231056,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.0653352290391922,
+      "gen_loss": 0.0027716488111764193,
+      "grounding_loss": 0.0009586010128259659,
+      "alignment_loss": 0.20518013834953308,
+      "empowerment_loss": 0.0005093165673315525,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.0652749165892601,
+      "gen_loss": 0.005040810443460941,
+      "grounding_loss": 0.0003968472592532635,
+      "alignment_loss": 0.19432860612869263,
+      "empowerment_loss": 0.01538668479770422,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.057711243629455566,
+      "gen_loss": 0.0023692124523222446,
+      "grounding_loss": 0.00042030808981508017,
+      "alignment_loss": 0.18250776827335358,
+      "empowerment_loss": 0.0016939211636781693,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0,
+      "test_seq_acc": 0.0
+    },
+    {
+      "total_loss": 0.07423867285251617,
+      "gen_loss": 0.004267038777470589,
+      "grounding_loss": 0.0003041952440980822,
+      "alignment_loss": 0.23222477734088898,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.060816265642642975,
+      "gen_loss": 0.0021413112990558147,
+      "grounding_loss": 0.0003649568243417889,
+      "alignment_loss": 0.19323697686195374,
+      "empowerment_loss": 0.0033890623599290848,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.08059995621442795,
+      "gen_loss": 0.004111167509108782,
+      "grounding_loss": 0.0006005517789162695,
+      "alignment_loss": 0.25114381313323975,
+      "empowerment_loss": 0.005450921133160591,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.05536603182554245,
+      "gen_loss": 0.0013526249676942825,
+      "grounding_loss": 0.0003134699654765427,
+      "alignment_loss": 0.17899978160858154,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.0749303475022316,
+      "gen_loss": 0.0015373823698610067,
+      "grounding_loss": 0.0007016937015578151,
+      "alignment_loss": 0.2423042207956314,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.08045394718647003,
+      "gen_loss": 0.001879611168988049,
+      "grounding_loss": 0.0003337736416142434,
+      "alignment_loss": 0.26080188155174255,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.05498010292649269,
+      "gen_loss": 0.0016125523252412677,
+      "grounding_loss": 0.00021377646771725267,
+      "alignment_loss": 0.1771792471408844,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.05029323324561119,
+      "gen_loss": 0.002086738357320428,
+      "grounding_loss": 0.0017340200720354915,
+      "alignment_loss": 0.15490823984146118,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.06929919868707657,
+      "gen_loss": 0.002203962067142129,
+      "grounding_loss": 0.00043572927825152874,
+      "alignment_loss": 0.22219836711883545,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.05951007828116417,
+      "gen_loss": 0.0019656599033623934,
+      "grounding_loss": 0.0004083703679498285,
+      "alignment_loss": 0.18987774848937988,
+      "empowerment_loss": 0.0017271991819143295,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.058161184191703796,
+      "gen_loss": 0.0014284509234130383,
+      "grounding_loss": 0.0002881980617530644,
+      "alignment_loss": 0.18555386364459991,
+      "empowerment_loss": 0.007783766835927963,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.055863674730062485,
+      "gen_loss": 0.0025456652510911226,
+      "grounding_loss": 0.0002452344633638859,
+      "alignment_loss": 0.17690925300121307,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.09267769753932953,
+      "gen_loss": 0.011476448737084866,
+      "grounding_loss": 0.0008792585576884449,
+      "alignment_loss": 0.2677399516105652,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.06665309518575668,
+      "gen_loss": 0.0024247050751000643,
+      "grounding_loss": 0.00024299089272972196,
+      "alignment_loss": 0.2102561891078949,
+      "empowerment_loss": 0.009085394442081451,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.05167701095342636,
+      "gen_loss": 0.001804495695978403,
+      "grounding_loss": 0.00045942040742374957,
+      "alignment_loss": 0.16471031308174133,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.06457449495792389,
+      "gen_loss": 0.002554353093728423,
+      "grounding_loss": 0.00016485106607433408,
+      "alignment_loss": 0.20009173452854156,
+      "empowerment_loss": 0.01827767677605152,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.08110647648572922,
+      "gen_loss": 0.0013442212948575616,
+      "grounding_loss": 0.00041832757415249944,
+      "alignment_loss": 0.2583596706390381,
+      "empowerment_loss": 0.018360229209065437,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.07524579018354416,
+      "gen_loss": 0.001650738762691617,
+      "grounding_loss": 0.00016148484428413212,
+      "alignment_loss": 0.24394823610782623,
+      "empowerment_loss": 0.002490900456905365,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.04431937634944916,
+      "gen_loss": 0.0018556250724941492,
+      "grounding_loss": 0.00023463113757316023,
+      "alignment_loss": 0.14076372981071472,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.052605997771024704,
+      "gen_loss": 0.001638046931475401,
+      "grounding_loss": 0.00034061967744491994,
+      "alignment_loss": 0.16875776648521423,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.05142585560679436,
+      "gen_loss": 0.0013047256506979465,
+      "grounding_loss": 0.0003037518763449043,
+      "alignment_loss": 0.16605792939662933,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.053850430995225906,
+      "gen_loss": 0.0014686116483062506,
+      "grounding_loss": 0.00031644897535443306,
+      "alignment_loss": 0.17355121672153473,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.05348030477762222,
+      "gen_loss": 0.0007681072456762195,
+      "grounding_loss": 0.0008622427703812718,
+      "alignment_loss": 0.1728331744670868,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 1,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.08258751779794693,
+      "gen_loss": 0.0014304019277915359,
+      "grounding_loss": 0.0005205945926718414,
+      "alignment_loss": 0.2687883973121643,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 5.652297496795654,
+      "gen_loss": 5.570537567138672,
+      "grounding_loss": 0.004285500850528479,
+      "alignment_loss": 0.25824886560440063,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.25,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 5.310206890106201,
+      "gen_loss": 5.2318010330200195,
+      "grounding_loss": 0.00463210791349411,
+      "alignment_loss": 0.24591298401355743,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.25,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 5.035414218902588,
+      "gen_loss": 4.960331439971924,
+      "grounding_loss": 0.003542100777849555,
+      "alignment_loss": 0.2384691685438156,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.25,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 4.289626121520996,
+      "gen_loss": 4.216837406158447,
+      "grounding_loss": 0.003570140339434147,
+      "alignment_loss": 0.23072898387908936,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.25,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 4.17186975479126,
+      "gen_loss": 4.085424423217773,
+      "grounding_loss": 0.0047855074517428875,
+      "alignment_loss": 0.27219870686531067,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.25,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 3.3368465900421143,
+      "gen_loss": 3.2578439712524414,
+      "grounding_loss": 0.0023599418345838785,
+      "alignment_loss": 0.25547611713409424,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.25,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 2.9797470569610596,
+      "gen_loss": 2.887641429901123,
+      "grounding_loss": 0.0024468195624649525,
+      "alignment_loss": 0.2988623380661011,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.25,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 2.4025187492370605,
+      "gen_loss": 2.3338968753814697,
+      "grounding_loss": 0.0024624462239444256,
+      "alignment_loss": 0.22053135931491852,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.296875,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 2.2985763549804688,
+      "gen_loss": 2.2190911769866943,
+      "grounding_loss": 0.0034737130627036095,
+      "alignment_loss": 0.25337129831314087,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.28125,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 2.0317680835723877,
+      "gen_loss": 1.9605127573013306,
+      "grounding_loss": 0.0026085651479661465,
+      "alignment_loss": 0.22882238030433655,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.1901041716337204,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.9930907487869263,
+      "gen_loss": 1.9209823608398438,
+      "grounding_loss": 0.002425739075988531,
+      "alignment_loss": 0.23227524757385254,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.2421875,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.7343897819519043,
+      "gen_loss": 1.6568613052368164,
+      "grounding_loss": 0.001745153684169054,
+      "alignment_loss": 0.25261104106903076,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.35240256786346436,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.6330459117889404,
+      "gen_loss": 1.5567371845245361,
+      "grounding_loss": 0.001021397765725851,
+      "alignment_loss": 0.25095775723457336,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.261962354183197,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.6170145273208618,
+      "gen_loss": 1.5119928121566772,
+      "grounding_loss": 0.0015019571874290705,
+      "alignment_loss": 0.3397177457809448,
+      "empowerment_loss": 0.016043949872255325,
+      "judge_correctness": 0.12978830933570862,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.49924635887146,
+      "gen_loss": 1.3912341594696045,
+      "grounding_loss": 0.0015103846089914441,
+      "alignment_loss": 0.3414817154407501,
+      "empowerment_loss": 0.04057244583964348,
+      "judge_correctness": 0.09965437650680542,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.5695710182189941,
+      "gen_loss": 1.4008257389068604,
+      "grounding_loss": 0.0010826794896274805,
+      "alignment_loss": 0.5072875022888184,
+      "empowerment_loss": 0.15476369857788086,
+      "judge_correctness": 0.1572580635547638,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.5306448936462402,
+      "gen_loss": 1.3620038032531738,
+      "grounding_loss": 0.0014154798118397593,
+      "alignment_loss": 0.5197376012802124,
+      "empowerment_loss": 0.11304435133934021,
+      "judge_correctness": 0.06518816947937012,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.4838647842407227,
+      "gen_loss": 1.3307193517684937,
+      "grounding_loss": 0.002003749366849661,
+      "alignment_loss": 0.4823557138442993,
+      "empowerment_loss": 0.0643494576215744,
+      "judge_correctness": 0.09553349763154984,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.3796894550323486,
+      "gen_loss": 1.1939798593521118,
+      "grounding_loss": 0.0013132099993526936,
+      "alignment_loss": 0.5989739894866943,
+      "empowerment_loss": 0.04704253375530243,
+      "judge_correctness": 0.24309179186820984,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.319187879562378,
+      "gen_loss": 1.1801625490188599,
+      "grounding_loss": 0.0007093832828104496,
+      "alignment_loss": 0.452465295791626,
+      "empowerment_loss": 0.025763213634490967,
+      "judge_correctness": 0.30283936858177185,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.0267096757888794,
+      "gen_loss": 0.8989173769950867,
+      "grounding_loss": 0.0011164259631186724,
+      "alignment_loss": 0.4217868447303772,
+      "empowerment_loss": 0.0013978257775306702,
+      "judge_correctness": 0.2520161271095276,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.0184797048568726,
+      "gen_loss": 0.9042597413063049,
+      "grounding_loss": 0.0008464557467959821,
+      "alignment_loss": 0.37138882279396057,
+      "empowerment_loss": 0.019567612558603287,
+      "judge_correctness": 0.39695340394973755,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.975342869758606,
+      "gen_loss": 0.8940807580947876,
+      "grounding_loss": 0.0008110424969345331,
+      "alignment_loss": 0.2681702971458435,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.2447916567325592,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.9373064637184143,
+      "gen_loss": 0.832038938999176,
+      "grounding_loss": 0.002410296816378832,
+      "alignment_loss": 0.34285739064216614,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.296875,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.9268805384635925,
+      "gen_loss": 0.8032373785972595,
+      "grounding_loss": 0.0006043931934982538,
+      "alignment_loss": 0.4101291596889496,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.25,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.0553362369537354,
+      "gen_loss": 0.9427953362464905,
+      "grounding_loss": 0.0006593732396140695,
+      "alignment_loss": 0.3729385733604431,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.2708333432674408,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.8863843083381653,
+      "gen_loss": 0.768336832523346,
+      "grounding_loss": 0.0007246997556649148,
+      "alignment_loss": 0.3910759687423706,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.3333333432674408,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.779610812664032,
+      "gen_loss": 0.6522164344787598,
+      "grounding_loss": 0.0006017686682753265,
+      "alignment_loss": 0.4226419925689697,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.3125,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.8356006145477295,
+      "gen_loss": 0.7068897485733032,
+      "grounding_loss": 0.0011393881868571043,
+      "alignment_loss": 0.42523807287216187,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.3343749940395355,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.8025946617126465,
+      "gen_loss": 0.633364737033844,
+      "grounding_loss": 0.0006007296615280211,
+      "alignment_loss": 0.5620972514152527,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.29250672459602356,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.7486172318458557,
+      "gen_loss": 0.5987317562103271,
+      "grounding_loss": 0.00044392282143235207,
+      "alignment_loss": 0.4981384575366974,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.5005040168762207,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.8542588353157043,
+      "gen_loss": 0.6958163976669312,
+      "grounding_loss": 0.0005267203669063747,
+      "alignment_loss": 0.5263856649398804,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.3931451439857483,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.7499679923057556,
+      "gen_loss": 0.5871446132659912,
+      "grounding_loss": 0.000552528363186866,
+      "alignment_loss": 0.540902853012085,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.4313076138496399,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.7549796104431152,
+      "gen_loss": 0.6026341915130615,
+      "grounding_loss": 0.0004345363413449377,
+      "alignment_loss": 0.5063695311546326,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.4692540168762207,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.6925861835479736,
+      "gen_loss": 0.5505925416946411,
+      "grounding_loss": 0.0005796446930617094,
+      "alignment_loss": 0.4713800549507141,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.5989583730697632,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.5983294248580933,
+      "gen_loss": 0.480593740940094,
+      "grounding_loss": 0.0005006239516660571,
+      "alignment_loss": 0.39078354835510254,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.4895833432674408,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.7013881206512451,
+      "gen_loss": 0.5707791447639465,
+      "grounding_loss": 0.0008062464185059071,
+      "alignment_loss": 0.4326757490634918,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.46875,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.6434119939804077,
+      "gen_loss": 0.5161167979240417,
+      "grounding_loss": 0.0004658345424104482,
+      "alignment_loss": 0.4227645695209503,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.5989583730697632,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.5202153325080872,
+      "gen_loss": 0.41486606001853943,
+      "grounding_loss": 0.000485874799778685,
+      "alignment_loss": 0.3495447039604187,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6484375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.6276739835739136,
+      "gen_loss": 0.5157231688499451,
+      "grounding_loss": 0.0004133251204621047,
+      "alignment_loss": 0.37179163098335266,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.59375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.4892638623714447,
+      "gen_loss": 0.37537872791290283,
+      "grounding_loss": 0.0009314764756709337,
+      "alignment_loss": 0.37651222944259644,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.484375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.5723062753677368,
+      "gen_loss": 0.4446449875831604,
+      "grounding_loss": 0.0003636700566858053,
+      "alignment_loss": 0.4243253171443939,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.48750001192092896,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.5957051515579224,
+      "gen_loss": 0.46054893732070923,
+      "grounding_loss": 0.00054948526667431,
+      "alignment_loss": 0.44868898391723633,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.4768603444099426,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.5009061694145203,
+      "gen_loss": 0.38534218072891235,
+      "grounding_loss": 0.0005502474959939718,
+      "alignment_loss": 0.3833790719509125,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6046707034111023,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.5191859006881714,
+      "gen_loss": 0.3821622133255005,
+      "grounding_loss": 0.0004665361193474382,
+      "alignment_loss": 0.4551905393600464,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.5159057974815369,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.511822521686554,
+      "gen_loss": 0.3906470537185669,
+      "grounding_loss": 0.0003941291943192482,
+      "alignment_loss": 0.402604341506958,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.5892696976661682,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.5267896056175232,
+      "gen_loss": 0.4049833416938782,
+      "grounding_loss": 0.0005531447241082788,
+      "alignment_loss": 0.40417712926864624,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.4685099720954895,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.5243987441062927,
+      "gen_loss": 0.3844525218009949,
+      "grounding_loss": 0.0004058541380800307,
+      "alignment_loss": 0.46513450145721436,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6598790287971497,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.48368245363235474,
+      "gen_loss": 0.3291831314563751,
+      "grounding_loss": 0.00036187469959259033,
+      "alignment_loss": 0.5137914419174194,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7286866307258606,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.4394499957561493,
+      "gen_loss": 0.33597689867019653,
+      "grounding_loss": 0.00048613257240504026,
+      "alignment_loss": 0.343289852142334,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.5760416984558105,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.4366430640220642,
+      "gen_loss": 0.31693220138549805,
+      "grounding_loss": 0.0005025671562179923,
+      "alignment_loss": 0.39736104011535645,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.703125,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.41291624307632446,
+      "gen_loss": 0.32390767335891724,
+      "grounding_loss": 0.0002677366719581187,
+      "alignment_loss": 0.2958027124404907,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.721875011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.44944167137145996,
+      "gen_loss": 0.3389078676700592,
+      "grounding_loss": 0.00027687050169333816,
+      "alignment_loss": 0.3675231635570526,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7197580337524414,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.41045111417770386,
+      "gen_loss": 0.28794652223587036,
+      "grounding_loss": 0.0003272607282269746,
+      "alignment_loss": 0.40725773572921753,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7756944894790649,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.40330103039741516,
+      "gen_loss": 0.2965714931488037,
+      "grounding_loss": 0.0003673101600725204,
+      "alignment_loss": 0.35454073548316956,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8088037371635437,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.4146265387535095,
+      "gen_loss": 0.296841561794281,
+      "grounding_loss": 0.00036763312527909875,
+      "alignment_loss": 0.3899756371974945,
+      "empowerment_loss": 0.004246380180120468,
+      "judge_correctness": 0.7541331052780151,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.4275799095630646,
+      "gen_loss": 0.3043573200702667,
+      "grounding_loss": 0.0002939441765192896,
+      "alignment_loss": 0.4097621440887451,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6819444298744202,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.37322935461997986,
+      "gen_loss": 0.27370861172676086,
+      "grounding_loss": 0.0003902746830135584,
+      "alignment_loss": 0.3304349184036255,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6984207034111023,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.33006414771080017,
+      "gen_loss": 0.22666552662849426,
+      "grounding_loss": 0.0006509844679385424,
+      "alignment_loss": 0.34249213337898254,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7544642686843872,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.3258816599845886,
+      "gen_loss": 0.22854414582252502,
+      "grounding_loss": 0.000357538228854537,
+      "alignment_loss": 0.32326653599739075,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6723790168762207,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.3122507333755493,
+      "gen_loss": 0.20582416653633118,
+      "grounding_loss": 0.0003229361027479172,
+      "alignment_loss": 0.35367876291275024,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.784375011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2890644967556,
+      "gen_loss": 0.20654907822608948,
+      "grounding_loss": 0.0003097836743108928,
+      "alignment_loss": 0.2740187644958496,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7140457034111023,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.33687257766723633,
+      "gen_loss": 0.22937005758285522,
+      "grounding_loss": 0.0007272165967151523,
+      "alignment_loss": 0.35518866777420044,
+      "empowerment_loss": 0.0021870285272598267,
+      "judge_correctness": 0.6911290287971497,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.39222538471221924,
+      "gen_loss": 0.29692351818084717,
+      "grounding_loss": 0.0004359811428003013,
+      "alignment_loss": 0.31621962785720825,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7505040168762207,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.3390214443206787,
+      "gen_loss": 0.22305867075920105,
+      "grounding_loss": 0.00031819354626350105,
+      "alignment_loss": 0.38548189401626587,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7916666865348816,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.27950623631477356,
+      "gen_loss": 0.1659754365682602,
+      "grounding_loss": 0.00025052641285583377,
+      "alignment_loss": 0.37760087847709656,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7822580337524414,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.34071776270866394,
+      "gen_loss": 0.24393300712108612,
+      "grounding_loss": 0.00031154145835898817,
+      "alignment_loss": 0.32157737016677856,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8169642686843872,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.28008851408958435,
+      "gen_loss": 0.17166103422641754,
+      "grounding_loss": 0.00031424275948666036,
+      "alignment_loss": 0.3603774309158325,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7388392686843872,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2880260944366455,
+      "gen_loss": 0.19645048677921295,
+      "grounding_loss": 0.00023315941507462412,
+      "alignment_loss": 0.30447477102279663,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7152777910232544,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2825840711593628,
+      "gen_loss": 0.18238884210586548,
+      "grounding_loss": 0.0006242600502446294,
+      "alignment_loss": 0.33190327882766724,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8348790407180786,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2985328435897827,
+      "gen_loss": 0.21066685020923615,
+      "grounding_loss": 0.0002566187467891723,
+      "alignment_loss": 0.29203128814697266,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.890625,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.3034028112888336,
+      "gen_loss": 0.2050175815820694,
+      "grounding_loss": 0.0005728509277105331,
+      "alignment_loss": 0.32604125142097473,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.29499542713165283,
+      "gen_loss": 0.1937488317489624,
+      "grounding_loss": 0.0002342907537240535,
+      "alignment_loss": 0.3367076814174652,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8833333253860474,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.24372372031211853,
+      "gen_loss": 0.15674911439418793,
+      "grounding_loss": 0.00022930369595997036,
+      "alignment_loss": 0.28915098309516907,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6760080456733704,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.3192288875579834,
+      "gen_loss": 0.21266666054725647,
+      "grounding_loss": 0.0002674905408639461,
+      "alignment_loss": 0.35431572794914246,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8473790287971497,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.33509138226509094,
+      "gen_loss": 0.23429246246814728,
+      "grounding_loss": 0.0002876003854908049,
+      "alignment_loss": 0.3350377082824707,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8166330456733704,
+      "stage": 2,
+      "action_acc": 1.0,
+      "test_seq_acc": 0.0
+    },
+    {
+      "total_loss": 0.27401480078697205,
+      "gen_loss": 0.1770123541355133,
+      "grounding_loss": 0.00038000172935426235,
+      "alignment_loss": 0.322074830532074,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8353598117828369,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2636913061141968,
+      "gen_loss": 0.17325280606746674,
+      "grounding_loss": 0.00031964940717443824,
+      "alignment_loss": 0.3003961741924286,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8197580575942993,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.31097397208213806,
+      "gen_loss": 0.2197204828262329,
+      "grounding_loss": 0.0004989915760233998,
+      "alignment_loss": 0.3025149703025818,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8412858247756958,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.245076984167099,
+      "gen_loss": 0.15164978802204132,
+      "grounding_loss": 0.00022916980378795415,
+      "alignment_loss": 0.31066012382507324,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.811424732208252,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2333163321018219,
+      "gen_loss": 0.145768940448761,
+      "grounding_loss": 0.00020865598344244063,
+      "alignment_loss": 0.29112911224365234,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8729166984558105,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2476164996623993,
+      "gen_loss": 0.15208327770233154,
+      "grounding_loss": 0.0003761959378607571,
+      "alignment_loss": 0.3171900808811188,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8077957034111023,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.24692398309707642,
+      "gen_loss": 0.14672914147377014,
+      "grounding_loss": 0.0002100225683534518,
+      "alignment_loss": 0.3332827091217041,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9010416865348816,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.26858046650886536,
+      "gen_loss": 0.1973569393157959,
+      "grounding_loss": 0.0002344357199035585,
+      "alignment_loss": 0.23663027584552765,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9340277910232544,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.25124865770339966,
+      "gen_loss": 0.14254048466682434,
+      "grounding_loss": 0.00018340205133426934,
+      "alignment_loss": 0.36174920201301575,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.984375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2566373944282532,
+      "gen_loss": 0.13988959789276123,
+      "grounding_loss": 0.0004743139143101871,
+      "alignment_loss": 0.38757818937301636,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.909375011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.3022017776966095,
+      "gen_loss": 0.21855808794498444,
+      "grounding_loss": 0.00021424810984171927,
+      "alignment_loss": 0.27809813618659973,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2430741935968399,
+      "gen_loss": 0.15529903769493103,
+      "grounding_loss": 0.0004625720903277397,
+      "alignment_loss": 0.29104191064834595,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.90625,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2208864390850067,
+      "gen_loss": 0.1296112984418869,
+      "grounding_loss": 0.00026770474505610764,
+      "alignment_loss": 0.3033581078052521,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.953125,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.17692533135414124,
+      "gen_loss": 0.09048140048980713,
+      "grounding_loss": 0.00023131519265007228,
+      "alignment_loss": 0.28737539052963257,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.921875,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1890476644039154,
+      "gen_loss": 0.11141327768564224,
+      "grounding_loss": 0.0003032339154742658,
+      "alignment_loss": 0.25777047872543335,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8885416984558105,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1966346651315689,
+      "gen_loss": 0.12443817406892776,
+      "grounding_loss": 0.00020681496243923903,
+      "alignment_loss": 0.23996558785438538,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.862500011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2316819131374359,
+      "gen_loss": 0.15040703117847443,
+      "grounding_loss": 0.0005146615440025926,
+      "alignment_loss": 0.26920074224472046,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.953125,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.18288278579711914,
+      "gen_loss": 0.11337685585021973,
+      "grounding_loss": 0.0004666337335947901,
+      "alignment_loss": 0.23013094067573547,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9385416507720947,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.18057765066623688,
+      "gen_loss": 0.09098009765148163,
+      "grounding_loss": 0.00028555691824294627,
+      "alignment_loss": 0.29770663380622864,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9005039930343628,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.17542946338653564,
+      "gen_loss": 0.10042538493871689,
+      "grounding_loss": 0.00019027607049793005,
+      "alignment_loss": 0.24937930703163147,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.893750011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2000904679298401,
+      "gen_loss": 0.1285836398601532,
+      "grounding_loss": 0.00024069281062111259,
+      "alignment_loss": 0.23755377531051636,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.17271384596824646,
+      "gen_loss": 0.10687834024429321,
+      "grounding_loss": 0.00022154490579850972,
+      "alignment_loss": 0.21871317923069,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.984375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.20066122710704803,
+      "gen_loss": 0.1319982260465622,
+      "grounding_loss": 0.00029956235084682703,
+      "alignment_loss": 0.2278781235218048,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1924826204776764,
+      "gen_loss": 0.1325169801712036,
+      "grounding_loss": 0.00021119677694514394,
+      "alignment_loss": 0.1991814821958542,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.956250011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.19250795245170593,
+      "gen_loss": 0.12379410862922668,
+      "grounding_loss": 0.0002588223433122039,
+      "alignment_loss": 0.22818340361118317,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9750000238418579,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.19459131360054016,
+      "gen_loss": 0.11941932141780853,
+      "grounding_loss": 0.00023343521752394736,
+      "alignment_loss": 0.24979516863822937,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9286290407180786,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.24049976468086243,
+      "gen_loss": 0.15361709892749786,
+      "grounding_loss": 0.00024206246598623693,
+      "alignment_loss": 0.28880199790000916,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9411290287971497,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1828700453042984,
+      "gen_loss": 0.11336810886859894,
+      "grounding_loss": 0.00020500733808148652,
+      "alignment_loss": 0.2309897541999817,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9624999761581421,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2067229300737381,
+      "gen_loss": 0.1370810568332672,
+      "grounding_loss": 0.00028936529997736216,
+      "alignment_loss": 0.2311750054359436,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9281250238418579,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.20326195657253265,
+      "gen_loss": 0.12290720641613007,
+      "grounding_loss": 0.00032123993150889874,
+      "alignment_loss": 0.2667783498764038,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9223790168762207,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1967809796333313,
+      "gen_loss": 0.13191401958465576,
+      "grounding_loss": 0.0007380838505923748,
+      "alignment_loss": 0.21376293897628784,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.925000011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.17578303813934326,
+      "gen_loss": 0.10111873596906662,
+      "grounding_loss": 0.00021571044635493308,
+      "alignment_loss": 0.24816197156906128,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.921875,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1474505513906479,
+      "gen_loss": 0.08249658346176147,
+      "grounding_loss": 0.00017080044199246913,
+      "alignment_loss": 0.21594388782978058,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1333683431148529,
+      "gen_loss": 0.07509887963533401,
+      "grounding_loss": 0.0001774491829564795,
+      "alignment_loss": 0.19364005327224731,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.828125,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1350412666797638,
+      "gen_loss": 0.06758896261453629,
+      "grounding_loss": 0.0001891166903078556,
+      "alignment_loss": 0.22421057522296906,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.96875,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1336212456226349,
+      "gen_loss": 0.08625902980566025,
+      "grounding_loss": 0.0002843016991391778,
+      "alignment_loss": 0.15692636370658875,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1674688458442688,
+      "gen_loss": 0.1076539009809494,
+      "grounding_loss": 0.00018642510985955596,
+      "alignment_loss": 0.1987617015838623,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.796875,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1416567862033844,
+      "gen_loss": 0.06824762374162674,
+      "grounding_loss": 0.00022108753910288215,
+      "alignment_loss": 0.23862895369529724,
+      "empowerment_loss": 0.015993889421224594,
+      "judge_correctness": 0.8786290287971497,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.14559698104858398,
+      "gen_loss": 0.08791361004114151,
+      "grounding_loss": 0.0002431692846585065,
+      "alignment_loss": 0.1914673149585724,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9419642686843872,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.19416603446006775,
+      "gen_loss": 0.1395532637834549,
+      "grounding_loss": 0.0002388448192505166,
+      "alignment_loss": 0.18124637007713318,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.875,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.21629789471626282,
+      "gen_loss": 0.13937929272651672,
+      "grounding_loss": 0.0003329170576762408,
+      "alignment_loss": 0.2552855610847473,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.15586639940738678,
+      "gen_loss": 0.08049895614385605,
+      "grounding_loss": 0.00024624000070616603,
+      "alignment_loss": 0.2504040002822876,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.12170952558517456,
+      "gen_loss": 0.0601130872964859,
+      "grounding_loss": 0.0001541565143270418,
+      "alignment_loss": 0.2048076093196869,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.925000011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.16997361183166504,
+      "gen_loss": 0.11150898039340973,
+      "grounding_loss": 0.00021737528732046485,
+      "alignment_loss": 0.19415751099586487,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.925000011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1535577028989792,
+      "gen_loss": 0.09375864267349243,
+      "grounding_loss": 0.00019468141545075923,
+      "alignment_loss": 0.19868126511573792,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.11328939348459244,
+      "gen_loss": 0.054088935256004333,
+      "grounding_loss": 0.00029778986936435103,
+      "alignment_loss": 0.19634222984313965,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.956250011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.11328428238630295,
+      "gen_loss": 0.04429322108626366,
+      "grounding_loss": 0.0002644177875481546,
+      "alignment_loss": 0.22908881306648254,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.984375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.09355264157056808,
+      "gen_loss": 0.03955124318599701,
+      "grounding_loss": 0.00017155837849713862,
+      "alignment_loss": 0.17943279445171356,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.953125,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.15712618827819824,
+      "gen_loss": 0.08902094513177872,
+      "grounding_loss": 0.0001398877939209342,
+      "alignment_loss": 0.22655120491981506,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9575892686843872,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.13985134661197662,
+      "gen_loss": 0.07145711779594421,
+      "grounding_loss": 0.00015146905207075179,
+      "alignment_loss": 0.2274758517742157,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.987500011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.14011837542057037,
+      "gen_loss": 0.0937739685177803,
+      "grounding_loss": 0.0001662018767092377,
+      "alignment_loss": 0.15392735600471497,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.987500011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.16991189122200012,
+      "gen_loss": 0.08411508798599243,
+      "grounding_loss": 0.0002276531740790233,
+      "alignment_loss": 0.28523045778274536,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8286290168762207,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1618369221687317,
+      "gen_loss": 0.10846918821334839,
+      "grounding_loss": 0.00011263700434938073,
+      "alignment_loss": 0.17613644897937775,
+      "empowerment_loss": 0.004141628742218018,
+      "judge_correctness": 0.96875,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.19953793287277222,
+      "gen_loss": 0.1028323695063591,
+      "grounding_loss": 0.0001605640718480572,
+      "alignment_loss": 0.32181665301322937,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9319444894790649,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.14402490854263306,
+      "gen_loss": 0.08059786260128021,
+      "grounding_loss": 0.00024780273088254035,
+      "alignment_loss": 0.21059748530387878,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8812500238418579,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1137603223323822,
+      "gen_loss": 0.05957896634936333,
+      "grounding_loss": 0.00020524546562228352,
+      "alignment_loss": 0.17992034554481506,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.13117444515228271,
+      "gen_loss": 0.06578157842159271,
+      "grounding_loss": 0.0001760689337970689,
+      "alignment_loss": 0.217389315366745,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.10586944222450256,
+      "gen_loss": 0.05502379685640335,
+      "grounding_loss": 0.00018312866450287402,
+      "alignment_loss": 0.1688750684261322,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1302926242351532,
+      "gen_loss": 0.06631961464881897,
+      "grounding_loss": 0.00023200424038805068,
+      "alignment_loss": 0.21246999502182007,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.890625,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.13343545794487,
+      "gen_loss": 0.07401131093502045,
+      "grounding_loss": 0.00022521505889017135,
+      "alignment_loss": 0.19732977449893951,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.78125,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1697944551706314,
+      "gen_loss": 0.11367334425449371,
+      "grounding_loss": 0.00015495583647862077,
+      "alignment_loss": 0.18655382096767426,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.956250011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.18066053092479706,
+      "gen_loss": 0.12117478251457214,
+      "grounding_loss": 0.00023186628823168576,
+      "alignment_loss": 0.1975129395723343,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.984375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.11525002121925354,
+      "gen_loss": 0.04834134504199028,
+      "grounding_loss": 0.00016670003242325038,
+      "alignment_loss": 0.22247326374053955,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9593750238418579,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.12302729487419128,
+      "gen_loss": 0.06822519749403,
+      "grounding_loss": 0.00021030279458500445,
+      "alignment_loss": 0.1819726526737213,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1005731076002121,
+      "gen_loss": 0.039222002029418945,
+      "grounding_loss": 0.00027215713635087013,
+      "alignment_loss": 0.20359647274017334,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.953125,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.10459842532873154,
+      "gen_loss": 0.054804690182209015,
+      "grounding_loss": 0.00019447450176812708,
+      "alignment_loss": 0.16533085703849792,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9437500238418579,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.15915444493293762,
+      "gen_loss": 0.1048884466290474,
+      "grounding_loss": 0.00023079081438481808,
+      "alignment_loss": 0.18011736869812012,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9166666865348816,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2322371006011963,
+      "gen_loss": 0.15320077538490295,
+      "grounding_loss": 0.00016701144340913743,
+      "alignment_loss": 0.2628977298736572,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9015457034111023,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.23821502923965454,
+      "gen_loss": 0.17286799848079681,
+      "grounding_loss": 0.00023287843214347959,
+      "alignment_loss": 0.21704715490341187,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9190475940704346,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.10569006204605103,
+      "gen_loss": 0.04920065030455589,
+      "grounding_loss": 0.00012017445988021791,
+      "alignment_loss": 0.1878974437713623,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.987500011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1277545988559723,
+      "gen_loss": 0.07522130757570267,
+      "grounding_loss": 0.00022171347518451512,
+      "alignment_loss": 0.17437194287776947,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.987500011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.11480475962162018,
+      "gen_loss": 0.061557285487651825,
+      "grounding_loss": 0.00022110530699137598,
+      "alignment_loss": 0.17675453424453735,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.984375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.12942957878112793,
+      "gen_loss": 0.06813958287239075,
+      "grounding_loss": 0.00024333981855306774,
+      "alignment_loss": 0.20348885655403137,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.984375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.12041095644235611,
+      "gen_loss": 0.06743521988391876,
+      "grounding_loss": 0.00019211154722142965,
+      "alignment_loss": 0.17594540119171143,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.96875,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.10561633110046387,
+      "gen_loss": 0.05742299556732178,
+      "grounding_loss": 0.00025415292475372553,
+      "alignment_loss": 0.15979725122451782,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.984375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.21477900445461273,
+      "gen_loss": 0.1013970896601677,
+      "grounding_loss": 0.0001637148525333032,
+      "alignment_loss": 0.3773939907550812,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.90625,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.14262239634990692,
+      "gen_loss": 0.09990016371011734,
+      "grounding_loss": 0.0001314819819526747,
+      "alignment_loss": 0.14196917414665222,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.96875,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.14245182275772095,
+      "gen_loss": 0.09974954277276993,
+      "grounding_loss": 0.00015769031597301364,
+      "alignment_loss": 0.14181526005268097,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.971875011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.11239093542098999,
+      "gen_loss": 0.06376363337039948,
+      "grounding_loss": 0.00014613408711738884,
+      "alignment_loss": 0.1616038680076599,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.984375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.09375794231891632,
+      "gen_loss": 0.05102444440126419,
+      "grounding_loss": 0.00013308480265550315,
+      "alignment_loss": 0.14200136065483093,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.971875011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.0805441290140152,
+      "gen_loss": 0.03901119902729988,
+      "grounding_loss": 0.00016819770098663867,
+      "alignment_loss": 0.13788242638111115,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.0876980870962143,
+      "gen_loss": 0.03453291952610016,
+      "grounding_loss": 0.00021940714213997126,
+      "alignment_loss": 0.17648586630821228,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.971875011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.10560958087444305,
+      "gen_loss": 0.06165199354290962,
+      "grounding_loss": 0.00027744582621380687,
+      "alignment_loss": 0.14560045301914215,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.09212905168533325,
+      "gen_loss": 0.04802980273962021,
+      "grounding_loss": 0.0002040337712969631,
+      "alignment_loss": 0.14631736278533936,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.07120716571807861,
+      "gen_loss": 0.021621420979499817,
+      "grounding_loss": 0.00017270995886065066,
+      "alignment_loss": 0.16471010446548462,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.921875,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.0772082656621933,
+      "gen_loss": 0.0323161706328392,
+      "grounding_loss": 0.00022884360805619508,
+      "alignment_loss": 0.14887748658657074,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.05769725888967514,
+      "gen_loss": 0.023421484977006912,
+      "grounding_loss": 0.00022829655790701509,
+      "alignment_loss": 0.11349158734083176,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.96875,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.08427697420120239,
+      "gen_loss": 0.04290905222296715,
+      "grounding_loss": 0.00011564554733922705,
+      "alignment_loss": 0.1375075876712799,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.08359213173389435,
+      "gen_loss": 0.031588226556777954,
+      "grounding_loss": 0.0001905708049889654,
+      "alignment_loss": 0.1727111041545868,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.984375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1187879741191864,
+      "gen_loss": 0.07417911291122437,
+      "grounding_loss": 0.00027650847914628685,
+      "alignment_loss": 0.14777451753616333,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.10467657446861267,
+      "gen_loss": 0.061537474393844604,
+      "grounding_loss": 0.00013863900676369667,
+      "alignment_loss": 0.14333486557006836,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.15130813419818878,
+      "gen_loss": 0.1028904989361763,
+      "grounding_loss": 0.0001368974772049114,
+      "alignment_loss": 0.16093577444553375,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.921875,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.07491804659366608,
+      "gen_loss": 0.03233907371759415,
+      "grounding_loss": 0.00020876305643469095,
+      "alignment_loss": 0.14123402535915375,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.09723497927188873,
+      "gen_loss": 0.06345691531896591,
+      "grounding_loss": 0.00012983048509340733,
+      "alignment_loss": 0.11216077953577042,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.08637440204620361,
+      "gen_loss": 0.04207908734679222,
+      "grounding_loss": 0.00018592637206893414,
+      "alignment_loss": 0.14703130722045898,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.09249429404735565,
+      "gen_loss": 0.04469626024365425,
+      "grounding_loss": 0.00016918161418288946,
+      "alignment_loss": 0.15780872106552124,
+      "empowerment_loss": 0.002862371504306793,
+      "judge_correctness": 0.971875011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.04953410476446152,
+      "gen_loss": 0.020245317369699478,
+      "grounding_loss": 0.00021455626119859517,
+      "alignment_loss": 0.09691410511732101,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.96875,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.07400462031364441,
+      "gen_loss": 0.030275920405983925,
+      "grounding_loss": 0.0001457667676731944,
+      "alignment_loss": 0.14527642726898193,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.07596734166145325,
+      "gen_loss": 0.027384789660573006,
+      "grounding_loss": 0.00012835333473049104,
+      "alignment_loss": 0.16151398420333862,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.18833374977111816,
+      "gen_loss": 0.03408189117908478,
+      "grounding_loss": 0.00017087062587961555,
+      "alignment_loss": 0.5123876929283142,
+      "empowerment_loss": 0.0036467984318733215,
+      "judge_correctness": 0.875,
+      "stage": 2,
+      "action_acc": 1.0,
+      "test_seq_acc": 0.0
+    },
+    {
+      "total_loss": 0.11614435911178589,
+      "gen_loss": 0.08489316701889038,
+      "grounding_loss": 0.00013295054668560624,
+      "alignment_loss": 0.10372748970985413,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.984375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.06942221522331238,
+      "gen_loss": 0.029402701184153557,
+      "grounding_loss": 0.00020165836031083018,
+      "alignment_loss": 0.13272616267204285,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.984375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.08880016207695007,
+      "gen_loss": 0.035845715552568436,
+      "grounding_loss": 0.0001616711961105466,
+      "alignment_loss": 0.17597591876983643,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.953125,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.05563414469361305,
+      "gen_loss": 0.016902031376957893,
+      "grounding_loss": 0.00013598252553492785,
+      "alignment_loss": 0.12865376472473145,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.05954252928495407,
+      "gen_loss": 0.014398723840713501,
+      "grounding_loss": 0.0002154876128770411,
+      "alignment_loss": 0.14976105093955994,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.07929211854934692,
+      "gen_loss": 0.03443727642297745,
+      "grounding_loss": 0.00012431568757165223,
+      "alignment_loss": 0.14910173416137695,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.09803225845098495,
+      "gen_loss": 0.028718316927552223,
+      "grounding_loss": 0.00015523345791734755,
+      "alignment_loss": 0.2256583720445633,
+      "empowerment_loss": 0.014611929655075073,
+      "judge_correctness": 0.9223790168762207,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.0572672113776207,
+      "gen_loss": 0.015942594036459923,
+      "grounding_loss": 0.00017195948748849332,
+      "alignment_loss": 0.137175515294075,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9791666865348816,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.05910274386405945,
+      "gen_loss": 0.01546765398234129,
+      "grounding_loss": 0.00017882103566080332,
+      "alignment_loss": 0.14485421776771545,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.987500011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.07989524304866791,
+      "gen_loss": 0.03441108018159866,
+      "grounding_loss": 0.00017793379083741456,
+      "alignment_loss": 0.15102076530456543,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.05642653629183769,
+      "gen_loss": 0.01386153046041727,
+      "grounding_loss": 0.0001217594399349764,
+      "alignment_loss": 0.14147748053073883,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.050720036029815674,
+      "gen_loss": 0.014416905120015144,
+      "grounding_loss": 0.00016991375014185905,
+      "alignment_loss": 0.12044404447078705,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.09237296879291534,
+      "gen_loss": 0.04105357825756073,
+      "grounding_loss": 0.00012274573964532465,
+      "alignment_loss": 0.17065547406673431,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.08438248187303543,
+      "gen_loss": 0.03978404402732849,
+      "grounding_loss": 0.00022954940504860133,
+      "alignment_loss": 0.14789628982543945,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.984375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.12185455858707428,
+      "gen_loss": 0.06699060648679733,
+      "grounding_loss": 0.00016815379785839468,
+      "alignment_loss": 0.18231931328773499,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.047910381108522415,
+      "gen_loss": 0.01488497108221054,
+      "grounding_loss": 0.00016463211795780808,
+      "alignment_loss": 0.10953591763973236,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.96875,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.053368620574474335,
+      "gen_loss": 0.011181226931512356,
+      "grounding_loss": 0.0001300070871366188,
+      "alignment_loss": 0.14019128680229187,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.061490874737501144,
+      "gen_loss": 0.013378705829381943,
+      "grounding_loss": 0.0001813952112570405,
+      "alignment_loss": 0.1597692370414734,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.984375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.06109844893217087,
+      "gen_loss": 0.022296639159321785,
+      "grounding_loss": 0.00019024984794668853,
+      "alignment_loss": 0.1287052035331726,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.09772688150405884,
+      "gen_loss": 0.061648886650800705,
+      "grounding_loss": 0.00012564356438815594,
+      "alignment_loss": 0.11984117329120636,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.09240175783634186,
+      "gen_loss": 0.04473024979233742,
+      "grounding_loss": 0.00017135257076006383,
+      "alignment_loss": 0.15833383798599243,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 1.0,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.06208864971995354,
+      "gen_loss": 0.018074102699756622,
+      "grounding_loss": 0.000115197581180837,
+      "alignment_loss": 0.14633116126060486,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.987500011920929,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.06772507727146149,
+      "gen_loss": 0.03584641218185425,
+      "grounding_loss": 0.00014133137301541865,
+      "alignment_loss": 0.1057911068201065,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.984375,
+      "stage": 2,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.0658501461148262,
+      "gen_loss": 0.02151697874069214,
+      "grounding_loss": 0.00011874497431563213,
+      "alignment_loss": 0.14738139510154724,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.987500011920929,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.6610027551651,
+      "gen_loss": 1.5880275964736938,
+      "grounding_loss": 0.00011312263086438179,
+      "alignment_loss": 0.24287334084510803,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7057291865348816,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.4306972026824951,
+      "gen_loss": 1.377362847328186,
+      "grounding_loss": 0.00011938237730646506,
+      "alignment_loss": 0.17547355592250824,
+      "empowerment_loss": 0.005728781223297119,
+      "judge_correctness": 0.7071428894996643,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.6716853380203247,
+      "gen_loss": 1.612955927848816,
+      "grounding_loss": 0.00012249164865352213,
+      "alignment_loss": 0.1931571662425995,
+      "empowerment_loss": 0.006597474217414856,
+      "judge_correctness": 0.6796875,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.75721675157547,
+      "gen_loss": 0.6941179633140564,
+      "grounding_loss": 0.00016806033090688288,
+      "alignment_loss": 0.1977532058954239,
+      "empowerment_loss": 0.03604736924171448,
+      "judge_correctness": 0.8008928894996643,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 1.0884301662445068,
+      "gen_loss": 1.0148476362228394,
+      "grounding_loss": 0.00011980562703683972,
+      "alignment_loss": 0.2448759377002716,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6966146230697632,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.7730717658996582,
+      "gen_loss": 0.7016043663024902,
+      "grounding_loss": 0.00012262494419701397,
+      "alignment_loss": 0.2259443998336792,
+      "empowerment_loss": 0.03561485931277275,
+      "judge_correctness": 0.621121346950531,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.9324342012405396,
+      "gen_loss": 0.8564655780792236,
+      "grounding_loss": 0.0001125511626014486,
+      "alignment_loss": 0.25285354256629944,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6512768864631653,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.589722752571106,
+      "gen_loss": 0.5070906281471252,
+      "grounding_loss": 0.00010782382014440373,
+      "alignment_loss": 0.27508097887039185,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6482088565826416,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.715936541557312,
+      "gen_loss": 0.6277572512626648,
+      "grounding_loss": 0.00010978430509567261,
+      "alignment_loss": 0.293565034866333,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6040946245193481,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.8711126446723938,
+      "gen_loss": 0.798288881778717,
+      "grounding_loss": 0.00012637929467018694,
+      "alignment_loss": 0.24232470989227295,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.5584037899971008,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.8709955811500549,
+      "gen_loss": 0.7859469056129456,
+      "grounding_loss": 0.0001281617151107639,
+      "alignment_loss": 0.2830684781074524,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.5850974321365356,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.5333865284919739,
+      "gen_loss": 0.43167543411254883,
+      "grounding_loss": 9.387023601448163e-05,
+      "alignment_loss": 0.3387239873409271,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.5679166316986084,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.7284441590309143,
+      "gen_loss": 0.6391003131866455,
+      "grounding_loss": 0.00013145440607331693,
+      "alignment_loss": 0.29737478494644165,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.5440566539764404,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.5631821751594543,
+      "gen_loss": 0.4755314588546753,
+      "grounding_loss": 0.00010729270434239879,
+      "alignment_loss": 0.29181137681007385,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.5646057724952698,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.551782488822937,
+      "gen_loss": 0.4724957048892975,
+      "grounding_loss": 0.00012750280438922346,
+      "alignment_loss": 0.2638382911682129,
+      "empowerment_loss": 7.81714916229248e-05,
+      "judge_correctness": 0.6515697240829468,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.42183250188827515,
+      "gen_loss": 0.3244462013244629,
+      "grounding_loss": 0.00010256299719912931,
+      "alignment_loss": 0.32427918910980225,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7262330651283264,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.442795068025589,
+      "gen_loss": 0.347319632768631,
+      "grounding_loss": 0.00017955458315555006,
+      "alignment_loss": 0.3176529109477997,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.670799732208252,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.5344213843345642,
+      "gen_loss": 0.44396933913230896,
+      "grounding_loss": 0.00011634914699243382,
+      "alignment_loss": 0.3011190593242645,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6920397877693176,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.4961540102958679,
+      "gen_loss": 0.40973228216171265,
+      "grounding_loss": 0.00016968941781669855,
+      "alignment_loss": 0.2875068187713623,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7434896230697632,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.5302199125289917,
+      "gen_loss": 0.4419953525066376,
+      "grounding_loss": 0.0001224019651999697,
+      "alignment_loss": 0.2738049030303955,
+      "empowerment_loss": 0.059606924653053284,
+      "judge_correctness": 0.6880952715873718,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.5303351879119873,
+      "gen_loss": 0.4197074770927429,
+      "grounding_loss": 0.00016113203309942037,
+      "alignment_loss": 0.3682219088077545,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.5907818078994751,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.43277907371520996,
+      "gen_loss": 0.3611595332622528,
+      "grounding_loss": 0.00014484098937828094,
+      "alignment_loss": 0.2382490336894989,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.723214328289032,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.41811782121658325,
+      "gen_loss": 0.3175433874130249,
+      "grounding_loss": 0.00014458424993790686,
+      "alignment_loss": 0.334766149520874,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7101395130157471,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.40245282649993896,
+      "gen_loss": 0.31328094005584717,
+      "grounding_loss": 0.0001493641611887142,
+      "alignment_loss": 0.29674166440963745,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.698790431022644,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.4783394932746887,
+      "gen_loss": 0.4015136659145355,
+      "grounding_loss": 0.00015685794642195106,
+      "alignment_loss": 0.25556325912475586,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6843246221542358,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.3399543762207031,
+      "gen_loss": 0.24819408357143402,
+      "grounding_loss": 0.00011927979358006269,
+      "alignment_loss": 0.3054700791835785,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6778609752655029,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.33731159567832947,
+      "gen_loss": 0.25815504789352417,
+      "grounding_loss": 0.00011338829062879086,
+      "alignment_loss": 0.2634771466255188,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6081749200820923,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.45113128423690796,
+      "gen_loss": 0.3652891218662262,
+      "grounding_loss": 0.00014273404667619616,
+      "alignment_loss": 0.28566476702690125,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6478495001792908,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.35564741492271423,
+      "gen_loss": 0.28057196736335754,
+      "grounding_loss": 0.00016381348541472107,
+      "alignment_loss": 0.24970543384552002,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7085517644882202,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.3676155209541321,
+      "gen_loss": 0.3025735020637512,
+      "grounding_loss": 0.0001318364083999768,
+      "alignment_loss": 0.21636725962162018,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6549402475357056,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.3401701748371124,
+      "gen_loss": 0.26746082305908203,
+      "grounding_loss": 0.0001384615316055715,
+      "alignment_loss": 0.24190296232700348,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7166906595230103,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.3794233798980713,
+      "gen_loss": 0.2981525957584381,
+      "grounding_loss": 0.00010791386739583686,
+      "alignment_loss": 0.2705429196357727,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7153486609458923,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.30375397205352783,
+      "gen_loss": 0.21947062015533447,
+      "grounding_loss": 0.0001389036769978702,
+      "alignment_loss": 0.2804815173149109,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.710643470287323,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.314100980758667,
+      "gen_loss": 0.25459450483322144,
+      "grounding_loss": 0.00012731349852401763,
+      "alignment_loss": 0.19793055951595306,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7758929133415222,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.3080160915851593,
+      "gen_loss": 0.24925196170806885,
+      "grounding_loss": 0.0001566222053952515,
+      "alignment_loss": 0.19407489895820618,
+      "empowerment_loss": 0.003850191831588745,
+      "judge_correctness": 0.6492679715156555,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.3056403696537018,
+      "gen_loss": 0.2469930350780487,
+      "grounding_loss": 0.00010672712232917547,
+      "alignment_loss": 0.19513539969921112,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7537620067596436,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2970927655696869,
+      "gen_loss": 0.24598322808742523,
+      "grounding_loss": 0.00014231636305339634,
+      "alignment_loss": 0.16989073157310486,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.795799732208252,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.3204035460948944,
+      "gen_loss": 0.2561612129211426,
+      "grounding_loss": 0.00013211877376306802,
+      "alignment_loss": 0.21370069682598114,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6865207552909851,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2877561151981354,
+      "gen_loss": 0.22680474817752838,
+      "grounding_loss": 0.00013490553828887641,
+      "alignment_loss": 0.20272158086299896,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6566047668457031,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.3590651750564575,
+      "gen_loss": 0.30209431052207947,
+      "grounding_loss": 0.00010417607700219378,
+      "alignment_loss": 0.1895556002855301,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7044547200202942,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2855220437049866,
+      "gen_loss": 0.2233346402645111,
+      "grounding_loss": 0.00011725100193871185,
+      "alignment_loss": 0.206900492310524,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6965547800064087,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.32143187522888184,
+      "gen_loss": 0.2720161974430084,
+      "grounding_loss": 0.00011004911357304081,
+      "alignment_loss": 0.16435201466083527,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7121736407279968,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.25941869616508484,
+      "gen_loss": 0.20585858821868896,
+      "grounding_loss": 0.00013329816283658147,
+      "alignment_loss": 0.17808935046195984,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7786206007003784,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.262276828289032,
+      "gen_loss": 0.20606353878974915,
+      "grounding_loss": 9.580369078321382e-05,
+      "alignment_loss": 0.18608659505844116,
+      "empowerment_loss": 0.002914898097515106,
+      "judge_correctness": 0.7332757711410522,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.3091695010662079,
+      "gen_loss": 0.23982790112495422,
+      "grounding_loss": 0.00014951685443520546,
+      "alignment_loss": 0.23064024746418,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7471102476119995,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.30404824018478394,
+      "gen_loss": 0.2505837380886078,
+      "grounding_loss": 0.0001055208922480233,
+      "alignment_loss": 0.1778632551431656,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7106951475143433,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2790486812591553,
+      "gen_loss": 0.22799992561340332,
+      "grounding_loss": 0.00012651440920308232,
+      "alignment_loss": 0.16974076628684998,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7451884746551514,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.330022931098938,
+      "gen_loss": 0.2836417853832245,
+      "grounding_loss": 0.00016926285752560943,
+      "alignment_loss": 0.15403953194618225,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8377496600151062,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2527964115142822,
+      "gen_loss": 0.19964003562927246,
+      "grounding_loss": 0.00012599353794939816,
+      "alignment_loss": 0.17676790058612823,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8491935729980469,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.30236104130744934,
+      "gen_loss": 0.25009191036224365,
+      "grounding_loss": 0.00013015669537708163,
+      "alignment_loss": 0.17379659414291382,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7512934803962708,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.27070152759552,
+      "gen_loss": 0.2206265777349472,
+      "grounding_loss": 9.853906522039324e-05,
+      "alignment_loss": 0.16182133555412292,
+      "empowerment_loss": 0.014300137758255005,
+      "judge_correctness": 0.776833713054657,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2894926071166992,
+      "gen_loss": 0.23099468648433685,
+      "grounding_loss": 0.0001826932275434956,
+      "alignment_loss": 0.1943841129541397,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7925307750701904,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.27081918716430664,
+      "gen_loss": 0.20818312466144562,
+      "grounding_loss": 0.0001717482227832079,
+      "alignment_loss": 0.20821437239646912,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7841825485229492,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2274416983127594,
+      "gen_loss": 0.1852296143770218,
+      "grounding_loss": 9.937078721122816e-05,
+      "alignment_loss": 0.14037570357322693,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.6972025632858276,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2077886462211609,
+      "gen_loss": 0.16373328864574432,
+      "grounding_loss": 0.00013354967813938856,
+      "alignment_loss": 0.14640600979328156,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7741096019744873,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.32009610533714294,
+      "gen_loss": 0.256905198097229,
+      "grounding_loss": 0.00012869476631749421,
+      "alignment_loss": 0.20770363509655,
+      "empowerment_loss": 0.007511511445045471,
+      "judge_correctness": 0.7593062520027161,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2852865755558014,
+      "gen_loss": 0.24385550618171692,
+      "grounding_loss": 0.00010972386371577159,
+      "alignment_loss": 0.13773781061172485,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7883880734443665,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.26760801672935486,
+      "gen_loss": 0.20968051254749298,
+      "grounding_loss": 0.00013869833492208272,
+      "alignment_loss": 0.1926293522119522,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7670342922210693,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.24035239219665527,
+      "gen_loss": 0.19681791961193085,
+      "grounding_loss": 9.900087752612308e-05,
+      "alignment_loss": 0.1447848677635193,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7797859311103821,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.3095928132534027,
+      "gen_loss": 0.24864141643047333,
+      "grounding_loss": 0.0001415836886735633,
+      "alignment_loss": 0.20269931852817535,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8511905074119568,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2912023961544037,
+      "gen_loss": 0.24523836374282837,
+      "grounding_loss": 0.0001080921501852572,
+      "alignment_loss": 0.1528531014919281,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.803318202495575,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.27949589490890503,
+      "gen_loss": 0.21832279860973358,
+      "grounding_loss": 9.996718290494755e-05,
+      "alignment_loss": 0.1851448267698288,
+      "empowerment_loss": 0.05529676377773285,
+      "judge_correctness": 0.8086022138595581,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2198130488395691,
+      "gen_loss": 0.1612965166568756,
+      "grounding_loss": 0.0001313779066549614,
+      "alignment_loss": 0.1946171522140503,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8063316345214844,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.29574504494667053,
+      "gen_loss": 0.2344038188457489,
+      "grounding_loss": 0.00011115226516267285,
+      "alignment_loss": 0.20410028100013733,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8529762029647827,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.22987334430217743,
+      "gen_loss": 0.18306051194667816,
+      "grounding_loss": 0.00015015408280305564,
+      "alignment_loss": 0.15554222464561462,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8751736283302307,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.3153669834136963,
+      "gen_loss": 0.2558062672615051,
+      "grounding_loss": 0.0001126949573517777,
+      "alignment_loss": 0.1981601119041443,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7723214626312256,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2184191346168518,
+      "gen_loss": 0.16367824375629425,
+      "grounding_loss": 0.00011271886614849791,
+      "alignment_loss": 0.1815377026796341,
+      "empowerment_loss": 0.001668691635131836,
+      "judge_correctness": 0.8512167930603027,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.21450749039649963,
+      "gen_loss": 0.1689300835132599,
+      "grounding_loss": 0.00010675752128008753,
+      "alignment_loss": 0.15156887471675873,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8371794819831848,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.22327777743339539,
+      "gen_loss": 0.1789434850215912,
+      "grounding_loss": 0.00014457480574492365,
+      "alignment_loss": 0.14729908108711243,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8350526094436646,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2107996940612793,
+      "gen_loss": 0.17330484092235565,
+      "grounding_loss": 0.00012199602497275919,
+      "alignment_loss": 0.1245761588215828,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7597969174385071,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.24434994161128998,
+      "gen_loss": 0.19991551339626312,
+      "grounding_loss": 9.786109148990363e-05,
+      "alignment_loss": 0.14778855443000793,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.780501127243042,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2809019982814789,
+      "gen_loss": 0.22582344710826874,
+      "grounding_loss": 0.00013024259533267468,
+      "alignment_loss": 0.18316106498241425,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8187020421028137,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.25628232955932617,
+      "gen_loss": 0.21132773160934448,
+      "grounding_loss": 0.00012923705799039453,
+      "alignment_loss": 0.149417906999588,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7617175579071045,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.28143489360809326,
+      "gen_loss": 0.22810925543308258,
+      "grounding_loss": 0.00012989138485863805,
+      "alignment_loss": 0.17358191311359406,
+      "empowerment_loss": 0.011211633682250977,
+      "judge_correctness": 0.8940092921257019,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2492682933807373,
+      "gen_loss": 0.20175102353096008,
+      "grounding_loss": 9.443407179787755e-05,
+      "alignment_loss": 0.15807613730430603,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8689515590667725,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2736615836620331,
+      "gen_loss": 0.22975507378578186,
+      "grounding_loss": 0.0001375686115352437,
+      "alignment_loss": 0.14589649438858032,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8360682129859924,
+      "stage": 3,
+      "action_acc": 1.0,
+      "test_seq_acc": 0.5
+    },
+    {
+      "total_loss": 0.23382624983787537,
+      "gen_loss": 0.16971951723098755,
+      "grounding_loss": 0.0001641846465645358,
+      "alignment_loss": 0.1975547969341278,
+      "empowerment_loss": 0.046761009842157364,
+      "judge_correctness": 0.7984939217567444,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.22651150822639465,
+      "gen_loss": 0.18089768290519714,
+      "grounding_loss": 0.00010477386967977509,
+      "alignment_loss": 0.15169686079025269,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8645408153533936,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.24720411002635956,
+      "gen_loss": 0.19763842225074768,
+      "grounding_loss": 0.00011667278886307031,
+      "alignment_loss": 0.1648300439119339,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8471474051475525,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.29779142141342163,
+      "gen_loss": 0.1452900469303131,
+      "grounding_loss": 0.0001336533750873059,
+      "alignment_loss": 0.507892370223999,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7987638115882874,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2501564025878906,
+      "gen_loss": 0.1854940801858902,
+      "grounding_loss": 0.00011654697300400585,
+      "alignment_loss": 0.21515262126922607,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8444640636444092,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.22916026413440704,
+      "gen_loss": 0.1799163669347763,
+      "grounding_loss": 0.00010997393110301346,
+      "alignment_loss": 0.16377973556518555,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8752496242523193,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2476557195186615,
+      "gen_loss": 0.18627183139324188,
+      "grounding_loss": 0.00010336603736504912,
+      "alignment_loss": 0.20426838099956512,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8494287729263306,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.27552613615989685,
+      "gen_loss": 0.2219260334968567,
+      "grounding_loss": 0.00011774819722631946,
+      "alignment_loss": 0.17582815885543823,
+      "empowerment_loss": 0.0073392391204833984,
+      "judge_correctness": 0.8531401753425598,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.23994262516498566,
+      "gen_loss": 0.1814178079366684,
+      "grounding_loss": 0.00012566590157803148,
+      "alignment_loss": 0.19466383755207062,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8901989459991455,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.21225674450397491,
+      "gen_loss": 0.1595481038093567,
+      "grounding_loss": 0.00012956031423527747,
+      "alignment_loss": 0.17526358366012573,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8475481867790222,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.20841674506664276,
+      "gen_loss": 0.1555120199918747,
+      "grounding_loss": 0.0001521246158517897,
+      "alignment_loss": 0.17584197223186493,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8543850779533386,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2502930164337158,
+      "gen_loss": 0.1953430324792862,
+      "grounding_loss": 0.00013591493188869208,
+      "alignment_loss": 0.1827135980129242,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8049978613853455,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2120656967163086,
+      "gen_loss": 0.1561896800994873,
+      "grounding_loss": 0.00010527970152907073,
+      "alignment_loss": 0.1859024316072464,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8574404716491699,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2670366168022156,
+      "gen_loss": 0.20678555965423584,
+      "grounding_loss": 0.00010247559112031013,
+      "alignment_loss": 0.20049525797367096,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7502400875091553,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2513045370578766,
+      "gen_loss": 0.20357434451580048,
+      "grounding_loss": 0.00014369732525665313,
+      "alignment_loss": 0.15862169861793518,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8441840410232544,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.24953190982341766,
+      "gen_loss": 0.1946064829826355,
+      "grounding_loss": 0.00011762088251998648,
+      "alignment_loss": 0.18269270658493042,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7916667461395264,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2400050312280655,
+      "gen_loss": 0.19133278727531433,
+      "grounding_loss": 0.0001149785821326077,
+      "alignment_loss": 0.16185753047466278,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.832337498664856,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.18114788830280304,
+      "gen_loss": 0.1308148056268692,
+      "grounding_loss": 0.00014407486014533788,
+      "alignment_loss": 0.16729667782783508,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8427996039390564,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.20003251731395721,
+      "gen_loss": 0.15262454748153687,
+      "grounding_loss": 0.00013539535575546324,
+      "alignment_loss": 0.15757524967193604,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7395161390304565,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.25239717960357666,
+      "gen_loss": 0.2066279649734497,
+      "grounding_loss": 0.00012259141658432782,
+      "alignment_loss": 0.15215544402599335,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.872887909412384,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.19324100017547607,
+      "gen_loss": 0.14729467034339905,
+      "grounding_loss": 0.00015884041204117239,
+      "alignment_loss": 0.1526249647140503,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8904281854629517,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.24619224667549133,
+      "gen_loss": 0.21233366429805756,
+      "grounding_loss": 9.926553320838138e-05,
+      "alignment_loss": 0.11253105103969574,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7913210988044739,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1876085102558136,
+      "gen_loss": 0.14956551790237427,
+      "grounding_loss": 0.00017389122513122857,
+      "alignment_loss": 0.12623029947280884,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8666162490844727,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1774943619966507,
+      "gen_loss": 0.13176290690898895,
+      "grounding_loss": 0.00014886053395457566,
+      "alignment_loss": 0.15194196999073029,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.73182612657547,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.19726327061653137,
+      "gen_loss": 0.1583317518234253,
+      "grounding_loss": 0.0001452841388527304,
+      "alignment_loss": 0.12928740680217743,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8015121221542358,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.22154265642166138,
+      "gen_loss": 0.1824830323457718,
+      "grounding_loss": 0.0001193315110867843,
+      "alignment_loss": 0.1298009604215622,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8544643521308899,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.23253583908081055,
+      "gen_loss": 0.18659178912639618,
+      "grounding_loss": 0.000127906707348302,
+      "alignment_loss": 0.15272043645381927,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8739868402481079,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.19448548555374146,
+      "gen_loss": 0.1606481969356537,
+      "grounding_loss": 0.00012572984269354492,
+      "alignment_loss": 0.11237180978059769,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8186224699020386,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.22502204775810242,
+      "gen_loss": 0.18697981536388397,
+      "grounding_loss": 0.00011457733489805833,
+      "alignment_loss": 0.12642554938793182,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8499327898025513,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1977391242980957,
+      "gen_loss": 0.1631798893213272,
+      "grounding_loss": 0.00011300214100629091,
+      "alignment_loss": 0.11482080817222595,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8633641004562378,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1943216323852539,
+      "gen_loss": 0.15343160927295685,
+      "grounding_loss": 0.00011712175910361111,
+      "alignment_loss": 0.13590966165065765,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8009967803955078,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.20294594764709473,
+      "gen_loss": 0.16448618471622467,
+      "grounding_loss": 0.00011882402759511024,
+      "alignment_loss": 0.12780314683914185,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.800000011920929,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.20027825236320496,
+      "gen_loss": 0.15909019112586975,
+      "grounding_loss": 0.00013409061648417264,
+      "alignment_loss": 0.13684657216072083,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.854844331741333,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.22136792540550232,
+      "gen_loss": 0.178434818983078,
+      "grounding_loss": 0.00013261320418678224,
+      "alignment_loss": 0.14266830682754517,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8398234248161316,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2506124675273895,
+      "gen_loss": 0.21273331344127655,
+      "grounding_loss": 0.00012392853386700153,
+      "alignment_loss": 0.12585073709487915,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8688988089561462,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.19382449984550476,
+      "gen_loss": 0.16272090375423431,
+      "grounding_loss": 0.00011495163926156238,
+      "alignment_loss": 0.10329548269510269,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8547427654266357,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.20860064029693604,
+      "gen_loss": 0.16881385445594788,
+      "grounding_loss": 9.116709406953305e-05,
+      "alignment_loss": 0.13231870532035828,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8255208730697632,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.14677070081233978,
+      "gen_loss": 0.11219578236341476,
+      "grounding_loss": 0.00013937955372966826,
+      "alignment_loss": 0.11478513479232788,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8580069541931152,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.17826959490776062,
+      "gen_loss": 0.14064213633537292,
+      "grounding_loss": 0.00013100411160849035,
+      "alignment_loss": 0.1249881386756897,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8608871102333069,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1749381721019745,
+      "gen_loss": 0.14240586757659912,
+      "grounding_loss": 0.0001175258876173757,
+      "alignment_loss": 0.10804922878742218,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8958857655525208,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.18349644541740417,
+      "gen_loss": 0.15664291381835938,
+      "grounding_loss": 0.00012956169666722417,
+      "alignment_loss": 0.08907987177371979,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8825268745422363,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1838924139738083,
+      "gen_loss": 0.14569228887557983,
+      "grounding_loss": 0.00011498066305648535,
+      "alignment_loss": 0.1269504874944687,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.862154483795166,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2054484784603119,
+      "gen_loss": 0.1658896505832672,
+      "grounding_loss": 0.00013656471855938435,
+      "alignment_loss": 0.13140752911567688,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9134048819541931,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.18355374038219452,
+      "gen_loss": 0.14203475415706635,
+      "grounding_loss": 0.00012332081678323448,
+      "alignment_loss": 0.13798554241657257,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8013313412666321,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2534346580505371,
+      "gen_loss": 0.21527642011642456,
+      "grounding_loss": 0.00011109457409474999,
+      "alignment_loss": 0.1268237829208374,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7830309271812439,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.19156762957572937,
+      "gen_loss": 0.16102713346481323,
+      "grounding_loss": 0.00010743048187578097,
+      "alignment_loss": 0.10144353657960892,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.84369295835495,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.14570121467113495,
+      "gen_loss": 0.10825102776288986,
+      "grounding_loss": 0.00010333890531910583,
+      "alignment_loss": 0.12448949366807938,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.7929319143295288,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.18722711503505707,
+      "gen_loss": 0.13713707029819489,
+      "grounding_loss": 0.0001313735992880538,
+      "alignment_loss": 0.15960007905960083,
+      "empowerment_loss": 0.020786523818969727,
+      "judge_correctness": 0.7750987410545349,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.21117408573627472,
+      "gen_loss": 0.1792457103729248,
+      "grounding_loss": 0.00012063291069353,
+      "alignment_loss": 0.10602578520774841,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8466145992279053,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.17392085492610931,
+      "gen_loss": 0.1409929096698761,
+      "grounding_loss": 9.750715253176168e-05,
+      "alignment_loss": 0.10943478345870972,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8727462291717529,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.23360712826251984,
+      "gen_loss": 0.19481417536735535,
+      "grounding_loss": 0.0001314263790845871,
+      "alignment_loss": 0.12887173891067505,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8472653031349182,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1943935751914978,
+      "gen_loss": 0.15097102522850037,
+      "grounding_loss": 0.00011559828271856532,
+      "alignment_loss": 0.14435645937919617,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8020545840263367,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.19838158786296844,
+      "gen_loss": 0.15868625044822693,
+      "grounding_loss": 0.00012842557043768466,
+      "alignment_loss": 0.1318897157907486,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.858299732208252,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.15668444335460663,
+      "gen_loss": 0.11345425993204117,
+      "grounding_loss": 0.00011632266250671819,
+      "alignment_loss": 0.1437128633260727,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8374424576759338,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.22137971222400665,
+      "gen_loss": 0.17224618792533875,
+      "grounding_loss": 0.00012546330981422216,
+      "alignment_loss": 0.16336017847061157,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8590893745422363,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1749873012304306,
+      "gen_loss": 0.13188421726226807,
+      "grounding_loss": 0.00010773289977805689,
+      "alignment_loss": 0.1433178186416626,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8693453073501587,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1894300878047943,
+      "gen_loss": 0.14644591510295868,
+      "grounding_loss": 0.00011486318544484675,
+      "alignment_loss": 0.14289769530296326,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8686479330062866,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1902710199356079,
+      "gen_loss": 0.1421799510717392,
+      "grounding_loss": 0.00010199844837188721,
+      "alignment_loss": 0.15996354818344116,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8869048357009888,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.19368334114551544,
+      "gen_loss": 0.14934828877449036,
+      "grounding_loss": 0.00011824206012533978,
+      "alignment_loss": 0.14738938212394714,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8463541865348816,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2724686861038208,
+      "gen_loss": 0.21987119317054749,
+      "grounding_loss": 9.651011350797489e-05,
+      "alignment_loss": 0.1398175060749054,
+      "empowerment_loss": 0.10555705428123474,
+      "judge_correctness": 0.8154762387275696,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.17998969554901123,
+      "gen_loss": 0.13429677486419678,
+      "grounding_loss": 9.91125707514584e-05,
+      "alignment_loss": 0.15197934210300446,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8177083730697632,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2127419263124466,
+      "gen_loss": 0.17400310933589935,
+      "grounding_loss": 0.00012146728113293648,
+      "alignment_loss": 0.12872447073459625,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8904762864112854,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1666434407234192,
+      "gen_loss": 0.12070941179990768,
+      "grounding_loss": 0.00012619263725355268,
+      "alignment_loss": 0.1526927947998047,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8274147510528564,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.22894462943077087,
+      "gen_loss": 0.19084785878658295,
+      "grounding_loss": 0.00011367072147550061,
+      "alignment_loss": 0.12661033868789673,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8933811187744141,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.24402569234371185,
+      "gen_loss": 0.1924927532672882,
+      "grounding_loss": 0.00010503883095225319,
+      "alignment_loss": 0.17142632603645325,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9020212888717651,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.20043990015983582,
+      "gen_loss": 0.15544000267982483,
+      "grounding_loss": 0.000108714921225328,
+      "alignment_loss": 0.14963726699352264,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8861454725265503,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1686406284570694,
+      "gen_loss": 0.1310695856809616,
+      "grounding_loss": 0.00011026357242371887,
+      "alignment_loss": 0.12486925721168518,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8594734072685242,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.211786687374115,
+      "gen_loss": 0.17738153040409088,
+      "grounding_loss": 0.00012132354459026828,
+      "alignment_loss": 0.11427946388721466,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8654090762138367,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.19632962346076965,
+      "gen_loss": 0.16347457468509674,
+      "grounding_loss": 0.0001350121310679242,
+      "alignment_loss": 0.10906674712896347,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8501286506652832,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.15474165976047516,
+      "gen_loss": 0.12445089221000671,
+      "grounding_loss": 9.429662895854563e-05,
+      "alignment_loss": 0.10065489262342453,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8937212228775024,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.18341420590877533,
+      "gen_loss": 0.1438082754611969,
+      "grounding_loss": 0.0001314675755565986,
+      "alignment_loss": 0.10054785013198853,
+      "empowerment_loss": 0.093100905418396,
+      "judge_correctness": 0.946254551410675,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2025824338197708,
+      "gen_loss": 0.15808641910552979,
+      "grounding_loss": 0.00011292455747025087,
+      "alignment_loss": 0.12604019045829773,
+      "empowerment_loss": 0.06571042537689209,
+      "judge_correctness": 0.8303571939468384,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1595890074968338,
+      "gen_loss": 0.12770946323871613,
+      "grounding_loss": 0.00011783966328948736,
+      "alignment_loss": 0.10587234050035477,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9259792566299438,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1989906132221222,
+      "gen_loss": 0.1568598449230194,
+      "grounding_loss": 0.00010778279829537496,
+      "alignment_loss": 0.1400766521692276,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8880760669708252,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.16854719817638397,
+      "gen_loss": 0.12420688569545746,
+      "grounding_loss": 0.0001580347743583843,
+      "alignment_loss": 0.14727424085140228,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.884845495223999,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2003941684961319,
+      "gen_loss": 0.15949493646621704,
+      "grounding_loss": 0.00012952345423400402,
+      "alignment_loss": 0.13589902222156525,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8392857313156128,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.24257561564445496,
+      "gen_loss": 0.19647178053855896,
+      "grounding_loss": 0.00011406738485675305,
+      "alignment_loss": 0.14650624990463257,
+      "empowerment_loss": 0.020378857851028442,
+      "judge_correctness": 0.930443525314331,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1640782207250595,
+      "gen_loss": 0.10136757791042328,
+      "grounding_loss": 9.382467396790162e-05,
+      "alignment_loss": 0.17271515727043152,
+      "empowerment_loss": 0.10802274942398071,
+      "judge_correctness": 0.9519721865653992,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1916441023349762,
+      "gen_loss": 0.1347544640302658,
+      "grounding_loss": 0.00013066473184153438,
+      "alignment_loss": 0.18919655680656433,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8932291865348816,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.22996410727500916,
+      "gen_loss": 0.1645626425743103,
+      "grounding_loss": 0.00012959964806213975,
+      "alignment_loss": 0.2175728678703308,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9305555820465088,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.21386194229125977,
+      "gen_loss": 0.14667746424674988,
+      "grounding_loss": 0.00013851080439053476,
+      "alignment_loss": 0.22348652780056,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8794981241226196,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1495082527399063,
+      "gen_loss": 0.0906626433134079,
+      "grounding_loss": 0.0001181789775728248,
+      "alignment_loss": 0.19575807452201843,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8919355273246765,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.170058473944664,
+      "gen_loss": 0.11203698813915253,
+      "grounding_loss": 0.00011495464423205703,
+      "alignment_loss": 0.1930217742919922,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9036458730697632,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2211967557668686,
+      "gen_loss": 0.14651714265346527,
+      "grounding_loss": 0.00014763356011826545,
+      "alignment_loss": 0.2060963213443756,
+      "empowerment_loss": 0.12703076004981995,
+      "judge_correctness": 0.8957440257072449,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2072834074497223,
+      "gen_loss": 0.1495802253484726,
+      "grounding_loss": 0.00013406587822828442,
+      "alignment_loss": 0.19189703464508057,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8803811073303223,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.22822032868862152,
+      "gen_loss": 0.17671750485897064,
+      "grounding_loss": 0.00013439609028864652,
+      "alignment_loss": 0.1712280958890915,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9720238447189331,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2218163013458252,
+      "gen_loss": 0.16323502361774445,
+      "grounding_loss": 0.00012819159019272774,
+      "alignment_loss": 0.194843590259552,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8836805820465088,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.19286218285560608,
+      "gen_loss": 0.1294829398393631,
+      "grounding_loss": 0.00013546569971367717,
+      "alignment_loss": 0.2108125537633896,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9183948040008545,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.2145329713821411,
+      "gen_loss": 0.15043185651302338,
+      "grounding_loss": 0.0001372489787172526,
+      "alignment_loss": 0.21321287751197815,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9233774542808533,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.20504949986934662,
+      "gen_loss": 0.12240059673786163,
+      "grounding_loss": 0.00012190420238766819,
+      "alignment_loss": 0.27508997917175293,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8794163465499878,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1668037474155426,
+      "gen_loss": 0.1090620905160904,
+      "grounding_loss": 0.0001318121503572911,
+      "alignment_loss": 0.19203276932239532,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9068940877914429,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.20594985783100128,
+      "gen_loss": 0.14624634385108948,
+      "grounding_loss": 0.00014893112529534847,
+      "alignment_loss": 0.19851525127887726,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8585034608840942,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.1625140905380249,
+      "gen_loss": 0.107721246778965,
+      "grounding_loss": 0.00014780875062569976,
+      "alignment_loss": 0.18215009570121765,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8625199794769287,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.23654888570308685,
+      "gen_loss": 0.1864144206047058,
+      "grounding_loss": 0.00011934053327422589,
+      "alignment_loss": 0.166717067360878,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9115384817123413,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.19151820242404938,
+      "gen_loss": 0.14211921393871307,
+      "grounding_loss": 0.0001482481457060203,
+      "alignment_loss": 0.1641691029071808,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9394465684890747,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.23535649478435516,
+      "gen_loss": 0.18241363763809204,
+      "grounding_loss": 0.00012462820450309664,
+      "alignment_loss": 0.1760607212781906,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8895546197891235,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.16417182981967926,
+      "gen_loss": 0.11232054978609085,
+      "grounding_loss": 0.00015692351735197008,
+      "alignment_loss": 0.17231449484825134,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.9494287967681885,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.17756487429141998,
+      "gen_loss": 0.14336560666561127,
+      "grounding_loss": 0.00012974858691450208,
+      "alignment_loss": 0.11356506496667862,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.8763697743415833,
+      "stage": 3,
+      "action_acc": 1.0
+    },
+    {
+      "total_loss": 0.19489572942256927,
+      "gen_loss": 0.16098880767822266,
+      "grounding_loss": 0.00012838066322728992,
+      "alignment_loss": 0.11259514093399048,
+      "empowerment_loss": 0.0,
+      "judge_correctness": 0.913950502872467,
+      "stage": 3,
+      "action_acc": 1.0
+    }
+  ],
+  "final_test_accuracy": 0.5,
+  "final_stage": 3,
+  "config": {
+    "total_steps": 500,
+    "stage1_mastery_threshold": 0.85,
+    "stage2_mastery_threshold": 0.8
+  }
+}

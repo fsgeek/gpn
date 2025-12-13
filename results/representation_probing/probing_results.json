@@ -1,0 +1,14 @@
+{
+  "seed": 0,
+  "num_steps": 500,
+  "full_perception": {
+    "probes": {
+      "action_accuracy": 1.0,
+      "modifier_accuracy": 1.0,
+      "count_accuracy": 0.75,
+      "joint_accuracy": 0.75
+    },
+    "metrics": {
+      "dims_for_90_var": 7,
+      "dims_for_95_var": 8,
+      "action_separation": 

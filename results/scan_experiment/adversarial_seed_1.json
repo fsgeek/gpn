@@ -1,0 +1,79 @@
+{
+  "seed": 1,
+  "condition": "adversarial",
+  "train_accuracy": 1.0,
+  "test_accuracy": 1.0,
+  "history": [
+    {
+      "step": 2490,
+      "total_loss": 0.02308085188269615,
+      "gen_loss": 0.02308085188269615,
+      "disc_loss": 0.1303551197052002,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2491,
+      "total_loss": 0.004677460994571447,
+      "gen_loss": 0.004677460994571447,
+      "disc_loss": 0.13490313291549683,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2492,
+      "total_loss": 0.0032736705616116524,
+      "gen_loss": 0.0032736705616116524,
+      "disc_loss": 0.12542305886745453,
+      "judge_correctness": 0.984375
+    },
+    {
+      "step": 2493,
+      "total_loss": 0.01066373847424984,
+      "gen_loss": 0.01066373847424984,
+      "disc_loss": 0.1407977193593979,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2494,
+      "total_loss": 0.010421511717140675,
+      "gen_loss": 0.010421511717140675,
+      "disc_loss": 0.11896568536758423,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2495,
+      "total_loss": 0.01578686572611332,
+      "gen_loss": 0.01578686572611332,
+      "disc_loss": 0.21023565530776978,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2496,
+      "total_loss": 0.009171717800199986,
+      "gen_loss": 0.009171717800199986,
+      "disc_loss": 0.1096644178032875,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2497,
+      "total_loss": 0.004425513092428446,
+      "gen_loss": 0.004425513092428446,
+      "disc_loss": 0.10740602016448975,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2498,
+      "total_loss": 0.00940089300274849,
+      "gen_loss": 0.00940089300274849,
+      "disc_loss": 0.12047141790390015,
+      "judge_correctness": 1.0
+    },
+    {
+      "step": 2499,
+      "total_loss": 0.03882607817649841,
+      "gen_loss": 0.03882607817649841,
+      "disc_loss": 0.17446130514144897,
+      "judge_correctness": 0.9833333492279053
+    }
+  ],
+  "final_step": 2500
+}

@@ -1,0 +1,192 @@
+\appendix
+
+\section{Experimental Provenance}
+\label{appendix:provenance}
+
+This appendix provides traceability from claims in the main text to experimental sources. All experiments are reproducible from the codebase at \texttt{[repository URL]}.
+
+\subsection{Primary Empirical Claims}
+
+\subsubsection{Compositional Transfer (Table~\ref{tab:composition})}
+
+\textbf{Claim:} Pedagogical training achieves $96.7 \pm 6.5\%$ compositional transfer on held-out relations; adversarial achieves $80.1 \pm 2.8\%$ (5 seeds each).
+
+\textbf{Experiment:} Phase 1.6 relational generalization with held-out pairs $\{7>3, 8>2, 9>1, 6>4\}$.
+
+\begin{itemize}
+    \item \textbf{Multi-seed validation (December 12, 2025):} \\
+    Script: \texttt{scripts/run\_multiseed\_validation.py} \\
+    Results: \texttt{results/multiseed\_validation/summary.json} \\
+
+    \textbf{Pedagogical (5 seeds):}
+    \begin{itemize}
+        \item Mean: $96.7\%$, Std: $\pm 6.5\%$
+        \item Range: $[83.7\%, 100.0\%]$
+        \item Individual: 100.0\%, 100.0\%, 100.0\%, 99.8\%, 83.7\%
+    \end{itemize}
+
+    \textbf{Adversarial (5 seeds):}
+    \begin{itemize}
+        \item Mean: $80.1\%$, Std: $\pm 2.8\%$
+        \item Range: $[75.2\%, 82.9\%]$
+        \item Individual: 82.4\%, 80.9\%, 82.9\%, 78.9\%, 75.2\%
+    \end{itemize}
+
+    \textbf{Statistical analysis:}
+    \begin{itemize}
+        \item Gap: +16.6 percentage points
+        \item Mann-Whitney U: 25.0
+        \item $p$-value: 0.0056
+        \item Cohen's $d$: 3.31 (very large effect)
+    \end{itemize}
+
+    \item \textbf{Original single-run results (reference):} \\
+    Pedagogical: 100.0\% (\texttt{experiments/relational\_holdout.log}, Line 75) \\
+    Adversarial: 81.1\% (\texttt{experiments/relational\_holdout\_acgan.log}, Line 78) \\
+    Date: 2025-12-05
+\end{itemize}
+
+\textbf{Reproduction:}
+\begin{verbatim}
+# Multi-seed validation (5 seeds each)
+python scripts/run_multiseed_validation.py
+
+# Original single-run experiments
+python scripts/train_relational_holdout.py \
+    --primitives checkpoints/checkpoint_final.pt
+
+python scripts/train_relational_holdout.py \
+    --primitives checkpoints/acgan_final.pt
+\end{verbatim}
+
+\subsubsection{Topological Metrics (Table~\ref{tab:topology})}
+
+\textbf{Claim:} Pedagogical representations have lower intrinsic dimensionality (9.94 vs 13.55) and fewer topological holes ($\beta_1$: 5.6 vs 8.0).
+
+\begin{itemize}
+    \item \textbf{Source:} \texttt{results/feature\_metrics.json} (dimensionality) \\
+    \texttt{results/fashion\_mnist\_topology\_results.json} (holes, includes MNIST baseline)
+
+    \item \textbf{Analysis scripts:} \\
+    \texttt{scripts/compute\_feature\_metrics.py} \\
+    \texttt{scripts/compute\_persistent\_homology.py}
+
+    \item \textbf{Method:} Features extracted from frozen Judge network (architecture-agnostic comparison). Intrinsic dimensionality via MLE estimator ($k=20$). Persistent homology via Vietoris-Rips complex.
+\end{itemize}
+
+\textbf{Reproduction:}
+\begin{verbatim}
+python scripts/compute_feature_metrics.py \
+    --pedagogical checkpoints/checkpoint_final.pt \
+    --adversarial checkpoints/acgan_final.pt \
+    --output results/feature_metrics.json
+
+python scripts/compute_persistent_homology.py \
+    --pedagogical checkpoints/checkpoint_final.pt \
+    --adversarial checkpoints/acgan_final.pt
+\end{verbatim}
+
+% TODO: Add per-seed variance, statistical tests
+
+\subsubsection{Temporal Derivative Detection (Section 5.3)}
+
+\textbf{Claim:} 66 experiments across 5 conditions; temporal metrics improve pathology detection.
+
+\textbf{Validated Results:}
+\begin{itemize}
+    \item Mean static AUC: 0.593
+    \item Mean temporal AUC: 0.733
+    \item Improvement: +14.0 percentage points
+    \item Best single metric: $\partial I / \partial t$ (AUC = 0.769)
+\end{itemize}
+
+\textbf{Note:} Paper text conservatively reports ``$\approx$0.50 vs $\approx$0.60''; actual validated improvement is larger.
+
+\begin{itemize}
+    \item \textbf{Conditions:}
+    \begin{enumerate}
+        \item Baseline (healthy): \texttt{results/baseline/} (6 runs)
+        \item Mode collapse: \texttt{results/mode\_collapse/} (6 runs)
+        \item Collusion: \texttt{results/collusion/} (18 runs)
+        \item Gaming: \texttt{results/gaming/} (18 runs)
+        \item Noisy evaluation: \texttt{results/noisy\_judge/} (18 runs)
+    \end{enumerate}
+
+    \item \textbf{Structure:} Multiple seeds $\times$ density configs per condition
+
+    \item \textbf{Each run contains:} \texttt{summary.json}, \texttt{*\_history.json} files with full training trajectories
+
+    \item \textbf{Analysis script:} \texttt{scripts/aggregate\_temporal\_experiments.py}
+
+    \item \textbf{Results file:} \texttt{results/temporal\_detection\_auc.json}
+\end{itemize}
+
+\textbf{Reproduction:}
+\begin{verbatim}
+python scripts/aggregate_temporal_experiments.py
+python scripts/compute_statistical_rigor.py
+\end{verbatim}
+
+\textbf{Statistical tests:}
+\begin{itemize}
+    \item Permutation test: $p = 0.018$ (10,000 permutations)
+    \item 95\% CIs via bootstrap (10,000 resamples)
+\end{itemize}
+
+\subsubsection{Fashion-MNIST Replication}
+
+\textbf{Claim:} Topological signature replicates: 29.4\% dimensionality reduction, 24.7\% hole reduction.
+
+\begin{itemize}
+    \item \textbf{Source:} \texttt{results/fashion\_mnist\_topology\_results.json}
+
+    \item \textbf{Values:}
+    \begin{itemize}
+        \item Pedagogical: dim=12.10, holes=6.4
+        \item Adversarial: dim=17.15, holes=8.5
+    \end{itemize}
+
+    \item \textbf{Training scripts:} \\
+    \texttt{scripts/train\_fashion\_mnist\_pedagogical.py} \\
+    \texttt{scripts/train\_fashion\_mnist\_adversarial.py}
+
+    \item \textbf{Analysis:} \texttt{scripts/analyze\_fashion\_mnist\_topology.py}
+\end{itemize}
+
+\subsection{Figure Sources}
+
+\begin{itemize}
+    \item \textbf{Figure~\ref{fig:architecture}:} \texttt{paper/figures/architecture\_diagram.pdf} \\
+    \textit{Schematic illustration} of GPN architecture (not from experimental data).
+
+    \item \textbf{Figure~\ref{fig:temporal}:} \texttt{paper/figures/derivative\_comparison\_regenerated.png} \\
+    Generated by: \texttt{scripts/aggregate\_temporal\_experiments.py} \\
+    Data source: 66 experiments in \texttt{results/\{baseline,mode\_collapse,collusion,gaming,noisy\_judge\}/} \\
+    Validated: 2025-12-12
+
+    \item \textbf{Figure~\ref{fig:topology}:} \texttt{paper/figures/topology\_comparison.pdf} \\
+    Generated by: \texttt{scripts/generate\_topology\_figure.py} \\
+    Data source: \texttt{results/topology\_analysis\_summary.md}
+
+    \item \textbf{Figure~\ref{fig:fidelity}:} \texttt{paper/figures/fig4\_fidelity\_comparison.png} \\
+    Generated by: \texttt{scripts/generate\_fig4\_fixed.py} \\
+    Data source: Real samples from \texttt{checkpoints/checkpoint\_final.pt} (pedagogical) and \texttt{checkpoints/acgan\_final.pt} (adversarial)
+\end{itemize}
+
+\subsection{Checkpoints}
+
+All model checkpoints saved in \texttt{checkpoints/}:
+
+\begin{itemize}
+    \item \texttt{checkpoint\_final.pt} --- Pedagogical single-digit Weaver
+    \item \texttt{acgan\_final.pt} --- AC-GAN single-digit generator
+    \item \texttt{relational\_holdout\_final.pt} --- Pedagogical relational (Phase 1.6)
+    \item \texttt{relational\_holdout\_acgan\_final.pt} --- AC-GAN relational (Phase 1.6)
+\end{itemize}
+
+\subsection{Code Version}
+
+% TODO: Add git commit hash at submission time
+\begin{verbatim}
+git rev-parse HEAD
+\end{verbatim}

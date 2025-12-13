@@ -1,0 +1,179 @@
+{
+  "config": {
+    "num_steps": 500,
+    "num_samples": 50,
+    "seed": 0
+  },
+  "final_metrics": {
+    "accuracy": 0.7142857142857143,
+    "mean_coverage": 0.4761904761904762,
+    "mean_entropy": -1.366630037572938e-10
+  },
+  "training_log": [
+    {
+      "step": 100,
+      "loss": 0.5329013466835022,
+      "accuracy": 0.0,
+      "coverage": 0.4761904761904762
+    },
+    {
+      "step": 200,
+      "loss": 0.3684726357460022,
+      "accuracy": 0.14285714285714285,
+      "coverage": 0.4761904761904762
+    },
+    {
+      "step": 300,
+      "loss": 0.16367311775684357,
+      "accuracy": 0.7142857142857143,
+      "coverage": 0.4761904761904762
+    },
+    {
+      "step": 400,
+      "loss": 0.21144884824752808,
+      "accuracy": 0.7142857142857143,
+      "coverage": 0.4761904761904762
+    }
+  ],
+  "example_details": [
+    {
+      "command": "walk and run left",
+      "num_valid_interpretations": 2,
+      "valid_outputs": [
+        "WALK LTURN RUN",
+        "LTURN WALK LTURN RUN"
+      ],
+      "unique_generated": 1,
+      "valid_matches": {
+        "0": 1
+      },
+      "coverage": 0.5,
+      "sample_outputs": [
+        "WALK LTURN RUN",
+        "WALK LTURN RUN",
+        "WALK LTURN RUN",
+        "WALK LTURN RUN",
+        "WALK LTURN RUN"
+      ]
+    },
+    {
+      "command": "jump and look right",
+      "num_valid_interpretations": 2,
+      "valid_outputs": [
+        "JUMP RTURN LOOK",
+        "RTURN JUMP RTURN LOOK"
+      ],
+      "unique_generated": 1,
+      "valid_matches": {
+        "0": 1
+      },
+      "coverage": 0.5,
+      "sample_outputs": [
+        "JUMP RTURN LOOK",
+        "JUMP RTURN LOOK",
+        "JUMP RTURN LOOK",
+        "JUMP RTURN LOOK",
+        "JUMP RTURN LOOK"
+      ]
+    },
+    {
+      "command": "run and walk around",
+      "num_valid_interpretations": 2,
+      "valid_outputs": [
+        "RUN LTURN WALK LTURN WALK LTURN WALK LTURN WALK",
+        "LTURN RUN LTURN RUN LTURN RUN LTURN RUN LTURN WALK LTURN WALK LTURN WALK LTURN WALK"
+      ],
+      "unique_generated": 1,
+      "valid_matches": {},
+      "coverage": 0.0,
+      "sample_outputs": [
+        "WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK",
+        "WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK",
+        "WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK",
+        "WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK",
+        "WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK LTURN WALK"
+      ]
+    },
+    {
+      "command": "walk and jump twice",
+      "num_valid_interpretations": 2,
+      "valid_outputs": [
+        "WALK JUMP JUMP",
+        "WALK JUMP WALK JUMP"
+      ],
+      "unique_generated": 1,
+      "valid_matches": {
+        "0": 1
+      },
+      "coverage": 0.5,
+      "sample_outputs": [
+        "WALK JUMP JUMP",
+        "WALK JUMP JUMP",
+        "WALK JUMP JUMP",
+        "WALK JUMP JUMP",
+        "WALK JUMP JUMP"
+      ]
+    },
+    {
+      "command": "look and run thrice",
+      "num_valid_interpretations": 2,
+      "valid_outputs": [
+        "LOOK RUN RUN RUN",
+        "LOOK RUN LOOK RUN LOOK RUN"
+      ],
+      "unique_generated": 1,
+      "valid_matches": {},
+      "coverage": 0.0,
+      "sample_outputs": [
+        "LOOK RUN RUN RUN RUN",
+        "LOOK RUN RUN RUN RUN",
+        "LOOK RUN RUN RUN RUN",
+        "LOOK RUN RUN RUN RUN",
+        "LOOK RUN RUN RUN RUN"
+      ]
+    },
+    {
+      "command": "walk and jump left twice",
+      "num_valid_interpretations": 3,
+      "valid_outputs": [
+        "WALK LTURN JUMP LTURN JUMP",
+        "WALK LTURN JUMP WALK LTURN JUMP",
+        "LTURN WALK LTURN JUMP LTURN WALK LTURN JUMP"
+      ],
+      "unique_generated": 1,
+      "valid_matches": {
+        "0": 1
+      },
+      "coverage": 0.3333333333333333,
+      "sample_outputs": [
+        "WALK LTURN JUMP LTURN JUMP",
+        "WALK LTURN JUMP LTURN JUMP",
+        "WALK LTURN JUMP LTURN JUMP",
+        "WALK LTURN JUMP LTURN JUMP",
+        "WALK LTURN JUMP LTURN JUMP"
+      ]
+    },
+    {
+      "command": "run and look right once",
+      "num_valid_interpretations": 2,
+      "valid_outputs": [
+        "RUN RTURN LOOK",
+        "RTURN RUN RTURN LOOK"
+      ],
+      "unique_generated": 1,
+      "valid_matches": {
+        "0": 1
+      },
+      "coverage": 0.5,
+      "sample_outputs": [
+        "RUN RTURN LOOK",
+        "RUN RTURN LOOK",
+        "RUN RTURN LOOK",
+        "RUN RTURN LOOK",
+        "RUN RTURN LOOK"
+      ]
+    }
+  ],
+  "interpretation": "LIMITED DIVERSITY: Model biased toward specific interpretations",
+  "evidence": "Collapse occurring - may need explicit diversity-encouraging training"
+}

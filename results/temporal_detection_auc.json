@@ -1,0 +1,25 @@
+{
+  "experiment_counts": {
+    "baseline": 6,
+    "mode_collapse": 6,
+    "collusion": 18,
+    "gaming": 18,
+    "noisy_judge": 18
+  },
+  "total_experiments": 66,
+  "auc_by_metric": {
+    "dT_dt": 0.775,
+    "dI_dt": 0.7694444444444444,
+    "dF_dt": 0.6555555555555556,
+    "T": 0.6055555555555556,
+    "I": 0.5972222222222223,
+    "F": 0.5944444444444444,
+    "correctness": 0.5055555555555555,
+    "alignment": 0.6638888888888889
+  },
+  "mean_temporal_auc": 0.7333333333333333,
+  "mean_static_auc": 0.5933333333333334,
+  "improvement_pp": 13.99999999999999,
+  "best_metric": "dI_dt",
+  "best_auc": 0.7694444444444444
+}

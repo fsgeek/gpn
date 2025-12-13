@@ -1,0 +1,45 @@
+{
+  "compositional_transfer": {
+    "pedagogical": 1.0,
+    "adversarial": 0.811,
+    "note": "Single run, no variance available"
+  },
+  "auc": {
+    "temporal_mean": 0.7333333333333333,
+    "temporal_ci_95": [
+      0.6196721311475409,
+      0.8764384303749765
+    ],
+    "static_mean": 0.5990740740740742,
+    "static_ci_95": [
+      0.5295646523716699,
+      0.8994708994708995
+    ],
+    "difference_pp": 13.425925925925908,
+    "permutation_p": 0.018
+  },
+  "topology": {
+    "mnist": {
+      "pedagogical": {
+        "intrinsic_dim": 9.94,
+        "mean_holes": 5.6
+      },
+      "adversarial": {
+        "intrinsic_dim": 13.55,
+        "mean_holes": 8.0
+      }
+    },
+    "fashion": {
+      "pedagogical": {
+        "mean_holes": 6.4,
+        "std_holes": 1.0198039027185568,
+        "intrinsic_dim": 12.10261609201086
+      },
+      "adversarial": {
+        "mean_holes": 8.5,
+        "std_holes": 1.4317821063276353,
+        "intrinsic_dim": 17.149727724387436
+      }
+    }
+  }
+}

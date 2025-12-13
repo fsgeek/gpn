@@ -1,0 +1,36 @@
+{
+  "seed": 0,
+  "primitives": "adversarial",
+  "checkpoint": "checkpoints/acgan_final.pt",
+  "holdout_pairs": [
+    [
+      7,
+      3
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      6,
+      4
+    ]
+  ],
+  "holdout": {
+    "x_accuracy": 0.6044921875,
+    "y_accuracy": 0.6833984367549419,
+    "validity": 0.8104025796055794,
+    "relation_accuracy": 0.8244140632450581
+  },
+  "training": {
+    "x_accuracy": 0.5869140625,
+    "y_accuracy": 0.7847656272351742,
+    "validity": 0.7921342812478542,
+    "relation_accuracy": 0.8009765632450581
+  },
+  "timestamp": "2025-12-12T22:55:55.075260"
+}
