@@ -1,0 +1,10 @@
+{
+  "seed": 3,
+  "holdout": {
+    "x_accuracy": 0.03632812504656613,
+    "y_accuracy": 0.2412109375,
+    "avg_validity": 0.887704387307167,
+    "relation_accuracy": 1.0
+  },
+  "timestamp": "2025-12-13T06:32:39.395551"
+}
