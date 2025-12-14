@@ -1,0 +1,148 @@
+# GPN-1 Configuration: Architecture-Only Ablation
+# EXPERIMENT: ALL losses = 0 throughout ALL phases
+#
+# This is the critical experiment. If composition survives with no losses at all,
+# the mechanism is purely architectural: frozen primitives + trainable router.
+#
+# The losses were never doing the work. The bound on modification is enforced
+# by which parameters are trainable, not by gradients.
+#
+# Prediction if ARCHITECTURE is the mechanism: Composition remains high (~100%)
+# Prediction if LOSSES matter: Composition drops significantly
+
+# =============================================================================
+# Reproducibility
+# =============================================================================
+seed: 42
+
+# =============================================================================
+# Data
+# =============================================================================
+data:
+  dataset: mnist
+  batch_size: 64
+  num_workers: 4
+  pin_memory: true
+
+# =============================================================================
+# Model Architecture (same as default)
+# =============================================================================
+model:
+  latent_dim: 64
+  num_classes: 10
+  image_channels: 1
+  image_size: 28
+
+  weaver:
+    hidden_dims: [256, 512, 1024]
+    use_batch_norm: true
+    v_pred_hidden: 128
+
+  witness:
+    hidden_dims: [1024, 512, 256]
+    use_batch_norm: true
+    v_seen_hidden: 128
+    dropout: 0.3
+
+  judge:
+    checkpoint_path: null
+    hidden_dims: [512, 256]
+
+# =============================================================================
+# Training Phases
+# =============================================================================
+training:
+  total_steps: 15000
+
+  phase1_steps: 5000
+  phase2_steps: 10000
+
+  optimizer:
+    type: adam
+    lr: 0.0002
+    betas: [0.5, 0.999]
+    weight_decay: 0
+
+  scheduler:
+    type: constant
+    warmup_steps: 0
+
+# =============================================================================
+# Loss Weights - ALL ABLATED (= 0 in ALL phases)
+# =============================================================================
+losses:
+  # Phase 1: NO losses
+  phase1:
+    grounding: 0.0    # ABLATED
+    alignment: 0.0    # ABLATED
+    empowerment: 0.0  # ABLATED
+
+  # Phase 2: NO losses
+  phase2:
+    grounding: 0.0    # ABLATED
+    alignment: 0.0    # ABLATED
+    empowerment: 0.0  # ABLATED
+
+  # Phase 3: NO losses (same as default)
+  phase3:
+    grounding: 0.0
+    alignment: 0.0
+    empowerment: 0.0
+
+  empowerment:
+    target_kl: 0.5
+    tolerance: 0.1
+
+# =============================================================================
+# EMA Tracking (disabled - no losses to track)
+# =============================================================================
+ema:
+  decay: 0.99
+  update_on: witness_forward
+
+  stagnation:
+    variance_threshold: 0.000001
+    window_size: 100
+
+# =============================================================================
+# Collusion Detection (disabled - no losses)
+# =============================================================================
+collusion:
+  enabled: false
+
+# =============================================================================
+# Logging & Checkpoints
+# =============================================================================
+logging:
+  log_dir: experiments/architecture_only
+  log_interval: 100
+  sample_interval: 500
+  num_samples: 64
+
+checkpointing:
+  checkpoint_dir: checkpoints/architecture_only
+  save_interval: 1000
+  keep_last_n: 3
+  save_on_phase_transition: true
+
+# =============================================================================
+# Metrics
+# =============================================================================
+metrics:
+  mode_diversity:
+    enabled: true
+    eval_interval: 500
+    num_samples: 1000
+
+  quality:
+    enabled: true
+    eval_interval: 500
+
+  convergence:
+    enabled: true
+    track_from_step: 0
+
+# =============================================================================
+# Device
+# =============================================================================
+device: auto

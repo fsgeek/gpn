@@ -1,0 +1,12 @@
+{
+  "seed": 3,
+  "ablated_checkpoint": "checkpoints/alignment_ablation/no_alignment_seed_3.pt",
+  "holdout": {
+    "relation_accuracy": 1.0,
+    "x_accuracy": 1.0,
+    "y_accuracy": 0.998046875
+  },
+  "training": {
+    "relation_accuracy": 1.0
+  }
+}

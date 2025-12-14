@@ -1,0 +1,103 @@
+{
+  "seed": 2,
+  "ablation": "grounding",
+  "checkpoint_path": "checkpoints/grounding_ablation/grounding_ablated_seed_2.pt",
+  "final_metrics": {
+    "step": 14000,
+    "phase": 3,
+    "loss": 0.0,
+    "judge_accuracy": 0.03125
+  },
+  "training_history": [
+    {
+      "step": 0,
+      "phase": 1,
+      "loss": 0.008004908449947834,
+      "judge_accuracy": 0.078125
+    },
+    {
+      "step": 1000,
+      "phase": 1,
+      "loss": 0.0020787862595170736,
+      "judge_accuracy": 0.09375
+    },
+    {
+      "step": 2000,
+      "phase": 1,
+      "loss": 0.0019649392925202847,
+      "judge_accuracy": 0.140625
+    },
+    {
+      "step": 3000,
+      "phase": 1,
+      "loss": 0.0020130272023379803,
+      "judge_accuracy": 0.078125
+    },
+    {
+      "step": 4000,
+      "phase": 1,
+      "loss": 0.0018347211880609393,
+      "judge_accuracy": 0.109375
+    },
+    {
+      "step": 5000,
+      "phase": 2,
+      "loss": 0.051936183124780655,
+      "judge_accuracy": 0.078125
+    },
+    {
+      "step": 6000,
+      "phase": 2,
+      "loss": 0.004836156964302063,
+      "judge_accuracy": 0.0625
+    },
+    {
+      "step": 7000,
+      "phase": 2,
+      "loss": 89.002685546875,
+      "judge_accuracy": 0.125
+    },
+    {
+      "step": 8000,
+      "phase": 2,
+      "loss": 14289.6044921875,
+      "judge_accuracy": 0.15625
+    },
+    {
+      "step": 9000,
+      "phase": 2,
+      "loss": 936.1328125,
+      "judge_accuracy": 0.046875
+    },
+    {
+      "step": 10000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.140625
+    },
+    {
+      "step": 11000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.0625
+    },
+    {
+      "step": 12000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.03125
+    },
+    {
+      "step": 13000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.0
+    },
+    {
+      "step": 14000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.03125
+    }
+  ]
+}

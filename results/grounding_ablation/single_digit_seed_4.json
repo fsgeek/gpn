@@ -1,0 +1,103 @@
+{
+  "seed": 4,
+  "ablation": "grounding",
+  "checkpoint_path": "checkpoints/grounding_ablation/grounding_ablated_seed_4.pt",
+  "final_metrics": {
+    "step": 14000,
+    "phase": 3,
+    "loss": 0.0,
+    "judge_accuracy": 0.078125
+  },
+  "training_history": [
+    {
+      "step": 0,
+      "phase": 1,
+      "loss": 0.004828406032174826,
+      "judge_accuracy": 0.09375
+    },
+    {
+      "step": 1000,
+      "phase": 1,
+      "loss": 0.002445771126076579,
+      "judge_accuracy": 0.125
+    },
+    {
+      "step": 2000,
+      "phase": 1,
+      "loss": 0.002350390423089266,
+      "judge_accuracy": 0.140625
+    },
+    {
+      "step": 3000,
+      "phase": 1,
+      "loss": 0.0025127760600298643,
+      "judge_accuracy": 0.109375
+    },
+    {
+      "step": 4000,
+      "phase": 1,
+      "loss": 0.0023481466341763735,
+      "judge_accuracy": 0.140625
+    },
+    {
+      "step": 5000,
+      "phase": 2,
+      "loss": 0.05610104277729988,
+      "judge_accuracy": 0.046875
+    },
+    {
+      "step": 6000,
+      "phase": 2,
+      "loss": 0.010893709026277065,
+      "judge_accuracy": 0.15625
+    },
+    {
+      "step": 7000,
+      "phase": 2,
+      "loss": 0.0004394320130813867,
+      "judge_accuracy": 0.109375
+    },
+    {
+      "step": 8000,
+      "phase": 2,
+      "loss": 0.0013681347481906414,
+      "judge_accuracy": 0.09375
+    },
+    {
+      "step": 9000,
+      "phase": 2,
+      "loss": 0.04074622690677643,
+      "judge_accuracy": 0.15625
+    },
+    {
+      "step": 10000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.09375
+    },
+    {
+      "step": 11000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.171875
+    },
+    {
+      "step": 12000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.140625
+    },
+    {
+      "step": 13000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.0625
+    },
+    {
+      "step": 14000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.078125
+    }
+  ]
+}

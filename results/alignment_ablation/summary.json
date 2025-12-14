@@ -1,0 +1,52 @@
+{
+  "experiment": "alignment_ablation",
+  "hypothesis": "v_pred/v_seen alignment creates bounded modification class",
+  "ablation": "alignment = 0 throughout all phases",
+  "ablated_results": {
+    "n_seeds": 5,
+    "mean_accuracy": 1.0,
+    "std_accuracy": 0.0,
+    "min_accuracy": 1.0,
+    "max_accuracy": 1.0,
+    "accuracies": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "comparison": {
+    "baseline_pedagogical": {
+      "mean": 0.9669140629470349,
+      "std": 0.0651996998458137,
+      "accuracies": [
+        1.0,
+        1.0,
+        1.0,
+        0.998046875,
+        0.8365234397351742
+      ]
+    },
+    "ablated_no_alignment": {
+      "n_seeds": 5,
+      "mean_accuracy": 1.0,
+      "std_accuracy": 0.0,
+      "min_accuracy": 1.0,
+      "max_accuracy": 1.0,
+      "accuracies": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "difference_mean": -0.03308593705296514,
+    "mann_whitney_u": 7.5,
+    "p_value": 0.9494748720372951,
+    "cohens_d": -0.7176502501511149
+  },
+  "interpretation": "ALIGNMENT IS NOT THE MECHANISM: Composition survived without alignment",
+  "timestamp": "2025-12-13T09:00:54.828826"
+}

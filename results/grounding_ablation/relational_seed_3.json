@@ -1,0 +1,13 @@
+{
+  "seed": 3,
+  "ablation": "grounding",
+  "ablated_checkpoint": "checkpoints/grounding_ablation/grounding_ablated_seed_3.pt",
+  "holdout": {
+    "relation_accuracy": 0.9970703125,
+    "x_accuracy": 0.6339843757450581,
+    "y_accuracy": 0.8603515625
+  },
+  "training": {
+    "relation_accuracy": 0.990234375
+  }
+}

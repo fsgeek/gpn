@@ -1,0 +1,190 @@
+{
+  "experiments": {
+    "alignment": {
+      "experiment": "alignment_ablation",
+      "hypothesis": "v_pred/v_seen alignment creates bounded modification class",
+      "ablation": "alignment = 0 throughout all phases",
+      "ablated_results": {
+        "n_seeds": 5,
+        "mean_accuracy": 1.0,
+        "std_accuracy": 0.0,
+        "min_accuracy": 1.0,
+        "max_accuracy": 1.0,
+        "accuracies": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "comparison": {
+        "baseline_pedagogical": {
+          "mean": 0.9669140629470349,
+          "std": 0.0651996998458137,
+          "accuracies": [
+            1.0,
+            1.0,
+            1.0,
+            0.998046875,
+            0.8365234397351742
+          ]
+        },
+        "ablated_no_alignment": {
+          "n_seeds": 5,
+          "mean_accuracy": 1.0,
+          "std_accuracy": 0.0,
+          "min_accuracy": 1.0,
+          "max_accuracy": 1.0,
+          "accuracies": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "difference_mean": -0.03308593705296514,
+        "mann_whitney_u": 7.5,
+        "p_value": 0.9494748720372951,
+        "cohens_d": -0.7176502501511149
+      },
+      "interpretation": "ALIGNMENT IS NOT THE MECHANISM: Composition survived without alignment",
+      "timestamp": "2025-12-13T09:00:54.828826"
+    },
+    "grounding": {
+      "experiment": "grounding_ablation",
+      "hypothesis": "grounding loss creates compositional capacity",
+      "ablation": "grounding = 0 throughout all phases",
+      "ablated_results": {
+        "n_seeds": 5,
+        "mean_accuracy": 0.9994140625,
+        "std_accuracy": 0.001171875,
+        "min_accuracy": 0.9970703125,
+        "max_accuracy": 1.0,
+        "accuracies": [
+          1.0,
+          1.0,
+          1.0,
+          0.9970703125,
+          1.0
+        ]
+      },
+      "comparison": {
+        "baseline_pedagogical": {
+          "mean": 0.9669140629470349,
+          "std": 0.0651996998458137,
+          "accuracies": [
+            1.0,
+            1.0,
+            1.0,
+            0.998046875,
+            0.8365234397351742
+          ]
+        },
+        "grounding_ablated": {
+          "n_seeds": 5,
+          "mean_accuracy": 0.9994140625,
+          "std_accuracy": 0.001171875,
+          "min_accuracy": 0.9970703125,
+          "max_accuracy": 1.0,
+          "accuracies": [
+            1.0,
+            1.0,
+            1.0,
+            0.9970703125,
+            1.0
+          ]
+        },
+        "difference_mean": -0.03249999955296512,
+        "mann_whitney_u": 10.0,
+        "p_value": 0.779656991755661,
+        "cohens_d": -0.7048271391040555,
+        "alignment_ablated": {
+          "n_seeds": 5,
+          "mean_accuracy": 1.0,
+          "std_accuracy": 0.0,
+          "min_accuracy": 1.0,
+          "max_accuracy": 1.0,
+          "accuracies": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "interpretation": "GROUNDING IS NOT THE MECHANISM: Composition survived without grounding",
+      "timestamp": "2025-12-13T09:51:56.028138"
+    },
+    "empowerment": {
+      "experiment": "empowerment_ablation",
+      "hypothesis": "empowerment loss creates compositional capacity",
+      "ablation": "empowerment = 0 throughout all phases",
+      "ablated_results": {
+        "n_seeds": 5,
+        "mean_accuracy": 1.0,
+        "std_accuracy": 0.0,
+        "min_accuracy": 1.0,
+        "max_accuracy": 1.0,
+        "accuracies": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "comparison": {
+        "baseline_pedagogical": {
+          "mean": 0.9669140629470349,
+          "std": 0.0651996998458137,
+          "accuracies": [
+            1.0,
+            1.0,
+            1.0,
+            0.998046875,
+            0.8365234397351742
+          ]
+        },
+        "empowerment_ablated": {
+          "n_seeds": 5,
+          "mean_accuracy": 1.0,
+          "std_accuracy": 0.0,
+          "min_accuracy": 1.0,
+          "max_accuracy": 1.0,
+          "accuracies": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "difference_mean": -0.03308593705296514,
+        "mann_whitney_u": 7.5,
+        "p_value": 0.9494748720372951,
+        "cohens_d": -0.7176502501511149,
+        "alignment_ablated": {
+          "n_seeds": 5,
+          "mean_accuracy": 1.0,
+          "std_accuracy": 0.0,
+          "min_accuracy": 1.0,
+          "max_accuracy": 1.0,
+          "accuracies": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "interpretation": "EMPOWERMENT IS NOT THE MECHANISM: Composition survived without empowerment",
+      "timestamp": "2025-12-13T10:22:56.656657"
+    }
+  },
+  "conclusion": "NO SINGLE LOSS IS THE MECHANISM: Composition survives all individual ablations. Mechanism may be: (1) curriculum structure itself, (2) architecture (frozen primitives + trainable router), or (3) interaction between losses.",
+  "timestamp": "2025-12-13T10:22:56.657774"
+}

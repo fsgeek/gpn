@@ -1,0 +1,12 @@
+{
+  "seed": 0,
+  "ablated_checkpoint": "checkpoints/architecture_only/architecture_only_seed_0.pt",
+  "holdout": {
+    "relation_accuracy": 1.0,
+    "x_accuracy": 1.0,
+    "y_accuracy": 1.0
+  },
+  "training": {
+    "relation_accuracy": 1.0
+  }
+}

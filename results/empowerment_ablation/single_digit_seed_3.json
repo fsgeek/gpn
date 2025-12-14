@@ -1,0 +1,103 @@
+{
+  "seed": 3,
+  "ablation": "empowerment",
+  "checkpoint_path": "checkpoints/empowerment_ablation/empowerment_ablated_seed_3.pt",
+  "final_metrics": {
+    "step": 14000,
+    "phase": 3,
+    "loss": 0.0,
+    "judge_accuracy": 0.0625
+  },
+  "training_history": [
+    {
+      "step": 0,
+      "phase": 1,
+      "loss": 1.181315541267395,
+      "judge_accuracy": 0.078125
+    },
+    {
+      "step": 1000,
+      "phase": 1,
+      "loss": 0.5477477312088013,
+      "judge_accuracy": 0.03125
+    },
+    {
+      "step": 2000,
+      "phase": 1,
+      "loss": 0.5411742329597473,
+      "judge_accuracy": 0.078125
+    },
+    {
+      "step": 3000,
+      "phase": 1,
+      "loss": 0.5408769249916077,
+      "judge_accuracy": 0.109375
+    },
+    {
+      "step": 4000,
+      "phase": 1,
+      "loss": 0.5402292013168335,
+      "judge_accuracy": 0.09375
+    },
+    {
+      "step": 5000,
+      "phase": 2,
+      "loss": 0.5427637696266174,
+      "judge_accuracy": 0.09375
+    },
+    {
+      "step": 6000,
+      "phase": 2,
+      "loss": 0.5442185997962952,
+      "judge_accuracy": 0.09375
+    },
+    {
+      "step": 7000,
+      "phase": 2,
+      "loss": 0.5421289801597595,
+      "judge_accuracy": 0.15625
+    },
+    {
+      "step": 8000,
+      "phase": 2,
+      "loss": 0.5416691303253174,
+      "judge_accuracy": 0.046875
+    },
+    {
+      "step": 9000,
+      "phase": 2,
+      "loss": 0.5402104258537292,
+      "judge_accuracy": 0.125
+    },
+    {
+      "step": 10000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.125
+    },
+    {
+      "step": 11000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.09375
+    },
+    {
+      "step": 12000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.109375
+    },
+    {
+      "step": 13000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.0625
+    },
+    {
+      "step": 14000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.0625
+    }
+  ]
+}

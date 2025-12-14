@@ -1,0 +1,66 @@
+{
+  "experiment": "grounding_ablation",
+  "hypothesis": "grounding loss creates compositional capacity",
+  "ablation": "grounding = 0 throughout all phases",
+  "ablated_results": {
+    "n_seeds": 5,
+    "mean_accuracy": 0.9994140625,
+    "std_accuracy": 0.001171875,
+    "min_accuracy": 0.9970703125,
+    "max_accuracy": 1.0,
+    "accuracies": [
+      1.0,
+      1.0,
+      1.0,
+      0.9970703125,
+      1.0
+    ]
+  },
+  "comparison": {
+    "baseline_pedagogical": {
+      "mean": 0.9669140629470349,
+      "std": 0.0651996998458137,
+      "accuracies": [
+        1.0,
+        1.0,
+        1.0,
+        0.998046875,
+        0.8365234397351742
+      ]
+    },
+    "grounding_ablated": {
+      "n_seeds": 5,
+      "mean_accuracy": 0.9994140625,
+      "std_accuracy": 0.001171875,
+      "min_accuracy": 0.9970703125,
+      "max_accuracy": 1.0,
+      "accuracies": [
+        1.0,
+        1.0,
+        1.0,
+        0.9970703125,
+        1.0
+      ]
+    },
+    "difference_mean": -0.03249999955296512,
+    "mann_whitney_u": 10.0,
+    "p_value": 0.779656991755661,
+    "cohens_d": -0.7048271391040555,
+    "alignment_ablated": {
+      "n_seeds": 5,
+      "mean_accuracy": 1.0,
+      "std_accuracy": 0.0,
+      "min_accuracy": 1.0,
+      "max_accuracy": 1.0,
+      "accuracies": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "interpretation": "GROUNDING IS NOT THE MECHANISM: Composition survived without grounding",
+  "timestamp": "2025-12-13T09:51:56.028138"
+}

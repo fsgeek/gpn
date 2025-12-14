@@ -1,0 +1,76 @@
+{
+  "experiment": "architecture_only",
+  "hypothesis": "Compositional transfer requires only frozen primitives + trainable router",
+  "ablation": "ALL losses = 0 throughout ALL phases",
+  "results": {
+    "n_seeds": 5,
+    "mean_accuracy": 1.0,
+    "std_accuracy": 0.0,
+    "min_accuracy": 1.0,
+    "max_accuracy": 1.0,
+    "accuracies": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "comparisons": {
+    "baseline": {
+      "mean": 0.9669140629470349,
+      "std": 0.0651996998458137,
+      "accuracies": [
+        1.0,
+        1.0,
+        1.0,
+        0.998046875,
+        0.8365234397351742
+      ]
+    },
+    "alignment_ablated": {
+      "n_seeds": 5,
+      "mean_accuracy": 1.0,
+      "std_accuracy": 0.0,
+      "min_accuracy": 1.0,
+      "max_accuracy": 1.0,
+      "accuracies": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "grounding_ablated": {
+      "n_seeds": 5,
+      "mean_accuracy": 0.9994140625,
+      "std_accuracy": 0.001171875,
+      "min_accuracy": 0.9970703125,
+      "max_accuracy": 1.0,
+      "accuracies": [
+        1.0,
+        1.0,
+        1.0,
+        0.9970703125,
+        1.0
+      ]
+    },
+    "empowerment_ablated": {
+      "n_seeds": 5,
+      "mean_accuracy": 1.0,
+      "std_accuracy": 0.0,
+      "min_accuracy": 1.0,
+      "max_accuracy": 1.0,
+      "accuracies": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "interpretation": "ARCHITECTURE IS THE MECHANISM: Composition survives with NO losses. The losses were noise. Bounded modification is enforced by frozen parameters, not gradients.",
+  "timestamp": "2025-12-13T15:45:59.023720"
+}

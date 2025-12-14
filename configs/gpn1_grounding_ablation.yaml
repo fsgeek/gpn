@@ -1,0 +1,153 @@
+# GPN-1 Configuration: Grounding Mechanism Ablation
+# EXPERIMENT: grounding = 0 throughout ALL phases to test if grounding is the mechanism
+#
+# Hypothesis: If Judge-supervised grounding creates compositional capacity, removing
+# it should break compositional transfer.
+#
+# Prediction if grounding IS the mechanism: Compositional transfer drops significantly
+# Prediction if grounding ISN'T the mechanism: Compositional transfer remains high
+
+# =============================================================================
+# Reproducibility
+# =============================================================================
+seed: 42
+
+# =============================================================================
+# Data
+# =============================================================================
+data:
+  dataset: mnist
+  batch_size: 64
+  num_workers: 4
+  pin_memory: true
+
+# =============================================================================
+# Model Architecture (same as default)
+# =============================================================================
+model:
+  latent_dim: 64
+  num_classes: 10
+  image_channels: 1
+  image_size: 28
+
+  weaver:
+    hidden_dims: [256, 512, 1024]
+    use_batch_norm: true
+    v_pred_hidden: 128
+
+  witness:
+    hidden_dims: [1024, 512, 256]
+    use_batch_norm: true
+    v_seen_hidden: 128
+    dropout: 0.3
+
+  judge:
+    checkpoint_path: null
+    hidden_dims: [512, 256]
+
+# =============================================================================
+# Training Phases
+# =============================================================================
+training:
+  total_steps: 15000
+
+  phase1_steps: 5000
+  phase2_steps: 10000
+
+  optimizer:
+    type: adam
+    lr: 0.0002
+    betas: [0.5, 0.999]
+    weight_decay: 0
+
+  scheduler:
+    type: constant
+    warmup_steps: 0
+
+# =============================================================================
+# Loss Weights - GROUNDING ABLATED (= 0 in ALL phases)
+# =============================================================================
+losses:
+  # Phase 1: Alignment only, NO grounding
+  phase1:
+    grounding: 0.0    # ABLATED
+    alignment: 0.1
+    empowerment: 0.0
+
+  # Phase 2: Alignment + empowerment, still NO grounding
+  phase2:
+    grounding: 0.0    # ABLATED (normally 1.0)
+    alignment: 0.5
+    empowerment: 0.3
+
+  # Phase 3: Observation
+  phase3:
+    grounding: 0.0
+    alignment: 0.0
+    empowerment: 0.0
+
+  empowerment:
+    target_kl: 0.5
+    tolerance: 0.1
+
+# =============================================================================
+# EMA Tracking
+# =============================================================================
+ema:
+  decay: 0.99
+  update_on: witness_forward
+
+  stagnation:
+    variance_threshold: 0.000001
+    window_size: 100
+
+# =============================================================================
+# Collusion Detection
+# =============================================================================
+collusion:
+  enabled: true
+  phase1:
+    mode: informational
+  phase2:
+    mode: warning
+    alignment_drop_threshold: 0.1
+    quality_stagnation_threshold: 0.01
+  phase3:
+    mode: diagnostic
+
+# =============================================================================
+# Logging & Checkpoints
+# =============================================================================
+logging:
+  log_dir: experiments/grounding_ablation
+  log_interval: 100
+  sample_interval: 500
+  num_samples: 64
+
+checkpointing:
+  checkpoint_dir: checkpoints/grounding_ablation
+  save_interval: 1000
+  keep_last_n: 3
+  save_on_phase_transition: true
+
+# =============================================================================
+# Metrics
+# =============================================================================
+metrics:
+  mode_diversity:
+    enabled: true
+    eval_interval: 500
+    num_samples: 1000
+
+  quality:
+    enabled: true
+    eval_interval: 500
+
+  convergence:
+    enabled: true
+    track_from_step: 0
+
+# =============================================================================
+# Device
+# =============================================================================
+device: auto

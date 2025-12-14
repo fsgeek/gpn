@@ -1,0 +1,103 @@
+{
+  "seed": 4,
+  "ablation": "empowerment",
+  "checkpoint_path": "checkpoints/empowerment_ablation/empowerment_ablated_seed_4.pt",
+  "final_metrics": {
+    "step": 14000,
+    "phase": 3,
+    "loss": 0.0,
+    "judge_accuracy": 0.078125
+  },
+  "training_history": [
+    {
+      "step": 0,
+      "phase": 1,
+      "loss": 1.1810276508331299,
+      "judge_accuracy": 0.09375
+    },
+    {
+      "step": 1000,
+      "phase": 1,
+      "loss": 0.5488336682319641,
+      "judge_accuracy": 0.125
+    },
+    {
+      "step": 2000,
+      "phase": 1,
+      "loss": 0.5415427088737488,
+      "judge_accuracy": 0.140625
+    },
+    {
+      "step": 3000,
+      "phase": 1,
+      "loss": 0.5419980883598328,
+      "judge_accuracy": 0.109375
+    },
+    {
+      "step": 4000,
+      "phase": 1,
+      "loss": 0.5399088263511658,
+      "judge_accuracy": 0.140625
+    },
+    {
+      "step": 5000,
+      "phase": 2,
+      "loss": 0.5421707630157471,
+      "judge_accuracy": 0.046875
+    },
+    {
+      "step": 6000,
+      "phase": 2,
+      "loss": 0.5407131910324097,
+      "judge_accuracy": 0.15625
+    },
+    {
+      "step": 7000,
+      "phase": 2,
+      "loss": 0.5410206913948059,
+      "judge_accuracy": 0.109375
+    },
+    {
+      "step": 8000,
+      "phase": 2,
+      "loss": 0.5424467325210571,
+      "judge_accuracy": 0.09375
+    },
+    {
+      "step": 9000,
+      "phase": 2,
+      "loss": 0.5436644554138184,
+      "judge_accuracy": 0.15625
+    },
+    {
+      "step": 10000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.09375
+    },
+    {
+      "step": 11000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.171875
+    },
+    {
+      "step": 12000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.140625
+    },
+    {
+      "step": 13000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.0625
+    },
+    {
+      "step": 14000,
+      "phase": 3,
+      "loss": 0.0,
+      "judge_accuracy": 0.078125
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "seed": 2,
+  "ablation": "empowerment",
+  "ablated_checkpoint": "checkpoints/empowerment_ablation/empowerment_ablated_seed_2.pt",
+  "holdout": {
+    "relation_accuracy": 1.0,
+    "x_accuracy": 0.9945312514901161,
+    "y_accuracy": 0.9945312514901161
+  },
+  "training": {
+    "relation_accuracy": 0.998046875
+  }
+}
